@@ -1,0 +1,9 @@
+# Excel / Office lock files
+~$*
+# Stata temp files
+*.stswp
+*.smcl.tmp
+# R
+.Rhistory
+.RData
+.Rproj.user/
