@@ -5,11 +5,11 @@ Panel bulanan Jan-2006 s.d. Okt-2026 untuk 10 mitra dagang utama Indonesia: Chin
 ## Lokasi file
 | File | Isi |
 |---|---|
-| `output/Panel_Country_Month.csv` / `Panel_Gabungan_Indonesia.xlsx` | Negara × bulan: ekspor/impor total + YoY, IPI YoY, GDP YoY, REER, JISDOR |
+| `intermediate/Panel_Country_Month.csv` / `Panel_Gabungan_Indonesia.xlsx` | Negara × bulan: ekspor/impor total + YoY, IPI YoY, GDP YoY, REER, JISDOR |
 | `intermediate/Macro_Monthly.csv` | REER (BIS) dan JISDOR bulanan + YoY |
 | `intermediate/hs_panel/{Export,Import}_{ISO3}.csv` | HS-4 per mitra (±6 juta baris), nilai USD ribu + YoY |
 | `intermediate/HS_Lookup.csv` | Nama produk per HS-4 |
-| `script/build_panel.py` | Pipeline: `python script/build_panel.py input intermediate output` |
+| `script/01_build_panel.py` | Pipeline: `python script/01_build_panel.py input intermediate` |
 
 Gabung HS-level ke panel: `hs.merge(panel, on=['ISO3','Date'])`.
 

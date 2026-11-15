@@ -1,8 +1,8 @@
 """Gabungkan panel IPI/GDP 10 negara + BIS REER + JISDOR + trade HS-4 per mitra.
-Pakai:  python script/build_panel.py input intermediate output
+Pakai:  python script/01_build_panel.py input intermediate
   input/        : 4 file sumber
-  intermediate/ : hs_panel/*.csv, Macro_Monthly.csv, HS_Lookup.csv
-  output/       : Panel_Country_Month.csv, Panel_Gabungan_Indonesia.xlsx
+  intermediate/ : hs_panel/*.csv, Macro_Monthly.csv, HS_Lookup.csv,
+                  Panel_Country_Month.csv, Panel_Gabungan_Indonesia.xlsx
 raw_dir berisi 4 file (nama dicocokkan pakai pola, prefix hash di nama file diabaikan):
   *Panel_10Negara_IPI_GDP_YoY*.xlsx, *bis_dp_search_export*.xlsx, *Informasi_Kurs_Jisdor*.xlsx, *Indonesia_trade_by_product_10partners*.xlsx
 """
@@ -11,7 +11,8 @@ import numpy as np, pandas as pd
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter as L
 
-raw, mid, out = sys.argv[1], sys.argv[2], sys.argv[3]
+raw, mid = sys.argv[1], sys.argv[2]
+out = mid  # panel gabungan juga disimpan di intermediate/ (dataset olahan)
 f = lambda pat: glob.glob(os.path.join(raw, pat))[0]
 os.makedirs(os.path.join(mid, 'hs_panel'), exist_ok=True); os.makedirs(out, exist_ok=True)
 
