@@ -8,3 +8,6 @@
 - Data perdagangan HS-4 per mitra (nilai dan YoY) di `intermediate/hs_panel/`.
 - Script `01_build_panel.py` untuk membuat ulang semua dataset di atas.
 - Catatan data (definisi variabel dan keterbatasan seri) di `notes/catatan_data_panel.md`.
+## v0.2 — 16 Nov 2026: folder kerja per orang
+- Repo dibagi jadi `Haikal/` dan `Tio/` supaya tidak conflict. Masing-masing hanya mengedit folder sendiri.
+- Isi lama (`input/`, `intermediate/`, `script/`, `output/`, `archive/`, `notes/`) disalin ke kedua folder. Root sekarang hanya berisi README, CHANGELOG, `.gitignore`.
