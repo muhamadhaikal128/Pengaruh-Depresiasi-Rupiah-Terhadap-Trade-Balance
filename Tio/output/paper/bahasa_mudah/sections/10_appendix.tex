@@ -1,0 +1,68 @@
+\section{Cara membaca tabel lengkap}\label{app:read}
+Semua 176 model utama dan 340 robustness checks tetap ditampilkan. Ini termasuk hasil yang belum mendukung long run atau mempunyai masalah diagnostic tests.
+
+Koefisien pada ARDL adalah $\beta_q$, sedangkan pada NARDL adalah $\beta_-$. Dengan definisi kurs yang dipakai, positif mengarah pada perbaikan saat depresiasi dan negatif mengarah pada pemburukan. Namun hasil masih perlu memenuhi pemeriksaan model.
+
+\subsection{Kode yang dipakai}
+Negara pelapor selalu Indonesia. WLD berarti semua mitra; AUS Australia; CHN Tiongkok; IND India; JPN Jepang; KOR Korea Selatan; MYS Malaysia; SGP Singapura; THA Thailand; USA Amerika Serikat; dan VNM Vietnam.
+
+G0 berarti seluruh barang. G1--G7 mengikuti Tabel~\ref{tab:groups}. Ingat bahwa ketujuh kelompok tidak bisa dijumlahkan menjadi total karena sebagian tumpang tindih.
+
+U berarti model utama dengan maksimum empat lag level. L2 berarti maksimum dua lag. P menambah BCOM. W06 memperpanjang total Indonesia ke 2006+. WPI memakai proksi harga WPI India. FX memakai keluarga kurs GEM. Sebagian perubahan tersebut juga mengubah periode data.
+
+\subsection{Arti status dan p-value}
+\textbf{L+D}: pemeriksaan long run dan diagnostic tests yang dipakai terpenuhi. \textbf{L}: long run didukung, tetapi ada catatan diagnostic tests. Tanda \textbf{--}: bukti long run belum cukup atau hasil uji yang diperlukan tidak tersedia.
+
+Status L+D belum berarti koefisien kurs signifikan. Misalnya, model bisa mendukung suatu hubungan long run secara keseluruhan, tetapi angka pengaruh kursnya masih tidak pasti.
+
+Kolom p menunjukkan p-value awal, sedangkan BH menunjukkan hasil koreksi dalam keluarga model utama. BH tidak dihitung untuk model pembanding pada run ini, sehingga kolomnya ditulis --. Angka $<0{,}001$ berarti lebih kecil dari 0,001, bukan nol persis.
+
+N adalah jumlah kuartal yang masuk regresi setelah lag disiapkan. N bukan jumlah bulan atau semua kuartal raw data.
+
+\subsection{Di mana rincian lainnya?}
+Workbook \path{output/tables/oskooee/Oskooee_Results.xlsx} memuat koefisien, unit root tests, rentang sampel, dan pemeriksaan model. Rincian lain tersedia dalam \path{results_all_models.csv} dan \path{diagnostic_summary.csv}.
+
+PPT lengkap memuat respons semua 516 model. Paper ini memilih grafik untuk pembahasan, sedangkan tabel berikut tetap mempertahankan semua angka ringkasnya.
+
+\clearpage\section{Semua 176 model utama}
+\noindent Semua perdagangan adalah milik Indonesia. WLD berarti seluruh mitra. Kode dan status dijelaskan pada Lampiran~\ref{app:read}. Angka tabel sama dengan paper versi sebelumnya.
+\input{tables/all_primary.tex}
+
+\clearpage\section{Semua 340 robustness checks}
+\noindent Periode model pembanding bisa berbeda. BH tidak dihitung untuk keluarga model pembanding pada run ini.
+\input{tables/all_sensitivity.tex}
+
+\clearpage\section{Glosarium singkat}
+\begin{longtable}{p{.26\linewidth}p{.63\linewidth}}
+\toprule Istilah & Penjelasan\\\midrule\endfirsthead
+\toprule Istilah & Penjelasan\\\midrule\endhead
+Trade balance & Biasanya ekspor dikurangi impor. Regresi paper ini memakai log rasio impor/ekspor mengikuti paper acuan.\\
+Outcome $y$ & Variabel yang dijelaskan model. Di sini log impor/ekspor; turun berarti posisi ekspor relatif terhadap impor membaik.\\
+Kurs riil $q$ & Ukuran kurs yang memperhitungkan harga relatif. Dalam model ini, naik selalu berarti apresiasi.\\
+Partial sums & Jumlah perubahan kurs positif dan negatif secara terpisah. Ini bukan ukuran volatilitas.\\
+Level dan first difference & Level berarti nilai variabel itu sendiri. First difference berarti perubahannya dari periode sebelumnya.\\
+OLS & Ordinary least squares, cara memilih koefisien dengan memperkecil jumlah kuadrat residual.\\
+Delta method & Cara memperkirakan ketidakpastian hasil perhitungan dari ketidakpastian koefisien yang digunakan.\\
+Long run & Hubungan jangka panjang yang diimplikasikan model, dengan syarat pemeriksaannya mendukung.\\
+Error correction & Bagian model yang menggambarkan penyesuaian terhadap penyimpangan dari hubungan long run.\\
+Confidence interval & Rentang ketidakpastian di sekitar koefisien atau respons. Lebar berarti hasil kurang presisi.\\
+Point estimate & Angka koefisien atau garis utama estimasi, sebelum melihat rentang ketidakpastiannya.\\
+Pointwise & Interval berlaku per horizon; belum menjamin seluruh kurva sekaligus.\\
+P-value & Ukuran seberapa jauh data bertentangan dengan hipotesis nol, di bawah asumsi uji. Bukan peluang hipotesis benar.\\
+Bounds test & Pemeriksaan apakah ada bukti hubungan long run dalam kerangka ARDL.\\
+Joint-X test & Pemeriksaan tambahan komponen level variabel penjelas. Tidak mengharuskan setiap koefisien signifikan sendiri-sendiri.\\
+Diagnostic tests & Pemeriksaan residual, bentuk model dan stabilitas. Tidak menemukan masalah belum berarti semua asumsi pasti benar.\\
+Robustness check & Melihat apakah hasil berubah ketika pilihan model, sumber, atau periode diubah.\\
+BH & Koreksi untuk banyak pengujian, diterapkan secara terbatas pada keluarga model utama penelitian ini.\\
+Tidak signifikan & Bukti belum cukup menolak efek nol. Ini belum membuktikan efek benar-benar nol.\\
+J-curve & Pola awal memburuk lalu membaik. Bentuk garis perlu dibaca bersama interval dan model.\\
+Horizon 24 & Kuartal ke-24 setelah perubahan kurs, atau enam tahun. Tidak otomatis berarti keseimbangan long run sudah tercapai.\\
+Kausal & Menyatakan satu hal menyebabkan hal lain. Hubungan dalam model ini belum otomatis memenuhi klaim tersebut.\\
+\bottomrule\end{longtable}
+
+\section{Catatan revisi dan sumber file}
+Bahasa diperbarui pada 18 November 2026. Estimasi tetap memakai run 17 November 2026. Tidak ada model yang dijalankan ulang untuk revisi bahasa.
+
+Semua tabel angka dan file angka rumus disalin identik dari versi sebelumnya. Grafik memakai respons dan confidence interval yang sama. Perubahannya adalah penjelasan dan beberapa label, agar lebih mudah dibaca.
+
+Source LaTeX tersedia di folder versi ini. \path{script/13_build_readable_paper.py} digunakan untuk membuat PDF; \path{validation.json} mencatat pemeriksaan angka, sumber dan tata letak.

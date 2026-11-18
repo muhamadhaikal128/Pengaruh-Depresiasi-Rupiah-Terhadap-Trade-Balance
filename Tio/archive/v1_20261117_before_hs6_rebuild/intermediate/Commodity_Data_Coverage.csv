@@ -1,0 +1,21 @@
+Series,Ticker,Merge_Eligible,First_Date,Last_Date,Numeric_Observations,Usable_Months,Complete_Quarters,Nonpositive_Observations,Months_With_Duplicate_Conflict,Unit_AsSupplied
+WTI,CL1 Comdty,True,1994-12-01,2026-11-02,8328,381,126,1,2,USD per barrel
+Brent,CO1 Comdty,True,1988-06-23,2026-11-02,10008,457,151,0,3,USD per barrel
+Coal_Newcastle,XW1 Comdty,True,2008-12-05,2026-11-02,4672,212,70,0,2,USD per metric ton
+Gold,XAU Curncy,True,1920-01-30,2026-11-02,27852,1279,425,0,2,USD per troy ounce
+CPO_Active,KOA Comdty,False,2024-01-15,2026-11-02,731,15,4,0,18,MYR per metric ton
+CPO_Front,KO1 Comdty,True,1995-03-16,2026-11-02,8253,377,125,0,2,MYR per metric ton
+Nickel_Front,LN1 Comdty,True,1997-07-23,2026-11-02,7639,349,115,0,2,USD per metric ton
+BCOM,BCOM INDEX,True,1960-01-04,2026-11-02,17436,799,265,0,2,Index points
+SCFI,SHSPSCFI INDEX,True,2010-11-05,2026-11-02,4172,191,63,0,0,Index points
+WCI,WCIDCOMP INDEX,True,2011-06-23,2026-11-02,4008,184,61,0,0,USD per 40ft container (FEU)
+DOW_Unverified,DOW1 COMDTY,False,2026-02-02,2026-11-02,196,6,1,0,2,Index points
+Nickel_3M_UnverifiedUnit,LMNIDS03 Comdty,False,1987-01-05,2026-11-02,10391,477,158,0,0,6 metric tons price quote
+NickelOre_15,N2CNBAPE Index,True,2015-11-04,2026-11-02,2869,131,43,0,0,USD per metric ton
+NickelOre_18,N2CNNLCL Index,True,2015-12-08,2026-11-02,2845,130,43,0,0,USD per metric ton
+IronOre_62,ISIX62IU Index,True,2011-12-22,2026-11-02,3878,177,59,0,1,USD per metric ton
+Urea,GCFPURMG Index,True,2018-01-01,2026-11-02,2306,105,34,0,1,USD per metric ton
+Sulfur,SSGSSFC4 Index,True,2019-12-16,2026-11-02,1796,79,26,0,3,USD per metric ton
+Graphite,GPCNLCLW Index,True,2018-01-01,2026-11-02,2306,106,35,0,0,USD per metric ton
+Methanol,SSGSMCC Index,True,2019-05-03,2026-11-02,1957,86,28,0,3,USD per metric ton
+JetKerosene,BCSL0032 Index,True,2018-01-01,2026-11-02,2306,103,34,0,3,USD per barrel

@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=2.15cm,bottom=2.15cm,left=2.25cm,right=2.25cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array,xcolor}
+\definecolor{Brown}{HTML}{A5644E}
+\definecolor{Dark}{HTML}{4E3B30}
+\definecolor{Blue}{HTML}{2F5D8C}
+\definecolor{Beige}{HTML}{F2E8E1}
+\usepackage[unicode=true,colorlinks=true,linkcolor=Brown,citecolor=Brown,urlcolor=Blue]{hyperref}
+\hypersetup{pdftitle={Depresiasi Rupiah dan Neraca Perdagangan Indonesia},pdfauthor={Tio},pdfsubject={Naskah kerja hasil ARDL dan NARDL berbasis HS-6}}
+\renewcommand{\contentsname}{Daftar isi}
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\refname}{Daftar pustaka}
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0.32em}
+\linespread{1.12}
+\setlength{\emergencystretch}{2.5em}
+\setcounter{tocdepth}{2}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\textfraction}{.08}
+\renewcommand{\floatpagefraction}{.65}
+\input{numbers.tex}
+\newcommand{\readingbox}[1]{\par\medskip\noindent\fcolorbox{Brown}{Beige}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{#1}}\par\medskip}
+\begin{document}
+\begin{titlepage}\centering
+\vspace*{1.1cm}
+{\sffamily\color{Brown}\large NASKAH KERJA PENELITIAN\par}
+\vspace{1.0cm}
+{\sffamily\bfseries\color{Dark}\LARGE Depresiasi Rupiah dan\\[.25em]Neraca Perdagangan Indonesia\par}
+\vspace{.6cm}
+{\large Bukti ARDL dan NARDL pada perdagangan agregat,\\sepuluh mitra, dan kelompok barang berbasis HS-6\par}
+\vspace{1cm}{\large Tio\par}
+{\normalsize Versi hasil estimasi: 17 November 2026\par}
+\vfill
+\begin{minipage}{.88\textwidth}
+\readingbox{\textbf{Cakupan.} Seluruh ekspor dan impor adalah milik Indonesia. Istilah \emph{seluruh dunia} menunjukkan seluruh negara mitra Indonesia. HS-6 dipakai membentuk tujuh kelompok; estimasi setiap kode HS-6 secara terpisah belum dilakukan.}
+\medskip
+Naskah ini menjelaskan hasil yang telah dijalankan di Stata, dengan pembahasan yang lebih panjang daripada presentasi. Statusnya adalah naskah kerja untuk pembelajaran dan pengembangan penelitian, belum artikel jurnal yang telah melalui penelaahan sejawat. Angka, grafik, dan lampiran ditarik dari hasil yang sama dengan PPT; tidak dilakukan estimasi ulang saat menyusun dokumen.
+\end{minipage}\vspace{.8cm}
+\end{titlepage}
+\pagenumbering{roman}
+\section*{Abstrak}\addcontentsline{toc}{section}{Abstrak}
+Penelitian ini menelaah apakah depresiasi riil rupiah berkaitan dengan perbaikan neraca perdagangan Indonesia secara seragam. Nilai perdagangan bulanan HS-6 Januari 2006--Agustus 2026 diagregasi menjadi kuartal lengkap dan dipadukan dengan kurs riil, indeks harga, serta level PDB riil. Cakupannya adalah perdagangan Indonesia dengan seluruh negara, sepuluh mitra, dan tujuh kelompok barang. Sebanyak 176 model utama ARDL/NARDL dan 340 sensitivitas telah diestimasi di Stata. Outcome adalah log rasio impor terhadap ekspor, sehingga hasil tidak memisahkan respons ekspor dari respons impor. Pada model utama, 95 spesifikasi menolak tidak adanya hubungan level menurut F dan t bounds; 62 memenuhi syarat level tambahan, dan 28 sekaligus memenuhi penyaringan diagnostik yang digunakan. Agregat Indonesia belum memberi dukungan hubungan level yang kuat pada taraf lima persen. Australia dan Malaysia mempunyai dukungan lebih baik pada NARDL bilateral, tetapi signifikansi Malaysia melemah setelah koreksi pengujian berganda. ARDL komoditas total serta energi/tambang mengarah pada pemburukan saat depresiasi, sedangkan NARDL belum mengonfirmasi hubungan yang sama kuat. Pola J terlihat pada sebagian estimasi titik, dengan dukungan interval dan kelayakan model yang lebih terbatas. Hasil memperlihatkan heterogenitas dan ketergantungan pada spesifikasi, bukan pembuktian kausal bahwa depresiasi selalu merugikan atau bahwa komoditas pasti tidak sensitif terhadap kurs.
+
+\noindent\textbf{Kata kunci:} Indonesia; neraca perdagangan; depresiasi riil; J-curve; ARDL; NARDL; komoditas; HS-6.
+
+\section*{Cara membaca naskah}\addcontentsline{toc}{section}{Cara membaca naskah}
+Bagian awal menguraikan pertanyaan ekonomi, definisi data dan konstruksi model. Hasil bergerak dari agregat Indonesia ke pasangan bilateral dan kelompok barang. Pembaca yang ingin memahami tanda koefisien sebaiknya membaca Bagian~\ref{sec:methods} sebelum menilai grafik. Bagian~\ref{sec:diagnostics} membahas diagnostik, sensitivitas dan perbedaan antara pola titik dengan dukungan statistik. Lampiran mempertahankan seluruh 516 estimasi dalam bentuk ringkas.
+
+Kode \texttt{WLD} adalah kode mitra agregat, bukan negara pelapor. Negara pelapor tetap Indonesia. Status \texttt{L} dan \texttt{L+D} adalah ringkasan penyaringan operasional, bukan sertifikat kebenaran model. Probabilitas koefisien dan interval bersifat nominal sesudah seleksi AIC.
+
+\clearpage\tableofcontents
+\clearpage\pagenumbering{arabic}
+\input{sections/01_intro.tex}
+\clearpage\input{sections/02_data.tex}
+\clearpage\input{sections/03_methods.tex}
+\clearpage\input{sections/04_aggregate.tex}
+\clearpage\input{sections/05_bilateral.tex}
+\clearpage\input{sections/06_goods.tex}
+\clearpage\input{sections/07_diagnostics.tex}
+\clearpage\input{sections/08_discussion.tex}
+\clearpage\input{sections/09_references.tex}
+\clearpage\appendix\input{sections/10_appendix.tex}
+\end{document}

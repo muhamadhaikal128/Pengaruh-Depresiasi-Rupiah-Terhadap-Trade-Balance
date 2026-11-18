@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "Extraction and merge integrity only; not independent vendor validation",
+  "raw_sha256": "8a3f124e07c2721635da6bc3c2f677ff67c91260bc1d056d27181fe66858ba4d",
+  "series_extracted": 20,
+  "series_merged": 17,
+  "excluded_series": [
+    "CPO_Active",
+    "DOW_Unverified",
+    "Nickel_3M_UnverifiedUnit"
+  ],
+  "raw_numeric_rows": 123949,
+  "latest_source_date": "2026-11-02",
+  "duplicate_numeric_conflicts": 384,
+  "legacy_values_preserved": true,
+  "no_interpolation_or_duplicate_splicing": true,
+  "monthly_partial_periods_excluded": true,
+  "months_with_duplicate_conflicts_excluded": true,
+  "quarter_requires_three_months": true,
+  "merged_files": {
+    "Macro_Monthly.csv": {
+      "rows": 250,
+      "columns": 75
+    },
+    "Panel_Country_Month.csv": {
+      "rows": 2500,
+      "columns": 110
+    },
+    "Trade_World_Monthly.csv": {
+      "rows": 250,
+      "columns": 61
+    },
+    "Panel_Country_Quarter.csv": {
+      "rows": 840,
+      "columns": 70
+    },
+    "Panel_World_Quarter.csv": {
+      "rows": 84,
+      "columns": 45
+    }
+  },
+  "identical_input_csv_rerun": "PASS",
+  "csv_files_checked_on_rerun": 13
+}

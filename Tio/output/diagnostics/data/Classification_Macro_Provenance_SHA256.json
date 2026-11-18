@@ -1,0 +1,9 @@
+{
+  "input\\reference\\classification_sources\\unsd_correlations_2022.xlsx": "ec4460c94a1b06bf026eda174842a0ed995d9d501ac13451c47c9dea97a1e5a9",
+  "input\\reference\\classification_sources\\HS6_SITC3_Commodity_Crosswalk.csv": "511f828939d3cf86de07c569301f4e48d114379b1dcada3841c009c2e017678c",
+  "intermediate\\macro\\FX_Bilateral_Monthly.csv": "8d5f6238f186cab2d05de88eb4cb83c0029fc549ccd26bc7cb05116c49e0bb0d",
+  "intermediate\\macro\\FX_Bilateral_WBGEM_Alternative.csv": "19b5bb6781dedd980c9ffd394daf9f2ac4ca22949e1364cf5098d459ac45a80c",
+  "intermediate\\macro\\Macro_Country_Month.csv": "650fb6c9fa2311dde67097768e6e4a1f9a0bc4038f801e15f6c80fb1b06960a6",
+  "intermediate\\macro\\Macro_Country_Quarter.csv": "01708808ff71d0e739f356d6ea741024fbca84f956c2a6cbb10a715c4237c3ab",
+  "intermediate\\macro\\Macro_World_Quarter.csv": "0670fba46715c92a16f134bfdc7079fd023eab9edd3beaf795a1ad2c026f507a"
+}

@@ -1,0 +1,1 @@
+{"_meta":{"args":{"align_periods":false,"dataset_code":"IFS","dimensions":{},"facets":false,"format":"json","limit":1000,"metadata":true,"observations":true,"offset":0,"provider_code":"IMF","q":"","series_code":"Q.VN.NGDP_R_XDC"},"version":"22.1.17"},"message":"Series 'IMF\/IFS\/Q.VN.NGDP_R_XDC' not found"}

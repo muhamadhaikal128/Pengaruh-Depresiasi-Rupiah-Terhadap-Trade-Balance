@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "models": 516,
+  "primary": 176,
+  "sensitivity": 340,
+  "required_artifacts_checked": 2178,
+  "png_files_verified": 775,
+  "raw_workbooks_hash_verified": 22,
+  "finite_sample_bounds_unavailable": [
+    "PRICE_IND_commodity_NARDL_AIC4",
+    "PRICE_IND_energy_mining_NARDL_AIC4",
+    "PRICE_IND_intermediate_NARDL_AIC4"
+  ],
+  "official_Stata_CUSUM_paths_verified": 176,
+  "independent_CUSUM_initialization_exceptions": [
+    "TYPE_AUS_capital_NARDL_AIC4",
+    "TYPE_AUS_consumption_NARDL_AIC4"
+  ],
+  "classification_macro_provenance_hashes_verified": 7,
+  "stata_do_files": [
+    "00_master.do",
+    "02_prep_data.do",
+    "03_ardl_agregat.do",
+    "04_ardl_mitra.do",
+    "05_ardl_kelompok.do",
+    "06_cusum_paths.do",
+    "06_diagnostics.do",
+    "07_export.do",
+    "ardl_helpers.do",
+    "graph_helpers.do",
+    "group_forests.do"
+  ],
+  "archive": "F:\\Trade-Balance\\Tio\\archive\\v1_20261117_before_hs6_rebuild",
+  "archive_files": 2211,
+  "import_input_dependency": "EXCLUDED",
+  "group_classification": "7 overlapping HS6/BEC5 groups, world and ten partners",
+  "HS_revision_limitation": "Workbook revision not declared; conservative consensus across official correspondences"
+}

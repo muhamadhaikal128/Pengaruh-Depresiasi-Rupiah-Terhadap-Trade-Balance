@@ -1,0 +1,19 @@
+{
+  "cusum_cross_implementation_max_difference": 5.956822723973687e-08,
+  "status": "PASS",
+  "required_primary_artifacts_checked": 496,
+  "tables_png": 79,
+  "figures_png": 189,
+  "native_gph": 248,
+  "all_png_files_verified": true,
+  "models": 174,
+  "primary_models": 62,
+  "HS4_screened": 12214,
+  "HS4_preeligible": 2115,
+  "not_claimed": [
+    "All HS4 individually estimated",
+    "World goods groups estimated",
+    "Causal export effect established",
+    "All diagnostic tests passed"
+  ]
+}

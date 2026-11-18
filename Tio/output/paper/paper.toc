@@ -1,0 +1,65 @@
+\contentsline {section}{Abstrak}{i}{section*.1}%
+\contentsline {section}{Cara membaca naskah}{i}{section*.2}%
+\contentsline {section}{\numberline {1}Pendahuluan}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Pertanyaan ekonomi}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Cakupan dan pertanyaan yang dapat dijawab}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Literatur acuan dan posisi analisis}{1}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Data, cakupan, dan klasifikasi barang}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Asal perdagangan dan arti kode mitra}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Frekuensi, satuan, dan agregasi}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Dua dimensi klasifikasi yang bertumpang tindih}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Kontrol makro dan keterbatasan pengukuran}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Penentuan sampel dan statistik deskriptif}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Kerangka ekonomi dan metode}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Neraca nominal dan rasio yang diestimasi}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}J-curve dan penyesuaian perdagangan}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}ARDL sebagai pembanding linier}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}NARDL dan pemisahan arah kurs}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Orientasi kurs dan tanda koefisien}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Proksi aktivitas luar negeri}{8}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Lag dan sampel efektif}{8}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Unit root dan penyaringan hubungan level}{8}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Asimetri, multiplier, dan interval}{9}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Hasil agregat perdagangan Indonesia}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Dukungan level belum kuat pada model utama}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Apa yang dapat dipelajari dari bentuk respons}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Membaca arti angka tanpa mengubahnya menjadi ramalan}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Hasil bilateral sepuluh mitra}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Perbedaan arah dan dukungan model}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Indonesia--Australia}{14}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Indonesia--Tiongkok}{15}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Indonesia--India}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Indonesia--Jepang}{17}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Indonesia--Korea Selatan}{18}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Indonesia--Malaysia}{19}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Indonesia--Singapura}{20}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Indonesia--Thailand}{21}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Indonesia--Amerika Serikat}{22}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Indonesia--Vietnam}{23}{subsection.5.11}%
+\contentsline {section}{\numberline {6}Hasil menurut kelompok barang HS-6}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Gambaran agregat Indonesia menurut tujuh kelompok}{24}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Komoditas total dan energi/tambang}{24}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Manufaktur nonkomoditas}{26}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Konsumsi, pertanian, bahan baku/penolong dan modal}{27}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Perbedaan antara kelompok agregat dan kelompok bilateral}{27}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Diagnostik, sensitivitas dan kekuatan bukti}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Penyaringan level dan diagnostik dibedakan}{30}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Stabilitas dan pemeriksaan independen}{30}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Ketahanan terhadap lag, harga dan sumber}{30}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Bentuk J pada titik dan dukungan dua fase}{32}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Mengapa ARDL dan NARDL dapat berbeda}{32}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Pembahasan dan kesimpulan}{33}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Apa arti hasil bagi hipotesis awal}{33}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Batas penafsiran ekspor, neraca dan ketidakpekaan}{33}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Keterbatasan yang paling menentukan}{33}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Pengembangan penelitian yang paling dekat dengan pertanyaan}{34}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Kesimpulan}{34}{subsection.8.5}%
+\contentsline {section}{Daftar pustaka}{35}{section*.4}%
+\contentsline {section}{\numberline {A}Panduan membaca tabel lengkap}{36}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Kode pasar, kelompok, dan varian}{36}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Arti status}{36}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Berkas yang memuat rincian lebih jauh}{36}{subsection.A.3}%
+\contentsline {section}{\numberline {B}Seluruh 176 model utama}{37}{appendix.B}%
+\contentsline {section}{\numberline {C}Seluruh 340 model sensitivitas}{41}{appendix.C}%
+\contentsline {section}{\numberline {D}Glosarium interpretasi}{49}{appendix.D}%
+\contentsline {section}{\numberline {E}Jejak reproduksi}{49}{appendix.E}%

@@ -1,0 +1,179 @@
+BEC5_Code,Description,Parent,Aggregation_Level,Is_Leaf,Goods_or_Services,End_Use
+TOTAL,Total of all BEC5 categories,#,0,False,,Unclassified_or_not_specified
+1,"1 - Agriculture, forestry, fishing, food, beverages, tobacco ",TOTAL,1,False,,Unclassified_or_not_specified
+2,"2 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment ",TOTAL,1,False,,Unclassified_or_not_specified
+3,"3 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  ",TOTAL,1,False,,Unclassified_or_not_specified
+4,"4 - Textile, apparel, shoes ",TOTAL,1,False,,Unclassified_or_not_specified
+5,"5 - Transport equipment and services, travel, postal services",TOTAL,1,False,,Unclassified_or_not_specified
+6,"6 - ICT, media, computers, business and financial services",TOTAL,1,False,,Unclassified_or_not_specified
+7,"7 - Health, pharmaceuticals, education, cultural, sport",TOTAL,1,False,,Unclassified_or_not_specified
+8,"8 - Government, military and other",TOTAL,1,False,,Unclassified_or_not_specified
+9,9 - Not-elsewhere-specified (NES),TOTAL,1,True,,Unclassified_or_not_specified
+11,"11 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods",1,2,False,Goods,Unclassified_or_not_specified
+12,"12 - Agriculture, forestry, fishing, food, beverages, tobacco |Services",1,2,False,Services,Unclassified_or_not_specified
+21,"21 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods",2,2,False,Goods,Unclassified_or_not_specified
+22,"22 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Services",2,2,False,Services,Unclassified_or_not_specified
+31,"31 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods",3,2,False,Goods,Unclassified_or_not_specified
+32,"32 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Services",3,2,False,Services,Unclassified_or_not_specified
+41,"41 - Textile, apparel, shoes |Goods",4,2,False,Goods,Unclassified_or_not_specified
+42,"42 - Textile, apparel, shoes |Services",4,2,False,Services,Unclassified_or_not_specified
+51,"51 - Transport equipment and services, travel, postal services|Goods",5,2,False,Goods,Unclassified_or_not_specified
+52,"52 - Transport equipment and services, travel, postal services|Services",5,2,False,Services,Unclassified_or_not_specified
+61,"61 - ICT, media, computers, business and financial services|Goods",6,2,False,Goods,Unclassified_or_not_specified
+62,"62 - ICT, media, computers, business and financial services|Services",6,2,False,Services,Unclassified_or_not_specified
+71,"71 - Health, pharmaceuticals, education, cultural, sport|Goods",7,2,False,Goods,Unclassified_or_not_specified
+72,"72 - Health, pharmaceuticals, education, cultural, sport|Services",7,2,False,Services,Unclassified_or_not_specified
+81,"81 - Government, military and other|Goods",8,2,False,Goods,Unclassified_or_not_specified
+82,"82 - Government, military and other|Services",8,2,False,Services,Unclassified_or_not_specified
+111,"111 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Intermediate Consumption",11,3,False,Goods,Intermediate_inputs
+112,"112 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Gross Fixed Capital Formation",11,3,False,Goods,Capital_goods
+113,"113 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption",11,3,False,Goods,Final_consumption
+121,"121 - Agriculture, forestry, fishing, food, beverages, tobacco |Services|Intermediate Consumption",12,3,False,Services,Intermediate_inputs
+123,"123 - Agriculture, forestry, fishing, food, beverages, tobacco |Services|Final Consumption",12,3,True,Services,Final_consumption
+211,"211 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Intermediate Consumption",21,3,False,Goods,Intermediate_inputs
+212,"212 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Gross Fixed Capital Formation",21,3,False,Goods,Capital_goods
+213,"213 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption",21,3,False,Goods,Final_consumption
+221,"221 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Services|Intermediate Consumption",22,3,False,Services,Intermediate_inputs
+223,"223 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Services|Final Consumption",22,3,True,Services,Final_consumption
+311,"311 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Intermediate Consumption",31,3,False,Goods,Intermediate_inputs
+312,"312 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Gross Fixed Capital Formation",31,3,False,Goods,Capital_goods
+313,"313 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption",31,3,False,Goods,Final_consumption
+321,"321 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Services|Intermediate Consumption",32,3,False,Services,Intermediate_inputs
+323,"323 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Services|Final Consumption",32,3,True,Services,Final_consumption
+411,"411 - Textile, apparel, shoes |Goods|Intermediate Consumption",41,3,False,Goods,Intermediate_inputs
+412,"412 - Textile, apparel, shoes |Goods|Gross Fixed Capital Formation",41,3,False,Goods,Capital_goods
+413,"413 - Textile, apparel, shoes |Goods|Final Consumption",41,3,False,Goods,Final_consumption
+421,"421 - Textile, apparel, shoes |Services|Intermediate Consumption",42,3,False,Services,Intermediate_inputs
+423,"423 - Textile, apparel, shoes |Services|Final Consumption",42,3,True,Services,Final_consumption
+511,"511 - Transport equipment and services, travel, postal services|Goods|Intermediate Consumption",51,3,False,Goods,Intermediate_inputs
+512,"512 - Transport equipment and services, travel, postal services|Goods|Gross Fixed Capital Formation",51,3,False,Goods,Capital_goods
+513,"513 - Transport equipment and services, travel, postal services|Goods|Final Consumption",51,3,False,Goods,Final_consumption
+521,"521 - Transport equipment and services, travel, postal services|Services|Intermediate Consumption",52,3,False,Services,Intermediate_inputs
+523,"523 - Transport equipment and services, travel, postal services|Services|Final Consumption",52,3,True,Services,Final_consumption
+611,"611 - ICT, media, computers, business and financial services|Goods|Intermediate Consumption",61,3,False,Goods,Intermediate_inputs
+612,"612 - ICT, media, computers, business and financial services|Goods|Gross Fixed Capital Formation",61,3,False,Goods,Capital_goods
+613,"613 - ICT, media, computers, business and financial services|Goods|Final Consumption",61,3,False,Goods,Final_consumption
+621,"621 - ICT, media, computers, business and financial services|Services|Intermediate Consumption",62,3,False,Services,Intermediate_inputs
+623,"623 - ICT, media, computers, business and financial services|Services|Final Consumption",62,3,True,Services,Final_consumption
+711,"711 - Health, pharmaceuticals, education, cultural, sport|Goods|Intermediate Consumption",71,3,False,Goods,Intermediate_inputs
+712,"712 - Health, pharmaceuticals, education, cultural, sport|Goods|Gross Fixed Capital Formation",71,3,False,Goods,Capital_goods
+713,"713 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption",71,3,False,Goods,Final_consumption
+721,"721 - Health, pharmaceuticals, education, cultural, sport|Services|Intermediate Consumption",72,3,False,Services,Intermediate_inputs
+723,"723 - Health, pharmaceuticals, education, cultural, sport|Services|Final Consumption",72,3,True,Services,Final_consumption
+811,"811 - Government, military and other|Goods|Intermediate Consumption",81,3,False,Goods,Intermediate_inputs
+812,"812 - Government, military and other|Goods|Gross Fixed Capital Formation",81,3,False,Goods,Capital_goods
+813,"813 - Government, military and other|Goods|Final Consumption",81,3,False,Goods,Final_consumption
+821,"821 - Government, military and other|Services|Intermediate Consumption",82,3,False,Services,Intermediate_inputs
+823,"823 - Government, military and other|Services|Final Consumption",82,3,True,Services,Final_consumption
+1111,"1111 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Intermediate Consumption|Primary",111,4,True,Goods,Intermediate_inputs
+1112,"1112 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Intermediate Consumption|Processed",111,4,False,Goods,Intermediate_inputs
+1131,"1131 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption|Primary",113,4,False,Goods,Final_consumption
+1132,"1132 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption|Processed",113,4,False,Goods,Final_consumption
+2111,"2111 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Intermediate Consumption|Primary",211,4,True,Goods,Intermediate_inputs
+2112,"2112 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Intermediate Consumption|Processed",211,4,False,Goods,Intermediate_inputs
+2131,"2131 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption|Primary",213,4,False,Goods,Final_consumption
+2132,"2132 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption|Processed",213,4,False,Goods,Final_consumption
+3111,"3111 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Intermediate Consumption|Primary",311,4,True,Goods,Intermediate_inputs
+3112,"3112 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Intermediate Consumption|Processed",311,4,False,Goods,Intermediate_inputs
+3131,"3131 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption|Primary",313,4,False,Goods,Final_consumption
+3132,"3132 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption|Processed",313,4,False,Goods,Final_consumption
+4111,"4111 - Textile, apparel, shoes |Goods|Intermediate Consumption|Primary",411,4,True,Goods,Intermediate_inputs
+4112,"4112 - Textile, apparel, shoes |Goods|Intermediate Consumption|Processed",411,4,False,Goods,Intermediate_inputs
+4131,"4131 - Textile, apparel, shoes |Goods|Final Consumption|Primary",413,4,False,Goods,Final_consumption
+4132,"4132 - Textile, apparel, shoes |Goods|Final Consumption|Processed",413,4,False,Goods,Final_consumption
+5111,"5111 - Transport equipment and services, travel, postal services|Goods|Intermediate Consumption|Primary",511,4,True,Goods,Intermediate_inputs
+5112,"5112 - Transport equipment and services, travel, postal services|Goods|Intermediate Consumption|Processed",511,4,False,Goods,Intermediate_inputs
+5131,"5131 - Transport equipment and services, travel, postal services|Goods|Final Consumption|Primary",513,4,False,Goods,Final_consumption
+5132,"5132 - Transport equipment and services, travel, postal services|Goods|Final Consumption|Processed",513,4,False,Goods,Final_consumption
+6111,"6111 - ICT, media, computers, business and financial services|Goods|Intermediate Consumption|Primary",611,4,True,Goods,Intermediate_inputs
+6112,"6112 - ICT, media, computers, business and financial services|Goods|Intermediate Consumption|Processed",611,4,False,Goods,Intermediate_inputs
+6131,"6131 - ICT, media, computers, business and financial services|Goods|Final Consumption|Primary",613,4,False,Goods,Final_consumption
+6132,"6132 - ICT, media, computers, business and financial services|Goods|Final Consumption|Processed",613,4,False,Goods,Final_consumption
+7111,"7111 - Health, pharmaceuticals, education, cultural, sport|Goods|Intermediate Consumption|Primary",711,4,True,Goods,Intermediate_inputs
+7112,"7112 - Health, pharmaceuticals, education, cultural, sport|Goods|Intermediate Consumption|Processed",711,4,False,Goods,Intermediate_inputs
+7131,"7131 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption|Primary",713,4,False,Goods,Final_consumption
+7132,"7132 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption|Processed",713,4,False,Goods,Final_consumption
+8111,"8111 - Government, military and other|Goods|Intermediate Consumption|Primary",811,4,True,Goods,Intermediate_inputs
+8112,"8112 - Government, military and other|Goods|Intermediate Consumption|Processed",811,4,False,Goods,Intermediate_inputs
+8131,"8131 - Government, military and other|Goods|Final Consumption|Primary",813,4,False,Goods,Final_consumption
+8132,"8132 - Government, military and other|Goods|Final Consumption|Processed",813,4,False,Goods,Final_consumption
+111210,"111210 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Intermediate Consumption|Processed|Generic",1112,6,True,Goods,Intermediate_inputs
+111220,"111220 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Intermediate Consumption|Processed|Specific",1112,6,True,Goods,Intermediate_inputs
+112010,"112010 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Gross Fixed Capital Formation|Generic",112,6,True,Goods,Capital_goods
+112020,"112020 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Gross Fixed Capital Formation|Specific",112,6,True,Goods,Capital_goods
+113101,"113101 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption|Primary|Non-durable",1131,6,True,Goods,Final_consumption
+113102,"113102 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption|Primary|Durable",1131,6,True,Goods,Final_consumption
+113201,"113201 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption|Processed|Non-durable",1132,6,True,Goods,Final_consumption
+113202,"113202 - Agriculture, forestry, fishing, food, beverages, tobacco |Goods|Final Consumption|Processed|Durable",1132,6,True,Goods,Final_consumption
+121010,"121010 - Agriculture, forestry, fishing, food, beverages, tobacco |Services|Intermediate Consumption|Generic",121,6,True,Services,Intermediate_inputs
+121020,"121020 - Agriculture, forestry, fishing, food, beverages, tobacco |Services|Intermediate Consumption|Specific",121,6,True,Services,Intermediate_inputs
+211210,"211210 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Intermediate Consumption|Processed|Generic",2112,6,True,Goods,Intermediate_inputs
+211220,"211220 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Intermediate Consumption|Processed|Specific",2112,6,True,Goods,Intermediate_inputs
+212010,"212010 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Gross Fixed Capital Formation|Generic",212,6,True,Goods,Capital_goods
+212020,"212020 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Gross Fixed Capital Formation|Specific",212,6,True,Goods,Capital_goods
+213101,"213101 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption|Primary|Non-durable",2131,6,True,Goods,Final_consumption
+213102,"213102 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption|Primary|Durable",2131,6,True,Goods,Final_consumption
+213201,"213201 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption|Processed|Non-durable",2132,6,True,Goods,Final_consumption
+213202,"213202 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Goods|Final Consumption|Processed|Durable",2132,6,True,Goods,Final_consumption
+221010,"221010 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Services|Intermediate Consumption|Generic",221,6,True,Services,Intermediate_inputs
+221020,"221020 - Mining, quarrying, refinery, fuels, chemicals, electricity, water, waste treatment |Services|Intermediate Consumption|Specific",221,6,True,Services,Intermediate_inputs
+311210,"311210 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Intermediate Consumption|Processed|Generic",3112,6,True,Goods,Intermediate_inputs
+311220,"311220 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Intermediate Consumption|Processed|Specific",3112,6,True,Goods,Intermediate_inputs
+312010,"312010 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Gross Fixed Capital Formation|Generic",312,6,True,Goods,Capital_goods
+312020,"312020 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Gross Fixed Capital Formation|Specific",312,6,True,Goods,Capital_goods
+313101,"313101 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption|Primary|Non-durable",3131,6,True,Goods,Final_consumption
+313102,"313102 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption|Primary|Durable",3131,6,True,Goods,Final_consumption
+313201,"313201 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption|Processed|Non-durable",3132,6,True,Goods,Final_consumption
+313202,"313202 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Goods|Final Consumption|Processed|Durable",3132,6,True,Goods,Final_consumption
+321010,"321010 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Services|Intermediate Consumption|Generic",321,6,True,Services,Intermediate_inputs
+321020,"321020 - Construction, wood, glass, stone, basic metals, housing, electrical appliances, furniture  |Services|Intermediate Consumption|Specific",321,6,True,Services,Intermediate_inputs
+411210,"411210 - Textile, apparel, shoes |Goods|Intermediate Consumption|Processed|Generic",4112,6,True,Goods,Intermediate_inputs
+411220,"411220 - Textile, apparel, shoes |Goods|Intermediate Consumption|Processed|Specific",4112,6,True,Goods,Intermediate_inputs
+412010,"412010 - Textile, apparel, shoes |Goods|Gross Fixed Capital Formation|Generic",412,6,True,Goods,Capital_goods
+412020,"412020 - Textile, apparel, shoes |Goods|Gross Fixed Capital Formation|Specific",412,6,True,Goods,Capital_goods
+413101,"413101 - Textile, apparel, shoes |Goods|Final Consumption|Primary|Non-durable",4131,6,True,Goods,Final_consumption
+413102,"413102 - Textile, apparel, shoes |Goods|Final Consumption|Primary|Durable",4131,6,True,Goods,Final_consumption
+413201,"413201 - Textile, apparel, shoes |Goods|Final Consumption|Processed|Non-durable",4132,6,True,Goods,Final_consumption
+413202,"413202 - Textile, apparel, shoes |Goods|Final Consumption|Processed|Durable",4132,6,True,Goods,Final_consumption
+421010,"421010 - Textile, apparel, shoes |Services|Intermediate Consumption|Generic",421,6,True,Services,Intermediate_inputs
+421020,"421020 - Textile, apparel, shoes |Services|Intermediate Consumption|Specific",421,6,True,Services,Intermediate_inputs
+511210,"511210 - Transport equipment and services, travel, postal services|Goods|Intermediate Consumption|Processed|Generic",5112,6,True,Goods,Intermediate_inputs
+511220,"511220 - Transport equipment and services, travel, postal services|Goods|Intermediate Consumption|Processed|Specific",5112,6,True,Goods,Intermediate_inputs
+512010,"512010 - Transport equipment and services, travel, postal services|Goods|Gross Fixed Capital Formation|Generic",512,6,True,Goods,Capital_goods
+512020,"512020 - Transport equipment and services, travel, postal services|Goods|Gross Fixed Capital Formation|Specific",512,6,True,Goods,Capital_goods
+513101,"513101 - Transport equipment and services, travel, postal services|Goods|Final Consumption|Primary|Non-durable",5131,6,True,Goods,Final_consumption
+513102,"513102 - Transport equipment and services, travel, postal services|Goods|Final Consumption|Primary|Durable",5131,6,True,Goods,Final_consumption
+513201,"513201 - Transport equipment and services, travel, postal services|Goods|Final Consumption|Processed|Non-durable",5132,6,True,Goods,Final_consumption
+513202,"513202 - Transport equipment and services, travel, postal services|Goods|Final Consumption|Processed|Durable",5132,6,True,Goods,Final_consumption
+521010,"521010 - Transport equipment and services, travel, postal services|Services|Intermediate Consumption|Generic",521,6,True,Services,Intermediate_inputs
+521020,"521020 - Transport equipment and services, travel, postal services|Services|Intermediate Consumption|Specific",521,6,True,Services,Intermediate_inputs
+611210,"611210 - ICT, media, computers, business and financial services|Goods|Intermediate Consumption|Processed|Generic",6112,6,True,Goods,Intermediate_inputs
+611220,"611220 - ICT, media, computers, business and financial services|Goods|Intermediate Consumption|Processed|Specific",6112,6,True,Goods,Intermediate_inputs
+612010,"612010 - ICT, media, computers, business and financial services|Goods|Gross Fixed Capital Formation|Generic",612,6,True,Goods,Capital_goods
+612020,"612020 - ICT, media, computers, business and financial services|Goods|Gross Fixed Capital Formation|Specific",612,6,True,Goods,Capital_goods
+613101,"613101 - ICT, media, computers, business and financial services|Goods|Final Consumption|Primary|Non-durable",6131,6,True,Goods,Final_consumption
+613102,"613102 - ICT, media, computers, business and financial services|Goods|Final Consumption|Primary|Durable",6131,6,True,Goods,Final_consumption
+613201,"613201 - ICT, media, computers, business and financial services|Goods|Final Consumption|Processed|Non-durable",6132,6,True,Goods,Final_consumption
+613202,"613202 - ICT, media, computers, business and financial services|Goods|Final Consumption|Processed|Durable",6132,6,True,Goods,Final_consumption
+621010,"621010 - ICT, media, computers, business and financial services|Services|Intermediate Consumption|Generic",621,6,True,Services,Intermediate_inputs
+621020,"621020 - ICT, media, computers, business and financial services|Services|Intermediate Consumption|Specific",621,6,True,Services,Intermediate_inputs
+711210,"711210 - Health, pharmaceuticals, education, cultural, sport|Goods|Intermediate Consumption|Processed|Generic",7112,6,True,Goods,Intermediate_inputs
+711220,"711220 - Health, pharmaceuticals, education, cultural, sport|Goods|Intermediate Consumption|Processed|Specific",7112,6,True,Goods,Intermediate_inputs
+712010,"712010 - Health, pharmaceuticals, education, cultural, sport|Goods|Gross Fixed Capital Formation|Generic",712,6,True,Goods,Capital_goods
+712020,"712020 - Health, pharmaceuticals, education, cultural, sport|Goods|Gross Fixed Capital Formation|Specific",712,6,True,Goods,Capital_goods
+713101,"713101 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption|Primary|Non-durable",7131,6,True,Goods,Final_consumption
+713102,"713102 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption|Primary|Durable",7131,6,True,Goods,Final_consumption
+713201,"713201 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption|Processed|Non-durable",7132,6,True,Goods,Final_consumption
+713202,"713202 - Health, pharmaceuticals, education, cultural, sport|Goods|Final Consumption|Processed|Durable",7132,6,True,Goods,Final_consumption
+721010,"721010 - Health, pharmaceuticals, education, cultural, sport|Services|Intermediate Consumption|Generic",721,6,True,Services,Intermediate_inputs
+721020,"721020 - Health, pharmaceuticals, education, cultural, sport|Services|Intermediate Consumption|Specific",721,6,True,Services,Intermediate_inputs
+811210,"811210 - Government, military and other|Goods|Intermediate Consumption|Processed|Generic",8112,6,True,Goods,Intermediate_inputs
+811220,"811220 - Government, military and other|Goods|Intermediate Consumption|Processed|Specific",8112,6,True,Goods,Intermediate_inputs
+812010,"812010 - Government, military and other|Goods|Gross Fixed Capital Formation|Generic",812,6,True,Goods,Capital_goods
+812020,"812020 - Government, military and other|Goods|Gross Fixed Capital Formation|Specific",812,6,True,Goods,Capital_goods
+813101,"813101 - Government, military and other|Goods|Final Consumption|Primary|Non-durable",8131,6,True,Goods,Final_consumption
+813102,"813102 - Government, military and other|Goods|Final Consumption|Primary|Durable",8131,6,True,Goods,Final_consumption
+813201,"813201 - Government, military and other|Goods|Final Consumption|Processed|Non-durable",8132,6,True,Goods,Final_consumption
+813202,"813202 - Government, military and other|Goods|Final Consumption|Processed|Durable",8132,6,True,Goods,Final_consumption
+821010,"821010 - Government, military and other|Services|Intermediate Consumption|Generic",821,6,True,Services,Intermediate_inputs
+821020,"821020 - Government, military and other|Services|Intermediate Consumption|Specific",821,6,True,Services,Intermediate_inputs

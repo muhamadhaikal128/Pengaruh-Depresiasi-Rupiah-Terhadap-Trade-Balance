@@ -1,0 +1,63 @@
+model_id,estimator,N,Estimation_Start,Estimation_End,lag_order,lr_q_b,lr_q_p,lr_pos_b,lr_pos_p,lr_neg_b,lr_neg_p,Dep_LR_p_BH,lr_asym_p,Bounds5,Levels_supported5,Diagnostic_Flags
+WORLD_ARDL_AIC4,ARDL,61,2011Q1,2026Q1,"(2,3,0,4)",0.54744459,0.60816485,,,,,0.60816485,,No rejection,False,No rejection in listed tests
+WORLD_NARDL_AIC4,NARDL,61,2011Q1,2026Q1,"(2,0,3,0,4)",,,-2.2773788,0.032527771,2.8683406,0.040397111,0.040397111,0.0071816691,No rejection,False,CUSUMSQ instability
+BIL_AUS_ARDL_AIC4,ARDL,77,2007Q1,2026Q1,"(1,0,4,3)",2.0834965,0.0020914692,,,,,0.020914692,,Reject no-level relation,True,No rejection in listed tests
+BIL_AUS_NARDL_AIC4,NARDL,77,2007Q1,2026Q1,"(1,0,4,0,4)",,,1.9011541,0.0067744618,3.3560052,0.00039903304,0.0039903304,0.14715239,Reject no-level relation,True,No rejection in listed tests
+BIL_CHN_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(3,0,0,0)",-1.8864355,0.059351999,,,,,0.14838,,Inconclusive,False,CUSUM instability or unavailable
+BIL_CHN_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(3,3,0,4,4)",,,-3.2879072,0.29201493,-2.7272714,0.2502358,0.34965262,0.90549618,No rejection,False,BG4 serial correlation
+BIL_IND_ARDL_AIC4,ARDL,49,2014Q1,2026Q1,"(1,4,1,3)",5.2536211,0.43731785,,,,,0.48590872,,No rejection,False,BG4 serial correlation; RESET
+BIL_IND_NARDL_AIC4,NARDL,49,2014Q1,2026Q1,"(1,2,1,1,4)",,,9.6013501,0.09931872,-6.4427841,0.23638335,0.34965262,0.021042308,No rejection,False,No rejection in listed tests
+BIL_JPN_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(4,4,2,4)",-2.1056594,0.017482195,,,,,0.058273983,,No rejection,False,CUSUMSQ instability; CUSUM instability or unavailable
+BIL_JPN_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,4,2,0,3)",,,-2.5040766,0.0038826747,-2.4564352,0.0055487449,0.020148363,0.97140288,Inconclusive,False,ARCH4; non-normal residuals
+BIL_KOR_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(3,4,4,0)",-0.074233188,0.94366992,,,,,0.94366992,,No rejection,False,BG4 serial correlation; RESET
+BIL_KOR_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(3,4,4,1,1)",,,-3.157633,0.14432524,3.9348406,0.14411236,0.28822473,0.11176205,No rejection,False,BG4 serial correlation; RESET; CUSUM instability or unavailable
+BIL_MYS_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,0,0,0)",-0.71623796,0.08141946,,,,,0.16283892,,Reject no-level relation,True,RESET; CUSUM instability or unavailable
+BIL_MYS_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,0,0,0,0)",,,-1.8065398,1.7815773e-05,1.3460839,0.023633435,0.059083588,8.6466724e-05,Reject no-level relation,True,No rejection in listed tests
+BIL_SGP_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,1,2,3)",-0.45061454,0.43182293,,,,,0.48590872,,Reject no-level relation,False,No rejection in listed tests
+BIL_SGP_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,1,2,4,4)",,,0.14081548,0.8753382,-0.262459,0.81033969,0.81033969,0.7910614,Reject no-level relation,False,BG4 serial correlation
+BIL_THA_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,0,1,0)",1.1796272,0.0062109861,,,,,0.03105493,,Reject no-level relation,True,CUSUMSQ instability; ARCH4
+BIL_THA_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,0,1,0,0)",,,1.2817033,0.020885978,0.95016527,0.27972209,0.34965262,0.76532942,Reject no-level relation,True,CUSUMSQ instability; ARCH4; CUSUM instability or unavailable
+BIL_USA_ARDL_AIC4,ARDL,75,2007Q1,2025Q3,"(2,2,2,0)",0.98884285,0.16323885,,,,,0.27206476,,Inconclusive,False,non-normal residuals; CUSUM instability or unavailable
+BIL_USA_NARDL_AIC4,NARDL,75,2007Q1,2025Q3,"(2,2,2,2,4)",,,1.8521358,0.0065956078,3.094848,0.0060445089,0.020148363,0.23972087,Reject no-level relation,False,CUSUMSQ instability; non-normal residuals
+BIL_VNM_ARDL_AIC4,ARDL,74,2007Q1,2025Q2,"(4,0,1,0)",1.3892777,0.20526417,,,,,0.29323452,,Inconclusive,False,heteroskedasticity; RESET; CUSUMSQ instability; ARCH4; CUSUM instability or unavailable
+BIL_VNM_NARDL_AIC4,NARDL,74,2007Q1,2025Q2,"(4,0,1,0,0)",,,3.5907771,0.10227604,-0.55051867,0.73656219,0.81033969,0.16263881,Inconclusive,False,heteroskedasticity; CUSUMSQ instability; ARCH4; CUSUM instability or unavailable
+TYPE_AUS_commodity_ARDL_AIC4,ARDL,77,2007Q1,2026Q1,"(1,1,4,0)",1.6273921,0.0024050232,,,,,0.033872177,,Reject no-level relation,True,No rejection in listed tests
+TYPE_AUS_commodity_NARDL_AIC4,NARDL,77,2007Q1,2026Q1,"(1,1,4,0,0)",,,2.4500606,0.00070479029,0.87854481,0.18428347,0.40829816,0.093945488,Reject no-level relation,True,No rejection in listed tests
+TYPE_AUS_noncommodity_ARDL_AIC4,ARDL,77,2007Q1,2026Q1,"(1,0,0,0)",0.78584216,0.50077629,,,,,0.7153947,,Reject no-level relation,False,No rejection in listed tests
+TYPE_AUS_noncommodity_NARDL_AIC4,NARDL,77,2007Q1,2026Q1,"(1,1,0,4,4)",,,0.20270691,0.89801657,5.2313131,0.0046901917,0.023450959,0.026179748,Inconclusive,False,No rejection in listed tests
+TYPE_CHN_commodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(4,1,1,3)",-2.3123703,0.0049881996,,,,,0.033872177,,Reject no-level relation,True,heteroskedasticity; CUSUMSQ instability
+TYPE_CHN_commodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(4,1,3,0,3)",,,-1.3167022,0.064262062,-3.6033847,5.9579583e-05,0.0011915917,0.04957822,Reject no-level relation,True,RESET; CUSUMSQ instability
+TYPE_CHN_noncommodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(2,4,1,0)",0.2591546,0.89331341,,,,,0.99257045,,No rejection,False,heteroskedasticity; non-normal residuals
+TYPE_CHN_noncommodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(2,1,4,1,4)",,,-3.6056066,0.49741092,2.599463,0.69062316,0.76735907,0.55800706,No rejection,False,No rejection in listed tests
+TYPE_IND_commodity_ARDL_AIC4,ARDL,49,2014Q1,2026Q1,"(1,4,1,4)",5.8114235,0.54005122,,,,,0.7200683,,No rejection,False,No rejection in listed tests
+TYPE_IND_commodity_NARDL_AIC4,NARDL,49,2014Q1,2026Q1,"(1,1,1,0,3)",,,19.968672,0.00095427036,-4.6218795,0.32847071,0.48918955,0.00029214926,Reject no-level relation,True,No rejection in listed tests
+TYPE_IND_noncommodity_ARDL_AIC4,ARDL,49,2014Q1,2026Q1,"(3,3,2,1)",-11.123924,0.40150979,,,,,0.61770737,,No rejection,False,heteroskedasticity; non-normal residuals
+TYPE_IND_noncommodity_NARDL_AIC4,NARDL,49,2014Q1,2026Q1,"(2,1,2,0,1)",,,-0.20197292,0.97077352,-7.6855615,0.20414908,0.40829816,0.18942308,No rejection,False,heteroskedasticity; RESET; non-normal residuals
+TYPE_JPN_commodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,0,2,0)",-1.5706077,0.0050808266,,,,,0.033872177,,Reject no-level relation,True,CUSUMSQ instability; CUSUM instability or unavailable
+TYPE_JPN_commodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,0,2,0,0)",,,-2.2049707,0.0070058615,-0.81627414,0.35556141,0.48918955,0.26689416,Reject no-level relation,True,CUSUMSQ instability; CUSUM instability or unavailable
+TYPE_JPN_noncommodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,2,0,2)",-1.1622207,0.16955394,,,,,0.37678652,,Inconclusive,False,BG4 serial correlation; heteroskedasticity; RESET; non-normal residuals; CUSUM instability or unavailable
+TYPE_JPN_noncommodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,2,0,0,2)",,,-0.78646791,0.40353593,-1.4596417,0.16524358,0.40829816,0.60675621,Inconclusive,False,BG4 serial correlation; heteroskedasticity; RESET; non-normal residuals; CUSUM instability or unavailable
+TYPE_KOR_commodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(4,4,4,0)",-0.52356944,0.80132598,,,,,0.95353393,,No rejection,False,No rejection in listed tests
+TYPE_KOR_commodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,0,0,0,0)",,,-3.30164,0.038027354,3.1044156,0.096714891,0.32238297,0.031528961,Reject no-level relation,False,CUSUMSQ instability
+TYPE_KOR_noncommodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(3,4,2,0)",1.6355699,0.05759152,,,,,0.2879576,,Inconclusive,False,RESET
+TYPE_KOR_noncommodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(3,4,0,2,3)",,,-0.45658026,0.66722167,4.589532,0.0011889908,0.0079266052,0.022239847,Inconclusive,False,No rejection in listed tests
+TYPE_MYS_commodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(4,0,0,0)",-1.3069626,0.12530354,,,,,0.37678652,,Inconclusive,False,No rejection in listed tests
+TYPE_MYS_commodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(4,0,0,0,0)",,,-2.8993408,0.0021148596,1.5852899,0.30221906,0.48918955,0.022229312,Reject no-level relation,True,No rejection in listed tests
+TYPE_MYS_noncommodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(4,0,1,0)",0.34426392,0.81050384,,,,,0.95353393,,No rejection,False,heteroskedasticity; CUSUMSQ instability; CUSUM instability or unavailable
+TYPE_MYS_noncommodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(4,0,1,0,0)",,,-0.50759737,0.74444652,1.917442,0.40486741,0.48918955,0.41708055,No rejection,False,heteroskedasticity; CUSUMSQ instability; CUSUM instability or unavailable
+TYPE_SGP_commodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,2,1,0)",-0.5298604,0.16122027,,,,,0.37678652,,Reject no-level relation,True,heteroskedasticity
+TYPE_SGP_commodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,0,0,0,0)",,,-1.8491876,0.0021410994,0.56611242,0.37302893,0.48918955,0.011958575,Reject no-level relation,True,heteroskedasticity
+TYPE_SGP_noncommodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(1,0,0,0)",0.009011585,0.99317187,,,,,0.99317187,,Reject no-level relation,False,BG4 serial correlation; heteroskedasticity; CUSUMSQ instability; non-normal residuals; CUSUM instability or unavailable
+TYPE_SGP_noncommodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(1,0,0,0,0)",,,1.4282958,0.31309184,-1.5359239,0.3119005,0.48918955,0.19343777,Inconclusive,False,BG4 serial correlation; heteroskedasticity; CUSUMSQ instability; non-normal residuals; CUSUM instability or unavailable
+TYPE_THA_commodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(2,0,1,0)",1.0650257,0.14352591,,,,,0.37678652,,Reject no-level relation,False,CUSUM instability or unavailable
+TYPE_THA_commodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(2,1,0,0,2)",,,0.56325517,0.5140661,3.5600967,0.024616981,0.098467924,0.094465621,Reject no-level relation,False,No rejection in listed tests
+TYPE_THA_noncommodity_ARDL_AIC4,ARDL,78,2007Q1,2026Q2,"(2,1,1,3)",0.99539979,0.22361588,,,,,0.42910421,,Inconclusive,False,BG4 serial correlation; non-normal residuals
+TYPE_THA_noncommodity_NARDL_AIC4,NARDL,78,2007Q1,2026Q2,"(2,3,1,1,3)",,,0.097761082,0.92566413,0.64785943,0.7345618,0.77322295,0.80433458,Inconclusive,False,CUSUMSQ instability; non-normal residuals; CUSUM instability or unavailable
+TYPE_USA_commodity_ARDL_AIC4,ARDL,75,2007Q1,2025Q3,"(4,0,2,3)",-0.013803215,0.98707151,,,,,0.99317187,,No rejection,False,RESET
+TYPE_USA_commodity_NARDL_AIC4,NARDL,75,2007Q1,2025Q3,"(4,1,2,2,3)",,,0.53999767,0.31545642,3.8977032,0.00048243502,0.0048243502,0.0030267644,Reject no-level relation,True,BG4 serial correlation
+TYPE_USA_noncommodity_ARDL_AIC4,ARDL,75,2007Q1,2025Q3,"(2,2,3,0)",2.0030287,0.10114668,,,,,0.37678652,,Inconclusive,False,CUSUM instability or unavailable
+TYPE_USA_noncommodity_NARDL_AIC4,NARDL,75,2007Q1,2025Q3,"(2,2,3,0,2)",,,3.104518,0.021319173,2.2814879,0.15172026,0.40829816,0.62452632,Inconclusive,False,CUSUM instability or unavailable
+TYPE_VNM_commodity_ARDL_AIC4,ARDL,74,2007Q1,2025Q2,"(1,0,0,0)",2.0768075,0.23600732,,,,,0.42910421,,Reject no-level relation,True,CUSUMSQ instability
+TYPE_VNM_commodity_NARDL_AIC4,NARDL,74,2007Q1,2025Q2,"(1,0,0,0,0)",,,1.9578353,0.42179531,2.2242836,0.41581112,0.48918955,0.94376457,Reject no-level relation,False,BG4 serial correlation; CUSUMSQ instability
+TYPE_VNM_noncommodity_ARDL_AIC4,ARDL,74,2007Q1,2025Q2,"(4,0,0,0)",2.128239,0.33631128,,,,,0.5605188,,No rejection,False,CUSUM instability or unavailable
+TYPE_VNM_noncommodity_NARDL_AIC4,NARDL,74,2007Q1,2025Q2,"(4,0,0,0,0)",,,2.4370027,0.13822393,-0.53083251,0.77600235,0.77600235,0.14958172,No rejection,False,CUSUM instability or unavailable

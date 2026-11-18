@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "main_slides": 50,
+  "full_slides": 239,
+  "primary_model_response_panels": 176,
+  "sensitivity_model_response_panels": 340,
+  "sensitivity_atlas_pages": 87,
+  "all_516_model_responses_in_full_deck": true,
+  "each_model_has_both_shock_directions": true,
+  "response_display": "Exact sign reversal: 100*change log(X/M), not estimated outcome log(M/X)",
+  "shock": "q +/- ln(1.10); no claim of symmetric arithmetic 10 percent shocks",
+  "uncertainty": "Nominal pointwise delta-method 95% intervals after AIC selection",
+  "J_classification": "Exploratory visual-operational; not a formal joint J-curve test",
+  "latex_equations": 31,
+  "latex_engine": "pdfLaTeX / TeX Live 2025",
+  "equation_format": "Genuine LaTeX -> PDF/SVG, PNG fallback; SVG embedded in PPTX",
+  "font_policy": "Original Arial Nova cover; Arial body; TeX math fonts for equations",
+  "template": "F:\\Trade-Balance\\Tio\\input\\reference\\presentation_template\\Simulasi Nilai Tukar Rupiah_Meeting Sore_rev.pptx",
+  "template_sha256": "55300fce04f69e7da469465e9175fbeab64b12b3a838b7b54f6bdabb37a21774",
+  "all_master_layout_theme_parts_preserved": true,
+  "template_xml_parts_preserved": 8,
+  "input_files_unchanged": true,
+  "input_sha256": {
+    "output\\tables\\oskooee\\results_primary_models.csv": "f189e77918f8d0f7eda452137db8215a97a50cd51bb07831c0a0717ae1b6199e",
+    "output\\tables\\oskooee\\results_all_models.csv": "539fe010032f83cfc0cb884ba34f312306756299a8dac0ac0c7010b52f031346",
+    "output\\diagnostics\\oskooee\\dynamic_multipliers.csv": "1eb9d90c62c7615ba97b36eb56c9d790b97f32b35134039327ea364f8af7ad80",
+    "intermediate\\Trade_Total_Quarter.csv": "6ace2a532a29f988178ebe13eefb55713b7ee9a8b9727e9f97ed72c57246c47e",
+    "intermediate\\Trade_Goods_Quarter.csv": "33a0900d93ab5253c69d8e9f0dfafefe9a713294c4e26c9ebe1aaf9bda81636f",
+    "intermediate\\HS6_Classification.csv": "633cc124fbabbe49430a821c588e529937dd7d256a73b5a6b9298aada9d64bf6",
+    "output\\diagnostics\\oskooee\\case_registry.csv": "4aaefe73acc178f5f3c51e87c06f540879b0792ec4213a0b11cf80ab3c42fd9a",
+    "output\\diagnostics\\oskooee\\stability_paths.csv": "875f8aad4789d27752ad5638fb6af16489dda5a6d81224986300862587d5f889",
+    "output\\diagnostics\\data\\Classification_Coverage_By_Year.csv": "f5394940b788826a359f037095b36b7d38f9f4ffb724cf7b0d9b780ee0252854",
+    "output\\diagnostics\\oskooee\\delivery_validation.json": "b99350b59dc1b873dd4eca255efb0cbc043f0870d24d714c18cdf51efd68f52e",
+    "input\\reference\\presentation_template\\Simulasi Nilai Tukar Rupiah_Meeting Sore_rev.pptx": "55300fce04f69e7da469465e9175fbeab64b12b3a838b7b54f6bdabb37a21774"
+  },
+  "files": {
+    "main_pptx": "Depresiasi_Rupiah_HS6_Tio_20261117_Utama.pptx",
+    "full_pptx": "Depresiasi_Rupiah_HS6_Tio_20261117_Lengkap.pptx"
+  },
+  "pptx_sha256": {
+    "Depresiasi_Rupiah_HS6_Tio_20261117_Utama.pptx": "0163fa677c02b5b842b543465838f180f60fe8d107279c8b4559286b6450f711",
+    "Depresiasi_Rupiah_HS6_Tio_20261117_Lengkap.pptx": "a41436bf8b7bd004cf79e1aedc311cdf02b12aabd455f0eadce9360c04ff35d5"
+  },
+  "source_code": "script/10_build_research_ppt.py; script/python/presentation_style.py",
+  "rendered": {
+    "main_pptx": {
+      "slides": 50,
+      "pdf": "Depresiasi_Rupiah_HS6_Tio_20261117_Utama.pdf",
+      "pdf_pages": 50,
+      "pdf_sha256": "6ab945d8c7b5d5606ec641368d2953ac87be0432729033f04e93a4cbc66f9320",
+      "png_directory": "slides_main",
+      "png_count": 50,
+      "fonts": [
+        "BCDEEE+Arial-BoldMT",
+        "BCDFEE+Arial Nova,Bold",
+        "BCDGEE+ArialMT",
+        "BCDHEE+ArialMT"
+      ],
+      "text_overflows": []
+    },
+    "full_pptx": {
+      "slides": 239,
+      "pdf": "Depresiasi_Rupiah_HS6_Tio_20261117_Lengkap.pdf",
+      "pdf_pages": 239,
+      "pdf_sha256": "99eb5fb9a3cb03dc51d9b2745530174ab10e08bd166c1bc4f2148b494cc8f2aa",
+      "png_directory": "slides_full",
+      "png_count": 239,
+      "fonts": [
+        "BCDEEE+Arial-BoldMT",
+        "BCDFEE+Arial Nova,Bold",
+        "BCDGEE+ArialMT",
+        "BCDHEE+ArialMT",
+        "BCDIEE+Calibri",
+        "BCDJEE+Arial-BoldMT"
+      ],
+      "text_overflows": []
+    }
+  },
+  "text_overflow_candidates": [],
+  "previews": [
+    "preview_main_01.png",
+    "preview_main_02.png",
+    "preview_main_03.png",
+    "preview_main_04.png",
+    "preview_main_05.png",
+    "preview_full_01.png",
+    "preview_full_02.png",
+    "preview_full_03.png",
+    "preview_full_04.png",
+    "preview_full_05.png",
+    "preview_full_06.png",
+    "preview_full_07.png",
+    "preview_full_08.png",
+    "preview_full_09.png",
+    "preview_full_10.png",
+    "preview_full_11.png",
+    "preview_full_12.png",
+    "preview_full_13.png",
+    "preview_full_14.png",
+    "preview_full_15.png",
+    "preview_full_16.png",
+    "preview_full_17.png",
+    "preview_full_18.png",
+    "preview_full_19.png",
+    "preview_full_20.png"
+  ],
+  "pptx_unchanged_by_render": true,
+  "input_files_unchanged_after_render": true,
+  "layout_corrections": {
+    "slides": [
+      9,
+      13,
+      50
+    ],
+    "type": "Shortened heading text and widened one paragraph; no numerical or model changes"
+  },
+  "three_digit_folio_pages_corrected": 140,
+  "scope_audit": {
+    "status": "PASS",
+    "reporter": "Indonesia (360)",
+    "workbooks_checked": 22,
+    "monthly_totals_matched": 5456,
+    "WLD_is_partner_not_reporter": true,
+    "goods_models_are_seven_HS6_categories_not_individual_codes": true
+  },
+  "label_revision": "Explicit Indonesia reporter and whole-world/partner scope; numerical model inputs unchanged"
+}

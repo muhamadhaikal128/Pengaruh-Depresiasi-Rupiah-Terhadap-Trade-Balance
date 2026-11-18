@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "definition": "UNCTAD A11 conservative HS4 consensus",
+  "classification_sha256": "ee84b1b64080d8b71e44399b77f3b472948b56762e9d4da12916f71074fea494",
+  "class_counts": {
+    "commodity": 358,
+    "noncommodity": 857,
+    "mixed": 47,
+    "unclassified": 2
+  },
+  "input_flow_rows": 5974568,
+  "original_zero_trade_rows_preserved": 3273254,
+  "partition_files": 80,
+  "hs4_monthly_rows": 3053500,
+  "hs4_quarterly_rows": 1025976,
+  "group_monthly_rows": 10000,
+  "group_quarterly_rows": 3360,
+  "all_input_files_unchanged": true,
+  "all_partition_sums_match_source": true,
+  "quarter_requires_three_months": true,
+  "zero_to_missing_conversion": false,
+  "missing_to_zero_conversion": false,
+  "unknown_groups_retained": true,
+  "max_HS_vs_official_abs_pct": 0.022763958445428584,
+  "ready_group_quarters_by_class": {
+    "commodity": 788,
+    "mixed": 788,
+    "noncommodity": 788,
+    "unclassified": 413
+  },
+  "source_hashes": {
+    "intermediate\\hs_panel\\Export_AUS.csv": "cf99c1d9c7d6526061c770573b7d2755fe77e4b3a1bc327afe7af9ed71e9b3f6",
+    "intermediate\\hs_panel\\Export_CHN.csv": "86010eee9e5479d1c4e2add5f9e7714d8114d4b9a9c7f1f269a6a5b9017ab6dc",
+    "intermediate\\hs_panel\\Export_IND.csv": "51a9d737ecb8a71d370443dae9fc36de0379420cd620d9dba8f0a16d0cdb4ce4",
+    "intermediate\\hs_panel\\Export_JPN.csv": "9924c4e9a852d725c550b7494f59f79a723ece172d28245ef4b296f7faf951d2",
+    "intermediate\\hs_panel\\Export_KOR.csv": "80a0c18222d9abf7282d908c602adb5064242aea953e0f2b35d7773b41f27aa5",
+    "intermediate\\hs_panel\\Export_MYS.csv": "aea1fe89f0254f77f7d510281371ab0d840fc94d5c36ced39a81b9f62da99454",
+    "intermediate\\hs_panel\\Export_SGP.csv": "026795a88220dd12294fd0b6005c279cd55ad8c0d78a65c38747381d69892751",
+    "intermediate\\hs_panel\\Export_THA.csv": "d3dfb8c08c721b51cdf6ab287c7996548d4ab966338ee307a622a2e12f1499ec",
+    "intermediate\\hs_panel\\Export_USA.csv": "3d2436ce6a6968b8bcb2cb2a4e8468ff346087321126022eb742336ee3184d59",
+    "intermediate\\hs_panel\\Export_VNM.csv": "8471cd4dec5a96f10bc9423031829ff82cdfb40a0270e93fb20a369b18eb8b82",
+    "intermediate\\hs_panel\\Import_AUS.csv": "1f442ddedc43c8ac06226510a3bc0f798f03a594b10376ee53977cb992bead9c",
+    "intermediate\\hs_panel\\Import_CHN.csv": "216685210928decd09169395b544b42dbadc0de7e723c7f23fc39c66e48845ef",
+    "intermediate\\hs_panel\\Import_IND.csv": "c79054c1469808bfbfc501fbdf127c99fbe5549757dc6a78a391fc4eb23c5506",
+    "intermediate\\hs_panel\\Import_JPN.csv": "4569356f3eb0cf430714cca80eaec7d2798431d9358f26ac10611422760f6a84",
+    "intermediate\\hs_panel\\Import_KOR.csv": "83894f9e16d7ec5129569b1595adf372d0042bacc4f46d5ba233dde166e707cb",
+    "intermediate\\hs_panel\\Import_MYS.csv": "77f3b2e445223ae8daeecc491361742c11efd8dbf11b4203b0850bad79186f73",
+    "intermediate\\hs_panel\\Import_SGP.csv": "19c59ca5b00c5e9d42dccc4f58b563b58ef9195f20be96e2d99910398e7bc5c9",
+    "intermediate\\hs_panel\\Import_THA.csv": "cc5224450babfd66d87ec2f108ebe1c35e9c4bcafe8493f63ec371727c9d0a10",
+    "intermediate\\hs_panel\\Import_USA.csv": "8f2426d08da18056c611d6473b918e9d84e4e4589b15577de3a45dd2b3221b74",
+    "intermediate\\hs_panel\\Import_VNM.csv": "204cec019c3f857621bf9a950ef8b75e0fff57314ad44a5565c509bbe922d255",
+    "intermediate/HS_Lookup.csv": "be15ba6139450f53f075364635d496e7bac7e3dd48dda32a0250f572582e77a7"
+  },
+  "quarter_anchor": {
+    "hs4_1511_CHN_2015Q1": {
+      "Exports_USDk": 318517.0,
+      "Imports_USDk": 0.0
+    }
+  },
+  "limits": [
+    "Not a claim of full HS temporal harmonisation",
+    "Group shares cover ten partners, not world",
+    "Ready flags indicate variable availability only",
+    "HS4 ambiguous codes need HS6 or revision confirmation"
+  ]
+}

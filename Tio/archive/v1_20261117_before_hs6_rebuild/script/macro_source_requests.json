@@ -1,0 +1,77 @@
+[
+  {
+    "label": "VALEXPIDM052N",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VALEXPIDM052N",
+    "extension": ".csv"
+  },
+  {
+    "label": "VALIMPIDM052N",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VALIMPIDM052N",
+    "extension": ".csv"
+  },
+  {
+    "label": "VALEXPIDM052N_metadata",
+    "url": "https://fred.stlouisfed.org/series/VALEXPIDM052N",
+    "extension": ".html"
+  },
+  {
+    "label": "VALIMPIDM052N_metadata",
+    "url": "https://fred.stlouisfed.org/series/VALIMPIDM052N",
+    "extension": ".html"
+  },
+  {
+    "label": "bis_fx_bulk",
+    "url": "https://data.bis.org/static/bulk/WS_XRU_csv_col.zip",
+    "extension": ".zip"
+  },
+  {
+    "label": "bis_cpi_bulk",
+    "url": "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip",
+    "extension": ".zip"
+  },
+  {
+    "label": "bis_cpi_documentation",
+    "url": "https://www.bis.org/statistics/cp/cp_long_documentation.pdf",
+    "extension": ".pdf"
+  },
+  {
+    "label": "bis_bulk_index",
+    "url": "https://data.bis.org/bulkdownload",
+    "extension": ".html"
+  },
+  {
+    "label": "wb_gem_gdp_real_all",
+    "url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/NYGDPMKTPSAKN/time/all?format=json&per_page=30000",
+    "extension": ".json"
+  },
+  {
+    "label": "wb_gem_vnm_cpi",
+    "url": "https://api.worldbank.org/v2/sources/15/country/VNM/series/CPTOTNSXN/time/all?format=json&per_page=20000",
+    "extension": ".json"
+  },
+  {
+    "label": "wb_gem_indicators",
+    "url": "https://api.worldbank.org/v2/indicator?source=15&format=json&per_page=1000",
+    "extension": ".json"
+  },
+  {
+    "label": "wb_gem_idn_DXGSRMRCHNSCD",
+    "url": "https://api.worldbank.org/v2/sources/15/country/IDN/series/DXGSRMRCHNSCD/time/all?format=json&per_page=10000",
+    "extension": ".json"
+  },
+  {
+    "label": "wb_gem_idn_DMGSRMRCHNSCD",
+    "url": "https://api.worldbank.org/v2/sources/15/country/IDN/series/DMGSRMRCHNSCD/time/all?format=json&per_page=10000",
+    "extension": ".json"
+  },
+  {
+    "label": "wb_gem_vnm_fx",
+    "url": "https://api.worldbank.org/v2/sources/15/country/VNM/series/DPANUSLCU/time/all?format=json&per_page=10000",
+    "extension": ".json"
+  },
+  {
+    "label": "wdi_trade_annual",
+    "url": "https://api.worldbank.org/v2/country/IDN/indicator/TX.VAL.MRCH.CD.WT;TM.VAL.MRCH.CD.WT?source=2&format=json&per_page=2000",
+    "extension": ".json"
+  }
+]

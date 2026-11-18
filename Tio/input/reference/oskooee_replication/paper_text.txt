@@ -1,0 +1,1170 @@
+PAGE 1
+RESEARCH ARTICLE
+Nonlinear ARDL Approach and the J-Curve
+Phenomenon
+Mohsen Bahmani-Oskooee1 & Hadise Fariditavana1
+# Springer Science+Business Media New York 2015
+Abstract Since introduction of cointegration and error-correction modeling, the defi-
+nition of the J-curve has changed to reflect short-run deterioration combined with long-
+run improvement of the trade balance due to currency depreciation. Standard methods
+such as ARDL approach of Pesaran et al. (2001) assume that adjustment of variables
+follow a linear path. It is now recognized that the adjustment process could be
+nonlinear. Application of Non-linear ARDL approach of Shin et al. (2013) provides
+more evidence of the J-curve supporting non-linear adjustment of variables as well as
+asymmetric effects of exchange rate changes on the trade balance, using bilateral trade
+balance models of the U.S. with each of her six largest trading partners.
+Keywords J-Curve . Non-linear ARDL approach . Asymmetry effects . Bilateral trade
+balance
+JEL Classification F31
+1 Introduction
+The J-curve phenomenon summarizes the response of the trade balance to devaluation
+or currency depreciation. Magee (1973) who introduced the concept argued that due to
+adjustment lags such as recognition lag, production lag, delivery lag, etc. currency
+depreciation affects the trade balance in the future. Therefore, if the trade balance was
+deteriorating at the time of devaluation, it will keep deteriorating even after devaluation
+until the lags are realized. The trade balance then could improve, hence the J-curve
+Open Econ Rev
+DOI 10.1007/s11079-015-9369-5
+Valuable comments of two anonymous referees are greatly appreciated. Remaining errors, however, are ours.
+* Mohsen Bahmani-Oskooee
+bahmani@uwm.edu
+1
+The Center for Research on International Economics and Department of Economics, The
+University of Wisconsin-Milwaukee, Milwaukee, WI 53211, USA
+
+
+PAGE 2
+pattern. Although Magee introduced the concept, Bahmani-Oskooee (1985) introduced
+the testing method by specifying a trade balance model and imposing a lag structure on
+the exchange rate as one of the determinants of the trade balance. A few negative
+coefficients followed by a few positive ones were shown to support the J-curve. Rose
+and Yellen (1989) introduced yet an alternative way of testing the J-Curve within
+cointegration and error-correction modeling techniques, i.e., short-run deterioration
+combined with long-run improvement in the trade balance due to currency deprecia-
+tion.1 Bahmani-Oskooee and Ratha (2004) and Bahmani-Oskooee and Hegerty (2010)
+are two comprehensive review articles on the topic.
+Although Rose and Yellen (1989) introduced us an alternative concept, they criti-
+cized previous studies on the ground that failure to support the J-curve could be due to
+using aggregate trade flows between one country and rest of the world. They then
+disaggregated the U.S. trade flows by trading partners and tested the phenomenon
+between the U.S. and each of her six major partners using error-correction and
+cointegration methods. As they concluded, “No statistically reliable evidence of the
+J-curve was found”. In this paper we ask the following question: Could failure to
+support the J-curve using disaggregated trade data be due to assuming a linear
+adjustment process? Can we discover the J-curve if we introduce nonlinearity into
+error-correction and cointegration modeling methods? The nonlinear ARDL approach
+to error-correction modeling and cointegration not only introduces nonlinear adjust-
+ment process into testing procedure but also helps us to determine whether the short-run
+and long-run effects of currency depreciation on the trade balance are symmetric or
+asymmetric. To this end, in Section 2 we outline the model and explain the linear and
+nonlinear ARDL methods. In Section 3 we report empirical results of testing the J-
+curve between the U.S. and each of her six largest partners.2 A summary is provided in
+Section 4. Finally, definition of variables and sources of the data are cited in the
+Appendix.
+2 The Model and Methods
+Following Rose and Yellen (1989) and the literature we assume the trade balance
+between the U.S. and trading partner i is a function of the level of economic activity or
+income in both countries as well as the real bilateral exchange rate. Thus, we begin with
+the following bilateral trade balance model:
+LnTBi;t ¼ a þ b LnY US;t; þc LnY i;t þ d Ln REX i;t þ εt
+ð1Þ
+where TBi is a measure of the trade balance between the U.S. and trading partner i and
+is defined as the ratio of U.S. imports from trading partner i over her exports to trading
+partner i. It is assumed that this measure of the trade balance depends positively on the
+U.S. income, YUS, and negatively on the trading partner i’s income, Yi. As the U.S.
+economy grows, we expect her to import more and as the trading partner i’s economy
+grows, we expect U.S. to export more. The real exchange rate, REXi, is defined in a
+manner that a decline reflects a real depreciation of the U.S. dollar. If dollar
+1 Rose and Yellen (1989, p. 67).
+2 These are the same partners that were considered by Rose and Yellen (1989).
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 3
+depreciation is to increase U.S. exports and reduce her imports from partner i, an
+estimate of d is expected to be positive for long-run improvement.
+As mentioned above, Eq. (1) is a long-run model and coefficient estimates by any
+method only reflect long-run effects of exogenous variables. In order to judge the short-
+run effects of exogenous variables we must introduce short-run dynamic adjustment
+process into (1). We do so first following Pesaran et al.’s (2001) linear ARDL or
+bounds testing approach as in Eq. (2):
+ΔLnTBi;t ¼ a0 þ
+X
+n
+k¼1
+b0k ΔLnTBi;t−k þ
+X
+n
+k¼0
+c0k ΔLnY US;K þ
+X
+n
+k¼0
+d0k ΔLnY i;t−k
+þ
+X
+n
+k¼0
+e0kΔLnREX i;t−k þ λ1 LnTBi;t−1 þ λ2 LnY US;t−1
+þ λ3 Ln Y i;t−1 þ λ4 LnREX i;t−1 þ μt
+ð2Þ
+Equation (2) is an error-correction model in which lagged error term from (1) is
+replaced by its equivalent, i.e., the linear combination of lagged level variables. In
+this set up, the short-run effects are inferred from estimate of coefficients attached
+to first-differenced variables and the long-run effects are judged by the estimates
+of λ2 – λ4 normalized on λ1. However, for the long-run effects to be valid, we
+must establish cointegration. Pesaran et al. (2001) propose applying the familiar F
+test to establish joint significance of lagged level variables as a sign of
+cointegration. However, the F test in this context has new critical values that they
+tabulate. Since these new critical values do account for integrating properties of all
+variables, there is no need for pre unit-root testing and variables could be
+integrated of order zero, I(0) or order one, I(1) which are the properties of almost
+all macro variables. The J-curve effect will be supported if estimates of e’ are
+negative or insignificant but the estimate of normalized λ4 is positive and
+significant.
+Our claim in this paper is that failure to find support for the J-curve effect could
+be due to assuming that the effects of exchange rate changes are symmetric. Once
+depreciations are separated from appreciations and their effects on the trade balance
+are tested separately, it is possible that depreciations could have significant effect
+whereas appreciations may not, i.e., effects of exchange rate changes could be
+asymmetric. To this end, following the literature we decompose the movement of
+the LnREX variable into its negative (dollar depreciation) and positive (dollar
+appreciation) partial sum as: LnREX=LnREX0+LnREXt
+++LnREXt
+−where LnREX+
+t
+and LnREX−
+t are the partial sum process of positive and negative changes in
+LnREX. More precisely:
+POS ¼ LnREX þ
+t ¼
+X
+t
+j¼1
+ΔLnREX þ
+j ¼
+X
+t
+j¼1
+max ΔLnREX j; 0;
+
+
+N EG ¼ LnREX −
+t ¼
+X
+t
+j¼1
+ΔLnREX −
+j ¼
+X
+t
+j¼1
+min ΔLnREX j; 0
+
+
+ð3Þ
+We then follow Shin et al. (2013) and replace LnREX in Eq. (2) by POS and NEG
+variables as in (4):
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 4
+ΔLnTBi;t ¼ a0 þ
+X
+n1
+k¼1
+b0
+kΔLnTBi;t−k þ
+X
+n2
+k¼0
+c0
+kΔLnY US
+t−k þ
+X
+n3
+k¼0
+d0
+kΔLnY i
+t−k þ
+X
+n4
+k¼0
+e0
+kΔPOSt−k
+þ
+X
+n5
+k¼0
+f 0
+kNEGt−k þ θ0LnTBi;t−1 þ θ1LnY US
+t−1 þ θ2LnY i
+t−1 þ θ3POSt−1 þ θ4NEGt−1 þ ξt
+ð4Þ
+The new variables in Eq. (4) now allow us to test whether exchange rate changes
+have asymmetric or symmetric effects on the U.S. trade balance with trading partner i.
+Error-correction model (4) is said to be a nonlinear ARDL model and nonlinearity is
+introduced through partial sum or cumulative sum concept included in generating the
+new variables POS and NEG. Shin et al. (2013) justify applying Pesaran et al.’s (2001)
+bounds testing approach to Eq. (4).3 Error-correction models (2) and (4) are estimated
+in the next section.4
+3 The Results
+In this section we estimate both error-correction models (2) and (4) using bilateral data
+between the U.S. and each of her six major trading partners. The list that was also
+considered by Rose and Yellen (1989) includes: Canada, France, Germany, Italy, Japan,
+and the U.K. While definitions of variables and data sources are provided in the
+Appendix, it should be mentioned that quarterly data over the period 1971I-2013III
+are used to carry the estimation procedure. Following the literature (e.g., Bahmani-
+Oskooee and Tanku 2008) we impose a maximum of eight lags on each first-
+differenced variable and use Akaike’s Information Criterion (AIC) to select the opti-
+mum lags. Results from each optimum model are reported in Tables 1, 2, 3, 4, 5 and 6.
+Note that there are two parts in each table. Part I reports estimates and diagnostics of
+Eq. (2) and Part II does the same for Eq. (4). Furthermore, there are three panels in each
+part. While Panel A displays short-run coefficient estimates, Panel B does the same for
+long-run estimates. Finally Panel C reports diagnostic statistics.
+Let us concentrate on the U.S.-Canada models and Table 1 first. From Part I and
+Panel A, it is clear that the real exchange rate has no significant short-run effects.
+However, from Panel B we gather that at least at the 10 % level of significance, it
+carries a positive and significant coefficient in the long run, supporting the J-curve
+hypothesis. From the long-run results we also gather that the level of income in both the
+U.S. and Canada carry significant coefficients, again at the 10 % significance level. Are
+these long-run estimates valid? To answer this question, we must establish joint
+significance of lagged level variables in Eq. (2) as a sign of cointegration. Given its
+upper bound critical value of 3.52, from Panel C we gather that the F test is not
+3 For some other application of partial sum concept see Apergis and Miller (2006) on the effects of U.S. stock
+market on consumption; Verheyen (2013) on interest rate pass-through mechanism to deposit rates; and
+Bahmani-Oskooee and Fariditavana (2014) on testing the S-curve.
+4 Note that expected sign of normalized coefficient estimates of POS and NEG variables in model (4) are the
+same as that of REX in model (2). Therefore, if exchange rate changes are to have symmetric favorable effects
+on the trade balance, we expect the POS and NEG variables in (4) to carry significantly normalized positive
+coefficients that are the same in size.
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 5
+Table 1 The US—Canada models
+0
+1
+2
+3
+4
+5
+6
+7
+Part I
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−.7249E-3 [0.0087]
+−0.22476 [2.72]
+−0.085802 [1.02]
+0.28308 [3.43]
+−0.14628 [1.87]
+0.10497 [1.30]
+Δln YUS
+−0.19187 [0.35]
+1.1915 [2.31]
+Δln YCANADA
+−.6665E-3 [0.001]
+Δln REX
+0.011124 [0.079]
+Panel B: Long-run Estimates
+Constant
+−0.68370 [1.10]
+Ln YUS
+−1.8254 [1.77]
+ln YCANADA
+2.0031 [1.75]
+Ln REX
+0.48599 [1.82]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+2.0579
+−0.12235 [2.82]
+11.6953
+0.02816
+S
+S
+0.21776
+Part II
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−.9281E-3 [0.011]
+−0.23207 [2.78]
+−0.081457 [0.96]
+0.27159 [3.17]
+−0.14112 [1.80]
+0.10245 [1.27]
+Δln YUS
+−0.26712 [0.49]
+1.0552 [2.05]
+Δln YCANADA
+0.13341 [0.20]
+Δ POS
+−0.45077 [0.81]
+Δ NEG
+0.48063 [0.83]
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 6
+Table 1 (continued)
+0
+1
+2
+3
+4
+5
+6
+7
+Panel B: Long-run Estimates
+Constant
+−2.4591 [1.59]
+Ln YUS
+−1.7606 [1.88]
+ln YCANADA
+2.4224 [2.17]
+POS
+0.17662 [0.19]
+NEG
+0.98364 [1.75]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+1.5274
+−0.11987 [2.70]
+7.6711
+0.21758
+S
+S
+0.23221
+Number inside the parenthesis is absolute value of the t-ratio
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 7
+significant, failing to support cointegration.5 In such cases, following the literature (e.g.,
+Bahmani-Oskooee and Tanku 2008) we use normalized long-run coefficient estimates
+and Eq. (1) and calculate the error term. Denoting this new series by ECM, we replace
+the linear combination of lagged level variables in (2) by ECMt-1, and estimate the new
+model after imposing the same optimum lag orders from Panel A. A significantly
+negative coefficient obtained for ECMt-1 will support convergence toward long-run
+equilibrium or cointegration. As can be seen from Panel C, this is exactly the case.
+A few other diagnostic statistics are also reported in Panel C. The Lagrange
+Multiplier (LM) statistic is reported to make sure residuals are autocorrelation free. It
+is distributed as χ2 with four degrees of freedom. Given its critical value of 9.48, the
+LM statistic is somewhat significant, implying existence of serial correlation. We also
+report Ramsey’s RESET statistic to check misspecification. It is also distributed as χ2
+but with only one degree of freedom. Given its critical value of 3.84 at the 5 % level of
+significance, the optimum model is correctly specified since the RESET statistic is
+insignificant. Finally, to test for stability of all coefficient estimates, following others
+(e.g., Pesaran et al. 2001; Bahmani-Oskooee and Tanku 2008) we apply CUSUM and
+CUSUMSQ tests to the residuals of the optimum model. Stable coefficients by either
+test are indicated by “S” and unstable ones by “US”. Clearly, all coefficient estimates
+are stable.
+The question now is if J-curve is supported by estimating Eq. (2) which follows
+linear ARDL specification, what do we learn from estimates of nonlinear ARDL model
+outlined by Eq. (4)? From the long-run coefficient estimates in part II of Table 1, we
+gather that at least at the 10 % significance level the NEG variable carries significant
+coefficient whereas, the POS variable does not. This implies that the long-run effects of
+exchange rate changes are asymmetric. More precisely, while real depreciation of the
+U.S. dollar has long-run favorable effects on the U.S.-Canada trade balance, real
+appreciation of the U.S. dollar has no long-run effects. Other statistics carry the same
+level of standing as those in linear ARDL model except that serial correlation among
+the residuals has now disappeared since LM statistic is insignificant. Cointegration is
+supported by ECMt-1 approach, there is lack of serial correlation, the nonlinear ARDL
+model is correctly specified and all estimated coefficients are stable.
+Results in the case of the U.S.-France (Table 2) and the U.S.-Germany (Table 3) are
+similar to those of the U.S.-Canada in that the J-curve is supported by the linear ARDL
+model. However, when we consider the results from nonlinear ARDL model, in the
+case of France, exchange rate changes have symmetric effects whereas in the case of
+Germany the effects are asymmetric. This is because both POS and NEG variables
+carry significantly positive coefficients in the long run that are very close in size in the
+results for France but not for Germany. Note that in all four models reported in Tables 2
+and 3 cointegration is supported by both the F test and ECMt-1, residuals are all
+autocorrelation free, models do not suffer from misspecification, and all estimated
+short-run and long-run coefficients are stable.
+In the remaining three cases, i.e., the US-Italy, the US-Japan, and the US-UK models
+whose results are reported in Tables 4, 5 and 6, the real bilateral exchange rate does not
+carry significant coefficient in the long run. If we were to rely upon these results from
+5 This critical value is at the usual 5 % significance level and when there are three exogenous variables. It
+comes from Pesaran et al. (2001, Table CI-Case III, p. 300).
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 8
+Table 2 The US-France models
+0
+1
+2
+3
+4
+5
+6
+7
+Part I
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.34010 [4.40]
+−0.30148 [3.72]
+−0.24026 [2.98]
+0.22038 [2.73]
+0.14025 [1.78]
+−0.063821 [0.87]
+Δln YUS
+2.4742 [2.32]
+1.5536 [1.46]
+1.6535 [1.59]
+Δln YFRANCE
+−2.6083 [1.67]
+Δln REX
+−0.028530 [0.21]
+Panel B: Long-run Estimates
+Constant
+−3.6841 [1.29]
+Ln YUS
+−0.48651 [0.36]
+ln YFRANCE
+1.4075 [0.72]
+Ln REX
+0.86097 [3.05]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+6.5888
+−0.24792 [5.17]
+7.7805
+0.71702
+S
+S
+0.46608
+Part II
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.35149 [4.61]
+−0.31418 [4.02]
+−0.23310 [2.95]
+0.23945 [3.13]
+0.16706 [2.32]
+Δln YUS
+2.4050 [2.26]
+1.7960 [1.69]
+1.4958 [1.44]
+Δln YFRANCE
+−2.6306 [1.68
+Δ POS
+−0.66483 [1.10]
+Δ NEG
+0.59522 [0.98]
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 9
+Table 2 (continued)
+0
+1
+2
+3
+4
+5
+6
+7
+Panel B: Long-run Estimates
+Constant
+−4.2292 [1.02]
+Ln YUS
+−4.2292 [1.02]
+ln YFRANCE
+1.5855 [0.80]
+POS
+1.9633 [2.35]
+NEG
+2.0292 [3.06]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+5.7815
+−0.25574 [5.44]
+9.0331
+1.1821
+S
+S
+0.46908
+Number inside the parenthesis is absolute value of the t-ratio
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 10
+linear ARDL models we would have concluded that dollar depreciation has no long-run
+significant effects on the U.S. trade balance with each of these trading partners.
+However, when we shift to estimates of nonlinear ARDL models, the NEG variable
+carries significantly positive coefficient in all three cases except Japan, implying that
+real depreciation of the dollar against euro and pound will improve the U.S. trade
+balance with Italy and the UK.6 In sum, when we consider the results from linear
+ARDL model, there is evidence of the J-curve in three cases (Canada, France, and
+Germany). However, when the results from nonlinear ARDL model are considered,
+there is evidence of the J-curve in all countries but Japan.7 Thus, nonlinear ARDL
+model provide more evidence of the J-curve than the linear ARDL model. Furthermore,
+the non-linear approach reveals that in most cases exchange rate changes have asym-
+metric effects on the trade balance.
+4 Summary and Conclusion
+A country that is experiencing deterioration in its trade balance may adhere to currency
+devaluation or depreciation. However, due to adjustment lags the effects of devaluation
+is not instantaneous. Indeed, the trade balance will continue to deteriorate and improve
+only after some times, hence the J-curve phenomenon. Early studies tested the phe-
+nomenon by using aggregate trade flows of one country with the rest of the world and
+standard VAR models. Rose and Yellen (1989) criticized those studies on the ground
+that they suffer from aggregation bias and they did not test for integrating or
+cointegrating properties of the variables in the trade balance model. To demonstrate
+their points they used bilateral trade flows data between the U.S. and her six major
+trading partners as well as Engle and Granger (1987) cointegraion and error-correction
+modeling. By using these methods they also provided a new definition of the J-curve,
+i.e., short-run deterioration combined with long-run improvement. However, they
+found no evidence of the J-curve in any model.
+In this paper we revisit the bilateral trade balance models used by Rose and Yellen
+(1989) one more time but try to improve on the method. Due to evidence of Purchasing
+Power Parity (PPP) in some cases, the real bilateral exchange rate could be a stationary
+variable whereas, the other variables in the trade balance model could be non-station-
+ary. In such circumstance, the appropriate method will be the bounds testing or ARDL
+approach of Pesaran et al. (2001) which does not require pre-unit root testing and
+variables could be combination of stationary and non-stationary. This relatively new
+method that has been used by some previous studies assumes that the adjustment of
+variables follow a linear path. Could this assumption cause J-curve to fail? If the answer
+is in the affirmative, we try an additional step and use Nonlinear ARDL approach of
+Shin et al. (2013) and provide evidence of the J-curve phenomenon. More precisely,
+when linear ARDL approach to error-correction and cointegration was used, there was
+6 Note that in these two cases (i.e., the US-Italy and the US-UK) effects of exchange rate changes are
+asymmetric since the POS and NEG variables carry coefficients that are different in size and significance..
+7 In all models cointegration is supported at least by F test or by ECMt-1. The RESET statistic is insignificant
+in all 12 models and the LM statistic is significant in four out of 12 models. To reduce the LM statistic to an
+insignificant level, we added additional lags of the dependent variable. There were no significant changes in
+the results. These results are available upon request.
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 11
+Table 3 The US- Germany models
+0
+1
+2
+3
+4
+5
+6
+7
+Part I
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.13600 [1.87]
+−0.12602 [1.71]
+−0.066199 [0.93]
+0.32034 [4.49]
+0.10178 [1.35]
+−0.10453 [1.44]
+Δln YUS
+1.0139 [1.19]
+0.29622 [0.33]
+1.8842 [2.12]
+1.4654 [1.65]
+1.7895 [2.03]
+Δln YGERMANY
+1.0271 [1.41]
+−0.96171 [1.32]
+−1.1483 [1.57]
+−1.6011 [2.22]
+−1.3900 [1.95]
+0.10916 [0.15]
+0.32782 [0.47]
+1.5586 [2.32]
+Δln REX
+−0.32053 [2.50]
+Panel B: Long-run Estimates
+Constant
+−1.4392 [0.83]
+Ln YUS
+0.50041 [0.70]
+ln YGERMANY
+−0.0026182 [0.002]
+Ln REX
+0.82495 [3.67]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+10.1925
+−0.24367 [6.45]
+4.9376
+1.6285
+S
+S
+0.38823
+Part II
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.045215 [0.61]
+−0.21690 [3.06]
+−0.076352 [1.05]
+0.28685 [4.10]
+Δln YUS
+0.53398 [0.63]
+0.22207 [0.25]
+2.3000 [2.59]
+1.2427 [1.38]
+2.3777 [2.68]
+Δln YGERMANY
+1.2285 [1.66]
+−1.5430 [2.16]
+-0.76418 [1.06]
+−1.7274 [2.35]
+−1.5468 [−2.13]
+0.46892 [0.67]
+−0.13373 [0.19]
+1.4997 [2.28]
+Δ POS
+−0.31187 [0.54]
+−0.49417 [0.88]
+−0.68952 [1.22]
+0.82185 [1.48]
+0.41824 [0.75]
+−1.5393 [2.77]
+−1.5393 [2.77]
+−1.1162 [2.04]
+Δ NEG
+−0.88672 [6.32]
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 12
+Table 3 (continued)
+0
+1
+2
+3
+4
+5
+6
+7
+Panel B: Long-run Estimates
+Constant
+3.7922 [1.12]
+Ln YUS
+−0.69037 [0.75]
+ln YGERMANY
+−0.22272 [0.22]
+POS
+3.0122 [4.15]
+NEG
+1.8843 [3.08]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+7.7471
+−0.27390 [6.31]
+7.4542
+0.019863
+S
+S
+Number inside the parenthesis is absolute value of the t-ratio
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 13
+Table 4 The US- Italy models
+0
+1
+2
+3
+4
+5
+6
+7
+Part I
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.401898 [5.36]
+−0.27595 [3.60]
+−0.23786 [3.09]
+0.34243 [4.98]
+−0.016129 [0.21]
+−0.016129 [0.21]
+−0.24599 [3.53]
+Δln YUS
+2.7836 [4.10]
+−0.13672 [0.16]
+2.9293 [3.60]
+−1.7811 [2.22]
+0.83405 [1.30]
+Δln YITALY
+−0.94597 [2.45]
+1.2526 [3.22]
+−0.91346 [2.28]
+Δln REX
+0.20670 [5.18]
+Panel B: Long-run Estimates
+Constant
+−7.9483 [2.78]
+Ln YUS
+−0.31406 [0.40]
+ln YITALY
+2.2601 [1.78]
+Ln REX
+2.3937 [1.68]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+6.5735
+−0.24367 [6.45]
+15.184
+2.6472
+S
+S
+0.38823
+Part II
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.33786 [4.42]
+−0.25508 [3.24]
+−0.21946 [2.80]
+0.33347 [4.79]
+−0.028757 [0.38]
+−0.13448 [1.75]
+−0.21934 [2.98]
+Δln YUS
+2.7681 [4.06]
+−0.30873 [0.36]
+3.1695 [3.81]
+−1.6179 [1.95]
+0.87004 [1.03]
+0.20478 [0.24]
+−0.89643 [1.12]
+0.84129 [1.36]
+Δln YITALY
+−0.83974 [2.11]
+−1.3235 [3.34]
+−1.1074 [2.72]
+Δ POS
+0.36566 [0.61]
+Δ NEG
+0.69997 [1.01]
+−0.018240 [0.29]
+−0.75527 [1.21]
+−1.3216 [2.20]
+0.23920 [0.38]
+−0.18614 [0.30]
+1.1375 [1.86]
+−1.5451 [2.55]
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 14
+Table 4 (continued)
+0
+1
+2
+3
+4
+5
+6
+7
+Panel B: Long-run Estimates
+Constant
+3.7922 [1.12]
+Ln YUS
+−0.69037 [0.75]
+ln YITALY
+−0.22272 [0.22]
+POS
+3.0122 [4.15]
+NEG
+1.8843 [3.08]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+7.188
+−0.12085 [5.15]
+11.19
+2.5652
+S
+S
+0.68269
+Number inside the parenthesis is absolute value of the t-ratio
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 15
+Table 5 The US-Japan models
+0
+1
+2
+3
+4
+5
+6
+7
+Part I
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.12641 [1.65]
+−0.14117 [1.87]
+Δln YUS
+−0.068984 [0.07]
+1.6175 [1.61]
+1.6238 [1.64]
+Δln YJAPAN
+0.013936 [0.03]
+−0.74068 [1.87]
+−1.2035 [3.76]
+−0.75194 [2.45]
+−0.97141 [2.69]
+−0.69742 [1.96]
+Δln REX
+−0.0056515 [0.04]
+Panel B: Long–run Estimates
+Constant
+−1.8854 [1.12]
+Ln YUS
+−1.9949 [1.60]
+ln YJAPAN
+2.5731 [1.81]
+Ln REX
+1.4527 [1.60]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+3.9345
+−0.093302 [3.97]
+2.5227
+0.99874
+S
+S
+0.16725
+Part II
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.088618 [1.14]
+−0.14265 [1.82]
+−0.047931 [0.61]
+0.14537 [1.84]
+Δln YUS
+−0.92876 [0.96]
+1.5984 [1.58]
+2.0557 [2.03]
+Δln YJAPAN
+0.14290 [0.35]
+−0.90407 [2.88]
+−0.78142 [2.54]
+−0.48292 [1.62]
+−0.72852 [2.08]
+Δ POS
+0.090938 [0.29]
+−0.64942 [2.08]
+0.16501 [0.51]
+0.17007 [0.50]
+0.17627 [0.53]
+−0.64646 [1.96]
+0.77330 [2.35]
+Δ NEG
+−0.079253 [0.32]
+0.61355 [2.48]
+0.59546 [2.38]
+−0.46170 [1.83]
+0.21597 [0.87]
+0.40695 [1.68]
+−0.40774 [1.69]
+0.46026 [2.07]
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 16
+Table 5 (continued)
+0
+1
+2
+3
+4
+5
+6
+7
+Panel B: Long-run Estimates
+Constant
+27.9805 [0.80]
+Ln YUS
+−6.5768 [0.91]
+ln YJAPAN
+−0.74298 [0.24]
+POS
+2.2349 [0.94]
+NEG
+−0.39079 [0.24]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+2.5501
+−0.058154 [3.62]
+13.716
+0.014813
+S
+S
+0.23706
+Number inside the parenthesis is absolute value of the t-ratio
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 17
+Table 6 The US- UK models
+0
+1
+2
+3
+4
+5
+6
+7
+Part I
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.41829 [5.68]
+−0.37738 [4.68]
+−0.15126 [1.75]
+0.19818 [2.32]
+0.082375 [0.94]
+−0.18713 [2.30]
+−0.14065 [1.96]
+Δln YUS
+1.3967 [1.29]
+Δln YUK
+0.89642 [0.99]
+−0.55625 [0.62]
+−0.27621 [0.32]
+0.63994 [0.76]
+−2.9338 [3.48]
+Δln REX
+0.050862 [0.32]
+−0.18754 [1.22]
+0.086590 [0.55]
+0.027471 [0.17]
+−0.28343 [1.87]
+0.50434 [3.35]
+Panel B: Long-run Estimates
+Constant
+0.0021066 [0.35]
+Ln YUS
+0.80990 [1.41]
+ln YUK
+−1.3759 [1.64]
+Ln REX
+0.13269 [0.72]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+1.8832
+−0.079032 [2.76]
+9.3852
+0.09324
+S
+S
+0.5087
+Part II
+Panel A: Short-run Estimates
+Lags
+Δln TB
+−0.37502 [4.99]
+−0.35820 [4.47]
+−0.090983 [1.07]
+0.19535 [2.33]
+0.056256 [0.65]
+−0.18596 [2.31]
+−0.15276 [2.14]
+Δln YUS
+1.2431 [1.11]
+−0.0007737 [0.0006]
+−0.015759 [0.01]
+−4.3299 [3.79]
+Δln YUK
+0.90566 [0.99]
+0.31715
+0.62477 [0.67]
+1.4369 [1.60]
+−2.4113 [2.85]
+Δ POS
+0.20239 [0.31]
+Δ NEG
+−0.077520 [0.11]
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 18
+Table 6 (continued)
+0
+1
+2
+3
+4
+5
+6
+7
+Panel B: Long-run Estimates
+Constant
+−7.1831 [1.83]
+Ln YUS
+10.0971 [2.23]
+ln YUK
+−7.6568 [2.00]
+POS
+−0.089864 [0.09]
+NEG
+2.7044 [2.06]
+Panel C : Diagnostic Statics
+F
+ECMt-1
+LM
+RESET
+CUSM
+CUSM2
+R
+2
+3.4348
+−0.16639 [4.19]
+5.5835
+0.030179
+S
+S
+0.52057
+Number inside the parenthesis is absolute value of the t-ratio
+M. Bahmani-Oskooee, H. Fariditavana
+
+
+PAGE 19
+evidence of the J-curve effect in three out of six models. However, when non-linear
+ARDL approach was used, the J-curve effect was supported in five out of six models.
+Thus, introducing non-linear adjustment process helps us to discover more evidence of
+the J-curve. Furthermore, the non-linear approach also shows us that in most cases the
+effects of exchange rate changes are asymmetric.
+Appendix
+Data Definition and Sources
+Quarterly data over the period 1971I-2013III are used to carry out the empirical
+analysis. They come from the following sources:
+a.
+Direction of Trade Statistics by the IMF.
+b.
+Federal Reserve Bank of St. Louis.8
+Variables
+TBi=U.S. trade balance with partner i is defined as the U.S. imports from partner i over
+her exports to partner i. The data come from source a.
+YUS=Measure of United States income. It is proxied by index of real GDP. The data
+come from source b.
+Yi=Trading partner i’s income. This is also proxied by the index of real GDP in
+country ii and the data come from source b.
+REXi=The real bilateral exchange rate of the U.S. dollar against the currency of
+partner i. It is defined as REXi=(PUS.NEXi/ Pi) where NEXi is the nominal exchange
+rate defined as number of units of partner i’s currency per U.S. dollar, PUS is the price
+level in the U.S. (measured by CPI) and Pi is the price level in country i (also measured
+by CPI). Thus, a decline in REX reflects a real depreciation of the U.S. dollar. All
+nominal exchange rates and price levels data come from source b.
+References
+Apergis N, Miller S (2006) Consumption asymmetry and the stock market: empirical evidence. Econ Lett 93:
+337–342
+Bahmani-Oskooee M (1985) Devaluation and the J-Curve: some evidence from LDCs. Rev Econ Stat 67:500–
+504
+Bahmani-Oskooee M, Ratha A (2004) The J-Curve: a literature review. Appl Econ 36(13):1377–1398
+Bahmani-Oskooee M, Tanku A (2008) The black market exchange rate vs. the official rate in testing PPP:
+which rate fosters the adjustment process. Econ Lett 99:40–43
+Bahmani-Oskooee M, Hegerty SW (2010) The J- and S-Curves: a survey of the recent literature. J Econ Stud
+37:580–596
+8 Note that instruction to download the data from the Federal Reserve Bank of St. Louis hints that “All OECD
+data should be cited as follows: OECD (2010), ”Main Economic Indicators - complete database“, Main
+Economic Indicators (database), http://dx.doi.org/10.1787/data-00052-en (Accessed on date)”
+Nonlinear ARDL Approach and the J-Curve Phenomenon
+
+
+PAGE 20
+Bahmani-Oskooee M, Fariditavana H (2014) Do exchange rate changes have symmetric effect on the s-curve?
+Econ Bull 34(1):164–173
+Engle RF, Granger CWJ (1987) Cointegration and error correction: representation, estimation, and testing.
+Econometrica 55(2):251–276
+Magee, S. P. (1973) Currency contracts, pass-through, and devaluation. Brookings Papers on Economic
+Activity, No. 1, pp. 303–325
+Pesaran MH, Shin Y, Smith RJ (2001) Bounds testing approaches to the analysis of level relationships. J Appl
+Econ 16(3):289–326
+Rose AK, Yellen JL (1989) Is there a J-curve? J Monet Econ 24:53–68
+Shin Y, Yu B, Greenwood-Nimmo M (2013) Modelling Asymmetric Cointegration and Dynamic Multipliers
+in a Nonlinear ARDL Framework Festschrift, forthcoming, Springer
+Verheyen F (2013) Interest rate pass-through in the emu: new evidence using nonlinear ARDL framework.
+Econ Bull 33:729–739
+M. Bahmani-Oskooee, H. Fariditavana

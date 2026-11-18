@@ -1,0 +1,25 @@
+﻿Variable,Definition,Unit
+ISO3,Mitra dagang; WLD berarti seluruh dunia,Kode negara
+Period / Date / Quarter,Periode sumber; bulan YYYYMM / YYYY-MM; kuartal YYYYQn,Waktu
+HS_Edition / HS_Edition_Year,Revisi HS asli sumber; bagian dari identitas produk,Kode / tahun revisi
+HS6,Kode produk enam digit; simpan sebagai teks agar nol depan tetap ada,Kode produk
+Flow,X = ekspor Indonesia; M = impor Indonesia,Arus perdagangan
+Trade_Value_USD,Nilai perdagangan nominal; kolom kuartalan utama memerlukan tiga bulan nyata,USD
+Trade_Value_USDk,Trade_Value_USD dibagi 1.000,Ribu USD
+Net_Weight_kg,Berat bersih; kuartalan utama memerlukan cakupan berat yang memenuhi syarat,kg
+Quantity / Quantity_Unit_Code,Kuantitas tambahan dan kode satuan sumber; angka 0 dengan unit -1 tidak berarti volume nol yang valid,Satuan sumber
+Net_Weight_Estimated / _Any,Penanda penyedia mengestimasi berat; Any untuk setidaknya satu bulan,Boolean
+Quantity_Estimated / _Any,Penanda kuantitas tambahan diestimasi,Boolean
+Weight_Usable,Berat positif yang dapat menjadi penyebut unit value,Boolean
+Quantity_Usable,Kuantitas positif dengan kode satuan valid,Boolean
+Unit_Value_USD_per_kg,Nilai dibagi berat; bukan indeks harga murni,USD / kg
+NMonths_Source_Rows,Jumlah bulan dengan baris produk asli pada kuartal itu,0 sampai 3
+Complete_Product_Quarter,Tiga baris produk-bulan nyata dan tiga bulan dataset tersedia,Boolean
+Observed_*,"Jumlah dari observasi tersedia, termasuk kuartal yang belum lengkap",Sesuai variabel
+Commodity_Class / Commodity_Flag,"UNCTAD A11: komoditas 1, nonkomoditas 0, mixed/unknown tetap missing pada flag",Kategori / biner
+Is_Reported / Is_Aggregate,Metadata kompilasi HS dari sumber; agregasi bukan otomatis estimasi nilai,Boolean
+Positive_Both_Flows_With_Macro,Kedua arus positif dan kontrol makro tersedia; bukan sertifikat kelayakan model,Boolean
+Foreign_Activity_Top10_FixedWeight_Index,Proksi permintaan asing 10 mitra untuk WLD; bukan PDB dunia,Indeks
+RER_Bilateral_Index_2015mean100,Kurs riil bilateral pada panel makro lama: naik berarti depresiasi,Indeks
+REER_BIS_broad,Kurs riil efektif BIS: naik berarti apresiasi; arah berbeda dari RER bilateral,Indeks
+Export_* / Import_*,Variabel arus pada tabel dua arus; prefiks menunjukkan arah perdagangan,Sesuai variabel

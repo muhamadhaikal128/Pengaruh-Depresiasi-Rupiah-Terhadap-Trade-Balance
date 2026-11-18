@@ -1,0 +1,412 @@
+
+  ___  ____  ____  ____  ____ ®
+ /__    /   ____/   /   ____/      StataNow 19.5
+___/   /   /___/   /   /___/       MP—Parallel Edition
+
+ Statistics and Data Science       Copyright 1985-2025 StataCorp LLC
+                                   StataCorp
+                                   4905 Lakeway Drive
+                                   College Station, Texas 77845 USA
+                                   800-782-8272        https://www.stata.com
+                                   979-696-4600        service@stata.com
+
+Stata license: Unlimited-user 2-core network, expiring 31 Mar 2027
+Serial number: 501909306700
+  Licensed to: USER
+               FEB UI
+
+Notes:
+      1. Stata is running in batch mode.
+      2. Unicode is supported; see help unicode_advice.
+      3. More than 2 billion observations are allowed; see help obs_advice.
+      4. Maximum number of variables is set to 5,000 but can be increased;
+          see help set_maxvar.
+
+. do F:/Trade-Balance/Tio/script/11_probe_ardl_api.do 
+
+. version 19
+
+. clear all
+
+. set more off
+
+. capture log close
+
+. log using "F:/Trade-Balance/Tio/output/diagnostics/ardl_api_probe.log", text 
+> replace
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/ardl_api_probe.log
+  log type:  text
+ opened on:  17 Nov 2026, 09:22:27
+
+. adopath ++ "F:/Trade-Balance/Tio/input/reference/oskooee_replication/stata_ad
+> o"
+  [1]              "F:/Trade-Balance/Tio/input/reference/oskooee_replication/st
+> ata_ado"
+  [2]  (BASE)      "C:\Program Files\StataNow19\ado\base/"
+  [3]  (SITE)      "C:\Program Files\StataNow19\ado\site/"
+  [4]              "."
+  [5]  (PERSONAL)  "C:\Users\Administrator\ado\personal/"
+  [6]  (PLUS)      "C:\Users\Administrator\ado\plus/"
+  [7]  (OLDPLACE)  "c:\ado/"
+
+. import delimited using "F:/Trade-Balance/Tio/intermediate/Panel_Country_Quart
+> er.csv", clear varnames(1) case(preserve)
+(encoding automatically selected: ISO-8859-1)
+(70 vars, 840 obs)
+
+. keep if ISO3=="CHN"
+(756 observations deleted)
+
+. gen tq=quarterly(Quarter,"YQ")
+
+. format tq %tq
+
+. tsset tq
+
+Time variable: tq, 2006q1 to 2026q4
+        Delta: 1 quarter
+
+. gen y=Ln_Imports_Exports
+(2 missing values generated)
+
+. gen yd=ln(IDN_GDP_Real_Index_2015mean100)
+(2 missing values generated)
+
+. unab pg : Partner_GDP_Real_Index*
+
+. gen yf=ln(`pg')
+(2 missing values generated)
+
+. gen q=-ln(RER_Bilateral_Index_2015mean100)
+(1 missing value generated)
+
+. keep if tq<=yq(2026,2)
+(2 observations deleted)
+
+. gen dq=D.q
+(1 missing value generated)
+
+. gen pos=sum(cond(missing(dq),0,max(dq,0)))
+
+. gen neg=sum(cond(missing(dq),0,min(dq,0)))
+
+. ardl y yd yf pos neg, maxlags(2) aic ec1 regstore(ureg)
+
+ARDL(1,0,0,0,0) regression
+
+Sample: 2006q3 thru 2026q2                              Number of obs =     80
+                                                        R-squared     = 0.1449
+                                                        Adj R-squared = 0.0872
+Log likelihood = 50.581891                              Root MSE      = 0.1337
+
+------------------------------------------------------------------------------
+         D.y | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+ADJ          |
+           y |
+         L1. |  -.2221651   .0781271    -2.84   0.006    -.3778368   -.0664934
+-------------+----------------------------------------------------------------
+LR           |
+          yd |
+         L1. |   3.989269   3.233034     1.23   0.221    -2.452691    10.43123
+             |
+          yf |
+         L1. |  -3.136496   2.761531    -1.14   0.260    -8.638968    2.365975
+             |
+         pos |
+         L1. |  -1.611272   1.721635    -0.94   0.352    -5.041706    1.819162
+             |
+         neg |
+         L1. |  -1.615548    1.58944    -1.02   0.313    -4.782576     1.55148
+-------------+----------------------------------------------------------------
+SR           |
+          yd |
+         D1. |   .8862761   .6743546     1.31   0.193    -.4574047    2.229957
+             |
+          yf |
+         D1. |  -.6968199   .6726522    -1.04   0.304    -2.037109    .6434688
+             |
+         pos |
+         D1. |  -.3579683   .3490694    -1.03   0.308    -1.053504    .3375676
+             |
+         neg |
+         D1. |  -.3589183   .4202765    -0.85   0.396    -1.196337    .4785008
+             |
+       _cons |  -.8785332    1.90365    -0.46   0.646    -4.671638    2.914572
+------------------------------------------------------------------------------
+
+. ereturn list
+
+scalars:
+              e(t_pss) =  -2.843635288935948
+              e(F_pss) =  2.508738574343389
+               e(case) =  3
+                  e(N) =  80
+               e(df_m) =  5
+               e(df_r) =  74
+                e(mss) =  .2241937130699962
+                e(rss) =  1.322603713025192
+               e(rmse) =  .1336900263631849
+                 e(r2) =  .1449405780535605
+               e(r2_a) =  .0871662927869092
+                 e(ll) =  50.58189058567375
+               e(rank) =  6
+           e(numcombs) =  162
+             e(N_gaps) =  0
+               e(tmin) =  186
+               e(tmax) =  265
+
+macros:
+                e(cmd) : "ardl"
+            e(cmdline) : "ardl y yd yf pos neg, maxlags(2) aic ec1 regstore.."
+         e(cmdversion) : "1.0.6"
+              e(model) : "ec"
+              e(title) : "ARDL(1,0,0,0,0) regression"
+          e(estat_cmd) : "ardl_estat"
+            e(predict) : "ardl_p"
+              e(tsfmt) : "%tq"
+               e(tvar) : "tq"
+              e(tmins) : "2006q3"
+              e(tmaxs) : "2026q2"
+         e(regressors) : "L.y L.yd L.yf L.pos L.neg L(1/0)D.y D.yd D.yf D.p.."
+                e(det) : "_cons"
+             e(srvars) : "L(1/0)D.y D.yd D.yf D.pos D.neg"
+            e(lrxvars) : "L.yd L.yf L.pos L.neg"
+         e(properties) : "b V"
+             e(depvar) : "D.y"
+
+matrices:
+                  e(b) :  1 x 10
+                  e(V) :  10 x 10
+            e(maxlags) :  1 x 5
+               e(lags) :  1 x 5
+
+functions:
+             e(sample)   
+
+. matrix list e(b)
+
+e(b)[1,10]
+           ADJ:         LR:         LR:         LR:         LR:         SR:
+             L.          L.          L.          L.          L.          D.
+             y          yd          yf         pos         neg          yd
+y1  -.22216507   3.9892686  -3.1364965   -1.611272  -1.6155477   .88627613
+
+            SR:         SR:         SR:         SR:
+             D.          D.          D.            
+            yf         pos         neg       _cons
+y1  -.69681994  -.35796835  -.35891827  -.87853316
+
+. matrix list e(lags)
+
+e(lags)[1,5]
+      y   yd   yf  pos  neg
+r1    1    0    0    0    0
+
+. estimates store ecmodel
+
+. estat ectest
+
+Pesaran, Shin, and Smith (2001) bounds test
+
+H0: no level relationship                                        F =     2.509
+Case 3                                                           t =    -2.844
+
+Finite sample (4 variables, 80 observations, 0 short-run coefficients)
+
+Kripfganz and Schneider (2020) critical values and approximate p-values
+
+   | 10%              | 5%               | 1%               | p-value         
+   |    I(0)     I(1) |    I(0)     I(1) |    I(0)     I(1) |    I(0)     I(1)
+---+------------------+------------------+------------------+-----------------
+ F |   2.541    3.643 |   3.013    4.212 |   4.068    5.458 |   0.105    0.340
+ t |  -2.567   -3.673 |  -2.883   -4.026 |  -3.506   -4.707 |   0.055    0.339
+
+do not reject H0 if
+    either F or t are closer to zero than critical values for I(0) variables
+      (if either p-value  > desired level for I(0) variables)
+reject H0 if
+    both F and t are more extreme than critical values for I(1) variables
+      (if both   p-values < desired level for I(1) variables)
+
+decision: no rejection (.a), inconclusive (.), or rejection (.r) at levels:
+
+             |       10%         5%         1% 
+-------------+--------------------------------
+    decision |        .a         .a         .a 
+
+. return list
+
+scalars:
+                  r(k) =  4
+               r(case) =  3
+              r(t_pss) =  -2.843635288935948
+              r(F_pss) =  2.508738574343389
+                  r(N) =  80
+                 r(sr) =  0
+
+macros:
+          r(siglevels) : "10 5 1"
+
+matrices:
+              r(cvmat) :  2 x 8
+             r(decmat) :  1 x 3
+
+. matrix list r(cvmat)
+
+r(cvmat)[2,8]
+          10%:        10%:         5%:         5%:         1%:         1%:
+          I(0)        I(1)        I(0)        I(1)        I(0)        I(1)
+F   2.5410785   3.6430971   3.0130574   4.2124552    4.068422   5.4575162
+t  -2.5669241  -3.6727967  -2.8828337  -4.0263234  -3.5064131  -4.7070604
+
+      p-value:    p-value:
+          I(0)        I(1)
+F   .10475557   .33997173
+t   .05475067   .33909726
+
+. estimates restore ureg
+(results ureg are active now)
+
+. matrix list e(b)
+
+e(b)[1,6]
+             L.                                                            
+             y          yd          yf         pos         neg       _cons
+y1  -.22216507   .88627613  -.69681994  -.35796835  -.35891827  -.87853316
+
+. local names : colfullnames e(b)
+
+. display "NAMES `names'"
+NAMES L.y yd yf pos neg _cons
+
+. estat bgodfrey, lags(1 4)
+
+Breusch–Godfrey LM test for autocorrelation
+---------------------------------------------------------------------------
+    lags(p)  |          chi2               df                 Prob > chi2
+-------------+-------------------------------------------------------------
+       1     |          0.403               1                   0.5257
+       4     |          9.782               4                   0.0443
+---------------------------------------------------------------------------
+                        H0: no serial correlation
+
+. return list
+
+scalars:
+                  r(k) =  6
+                  r(N) =  80
+             r(N_gaps) =  0
+
+macros:
+               r(lags) : "1 4"
+
+matrices:
+                  r(p) :  1 x 2
+                 r(df) :  1 x 2
+               r(chi2) :  1 x 2
+
+. estat hettest
+
+Breusch–Pagan/Cook–Weisberg test for heteroskedasticity 
+Assumption: Normal error terms
+Variable: Fitted values of D.y
+
+H0: Constant variance
+
+    chi2(1) =   0.03
+Prob > chi2 = 0.8557
+
+. return list
+
+scalars:
+                  r(p) =  .8556510742237873
+                 r(df) =  1
+               r(chi2) =  .0330923061786876
+
+. estat ovtest
+
+Ramsey RESET test for omitted variables
+Omitted: Powers of fitted values of D.y
+
+H0: Model has no omitted variables
+
+F(3, 71) =   1.03
+Prob > F = 0.3863
+
+. return list
+
+scalars:
+                  r(p) =  .3863435079300986
+                  r(F) =  1.026098246297258
+                 r(df) =  3
+               r(df_r) =  71
+
+. capture noisily estat sbcusum
+
+Cumulative sum test for parameter stability
+
+Sample: 2006q3 thru 2026q2                  Number of obs = 80
+H0: No structural break
+
+                   Test      -------- Critical value ---------
+      Type    statistic           1%           5%          10%
+--------------------------------------------------------------
+ Recursive       1.3489       1.1430       0.9479       0.8499
+--------------------------------------------------------------
+
+. capture noisily return list
+
+scalars:
+              r(cusum) =  1.348885418318351
+              r(level) =  95
+                 r(df) =  74
+
+macros:
+          r(statistic) : "recursive"
+              r(tmaxs) : "2026q2"
+              r(tmins) : "2006q3"
+
+matrices:
+            r(cvalues) :  1 x 3
+
+. capture noisily estat sbcusum, ols
+
+Cumulative sum test for parameter stability
+
+Sample: 2006q3 thru 2026q2                  Number of obs = 80
+H0: No structural break
+
+                   Test      -------- Critical value ---------
+      Type    statistic           1%           5%          10%
+--------------------------------------------------------------
+ OLS             0.7160       1.6276       1.3581       1.2238
+--------------------------------------------------------------
+
+. capture noisily return list
+
+scalars:
+              r(cusum) =  .716029396468231
+              r(level) =  95
+                 r(df) =  74
+
+macros:
+          r(statistic) : "ols"
+              r(tmaxs) : "2026q2"
+              r(tmins) : "2006q3"
+
+matrices:
+            r(cvalues) :  1 x 3
+
+. log close
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/ardl_api_probe.log
+  log type:  text
+ closed on:  17 Nov 2026, 09:22:41
+-------------------------------------------------------------------------------
+
+. exit, clear
+
+end of do-file

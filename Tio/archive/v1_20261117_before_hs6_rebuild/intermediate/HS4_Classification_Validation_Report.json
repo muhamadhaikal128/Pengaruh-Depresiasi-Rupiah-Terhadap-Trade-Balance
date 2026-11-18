@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "definition": "UNCTAD A11",
+  "hs4_count": 1264,
+  "class_counts": {
+    "commodity": 358,
+    "noncommodity": 857,
+    "mixed": 47,
+    "unclassified": 2
+  },
+  "all_available_editions_consensus": true,
+  "hs_source_edition_confirmed": false,
+  "all_unknown_and_mixed_retained": true,
+  "lookup_sha256": "be15ba6139450f53f075364635d496e7bac7e3dd48dda32a0250f572582e77a7",
+  "classification_sha256": "ee84b1b64080d8b71e44399b77f3b472948b56762e9d4da12916f71074fea494",
+  "raw_sources_sha256_checked": 12,
+  "source_revision_caveat": "No temporal HS harmonisation is asserted."
+}

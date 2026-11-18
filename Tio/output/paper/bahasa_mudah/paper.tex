@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=2.15cm,bottom=2.15cm,left=2.25cm,right=2.25cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array,xcolor}
+\definecolor{Brown}{HTML}{A5644E}
+\definecolor{Dark}{HTML}{4E3B30}
+\definecolor{Blue}{HTML}{2F5D8C}
+\definecolor{Beige}{HTML}{F2E8E1}
+\usepackage[unicode=true,colorlinks=true,linkcolor=Brown,citecolor=Brown,urlcolor=Blue]{hyperref}
+\hypersetup{pdftitle={Depresiasi Rupiah dan Trade Balance Indonesia: Versi Bahasa Lebih Mudah},pdfauthor={Tio}}
+\renewcommand{\contentsname}{Daftar isi}
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\refname}{Referensi}
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{.42em}
+\linespread{1.1}
+\setlength{\emergencystretch}{3em}
+\setcounter{tocdepth}{2}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\textfraction}{.08}
+\renewcommand{\floatpagefraction}{.65}
+\makeatletter
+\renewcommand\small{\@setfontsize\small{10}{12}}
+\renewcommand\footnotesize{\@setfontsize\footnotesize{9}{11}}
+\makeatother
+\input{numbers.tex}
+\newcommand{\readingbox}[1]{\par\medskip\noindent\fcolorbox{Brown}{Beige}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{#1}}\par\medskip}
+\begin{document}
+\begin{titlepage}\centering
+\vspace*{1cm}
+{\sffamily\color{Brown}\large PAPER PENELITIAN -- VERSI BAHASA LEBIH MUDAH\par}
+\vspace{1cm}
+{\sffamily\bfseries\color{Dark}\LARGE Depresiasi Rupiah dan\\[.3em]Trade Balance Indonesia\par}
+\vspace{.6cm}
+{\large Memahami hasil ARDL, NARDL, dan J-curve\\pada perdagangan Indonesia\par}
+\vspace{1cm}{\large Tio\par}
+{\normalsize Hasil estimasi: 17 November 2026\\Revisi bahasa: 18 November 2026\par}
+\vfill
+\begin{minipage}{.88\textwidth}
+\readingbox{\textbf{Objek penelitian tetap Indonesia.} Data mencakup ekspor-impor Indonesia dengan seluruh negara, dengan sepuluh mitra, dan menurut tujuh kelompok barang yang dibentuk dari HS-6. Regresi setiap kode HS-6 belum dilakukan.}
+\medskip
+Versi ini menjelaskan hasil yang sama dengan paper sebelumnya. Bahasanya disederhanakan, istilah teknis dijelaskan, dan beberapa istilah Inggris dipertahankan agar lebih mudah dikenali. Angka, rumus, dan kesimpulan tidak diganti. Dokumen ini masih berupa draft penelitian untuk dipelajari dan dikembangkan.
+\end{minipage}\vspace{.6cm}
+\end{titlepage}
+\pagenumbering{roman}
+\section*{Ringkasan penelitian}\addcontentsline{toc}{section}{Ringkasan penelitian}
+Penelitian ini memeriksa apakah rupiah yang melemah selalu diikuti perbaikan \emph{trade balance} Indonesia. Trade balance biasanya berarti nilai ekspor dikurangi impor. Untuk regresi, penelitian ini mengikuti paper acuan dan memakai log rasio impor terhadap ekspor. Jadi, hasilnya menjelaskan posisi ekspor relatif terhadap impor; belum menjelaskan perubahan ekspor saja.
+
+Data perdagangan bulanan HS-6 Januari 2006--Agustus 2026 diubah menjadi data kuartalan, lalu digabung dengan kurs riil, data harga, dan real GDP. Analisis mencakup perdagangan Indonesia dengan seluruh negara, sepuluh mitra, serta tujuh kelompok barang. Sebanyak 176 model utama dan 340 model pembanding sudah dijalankan di Stata.
+
+Hasilnya berbeda menurut pasar, jenis barang, dan model yang dipakai. Untuk total perdagangan Indonesia, bukti hubungan jangka panjang masih belum cukup kuat. Australia dan Malaysia menunjukkan hasil yang lebih mendukung perbaikan pada NARDL, tetapi signifikansi Malaysia melemah setelah koreksi untuk banyak pengujian. Pada ARDL, komoditas total dan energi/tambang justru mengarah pada pemburukan saat depresiasi. Namun NARDL belum menguatkan hasil tersebut dengan bukti yang sama kuat.
+
+Sebagian grafik membentuk pola J: memburuk dahulu, lalu membaik. Ketika confidence interval dan pemeriksaan model ikut diperhitungkan, bukti pola itu menjadi lebih terbatas. Karena itu, penelitian ini belum membuktikan bahwa depresiasi selalu merugikan, atau bahwa komoditas pasti tidak sensitif terhadap kurs.
+
+\noindent\textbf{Kata kunci:} Indonesia; trade balance; depresiasi; ARDL; NARDL; J-curve; HS-6.
+
+\section*{Mulai membaca dari sini}\addcontentsline{toc}{section}{Mulai membaca dari sini}
+Ada tiga hal yang perlu dibedakan ketika melihat hasil. \textbf{Arah} menunjukkan apakah angka dan garis model mengarah pada perbaikan atau pemburukan. \textbf{Ketepatan} menunjukkan seberapa lebar confidence interval-nya. \textbf{Kelayakan model} menunjukkan apakah pemeriksaan statistik mendukung cara kita membaca hasil tersebut.
+
+Confidence interval adalah rentang ketidakpastian di sekitar angka estimasi. Garis utama yang terlihat naik belum cukup bila rentangnya masih sangat lebar. Sebaliknya, p-value kecil pada satu koefisien juga belum cukup jika model belum mendukung hubungan jangka panjang.
+
+Bagian~\ref{sec:methods} menjelaskan model dan cara membaca tanda koefisien. Bagian~\ref{sec:aggregate} sampai~\ref{sec:goods} membahas hasil. Bagian~\ref{sec:diagnostics} menjelaskan pemeriksaan model dan robustness checks. Seluruh 516 hasil tetap ada dalam lampiran, termasuk hasil yang kurang mendukung.
+
+Kode \texttt{WLD} berarti seluruh negara mitra Indonesia. Negara pelapornya tetap Indonesia. Istilah teknis dijelaskan saat pertama muncul dan dirangkum lagi dalam glosarium.
+
+\clearpage\tableofcontents
+\clearpage\pagenumbering{arabic}
+\input{sections/01_intro.tex}
+\clearpage\input{sections/02_data.tex}
+\clearpage\input{sections/03_methods.tex}
+\clearpage\input{sections/04_aggregate.tex}
+\clearpage\input{sections/05_bilateral.tex}
+\clearpage\input{sections/06_goods.tex}
+\clearpage\input{sections/07_diagnostics.tex}
+\clearpage\input{sections/08_discussion.tex}
+\clearpage\input{sections/09_references.tex}
+\clearpage\appendix\input{sections/10_appendix.tex}
+\end{document}

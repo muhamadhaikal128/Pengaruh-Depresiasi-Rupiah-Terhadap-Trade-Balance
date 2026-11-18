@@ -1,0 +1,1923 @@
+Series,Quarter,Mean,NMonths,NObs,Complete_Quarter,Ticker,Unit_AsSupplied,Merge_Eligible
+BCOM,1960Q1,,2,44,False,BCOM INDEX,Index points,True
+BCOM,1960Q2,14.6968995671,3,65,True,BCOM INDEX,Index points,True
+BCOM,1960Q3,14.7204238848,3,66,True,BCOM INDEX,Index points,True
+BCOM,1960Q4,14.7578912698,3,65,True,BCOM INDEX,Index points,True
+BCOM,1961Q1,15.9980729776,3,65,True,BCOM INDEX,Index points,True
+BCOM,1961Q2,16.3774081159,3,65,True,BCOM INDEX,Index points,True
+BCOM,1961Q3,15.3691905452,3,65,True,BCOM INDEX,Index points,True
+BCOM,1961Q4,14.9562440837,3,65,True,BCOM INDEX,Index points,True
+BCOM,1962Q1,14.3489698353,3,65,True,BCOM INDEX,Index points,True
+BCOM,1962Q2,14.1882962043,3,65,True,BCOM INDEX,Index points,True
+BCOM,1962Q3,13.7274377866,3,65,True,BCOM INDEX,Index points,True
+BCOM,1962Q4,14.0151553705,3,66,True,BCOM INDEX,Index points,True
+BCOM,1963Q1,15.2740489614,3,64,True,BCOM INDEX,Index points,True
+BCOM,1963Q2,16.0976235639,3,65,True,BCOM INDEX,Index points,True
+BCOM,1963Q3,15.9438098375,3,66,True,BCOM INDEX,Index points,True
+BCOM,1963Q4,17.4853328189,3,66,True,BCOM INDEX,Index points,True
+BCOM,1964Q1,16.7454087286,3,65,True,BCOM INDEX,Index points,True
+BCOM,1964Q2,16.027399062,3,65,True,BCOM INDEX,Index points,True
+BCOM,1964Q3,15.9879445825,3,66,True,BCOM INDEX,Index points,True
+BCOM,1964Q4,16.8910004486,3,66,True,BCOM INDEX,Index points,True
+BCOM,1965Q1,16.8468165079,3,64,True,BCOM INDEX,Index points,True
+BCOM,1965Q2,16.4530772006,3,65,True,BCOM INDEX,Index points,True
+BCOM,1965Q3,16.0802712121,3,66,True,BCOM INDEX,Index points,True
+BCOM,1965Q4,16.6122359621,3,66,True,BCOM INDEX,Index points,True
+BCOM,1966Q1,17.5432307626,3,64,True,BCOM INDEX,Index points,True
+BCOM,1966Q2,17.5126468254,3,65,True,BCOM INDEX,Index points,True
+BCOM,1966Q3,18.680572012,3,66,True,BCOM INDEX,Index points,True
+BCOM,1966Q4,17.3107968254,3,65,True,BCOM INDEX,Index points,True
+BCOM,1967Q1,17.0241071014,3,65,True,BCOM INDEX,Index points,True
+BCOM,1967Q2,17.4652400856,3,65,True,BCOM INDEX,Index points,True
+BCOM,1967Q3,16.2428073154,3,65,True,BCOM INDEX,Index points,True
+BCOM,1967Q4,16.3072131313,3,65,True,BCOM INDEX,Index points,True
+BCOM,1968Q1,16.0074986197,3,65,True,BCOM INDEX,Index points,True
+BCOM,1968Q2,15.2183997365,3,65,True,BCOM INDEX,Index points,True
+BCOM,1968Q3,14.3451015277,3,66,True,BCOM INDEX,Index points,True
+BCOM,1968Q4,15.1382445386,3,66,True,BCOM INDEX,Index points,True
+BCOM,1969Q1,15.5365008385,3,64,True,BCOM INDEX,Index points,True
+BCOM,1969Q2,15.9722435786,3,65,True,BCOM INDEX,Index points,True
+BCOM,1969Q3,15.6283070299,3,66,True,BCOM INDEX,Index points,True
+BCOM,1969Q4,16.1420044928,3,66,True,BCOM INDEX,Index points,True
+BCOM,1970Q1,16.2467327273,3,64,True,BCOM INDEX,Index points,True
+BCOM,1970Q2,16.7282470418,3,65,True,BCOM INDEX,Index points,True
+BCOM,1970Q3,17.9201641602,3,66,True,BCOM INDEX,Index points,True
+BCOM,1970Q4,18.6385265293,3,66,True,BCOM INDEX,Index points,True
+BCOM,1971Q1,18.8696952139,3,64,True,BCOM INDEX,Index points,True
+BCOM,1971Q2,18.7289668831,3,65,True,BCOM INDEX,Index points,True
+BCOM,1971Q3,19.0433,3,66,True,BCOM INDEX,Index points,True
+BCOM,1971Q4,19.120163056,3,66,True,BCOM INDEX,Index points,True
+BCOM,1972Q1,20.6530642512,3,65,True,BCOM INDEX,Index points,True
+BCOM,1972Q2,21.1134049802,3,65,True,BCOM INDEX,Index points,True
+BCOM,1972Q3,21.7650435473,3,65,True,BCOM INDEX,Index points,True
+BCOM,1972Q4,24.0443782107,3,65,True,BCOM INDEX,Index points,True
+BCOM,1973Q1,29.1931336825,3,65,True,BCOM INDEX,Index points,True
+BCOM,1973Q2,38.4205600414,3,65,True,BCOM INDEX,Index points,True
+BCOM,1973Q3,53.3593668314,3,65,True,BCOM INDEX,Index points,True
+BCOM,1973Q4,52.1152776178,3,66,True,BCOM INDEX,Index points,True
+BCOM,1974Q1,60.878745911,3,64,True,BCOM INDEX,Index points,True
+BCOM,1974Q2,57.6719413241,3,65,True,BCOM INDEX,Index points,True
+BCOM,1974Q3,72.0451806701,3,66,True,BCOM INDEX,Index points,True
+BCOM,1974Q4,80.785143999,3,66,True,BCOM INDEX,Index points,True
+BCOM,1975Q1,65.9151895928,3,64,True,BCOM INDEX,Index points,True
+BCOM,1975Q2,62.594584632,3,65,True,BCOM INDEX,Index points,True
+BCOM,1975Q3,68.8042755976,3,66,True,BCOM INDEX,Index points,True
+BCOM,1975Q4,64.4505467391,3,66,True,BCOM INDEX,Index points,True
+BCOM,1976Q1,63.0757450198,3,65,True,BCOM INDEX,Index points,True
+BCOM,1976Q2,67.5285277056,3,65,True,BCOM INDEX,Index points,True
+BCOM,1976Q3,69.0818787879,3,66,True,BCOM INDEX,Index points,True
+BCOM,1976Q4,69.8618939237,3,66,True,BCOM INDEX,Index points,True
+BCOM,1977Q1,75.6942655141,3,64,True,BCOM INDEX,Index points,True
+BCOM,1977Q2,79.4536253247,3,65,True,BCOM INDEX,Index points,True
+BCOM,1977Q3,68.5177060104,3,66,True,BCOM INDEX,Index points,True
+BCOM,1977Q4,71.6841195527,3,65,True,BCOM INDEX,Index points,True
+BCOM,1978Q1,76.3542372464,3,65,True,BCOM INDEX,Index points,True
+BCOM,1978Q2,82.5079538669,3,65,True,BCOM INDEX,Index points,True
+BCOM,1978Q3,82.780726363,3,65,True,BCOM INDEX,Index points,True
+BCOM,1978Q4,87.8011340548,3,65,True,BCOM INDEX,Index points,True
+BCOM,1979Q1,91.7118990184,3,65,True,BCOM INDEX,Index points,True
+BCOM,1979Q2,97.1260186335,3,65,True,BCOM INDEX,Index points,True
+BCOM,1979Q3,105.834070013,3,65,True,BCOM INDEX,Index points,True
+BCOM,1979Q4,120.687571654,3,66,True,BCOM INDEX,Index points,True
+BCOM,1980Q1,148.602457281,3,65,True,BCOM INDEX,Index points,True
+BCOM,1980Q2,132.683371717,3,65,True,BCOM INDEX,Index points,True
+BCOM,1980Q3,147.55772812,3,66,True,BCOM INDEX,Index points,True
+BCOM,1980Q4,149.640692319,3,66,True,BCOM INDEX,Index points,True
+BCOM,1981Q1,126.946957879,3,64,True,BCOM INDEX,Index points,True
+BCOM,1981Q2,114.856372799,3,65,True,BCOM INDEX,Index points,True
+BCOM,1981Q3,104.328047092,3,66,True,BCOM INDEX,Index points,True
+BCOM,1981Q4,97.3561435222,3,66,True,BCOM INDEX,Index points,True
+BCOM,1982Q1,90.3766974983,3,64,True,BCOM INDEX,Index points,True
+BCOM,1982Q2,85.6645223665,3,65,True,BCOM INDEX,Index points,True
+BCOM,1982Q3,82.1211681818,3,66,True,BCOM INDEX,Index points,True
+BCOM,1982Q4,82.3738827906,3,66,True,BCOM INDEX,Index points,True
+BCOM,1983Q1,87.960637764,3,64,True,BCOM INDEX,Index points,True
+BCOM,1983Q2,89.9142304473,3,65,True,BCOM INDEX,Index points,True
+BCOM,1983Q3,97.4224678869,3,66,True,BCOM INDEX,Index points,True
+BCOM,1983Q4,93.3481137807,3,65,True,BCOM INDEX,Index points,True
+BCOM,1984Q1,91.0344593074,3,65,True,BCOM INDEX,Index points,True
+BCOM,1984Q2,92.7170030366,3,65,True,BCOM INDEX,Index points,True
+BCOM,1984Q3,84.2943801845,3,65,True,BCOM INDEX,Index points,True
+BCOM,1984Q4,80.9200494887,3,66,True,BCOM INDEX,Index points,True
+BCOM,1985Q1,77.1240196342,3,64,True,BCOM INDEX,Index points,True
+BCOM,1985Q2,77.7877512319,3,65,True,BCOM INDEX,Index points,True
+BCOM,1985Q3,75.3873773637,3,66,True,BCOM INDEX,Index points,True
+BCOM,1985Q4,78.6356734896,3,66,True,BCOM INDEX,Index points,True
+BCOM,1986Q1,72.9135976087,3,64,True,BCOM INDEX,Index points,True
+BCOM,1986Q2,68.7835590909,3,65,True,BCOM INDEX,Index points,True
+BCOM,1986Q3,68.6126747004,3,66,True,BCOM INDEX,Index points,True
+BCOM,1986Q4,71.487006087,3,66,True,BCOM INDEX,Index points,True
+BCOM,1987Q1,72.8487219697,3,64,True,BCOM INDEX,Index points,True
+BCOM,1987Q2,79.6461694805,3,65,True,BCOM INDEX,Index points,True
+BCOM,1987Q3,80.0615960443,3,66,True,BCOM INDEX,Index points,True
+BCOM,1987Q4,80.0126432618,3,66,True,BCOM INDEX,Index points,True
+BCOM,1988Q1,79.7703017253,3,65,True,BCOM INDEX,Index points,True
+BCOM,1988Q2,84.9474137807,3,65,True,BCOM INDEX,Index points,True
+BCOM,1988Q3,84.5843032436,3,66,True,BCOM INDEX,Index points,True
+BCOM,1988Q4,81.4738041847,3,65,True,BCOM INDEX,Index points,True
+BCOM,1989Q1,86.4579771344,3,65,True,BCOM INDEX,Index points,True
+BCOM,1989Q2,88.6806683663,3,65,True,BCOM INDEX,Index points,True
+BCOM,1989Q3,87.5776462388,3,65,True,BCOM INDEX,Index points,True
+BCOM,1989Q4,90.4302733766,3,65,True,BCOM INDEX,Index points,True
+BCOM,1990Q1,93.5072998221,3,65,True,BCOM INDEX,Index points,True
+BCOM,1990Q2,92.7963057281,3,65,True,BCOM INDEX,Index points,True
+BCOM,1990Q3,101.691479769,3,65,True,BCOM INDEX,Index points,True
+BCOM,1990Q4,105.847804724,3,66,True,BCOM INDEX,Index points,True
+BCOM,1991Q1,96.4882061422,3,64,True,BCOM INDEX,Index points,True
+BCOM,1991Q2,95.3397339855,3,65,True,BCOM INDEX,Index points,True
+BCOM,1991Q3,94.2253196374,3,66,True,BCOM INDEX,Index points,True
+BCOM,1991Q4,93.791202519,3,66,True,BCOM INDEX,Index points,True
+BCOM,1992Q1,90.3958658827,3,65,True,BCOM INDEX,Index points,True
+BCOM,1992Q2,92.9036373737,3,65,True,BCOM INDEX,Index points,True
+BCOM,1992Q3,93.2831743867,3,66,True,BCOM INDEX,Index points,True
+BCOM,1992Q4,90.4664093074,3,66,True,BCOM INDEX,Index points,True
+BCOM,1993Q1,89.3737405383,3,64,True,BCOM INDEX,Index points,True
+BCOM,1993Q2,90.451053824,3,65,True,BCOM INDEX,Index points,True
+BCOM,1993Q3,89.1089257576,3,66,True,BCOM INDEX,Index points,True
+BCOM,1993Q4,86.1925267551,3,66,True,BCOM INDEX,Index points,True
+BCOM,1994Q1,87.8207046584,3,64,True,BCOM INDEX,Index points,True
+BCOM,1994Q2,91.4165446609,3,65,True,BCOM INDEX,Index points,True
+BCOM,1994Q3,94.8550032248,3,66,True,BCOM INDEX,Index points,True
+BCOM,1994Q4,93.7033016595,3,65,True,BCOM INDEX,Index points,True
+BCOM,1995Q1,94.8963190975,3,65,True,BCOM INDEX,Index points,True
+BCOM,1995Q2,96.915666502,3,65,True,BCOM INDEX,Index points,True
+BCOM,1995Q3,96.8588452726,3,65,True,BCOM INDEX,Index points,True
+BCOM,1995Q4,99.8274642136,3,65,True,BCOM INDEX,Index points,True
+BCOM,1996Q1,105.699440994,3,65,True,BCOM INDEX,Index points,True
+BCOM,1996Q2,115.469988544,3,65,True,BCOM INDEX,Index points,True
+BCOM,1996Q3,115.787058288,3,66,True,BCOM INDEX,Index points,True
+BCOM,1996Q4,119.197486702,3,66,True,BCOM INDEX,Index points,True
+BCOM,1997Q1,123.472993561,3,64,True,BCOM INDEX,Index points,True
+BCOM,1997Q2,123.684496825,3,65,True,BCOM INDEX,Index points,True
+BCOM,1997Q3,120.350735005,3,66,True,BCOM INDEX,Index points,True
+BCOM,1997Q4,119.468572391,3,66,True,BCOM INDEX,Index points,True
+BCOM,1998Q1,108.257840455,3,64,True,BCOM INDEX,Index points,True
+BCOM,1998Q2,101.3481329,3,65,True,BCOM INDEX,Index points,True
+BCOM,1998Q3,89.8635877188,3,66,True,BCOM INDEX,Index points,True
+BCOM,1998Q4,83.8299463549,3,66,True,BCOM INDEX,Index points,True
+BCOM,1999Q1,77.3922790235,3,64,True,BCOM INDEX,Index points,True
+BCOM,1999Q2,81.1844966811,3,65,True,BCOM INDEX,Index points,True
+BCOM,1999Q3,86.5339151515,3,66,True,BCOM INDEX,Index points,True
+BCOM,1999Q4,90.9054048874,3,66,True,BCOM INDEX,Index points,True
+BCOM,2000Q1,97.3743387164,3,65,True,BCOM INDEX,Index points,True
+BCOM,2000Q2,101.06070502,3,65,True,BCOM INDEX,Index points,True
+BCOM,2000Q3,104.801140028,3,65,True,BCOM INDEX,Index points,True
+BCOM,2000Q4,109.730524459,3,65,True,BCOM INDEX,Index points,True
+BCOM,2001Q1,111.567108432,3,65,True,BCOM INDEX,Index points,True
+BCOM,2001Q2,107.031343202,3,65,True,BCOM INDEX,Index points,True
+BCOM,2001Q3,101.540223946,3,65,True,BCOM INDEX,Index points,True
+BCOM,2001Q4,90.3555684955,3,66,True,BCOM INDEX,Index points,True
+BCOM,2002Q1,92.2560433954,3,64,True,BCOM INDEX,Index points,True
+BCOM,2002Q2,98.1540515876,3,65,True,BCOM INDEX,Index points,True
+BCOM,2002Q3,101.827451057,3,66,True,BCOM INDEX,Index points,True
+BCOM,2002Q4,106.073658219,3,66,True,BCOM INDEX,Index points,True
+BCOM,2003Q1,117.663716456,3,64,True,BCOM INDEX,Index points,True
+BCOM,2003Q2,115.939293723,3,65,True,BCOM INDEX,Index points,True
+BCOM,2003Q3,118.264392713,3,66,True,BCOM INDEX,Index points,True
+BCOM,2003Q4,128.989865217,3,66,True,BCOM INDEX,Index points,True
+BCOM,2004Q1,142.766263986,3,65,True,BCOM INDEX,Index points,True
+BCOM,2004Q2,148.447262193,3,65,True,BCOM INDEX,Index points,True
+BCOM,2004Q3,145.808063636,3,66,True,BCOM INDEX,Index points,True
+BCOM,2004Q4,151.263900496,3,66,True,BCOM INDEX,Index points,True
+BCOM,2005Q1,151.385515697,3,64,True,BCOM INDEX,Index points,True
+BCOM,2005Q2,154.007160534,3,65,True,BCOM INDEX,Index points,True
+BCOM,2005Q3,164.629580174,3,66,True,BCOM INDEX,Index points,True
+BCOM,2005Q4,170.927544517,3,65,True,BCOM INDEX,Index points,True
+BCOM,2006Q1,165.759296495,3,65,True,BCOM INDEX,Index points,True
+BCOM,2006Q2,174.179654058,3,65,True,BCOM INDEX,Index points,True
+BCOM,2006Q3,170.050428847,3,65,True,BCOM INDEX,Index points,True
+BCOM,2006Q4,167.386953247,3,65,True,BCOM INDEX,Index points,True
+BCOM,2007Q1,165.700145455,3,65,True,BCOM INDEX,Index points,True
+BCOM,2007Q2,172.560635197,3,65,True,BCOM INDEX,Index points,True
+BCOM,2007Q3,170.082236884,3,65,True,BCOM INDEX,Index points,True
+BCOM,2007Q4,180.291715515,3,66,True,BCOM INDEX,Index points,True
+BCOM,2008Q1,199.971471636,3,65,True,BCOM INDEX,Index points,True
+BCOM,2008Q2,216.760576263,3,65,True,BCOM INDEX,Index points,True
+BCOM,2008Q3,196.362602905,3,66,True,BCOM INDEX,Index points,True
+BCOM,2008Q4,126.378623188,3,66,True,BCOM INDEX,Index points,True
+BCOM,2009Q1,109.90204303,3,64,True,BCOM INDEX,Index points,True
+BCOM,2009Q2,119.024826335,3,65,True,BCOM INDEX,Index points,True
+BCOM,2009Q3,124.499620444,3,66,True,BCOM INDEX,Index points,True
+BCOM,2009Q4,134.223935987,3,66,True,BCOM INDEX,Index points,True
+BCOM,2010Q1,134.102972067,3,64,True,BCOM INDEX,Index points,True
+BCOM,2010Q2,129.370192424,3,65,True,BCOM INDEX,Index points,True
+BCOM,2010Q3,132.569563636,3,66,True,BCOM INDEX,Index points,True
+BCOM,2010Q4,149.718077188,3,66,True,BCOM INDEX,Index points,True
+BCOM,2011Q1,163.373853999,3,64,True,BCOM INDEX,Index points,True
+BCOM,2011Q2,165.608462771,3,65,True,BCOM INDEX,Index points,True
+BCOM,2011Q3,158.729465365,3,66,True,BCOM INDEX,Index points,True
+BCOM,2011Q4,144.492117893,3,65,True,BCOM INDEX,Index points,True
+BCOM,2012Q1,144.715432684,3,65,True,BCOM INDEX,Index points,True
+BCOM,2012Q2,134.695871222,3,65,True,BCOM INDEX,Index points,True
+BCOM,2012Q3,144.264360659,3,65,True,BCOM INDEX,Index points,True
+BCOM,2012Q4,142.837923734,3,66,True,BCOM INDEX,Index points,True
+BCOM,2013Q1,139.006744703,3,64,True,BCOM INDEX,Index points,True
+BCOM,2013Q2,131.473088412,3,65,True,BCOM INDEX,Index points,True
+BCOM,2013Q3,128.330598017,3,66,True,BCOM INDEX,Index points,True
+BCOM,2013Q4,125.673059292,3,66,True,BCOM INDEX,Index points,True
+BCOM,2014Q1,130.309035497,3,64,True,BCOM INDEX,Index points,True
+BCOM,2014Q2,135.727500794,3,65,True,BCOM INDEX,Index points,True
+BCOM,2014Q3,126.260605756,3,66,True,BCOM INDEX,Index points,True
+BCOM,2014Q4,114.738294638,3,66,True,BCOM INDEX,Index points,True
+BCOM,2015Q1,101.573635455,3,64,True,BCOM INDEX,Index points,True
+BCOM,2015Q2,101.703375541,3,65,True,BCOM INDEX,Index points,True
+BCOM,2015Q3,91.609744457,3,66,True,BCOM INDEX,Index points,True
+BCOM,2015Q4,83.575738754,3,66,True,BCOM INDEX,Index points,True
+BCOM,2016Q1,76.6681511387,3,65,True,BCOM INDEX,Index points,True
+BCOM,2016Q2,84.6211473304,3,65,True,BCOM INDEX,Index points,True
+BCOM,2016Q3,84.8393171749,3,66,True,BCOM INDEX,Index points,True
+BCOM,2016Q4,85.7661819625,3,65,True,BCOM INDEX,Index points,True
+BCOM,2017Q1,87.0922289592,3,65,True,BCOM INDEX,Index points,True
+BCOM,2017Q2,83.2760793874,3,65,True,BCOM INDEX,Index points,True
+BCOM,2017Q3,83.8277830918,3,65,True,BCOM INDEX,Index points,True
+BCOM,2017Q4,85.7136577922,3,65,True,BCOM INDEX,Index points,True
+BCOM,2018Q1,88.1981765942,3,65,True,BCOM INDEX,Index points,True
+BCOM,2018Q2,89.1436027605,3,65,True,BCOM INDEX,Index points,True
+BCOM,2018Q3,84.0053539789,3,65,True,BCOM INDEX,Index points,True
+BCOM,2018Q4,83.1603867181,3,66,True,BCOM INDEX,Index points,True
+BCOM,2019Q1,80.6523247516,3,64,True,BCOM INDEX,Index points,True
+BCOM,2019Q2,79.7576731423,3,65,True,BCOM INDEX,Index points,True
+BCOM,2019Q3,78.306278104,3,66,True,BCOM INDEX,Index points,True
+BCOM,2019Q4,79.0360308834,3,66,True,BCOM INDEX,Index points,True
+BCOM,2020Q1,73.1773555731,3,65,True,BCOM INDEX,Index points,True
+BCOM,2020Q2,62.6876333333,3,65,True,BCOM INDEX,Index points,True
+BCOM,2020Q3,70.0733088431,3,66,True,BCOM INDEX,Index points,True
+BCOM,2020Q4,74.0358431959,3,66,True,BCOM INDEX,Index points,True
+BCOM,2021Q1,83.0235097964,3,64,True,BCOM INDEX,Index points,True
+BCOM,2021Q2,90.6907663059,3,65,True,BCOM INDEX,Index points,True
+BCOM,2021Q3,95.6622606061,3,66,True,BCOM INDEX,Index points,True
+BCOM,2021Q4,101.073681824,3,66,True,BCOM INDEX,Index points,True
+BCOM,2022Q1,113.478543982,3,64,True,BCOM INDEX,Index points,True
+BCOM,2022Q2,129.280732468,3,65,True,BCOM INDEX,Index points,True
+BCOM,2022Q3,117.964741596,3,66,True,BCOM INDEX,Index points,True
+BCOM,2022Q4,114.091831674,3,65,True,BCOM INDEX,Index points,True
+BCOM,2023Q1,107.559383353,3,65,True,BCOM INDEX,Index points,True
+BCOM,2023Q2,103.111064065,3,65,True,BCOM INDEX,Index points,True
+BCOM,2023Q3,105.434601518,3,65,True,BCOM INDEX,Index points,True
+BCOM,2023Q4,101.944983911,3,65,True,BCOM INDEX,Index points,True
+BCOM,2024Q1,97.671047274,3,65,True,BCOM INDEX,Index points,True
+BCOM,2024Q2,102.860249177,3,65,True,BCOM INDEX,Index points,True
+BCOM,2024Q3,97.2961329193,3,66,True,BCOM INDEX,Index points,True
+BCOM,2024Q4,98.5781798544,3,66,True,BCOM INDEX,Index points,True
+BCOM,2025Q1,104.114962619,3,64,True,BCOM INDEX,Index points,True
+BCOM,2025Q2,102.543093795,3,65,True,BCOM INDEX,Index points,True
+BCOM,2025Q3,102.697819772,3,66,True,BCOM INDEX,Index points,True
+BCOM,2025Q4,108.286878406,3,66,True,BCOM INDEX,Index points,True
+BCOM,2026Q1,121.830703182,3,64,True,BCOM INDEX,Index points,True
+BCOM,2026Q2,134.640440332,3,65,True,BCOM INDEX,Index points,True
+BCOM,2026Q3,,1,22,False,BCOM INDEX,Index points,True
+BCOM,2026Q4,,1,22,False,BCOM INDEX,Index points,True
+Brent,1988Q2,,0,0,False,CO1 Comdty,USD per barrel,True
+Brent,1988Q3,14.4863140724,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1988Q4,13.4525613276,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1989Q1,16.685516469,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1989Q2,17.9122180501,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1989Q3,17.2521048999,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1989Q4,18.8567893218,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1990Q1,19.4443162055,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1990Q2,16.7475914424,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1990Q3,25.5746376812,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1990Q4,31.1451963737,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1991Q1,20.2660424431,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,1991Q2,19.0034736495,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1991Q3,19.8945329067,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1991Q4,20.4567262689,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1992Q1,17.8891772069,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1992Q2,19.9565440115,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1992Q3,20.2064153962,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1992Q4,19.2941878411,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1993Q1,18.2938188406,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,1993Q2,18.4700721501,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1993Q3,16.6971212121,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1993Q4,15.3260580965,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1994Q1,13.731205314,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,1994Q2,15.9343578644,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1994Q3,17.0203049125,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1994Q4,16.609033189,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1995Q1,16.8295191041,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1995Q2,17.9669025033,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1995Q3,16.2161904762,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1995Q4,16.8618109668,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1996Q1,17.8989302968,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1996Q2,19.0682575758,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1996Q3,20.7811035824,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1996Q4,23.5001326934,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1997Q1,21.1803619738,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,1997Q2,18.4817027417,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1997Q3,18.6165352281,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1997Q4,18.9869130435,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1998Q1,14.7051515152,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,1998Q2,13.9950937951,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1998Q3,12.9852402911,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1998Q4,11.7293421796,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1999Q1,11.4887256729,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,1999Q2,15.8144877345,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,1999Q3,20.6909090909,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,1999Q4,23.8800768555,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2000Q1,26.5051552795,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2000Q2,26.7885131752,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2000Q3,30.4097584541,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2000Q4,29.8393939394,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2001Q1,26.2788715415,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2001Q2,27.6380676329,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2001Q3,25.7049163373,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2001Q4,19.9231074722,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2002Q1,21.4985179434,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2002Q2,25.4216370224,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2002Q3,26.7849940398,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2002Q4,26.4317579522,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2003Q1,30.668021049,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2003Q2,25.8490692641,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2003Q3,28.2089528829,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2003Q4,29.1153550725,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2004Q1,31.2385645586,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2004Q2,35.1865007215,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2004Q3,40.7418181818,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2004Q4,44.7341781166,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2005Q1,47.8281666667,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2005Q2,52.8361688312,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2005Q3,61.8642446201,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2005Q4,57.7710533911,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2006Q1,62.602201581,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2006Q2,70.3564295125,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2006Q3,70.6005797101,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2006Q4,60.6642857143,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2007Q1,58.7180724638,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2007Q2,68.6760179434,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2007Q3,74.6747351779,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2007Q4,88.7273884811,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2008Q1,96.4705175983,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2008Q2,122.951572872,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2008Q3,116.861991028,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2008Q4,57.0675072464,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2009Q1,45.6643484848,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2009Q2,59.7897763348,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2009Q3,68.9849435347,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2009Q4,75.5911500094,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2010Q1,77.2593236715,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2010Q2,79.4436002886,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2010Q3,76.9628787879,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2010Q4,87.3168395131,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2011Q1,105.203627329,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2011Q2,117.185656566,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2011Q3,112.195282954,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2011Q4,109.003888889,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2012Q1,118.290606061,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2012Q2,108.947501725,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2012Q3,109.478632411,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2012Q4,110.074963925,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2013Q1,112.635898896,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2013Q2,103.347507246,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2013Q3,109.710269779,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2013Q4,109.366869314,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2014Q1,107.952191166,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2014Q2,109.787229437,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2014Q3,103.383643892,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2014Q4,76.9377826087,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2015Q1,55.2786363636,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2015Q2,63.4052813853,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2015Q3,51.1698691888,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2015Q4,44.695036075,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2016Q1,35.1752933057,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2016Q2,46.9712049062,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2016Q3,46.9781156283,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2016Q4,51.1311760462,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2017Q1,54.6817318841,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2017Q2,50.9555237154,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2017Q3,52.1777777778,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2017Q4,61.554047619,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2018Q1,67.1980059289,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2018Q2,74.9034437543,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2018Q3,75.9676857708,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2018Q4,67.9700282326,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2019Q1,63.8066628709,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2019Q2,68.3283781291,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2019Q3,62.0012478826,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2019Q4,62.5358689378,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2020Q1,50.9935013175,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2020Q2,33.3454834055,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2020Q3,43.3719367589,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2020Q4,45.2562911726,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2021Q1,61.0458278123,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2021Q2,69.0081673882,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2021Q3,73.2278787879,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2021Q4,79.7998829914,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2022Q1,97.3789748102,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2022Q2,111.885036075,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2022Q3,97.8118627266,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2022Q4,88.6347546898,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2023Q1,82.2473945982,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2023Q2,78.0433063241,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2023Q3,85.9504968944,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2023Q4,82.7137445887,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2024Q1,81.8578467909,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2024Q2,84.9983405797,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2024Q3,78.5416942719,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2024Q4,73.9756666039,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2025Q1,74.8698229814,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2025Q2,66.7776118326,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2025Q3,68.1302719744,3,66,True,CO1 Comdty,USD per barrel,True
+Brent,2025Q4,,2,46,False,CO1 Comdty,USD per barrel,True
+Brent,2026Q1,77.8395151515,3,64,True,CO1 Comdty,USD per barrel,True
+Brent,2026Q2,96.9702020202,3,65,True,CO1 Comdty,USD per barrel,True
+Brent,2026Q3,,1,22,False,CO1 Comdty,USD per barrel,True
+Brent,2026Q4,,1,22,False,CO1 Comdty,USD per barrel,True
+CPO_Active,2024Q1,,2,42,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2024Q2,3921.74453228,3,65,True,KOA Comdty,MYR per metric ton,False
+CPO_Active,2024Q3,3720.55599473,3,66,True,KOA Comdty,MYR per metric ton,False
+CPO_Active,2024Q4,4061.75672878,3,66,True,KOA Comdty,MYR per metric ton,False
+CPO_Active,2025Q1,4125.63951001,3,64,True,KOA Comdty,MYR per metric ton,False
+CPO_Active,2025Q2,,1,22,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2025Q3,,0,0,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2025Q4,,0,0,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2026Q1,,0,0,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2026Q2,,0,0,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2026Q3,,0,0,False,KOA Comdty,MYR per metric ton,False
+CPO_Active,2026Q4,,0,0,False,KOA Comdty,MYR per metric ton,False
+CPO_Front,1995Q1,,0,0,False,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1995Q2,1250.82457181,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1995Q3,1345.72532781,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1995Q4,1387.92135642,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1996Q1,1214.63906142,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1996Q2,1203.15909091,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1996Q3,1111.35758203,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1996Q4,1171.56446452,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1997Q1,1295.39247757,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1997Q2,1246.12049062,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1997Q3,1253.78207541,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1997Q4,1725.81594203,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1998Q1,2310.46363636,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1998Q2,2377.01082251,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1998Q3,2431.0467407,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1998Q4,2289.66396888,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1999Q1,1876.34817115,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1999Q2,1480.66883117,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1999Q3,1180.3030303,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,1999Q4,1208.12114938,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2000Q1,1110.2284334,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2000Q2,1106.8914361,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2000Q3,966.650793651,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2000Q4,787.787157287,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2001Q1,744.887549407,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2001Q2,774.966873706,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2001Q3,1077.51870883,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2001Q4,1025.69257795,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2002Q1,1150.28216011,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2002Q2,1298.81936759,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2002Q3,1431.48051948,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2002Q4,1539.6149382,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2003Q1,1575.74071774,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2003Q2,1456.51010101,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2003Q3,1417.84305791,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2003Q4,1789.53695652,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2004Q1,1884.76706192,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2004Q2,1786.13924964,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2004Q3,1497.98484848,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2004Q4,1440.32950624,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2005Q1,1351.10800552,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2005Q2,1413.37734488,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2005Q3,1382.76027354,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2005Q4,1420.74747475,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2006Q1,1430.2386693,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2006Q2,1419.01192358,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2006Q3,1536.11249137,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2006Q4,1723.76911977,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2007Q1,1949.01765481,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2007Q2,2433.52035887,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2007Q3,2586.39670619,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2007Q4,2893.55508501,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2008Q1,3462.1552795,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2008Q2,3497.75036075,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2008Q3,2758.09824958,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2008Q4,1617.65797101,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2009Q1,1938.33030303,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2009Q2,2550.91919192,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2009Q3,2259.40981241,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2009Q4,2315.26071272,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2010Q1,2572.85258799,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2010Q2,2527.26551227,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2010Q3,2655.31818182,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2010Q4,3287.46536797,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2011Q1,3691.88585231,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2011Q2,3362.62914863,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2011Q3,3097.64611958,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2011Q4,3015.82467532,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2012Q1,3231.9033189,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2012Q2,3236.03657695,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2012Q3,2877.40922266,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2012Q4,2269.16789008,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2013Q1,2406.51649413,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2013Q2,2337.24776021,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2013Q3,2350.55219901,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2013Q4,2533.52666416,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2014Q1,2680.85717736,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2014Q2,2573.8953824,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2014Q3,2218.61164439,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2014Q4,2195.95724638,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2015Q1,2267.6,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2015Q2,2191.84776335,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2015Q3,2078.55740636,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2015Q4,2221.95228684,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2016Q1,2460.42857143,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2016Q2,2595.44516595,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2016Q3,2626.71783048,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2016Q4,2933.18470418,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2017Q1,3112.58036891,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2017Q2,2739.1828722,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2017Q3,2695.04002761,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2017Q4,2604.9025974,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2018Q1,2484.59341238,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2018Q2,2375.44030366,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2018Q3,2181.68359684,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2018Q4,1968.11540875,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2019Q1,2093.5252588,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2019Q2,2008.76600791,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2019Q3,2060.02710333,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2019Q4,2530.84424995,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2020Q1,2678.09545455,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2020Q2,2287.53246753,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2020Q3,2791.25183512,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2020Q4,3402.45482778,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2021Q1,3932.39037267,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2021Q2,4226.7012987,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2021Q3,4466.78787879,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2021Q4,5200.11785557,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2022Q1,6144.21918565,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2022Q2,6572.67676768,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2022Q3,3917.72796286,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2022Q4,3903.03896104,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2023Q1,3972.80388669,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2023Q2,3822.60322793,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2023Q3,3792.64113182,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2023Q4,3674.71861472,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2024Q1,3998.22360248,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2024Q2,4039.43418972,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2024Q3,3989.64793902,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2024Q4,4835.89760964,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2025Q1,4678.44482402,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2025Q2,4051.2972583,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2025Q3,4273.21848924,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2025Q4,4151.07028986,3,66,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2026Q1,4174.05757576,3,64,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2026Q2,4500.11544012,3,65,True,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2026Q3,,1,22,False,KO1 Comdty,MYR per metric ton,True
+CPO_Front,2026Q4,,1,22,False,KO1 Comdty,MYR per metric ton,True
+Coal_Newcastle,2008Q4,,0,0,False,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2009Q1,73.0841666667,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2009Q2,66.3289466089,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2009Q3,71.1838487358,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2009Q4,77.5492534036,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2010Q1,94.4255193237,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2010Q2,100.677669553,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2010Q3,93.8671212121,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2010Q4,107.158095865,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2011Q1,128.889413389,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2011Q2,121.590800866,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2011Q3,121.694086831,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2011Q4,115.572438672,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2012Q1,113.340151515,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2012Q2,97.0596963423,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2012Q3,90.1020685112,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2012Q4,87.4809382646,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2013Q1,93.6456780538,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2013Q2,86.5087187088,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2013Q3,77.7180312441,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2013Q4,83.8533314512,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2014Q1,78.6328243616,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2014Q2,73.2691558442,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2014Q3,68.5115596963,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2014Q4,63.4410507246,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2015Q1,65.0114393939,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2015Q2,59.2966810967,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2015Q3,59.0205219901,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2015Q4,52.6659702616,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2016Q1,50.5167701863,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2016Q2,51.6979437229,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2016Q3,66.173908338,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2016Q4,93.8860750361,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2017Q1,81.8923188406,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2017Q2,80.0413405797,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2017Q3,93.1287784679,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2017Q4,97.8577922078,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2018Q1,102.772539526,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2018Q2,103.899309869,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2018Q3,116.59673913,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2018Q4,105.177853065,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2019Q1,96.6670910973,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2019Q2,80.0330961792,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2019Q3,68.7367165443,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2019Q4,66.8779531338,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2020Q1,67.8706521739,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2020Q2,55.4402958153,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2020Q3,51.5711117385,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2020Q4,66.1705188531,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2021Q1,87.2263008972,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2021Q2,106.584632035,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2021Q3,165.734848485,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2021Q4,184.598870695,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2022Q1,263.702113527,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2022Q2,364.062554113,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2022Q3,417.564130435,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2022Q4,379.960569986,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2023Q1,255.21109025,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2023Q2,161.865872859,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2023Q3,147.06252588,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2023Q4,135.679184704,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2024Q1,127.123706004,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2024Q2,135.943402503,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2024Q3,140.362310998,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2024Q4,139.048185269,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2025Q1,107.429485852,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2025Q2,100.587229437,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2025Q3,109.372123408,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2025Q4,107.822318841,3,66,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2026Q1,119.623787879,3,64,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2026Q2,137.071067821,3,65,True,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2026Q3,,1,22,False,XW1 Comdty,USD per metric ton,True
+Coal_Newcastle,2026Q4,,1,22,False,XW1 Comdty,USD per metric ton,True
+DOW_Unverified,2026Q1,,1,22,False,DOW1 COMDTY,Index points,False
+DOW_Unverified,2026Q2,3472.9047619,3,65,True,DOW1 COMDTY,Index points,False
+DOW_Unverified,2026Q3,,1,22,False,DOW1 COMDTY,Index points,False
+DOW_Unverified,2026Q4,,1,22,False,DOW1 COMDTY,Index points,False
+Gold,1920Q1,,2,43,False,XAU Curncy,USD per troy ounce,True
+Gold,1920Q2,20.68,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1920Q3,20.68,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1920Q4,20.68,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1921Q1,20.6117460317,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1921Q2,20.58,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1921Q3,20.58,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1921Q4,20.58,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1922Q1,20.6345454545,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1922Q2,20.66,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1922Q3,20.66,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1922Q4,20.66,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1923Q1,21.1095652174,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1923Q2,21.32,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1923Q3,21.32,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1923Q4,21.32,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1924Q1,20.8908695652,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1924Q2,20.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1924Q3,20.69,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1924Q4,20.69,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1925Q1,20.6559090909,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1925Q2,20.64,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1925Q3,20.64,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1925Q4,20.64,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1926Q1,20.6331746032,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1926Q2,20.63,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1926Q3,20.63,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1926Q4,20.63,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1927Q1,20.6368253968,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1927Q2,20.64,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1927Q3,20.64,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1927Q4,20.64,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1928Q1,20.6536363636,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1928Q2,20.66,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1928Q3,20.66,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1928Q4,20.66,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1929Q1,20.6395652174,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1929Q2,20.63,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1929Q3,20.63,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1929Q4,20.63,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1930Q1,20.6436231884,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1930Q2,20.65,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1930Q3,20.65,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1930Q4,20.65,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1931Q1,20.6363636364,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1931Q2,20.63,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1931Q3,20.63,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1931Q4,20.63,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1932Q1,20.670952381,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1932Q2,20.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1932Q3,20.69,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1932Q4,20.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1933Q1,24.5354545455,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1933Q2,26.33,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1933Q3,26.33,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1933Q4,26.33,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1934Q1,32.0244927536,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1934Q2,34.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1934Q3,34.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1934Q4,34.69,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1935Q1,34.792173913,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1935Q2,34.84,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1935Q3,34.84,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1935Q4,34.84,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1936Q1,34.8604347826,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1936Q2,34.87,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1936Q3,34.87,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1936Q4,34.87,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1937Q1,34.8153968254,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1937Q2,34.79,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1937Q3,34.79,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1937Q4,34.79,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1938Q1,34.830952381,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1938Q2,34.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1938Q3,34.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1938Q4,34.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1939Q1,34.5568181818,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1939Q2,34.42,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1939Q3,34.42,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1939Q4,34.42,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1940Q1,34.0317391304,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1940Q2,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1940Q3,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1940Q4,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1941Q1,33.85,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1941Q2,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1941Q3,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1941Q4,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1942Q1,33.85,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1942Q2,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1942Q3,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1942Q4,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1943Q1,33.85,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1943Q2,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1943Q3,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1943Q4,33.85,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1944Q1,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1944Q2,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1944Q3,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1944Q4,33.85,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1945Q1,34.4357971014,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1945Q2,34.71,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1945Q3,34.71,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1945Q4,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1946Q1,34.71,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1946Q2,34.71,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1946Q3,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1946Q4,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1947Q1,34.71,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1947Q2,34.71,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1947Q3,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1947Q4,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1948Q1,34.71,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1948Q2,34.71,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1948Q3,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1948Q4,34.71,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1949Q1,34.6963492063,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1949Q2,34.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1949Q3,34.69,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1949Q4,34.69,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1950Q1,34.7104545455,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1950Q2,34.72,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1950Q3,34.72,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1950Q4,34.72,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1951Q1,34.72,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1951Q2,34.72,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1951Q3,34.72,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1951Q4,34.72,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1952Q1,34.6382608696,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1952Q2,34.6,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1952Q3,34.6,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1952Q4,34.6,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1953Q1,34.7636363636,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1953Q2,34.84,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1953Q3,34.84,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1953Q4,34.84,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1954Q1,34.9765079365,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1954Q2,35.04,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1954Q3,35.04,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1954Q4,35.04,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1955Q1,35.0331746032,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1955Q2,35.03,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1955Q3,35.03,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1955Q4,35.03,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1956Q1,35.0027272727,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1956Q2,34.99,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1956Q3,34.99,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1956Q4,34.99,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1957Q1,34.9627536232,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1957Q2,34.95,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1957Q3,34.95,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1957Q4,34.95,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1958Q1,35.052173913,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1958Q2,35.1,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1958Q3,35.1,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1958Q4,35.1,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1959Q1,35.1,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1959Q2,35.1,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1959Q3,35.1,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1959Q4,35.1,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1960Q1,35.216031746,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1960Q2,35.27,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1960Q3,35.27,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1960Q4,35.27,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1961Q1,35.2563636364,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1961Q2,35.25,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1961Q3,35.25,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1961Q4,35.25,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1962Q1,35.2363768116,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1962Q2,35.23,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1962Q3,35.23,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1962Q4,35.23,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1963Q1,35.1346376812,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1963Q2,35.09,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1963Q3,35.09,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1963Q4,35.09,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1964Q1,35.0968115942,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1964Q2,35.1,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1964Q3,35.1,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1964Q4,35.1,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1965Q1,35.1136507937,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1965Q2,35.12,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1965Q3,35.12,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1965Q4,35.12,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1966Q1,35.1268253968,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1966Q2,35.13,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1966Q3,35.13,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1966Q4,35.13,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1967Q1,35.0072727273,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1967Q2,34.95,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1967Q3,34.95,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1967Q4,34.95,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1968Q1,35.1202898551,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1968Q2,38.0214888011,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1968Q3,39.9214724889,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1968Q4,39.7480613589,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1969Q1,42.0319151139,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1969Q2,43.2918759019,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1969Q3,41.4206694272,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1969Q4,38.7191811594,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1970Q1,35.0321969697,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1970Q2,35.5588744589,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1970Q3,35.3914859778,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1970Q4,37.0688816739,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1971Q1,38.0398761215,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1971Q2,39.4863924964,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1971Q3,41.2890909091,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1971Q4,42.4820591003,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1972Q1,45.9068875086,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1972Q2,50.8658629776,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1972Q3,64.981773637,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1972Q4,64.3904184704,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1973Q1,68.072916996,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1973Q2,92.8283091787,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1973Q3,115.426576416,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1973Q4,99.3573078612,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1974Q1,129.678382333,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1974Q2,167.751712121,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1974Q3,150.543285024,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1974Q4,164.567950624,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1975Q1,178.173326432,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1975Q2,167.248448773,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1975Q3,157.402006086,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1975Q4,141.549202899,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1976Q1,131.853208169,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1976Q2,126.832828283,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1976Q3,113.856060606,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1976Q4,126.713965744,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1977Q1,138.965753623,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1977Q2,145.521536797,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1977Q3,145.956222473,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1977Q4,160.422113997,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1978Q1,178.07571805,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1978Q2,178.260507246,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1978Q3,202.247170462,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1978Q4,213.997366522,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1979Q1,238.310981555,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1979Q2,258.501621808,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1979Q3,317.072193676,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1979Q4,414.95386944,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1980Q1,629.037025535,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1980Q2,542.963888889,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1980Q3,648.543012422,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1980Q4,627.025905797,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1981Q1,519.61780303,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1981Q2,478.340728716,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1981Q3,421.172215948,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1981Q4,419.801342619,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1982Q1,363.110069013,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1982Q2,333.437373737,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1982Q3,380.984848485,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1982Q4,427.363896731,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1983Q1,463.637534507,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1983Q2,427.190699856,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1983Q3,417.06935661,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1983Q4,387.352705628,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1984Q1,383.970743146,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1984Q2,379.209765355,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1984Q3,345.278857049,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1984Q4,333.222653554,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1985Q1,302.05026225,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1985Q2,319.041561265,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1985Q3,323.493068888,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1985Q4,324.641512956,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1986Q1,343.000807453,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1986Q2,341.835137085,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1986Q3,380.991034569,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1986Q4,403.788623188,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1987Q1,406.342272727,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1987Q2,449.16482684,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1987Q3,457.053318903,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1987Q4,472.927705628,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1988Q1,454.206142167,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1988Q2,451.409271284,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1988Q3,427.492469728,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1988Q4,415.127741703,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1989Q1,394.089423584,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1989Q2,374.238698946,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1989Q3,367.313285024,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1989Q4,390.248160173,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1990Q1,406.531001318,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1990Q2,365.243995859,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1990Q3,382.379631094,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1990Q4,380.166614907,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1991Q1,370.127391304,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1991Q2,360.606096838,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1991Q3,357.514985256,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1991Q4,359.968631972,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1992Q1,350.858873518,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1992Q2,338.943650794,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1992Q3,347.805797101,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1992Q4,339.681739758,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1993Q1,331.091502761,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1993Q2,361.793578644,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1993Q3,375.528787879,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1993Q4,374.645381141,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1994Q1,384.618283299,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1994Q2,382.451443001,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1994Q3,386.26354696,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1994Q4,384.857720058,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1995Q1,379.493893281,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1995Q2,388.284535573,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1995Q3,384.683160801,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1995Q4,385.589357864,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1996Q1,400.268978606,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1996Q2,390.030154809,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1996Q3,384.849727085,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1996Q4,376.085077483,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1997Q1,351.605942029,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1997Q2,343.077835498,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1997Q3,323.837447456,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1997Q4,306.440652174,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1998Q1,294.562424242,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1998Q2,300.07979798,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1998Q3,288.607236966,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1998Q4,293.747315076,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1999Q1,287.069649758,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,1999Q2,273.553968254,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,1999Q3,259.372878788,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,1999Q4,296.142672062,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2000Q1,290.497798482,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2000Q2,280.431144928,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2000Q3,276.675997239,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2000Q4,269.420598846,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2001Q1,263.755092227,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2001Q2,268.172705314,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2001Q3,274.827891963,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2001Q4,278.506483468,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2002Q1,290.979539337,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2002Q2,313.186725955,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2002Q3,314.50246565,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2002Q4,323.756269214,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2003Q1,351.773798827,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2003Q2,347.465093795,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2003Q3,363.770043604,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2003Q4,392.706297101,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2004Q1,408.492588274,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2004Q2,393.655606061,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2004Q3,401.962121212,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2004Q4,434.503736746,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2005Q1,427.454929262,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2005Q2,427.781731602,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2005Q3,439.815550536,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2005Q4,485.771421356,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2006Q1,554.701030962,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2006Q2,627.070808959,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2006Q3,620.970345066,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2006Q4,614.569877345,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2007Q1,650.330091568,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2007Q2,667.589585921,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2007Q3,681.695434783,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2007Q4,790.065277935,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2008Q1,924.925873016,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2008Q2,897.232222222,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2008Q3,868.553897986,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2008Q4,797.152043478,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2009Q1,910.483515152,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2009Q2,922.255757576,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2009Q3,960.909030679,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2009Q4,1101.1990586,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2010Q1,1109.90520842,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2010Q2,1196.75310245,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2010Q3,1227.72272727,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2010Q4,1369.81895414,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2011Q1,1386.37456487,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2011Q2,1508.84021645,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2011Q3,1703.47833616,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2011Q4,1683.12616162,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2012Q1,1691.81277778,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2012Q2,1612.70808834,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2012Q3,1656.56973123,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2012Q4,1716.88647531,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2013Q1,1630.60329641,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2013Q2,1414.69852174,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2013Q3,1330.82818088,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2013Q4,1270.85744589,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2014Q1,1293.84388095,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2014Q2,1289.91940115,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2014Q3,1281.82498777,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2014Q4,1199.59781159,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2015Q1,1219.34751515,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2015Q2,1193.85441558,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2015Q3,1125.15910691,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2015Q4,1103.87005301,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2016Q1,1180.51005521,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2016Q2,1258.25671717,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2016Q3,1334.95027417,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2016Q4,1216.68930014,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2017Q1,1219.5315527,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2017Q2,1259.03458366,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2017Q3,1279.08339545,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2017Q4,1276.6255267,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2018Q1,1329.62402701,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2018Q2,1306.26879917,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2018Q3,1212.10470487,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2018Q4,1229.68501443,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2019Q1,1304.27537129,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2019Q2,1310.54040711,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2019Q3,1475.71047054,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2019Q4,1482.6674531,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2020Q1,1582.72878524,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2020Q2,1713.7105772,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2020Q3,1913.16968097,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2020Q4,1876.01282609,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2021Q1,1799.35574086,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2021Q2,1814.90816739,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2021Q3,1790.05469697,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2021Q4,1796.12598061,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2022Q1,1876.12942271,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2022Q2,1874.39249639,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2022Q3,1727.30363229,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2022Q4,1731.20520924,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2023Q1,1889.19764163,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2023Q2,1977.97366667,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2023Q3,1927.04216011,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2023Q4,1979.33585137,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2024Q1,2075.36850242,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2024Q2,2337.520583,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2024Q3,2479.43428415,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2024Q4,2659.68508501,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2025Q1,2863.60449034,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2025Q2,3290.12188312,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2025Q3,3458.62066096,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2025Q4,4154.0520942,3,66,True,XAU Curncy,USD per troy ounce,True
+Gold,2026Q1,4869.52087879,3,64,True,XAU Curncy,USD per troy ounce,True
+Gold,2026Q2,4511.56984127,3,65,True,XAU Curncy,USD per troy ounce,True
+Gold,2026Q3,,1,22,False,XAU Curncy,USD per troy ounce,True
+Gold,2026Q4,,1,22,False,XAU Curncy,USD per troy ounce,True
+Graphite,2018Q1,714.855072464,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2018Q2,719.492753623,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2018Q3,708.073781291,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2018Q4,695,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2019Q1,690,3,64,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2019Q2,621.700263505,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2019Q3,532.770092227,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2019Q4,523.286435786,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2020Q1,525,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2020Q2,494.689033189,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2020Q3,461.73097434,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2020Q4,461.941464333,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2021Q1,497.610075914,3,64,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2021Q2,511.54040404,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2021Q3,523.560606061,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2021Q4,655.163435598,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2022Q1,805,3,64,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2022Q2,818.174603175,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2022Q3,817.196969697,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2022Q4,870.573593074,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2023Q1,847.678524374,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2023Q2,765.328722003,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2023Q3,670.132505176,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2023Q4,624.678932179,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2024Q1,562.173913043,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2024Q2,476.920289855,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2024Q3,457.078737687,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2024Q4,440.658102767,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2025Q1,431.6563147,3,64,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2025Q2,425.591630592,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2025Q3,407.727272727,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2025Q4,399.221014493,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2026Q1,412.977272727,3,64,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2026Q2,418.015873016,3,65,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2026Q3,395.34914361,3,66,True,GPCNLCLW Index,USD per metric ton,True
+Graphite,2026Q4,,1,22,False,GPCNLCLW Index,USD per metric ton,True
+IronOre_62,2011Q4,,0,0,False,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2012Q1,142.387662338,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2012Q2,138.964044168,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2012Q3,112.816482213,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2012Q4,121.756327248,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2013Q1,147.472063492,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2013Q2,126.399018445,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2013Q3,131.44257168,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2013Q4,134.751985695,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2014Q1,119.713964803,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2014Q2,98.9883116883,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2014Q3,88.5744620114,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2014Q4,74.4584782609,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2015Q1,64.0581818182,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2015Q2,58.5476190476,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2015Q3,56.4197408871,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2015Q4,47.125431332,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2016Q1,47.0270531401,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2016Q2,54.9852813853,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2016Q3,57.1246492879,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2016Q4,70.7817099567,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2017Q1,85.3100375494,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2017Q2,61.380886693,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2017Q3,71.6662180814,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2017Q4,64.5191919192,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2018Q1,71.4856837945,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2018Q2,62.5097377502,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2018Q3,61.9620434783,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2018Q4,69.868261497,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2019Q1,78.3391276743,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2019Q2,94.5259762846,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2019Q3,101.440502227,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2019Q4,85.5954558002,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2020Q1,84.2058142292,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2020Q2,89.2886002886,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2020Q3,116.208081122,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2020Q4,127.419170588,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2021Q1,159.819161491,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2021Q2,194.753795094,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2021Q3,162.908333333,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2021Q4,106.298243616,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2022Q1,129.164229469,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2022Q2,129.978795094,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2022Q3,99.1986166008,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2022Q4,95.0902813853,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2023Q1,116.582067194,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2023Q2,107.536754282,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2023Q3,111.160131125,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2023Q4,122.168888889,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2024Q1,118.795383023,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2024Q2,105.642343215,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2024Q3,94.4439221407,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2024Q4,96.4895310245,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2025Q1,97.6066442374,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2025Q2,92.6902886003,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2025Q3,96.8946489742,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2025Q4,100.131942029,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2026Q1,102.496878788,3,64,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2026Q2,100.252027417,3,65,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2026Q3,92.0749604743,3,66,True,ISIX62IU Index,USD per metric ton,True
+IronOre_62,2026Q4,,0,0,False,ISIX62IU Index,USD per metric ton,True
+JetKerosene,2018Q1,77.7437793149,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2018Q2,84.5533678399,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2018Q3,86.2150480896,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2018Q4,83.0446185457,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2019Q1,74.6992398206,3,64,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2019Q2,77.6352773386,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2019Q3,74.9804285087,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2019Q4,74.2132981994,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2020Q1,61.7531772069,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2020Q2,32.118030303,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2020Q3,43.1624706694,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2020Q4,47.077998306,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2021Q1,62.4874309869,3,64,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2021Q2,69.8990836941,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2021Q3,75.2328787879,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2021Q4,87.931519857,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2022Q1,107.695935473,3,64,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2022Q2,141.985468975,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2022Q3,128.374908401,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2022Q4,118.114862915,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2023Q1,106.034753623,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2023Q2,92.1794828722,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2023Q3,110.235258799,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2023Q4,106.099184704,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2024Q1,101.49547274,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2024Q2,98.8559940711,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2024Q3,91.7556480959,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2024Q4,88.3568178681,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2025Q1,89.4170348516,3,64,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2025Q2,81.072034632,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2025Q3,85.7604090595,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2025Q4,86.1399130435,3,66,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2026Q1,110.32780303,3,64,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2026Q2,144.927294372,3,65,True,BCSL0032 Index,USD per barrel,True
+JetKerosene,2026Q3,,1,22,False,BCSL0032 Index,USD per barrel,True
+JetKerosene,2026Q4,,0,0,False,BCSL0032 Index,USD per barrel,True
+Methanol,2019Q2,,1,20,False,SSGSMCC Index,USD per metric ton,True
+Methanol,2019Q3,240.130748479,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2019Q4,224.70998808,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2020Q1,227.422793149,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2020Q2,285.722222222,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2020Q3,182.109040718,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2020Q4,242.383524688,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2021Q1,303.019047619,3,64,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2021Q2,302.575036075,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2021Q3,321.106060606,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2021Q4,363.658573311,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2022Q1,370.949033816,3,64,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2022Q2,357.68975469,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2022Q3,310.017661083,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2022Q4,310.653679654,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2023Q1,317.069762846,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2023Q2,266.485309618,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2023Q3,269.378191856,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2023Q4,283.823232323,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2024Q1,292.526570048,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2024Q2,298.330237154,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2024Q3,287.235773888,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2024Q4,293.729656817,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2025Q1,301.965665977,3,64,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2025Q2,270.956709957,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2025Q3,271.391335717,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2025Q4,250.92826087,3,66,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2026Q1,294.577272727,3,64,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2026Q2,402.640692641,3,65,True,SSGSMCC Index,USD per metric ton,True
+Methanol,2026Q3,,1,22,False,SSGSMCC Index,USD per metric ton,True
+Methanol,2026Q4,,0,0,False,SSGSMCC Index,USD per metric ton,True
+NickelOre_15,2015Q4,,1,23,False,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2016Q1,24.7080745342,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2016Q2,27.8163780664,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2016Q3,33.2277432712,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2016Q4,38.8614718615,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2017Q1,49.9981554677,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2017Q2,42.108168643,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2017Q3,38.8868184955,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2017Q4,37.9935064935,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2018Q1,37.5553359684,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2018Q2,34.2298136646,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2018Q3,31.9356719368,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2018Q4,31.0726049313,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2019Q1,29.7014492754,3,64,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2019Q2,28.3282279315,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2019Q3,30.9501662589,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2019Q4,40.115785181,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2020Q1,37.6714426877,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2020Q2,39.6832611833,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2020Q3,52.0779220779,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2020Q4,73.2252964427,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2021Q1,71.1547273982,3,64,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2021Q2,65.4545454545,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2021Q3,82.9090909091,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2021Q4,85.0894660895,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2022Q1,85.1130434783,3,64,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2022Q2,91.8802308802,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2022Q3,68.3243145743,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2022Q4,72.7619047619,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2023Q1,70.5,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2023Q2,52.5821475626,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2023Q3,57.226363009,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2023Q4,56.437950938,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2024Q1,46.9427191166,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2024Q2,47.3303030303,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2024Q3,50.7765543635,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2024Q4,52.1557657319,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2025Q1,53.2676328502,3,64,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2025Q2,59.7070707071,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2025Q3,58.5665976536,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2025Q4,57.6123188406,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2026Q1,65.2,3,64,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2026Q2,69.4145021645,3,65,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2026Q3,62.5487483531,3,66,True,N2CNBAPE Index,USD per metric ton,True
+NickelOre_15,2026Q4,,1,22,False,N2CNBAPE Index,USD per metric ton,True
+NickelOre_18,2015Q4,,0,0,False,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2016Q1,43.2256728778,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2016Q2,41.8759018759,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2016Q3,45.3112491373,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2016Q4,53.0454545455,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2017Q1,63.1660737813,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2017Q2,56.0346508564,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2017Q3,56.0572808834,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2017Q4,57.0072150072,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2018Q1,55.7022397892,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2018Q2,53.8171152519,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2018Q3,57.3977931489,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2018Q4,54.8848422109,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2019Q1,50.6403381643,3,64,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2019Q2,49.8933465086,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2019Q3,59.0344249953,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2019Q4,72.5103833365,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2020Q1,70,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2020Q2,70.2373737374,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2020Q3,74.0505050505,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2020Q4,93.2098939708,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2021Q1,94.5101449275,3,64,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2021Q2,92.7424242424,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2021Q3,106.015151515,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2021Q4,113.904761905,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2022Q1,114.826086957,3,64,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2022Q2,126.45959596,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2022Q3,106.579835623,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2022Q4,103.768398268,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2023Q1,101.971014493,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2023Q2,82.3214756258,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2023Q3,87.1538992409,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2023Q4,86.9653679654,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2024Q1,76.0586611456,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2024Q2,72.0303030303,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2024Q3,70.832737311,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2024Q4,70,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2025Q1,70,3,64,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2025Q2,70,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2025Q3,70,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2025Q4,70,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2026Q1,70,3,64,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2026Q2,70,3,65,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2026Q3,70,3,66,True,N2CNNLCL Index,USD per metric ton,True
+NickelOre_18,2026Q4,,1,22,False,N2CNNLCL Index,USD per metric ton,True
+Nickel_3M_UnverifiedUnit,1987Q1,,2,42,False,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1987Q2,2603.21428571,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1987Q3,3185.68642951,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1987Q4,3614.15330322,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1988Q1,8351.30503796,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1988Q2,14389.0873016,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1988Q3,12953.0511638,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1988Q4,12573.6868687,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1989Q1,17251.4328063,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1989Q2,13235.6604084,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1989Q3,11542.9095928,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1989Q4,9240.44011544,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1990Q1,7645.12121212,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1990Q2,8598.65769496,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1990Q3,10164.8852437,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1990Q4,8427.79129807,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1991Q1,8631.38243616,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1991Q2,8604.70823452,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1991Q3,8120.21858335,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1991Q4,7321.77718176,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1992Q1,7664.60573123,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1992Q2,7402.27489177,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1992Q3,7302.95994103,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1992Q4,5948.07227555,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1993Q1,6048.51432022,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1993Q2,5826.21284271,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1993Q3,4755.84848485,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1993Q4,4798.60063367,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1994Q1,5721.58153899,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1994Q2,6010.74891775,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1994Q3,6248.49498086,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1994Q4,7745.88600289,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1995Q1,8657.78886693,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1995Q2,7660.13306983,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1995Q3,8779.99654934,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1995Q4,8342.33405483,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1996Q1,8152.56728778,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1996Q2,8036.42391304,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1996Q3,7316.07613401,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1996Q4,6954.89996236,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1997Q1,7668.90942029,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1997Q2,7389.07720058,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1997Q3,6814.03532217,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1997Q4,6263.59782609,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1998Q1,5538.37121212,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1998Q2,5043.04834055,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1998Q3,4231.53020892,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1998Q4,4028.1338227,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1999Q1,4693.7605245,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1999Q2,5290.85858586,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1999Q3,6453.18181818,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,1999Q4,7840.55618295,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2000Q1,9344.97584541,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2000Q2,9186.68412385,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2000Q3,8104.58247067,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2000Q4,7129.16666667,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2001Q1,6351.18906456,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2001Q2,6626.91166322,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2001Q3,5519.02206851,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2001Q4,5085.69013112,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2002Q1,6122.06659765,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2002Q2,6961.25,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2002Q3,6847.64304536,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2002Q4,7091.34105025,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2003Q1,8311.62836439,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2003Q2,8364.26767677,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2003Q3,9336.57804756,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2003Q4,12442.5471014,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2004Q1,14595.1861001,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2004Q2,12485.6709957,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2004Q3,13797.5,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2004Q4,14087.728057,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2005Q1,15266.1837474,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2005Q2,15907.5974026,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2005Q3,14355.4559571,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2005Q4,12760.7407937,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2006Q1,14944.7032279,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2006Q2,19573.8922925,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2006Q3,26535.1035197,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2006Q4,31806.4033189,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2007Q1,38767.2559289,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2007Q2,45822.084196,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2007Q3,30307.3847167,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2007Q4,29595.5103833,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2008Q1,29093.8992409,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2008Q2,25822.0670996,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2008Q3,19143.8132882,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2008Q4,11066.3369565,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2009Q1,10636.6893939,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2009Q2,13052.5865801,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2009Q3,17647.6739444,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2009Q4,17619.2910471,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2010Q1,20045.7601794,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2010Q2,22548.6255411,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2010Q3,21267.7272727,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2010Q4,23630.0663467,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2011Q1,26923.4302968,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2011Q2,24370.7683983,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2011Q3,22058.3998369,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2011Q4,18409.0909091,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2012Q1,19705.1154401,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2012Q2,17223.8336784,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2012Q3,16434.7437418,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2012Q4,17036.4217015,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2013Q1,17360.963078,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2013Q2,15038.8886693,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2013Q3,14027.4414957,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2013Q4,13977.4363197,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2014Q1,14700.3961353,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2014Q2,18516.2099567,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2014Q3,18663.340862,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2014Q4,15906.0326087,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2015Q1,14453.5909091,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2015Q2,13091.010101,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2015Q3,10610.5154025,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2015Q4,9454.52851496,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2016Q1,8541.72877847,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2016Q2,8870.36075036,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2016Q3,10300.6829161,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2016Q4,10814.95671,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2017Q1,10328.8550725,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2017Q2,9286.7740448,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2017Q3,10596.7805383,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2017Q4,11678.0844156,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2018Q1,13325.8241107,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2018Q2,14520.0138026,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2018Q3,13324.729249,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2018Q4,11538.700985,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2019Q1,12474.028813,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2019Q2,12303.7129117,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2019Q3,15626.4030052,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2019Q4,15360.7484786,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2020Q1,12771.9361001,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2020Q2,12297.4357864,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2020Q3,14322.9077106,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2020Q4,16006.373455,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2021Q1,17642.7855418,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2021Q2,17388.7236652,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2021Q3,19105.5151515,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2021Q4,19677.1400966,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2022Q1,27695.1650449,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2022Q2,29133.5981241,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2022Q3,22162.9331828,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2022Q4,25660.8311688,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2023Q1,26304.0208827,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2023Q2,22502.0723979,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2023Q3,20624.8695652,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2023Q4,17479.6341991,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2024Q1,16847.4941339,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2024Q2,18619.0216733,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2024Q3,16512.0192296,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2024Q4,16215.059665,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2025Q1,15788.2822291,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2025Q2,15363.461039,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2025Q3,15221.6887509,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2025Q4,15095.7231884,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2026Q1,17522.2090909,3,64,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2026Q2,18291.6385281,3,65,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2026Q3,16748.6596712,3,66,True,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_3M_UnverifiedUnit,2026Q4,,1,22,False,LMNIDS03 Comdty,6 metric tons price quote,False
+Nickel_Front,1997Q3,,2,43,False,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1997Q4,6207.17057971,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1998Q1,5471.31062121,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1998Q2,4983.63625541,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1998Q3,4183.43019888,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1998Q4,3967.2391273,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1999Q1,4636.10847136,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1999Q2,5229.35840548,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1999Q3,6428.62878788,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,1999Q4,7797.9415804,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2000Q1,9424.01932367,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2000Q2,9405.69683794,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2000Q3,8264.5531401,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2000Q4,7536.13347763,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2001Q1,6541.72134387,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2001Q2,6710.7915804,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2001Q3,5524.01169302,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2001Q4,5107.2997365,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2002Q1,6202.00448585,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2002Q2,6940.53675889,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2002Q3,6871.43846854,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2002Q4,7107.85410001,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2003Q1,8315.16799517,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2003Q2,8384.29365079,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2003Q3,9378.58488613,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2003Q4,12484.392029,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2004Q1,14695.3988801,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2004Q2,12567.9906205,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2004Q3,13969.6818182,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2004Q4,14126.8717925,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2005Q1,15394.9878192,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2005Q2,16301.6356421,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2005Q3,14543.6543698,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2005Q4,12734.6645022,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2006Q1,14839.0577075,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2006Q2,19771.6305665,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2006Q3,27960.4520359,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2006Q4,32801.8253968,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2007Q1,40716.997365,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2007Q2,47201.7184265,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2007Q3,30241.270751,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2007Q4,29327.2775896,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2008Q1,28912.268461,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2008Q2,25706.2409812,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2008Q3,19061.5023527,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2008Q4,10940.784058,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2009Q1,10574.530303,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2009Q2,12984.1392496,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2009Q3,17607.9196311,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2009Q4,17560.9355355,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2010Q1,19991.294755,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2010Q2,22495.0407648,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2010Q3,21234.3030303,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2010Q4,23588.9936947,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2011Q1,26908.2466011,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2011Q2,24360.5440115,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2011Q3,22031.3078455,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2011Q4,18395.7059885,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2012Q1,19651.541847,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2012Q2,17170.0469289,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2012Q3,16393.5022727,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2012Q4,16989.5694366,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2013Q1,17306.9891994,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2013Q2,14979.1870883,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2013Q3,13967.1564872,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2013Q4,13922.8176956,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2014Q1,14665.4635956,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2014Q2,18476.2316017,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2014Q3,18598.9712184,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2014Q4,15852.3387681,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2015Q1,14404.7310606,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2015Q2,13055.3524531,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2015Q3,10580.781401,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2015Q4,9425.50964615,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2016Q1,8515.23516218,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2016Q2,8837.20869408,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2016Q3,10262.6148441,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2016Q4,10774.8373016,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2017Q1,10284.6124341,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2017Q2,9242.03078063,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2017Q3,10549.1119738,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2017Q4,11626.9931457,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2018Q1,13284.4248353,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2018Q2,14467.8564527,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2018Q3,13251.2911397,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2018Q4,11475.2650025,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2019Q1,12411.734843,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2019Q2,12258.5889822,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2019Q3,15655.6708231,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2019Q4,15369.9041659,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2020Q1,12711.4869895,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2020Q2,12242.4175685,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2020Q3,14286.5133537,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2020Q4,15967.5061083,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2021Q1,17604.8576967,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2021Q2,17359.4412698,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2021Q3,19106.4048485,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2021Q4,19759.8485134,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2022Q1,27937.081401,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2022Q2,29091.4629942,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2022Q3,22104.7868775,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2022Q4,25533.1318543,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2023Q1,26136.2898254,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2023Q2,22409.3433248,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2023Q3,20439.0781573,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2023Q4,17285.7935931,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2024Q1,16655.8881297,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2024Q2,18450.1374736,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2024Q3,16304.9433183,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2024Q4,16015.2602139,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2025Q1,15611.5515421,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2025Q2,15201.9019336,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2025Q3,15066.7812278,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2025Q4,14942.9553768,3,66,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2026Q1,17355.6772576,3,64,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2026Q2,18127.274733,3,65,True,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2026Q3,,1,22,False,LN1 Comdty,USD per metric ton,True
+Nickel_Front,2026Q4,,1,22,False,LN1 Comdty,USD per metric ton,True
+SCFI,2010Q4,,1,23,False,SHSPSCFI INDEX,Index points,True
+SCFI,2011Q1,1067.76622567,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2011Q2,1043.16213564,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2011Q3,1029.00454985,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2011Q4,906.72497114,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2012Q1,1044.90119048,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2012Q2,1426.0194686,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2012Q3,1337.16318511,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2012Q4,1166.59369597,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2013Q1,1181.45409248,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2013Q2,1030.67118182,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2013Q3,1084.08257482,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2013Q4,1016.58537455,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2014Q1,1078.20791684,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2014Q2,1096.46438672,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2014Q3,1094.54585859,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2014Q4,1014.50253623,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2015Q1,1010.29084848,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2015Q2,704.322987013,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2015Q3,681.403881046,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2015Q4,558.527409812,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2016Q1,559.249972395,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2016Q2,536.807294372,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2016Q3,697.667796286,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2016Q4,802.746356421,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2017Q1,873.779797101,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2017Q2,849.322499341,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2017Q3,840.245286404,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2017Q4,742.753961039,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2018Q1,804.97593083,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2018Q2,743.602774327,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2018Q3,875.455471014,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2018Q4,904.431642826,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2019Q1,868.883913043,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2019Q2,770.502982872,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2019Q3,794.974090909,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2019Q4,809.630107598,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2020Q1,939.782503953,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2020Q2,894.270093795,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2020Q3,1183.25374396,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2020Q4,1857.07727931,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2021Q1,2787.64313112,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2021Q2,3234.28567821,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2021Q3,4281.02969697,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2021Q4,4666.66326369,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2022Q1,4888.1293568,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2022Q2,4210.42723665,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2022Q3,3369.64124976,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2022Q4,1472.76295094,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2023Q1,985.92177668,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2023Q2,981.599710145,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2023Q3,988.105065562,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2023Q4,1021.11472583,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2024Q1,2022.25016563,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2024Q2,2481.13507576,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2024Q3,3147.54141728,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2024Q4,2238.14005992,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2025Q1,1810.86126708,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2025Q2,1628.87099567,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2025Q3,1505.88718928,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2025Q4,1405.04694928,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2026Q1,1484.6815303,3,64,True,SHSPSCFI INDEX,Index points,True
+SCFI,2026Q2,2292.59209957,3,65,True,SHSPSCFI INDEX,Index points,True
+SCFI,2026Q3,3380.62609825,3,66,True,SHSPSCFI INDEX,Index points,True
+SCFI,2026Q4,,1,22,False,SHSPSCFI INDEX,Index points,True
+Sulfur,2019Q4,,0,0,False,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2020Q1,68.344483531,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2020Q2,87.3064069264,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2020Q3,93.0267177991,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2020Q4,126.801105778,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2021Q1,165.200210145,3,64,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2021Q2,210.039184704,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2021Q3,242.853787879,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2021Q4,280.685500659,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2022Q1,333.666965493,3,64,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2022Q2,504.289415584,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2022Q3,200.15826683,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2022Q4,177.431551227,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2023Q1,152.865895916,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2023Q2,104.374481555,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2023Q3,117.790986888,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2023Q4,128.885699856,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2024Q1,122.255852312,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2024Q2,139.474246377,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2024Q3,165.999006525,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2024Q4,195.230946421,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2025Q1,236.642644582,3,64,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2025Q2,291.374379509,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2025Q3,312.243564527,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2025Q4,427.976231884,3,66,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2026Q1,536.222075758,3,64,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2026Q2,975.242972583,3,65,True,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2026Q3,,1,22,False,SSGSSFC4 Index,USD per metric ton,True
+Sulfur,2026Q4,,0,0,False,SSGSSFC4 Index,USD per metric ton,True
+Urea,2018Q1,255.61215415,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2018Q2,248.330917874,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2018Q3,291.345059289,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2018Q4,316.627674258,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2019Q1,258.6873706,3,64,True,GCFPURMG Index,USD per metric ton,True
+Urea,2019Q2,265.827898551,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2019Q3,272.10068072,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2019Q4,245.174383587,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2020Q1,244.956258235,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2020Q2,228.582251082,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2020Q3,257.890080934,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2020Q4,265.844626388,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2021Q1,342.081521739,3,64,True,GCFPURMG Index,USD per metric ton,True
+Urea,2021Q2,376.171356421,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2021Q3,488.977272727,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2021Q4,857.548701299,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2022Q1,824.013026225,3,64,True,GCFPURMG Index,USD per metric ton,True
+Urea,2022Q2,785.955988456,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2022Q3,619.240620491,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2022Q4,584.810606061,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2023Q1,378.621212121,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2023Q2,307.904841897,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2023Q3,362.126984127,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2023Q4,382.159090909,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2024Q1,361.438923395,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2024Q2,318.975625823,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2024Q3,341.740855763,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2024Q4,359.229578393,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2025Q1,403.071773637,3,64,True,GCFPURMG Index,USD per metric ton,True
+Urea,2025Q2,393.768398268,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2025Q3,491.74454169,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2025Q4,401.136956522,3,66,True,GCFPURMG Index,USD per metric ton,True
+Urea,2026Q1,519.170454545,3,64,True,GCFPURMG Index,USD per metric ton,True
+Urea,2026Q2,713.026695527,3,65,True,GCFPURMG Index,USD per metric ton,True
+Urea,2026Q3,,2,45,False,GCFPURMG Index,USD per metric ton,True
+Urea,2026Q4,,1,22,False,GCFPURMG Index,USD per metric ton,True
+WCI,2011Q2,,0,0,False,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2011Q3,1657.01865205,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2011Q4,1364.15287157,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2012Q1,1655.03018759,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2012Q2,2499.28908903,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2012Q3,2473.29017918,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2012Q4,2021.96214066,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2013Q1,2115.21337198,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2013Q2,1738.5445751,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2013Q3,1994.99285463,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2013Q4,1778.77612209,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2014Q1,2131.29409662,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2014Q2,1991.59420635,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2014Q3,2126.34356641,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2014Q4,1871.17600725,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2015Q1,1993.79377273,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2015Q2,1334.23251804,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2015Q3,1339.1806368,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2015Q4,958.083098061,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2016Q1,1032.27994479,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2016Q2,976.029069264,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2016Q3,1320.16751333,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2016Q4,1413.94067821,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2017Q1,1643.59017194,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2017Q2,1471.15247892,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2017Q3,1477.19100069,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2017Q4,1248.1528355,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2018Q1,1419.9014361,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2018Q2,1316.8294893,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2018Q3,1641.58082148,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2018Q4,1683.6442603,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2019Q1,1587.59323879,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2019Q2,1347.87580237,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2019Q3,1383.46646778,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2019Q4,1380.98689065,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2020Q1,1651.33468116,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2020Q2,1597.34970418,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2020Q3,2211.07210835,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2020Q4,3050.1419217,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2021Q1,5114.66404934,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2021Q2,5874.51414863,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2021Q3,9508.5169697,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2021Q4,9497.03428101,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2022Q1,9280.57868841,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2022Q2,7713.64383838,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2022Q3,6115.8061864,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2022Q4,2814.64476912,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2023Q1,1960.5656581,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2023Q2,1689.94242161,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2023Q3,1622.23435473,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2023Q4,1444.23489899,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2024Q1,3360.78111801,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2024Q2,3675.28435046,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2024Q3,5208.69018979,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2024Q4,3438.37181912,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2025Q1,3070.51608696,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2025Q2,2550.29126984,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2025Q3,2336.59484723,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2025Q4,1869.85165217,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2026Q1,2128.919,3,64,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2026Q2,2793.7202886,3,65,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2026Q3,4447.0361337,3,66,True,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WCI,2026Q4,,1,22,False,WCIDCOMP INDEX,USD per 40ft container (FEU),True
+WTI,1994Q4,,1,22,False,CL1 Comdty,USD per barrel,True
+WTI,1995Q1,18.3635250329,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1995Q2,19.3154123847,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1995Q3,17.7610282954,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1995Q4,18.1526118326,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1996Q1,19.5958661146,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1996Q2,21.6005645586,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1996Q3,22.3350749733,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1996Q4,24.5301982559,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1997Q1,22.7858536922,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,1997Q2,19.9502669553,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1997Q3,19.7901656315,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1997Q4,19.9053478261,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1998Q1,15.9338636364,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,1998Q2,14.5669047619,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1998Q3,14.1418577075,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1998Q4,12.8639161804,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1999Q1,13.0392781228,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,1999Q2,17.6396464646,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,1999Q3,21.688030303,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,1999Q4,24.5634384215,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2000Q1,28.7322429262,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2000Q2,28.6472753623,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2000Q3,31.6543547274,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2000Q4,31.8638311688,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2001Q1,28.6929400527,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2001Q2,27.9688612836,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2001Q3,26.6773162055,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2001Q4,20.4139648033,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2002Q1,21.6608826777,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2002Q2,26.2369011858,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2002Q3,28.254989648,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2002Q4,28.2098961666,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2003Q1,33.8765489993,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2003Q2,28.9616594517,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2003Q3,30.2488961039,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2003Q4,31.1805,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2004Q1,35.1098142292,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2004Q2,38.323044733,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2004Q3,43.8101515152,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2004Q4,48.3205913169,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2005Q1,49.8769937888,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2005Q2,53.1993578644,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2005Q3,63.2169602861,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2005Q4,60.0154329004,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2006Q1,63.3497108037,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2006Q2,70.6890803689,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2006Q3,70.5476673568,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2006Q4,60.208968254,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2007Q1,58.3349920949,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2007Q2,65.0602070393,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2007Q3,75.2438682477,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2007Q4,90.755574691,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2008Q1,97.8549482402,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2008Q2,124.080995671,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2008Q3,118.32712529,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2008Q4,58.5887391304,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2009Q1,43.0106363636,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2009Q2,59.6928715729,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2009Q3,68.3133248635,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2009Q4,76.2376234394,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2010Q1,78.6851825397,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2010Q2,78.0345526696,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2010Q3,76.1207575758,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2010Q4,85.2003422423,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2011Q1,94.0730697032,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2011Q2,102.58538961,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2011Q3,89.7384139532,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2011Q4,94.0572438672,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2012Q1,102.897106782,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2012Q2,93.432594893,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2012Q3,92.2446534914,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2012Q4,88.1985149633,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2013Q1,94.412847136,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2013Q2,94.2131772069,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2013Q3,105.796426062,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2013Q4,97.453654558,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2014Q1,98.7186608006,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2014Q2,103.06510101,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2014Q3,97.2359370099,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2014Q4,73.0608985507,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2015Q1,48.7797727273,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2015Q2,57.8652813853,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2015Q3,46.5239117887,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2015Q4,42.1929954828,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2016Q1,33.5002829538,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2016Q2,45.6299206349,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2016Q3,44.9960593513,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2016Q4,49.3362121212,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2017Q1,51.9270316206,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2017Q2,48.3369189723,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2017Q3,48.1684817115,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2017Q4,55.4303318903,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2018Q1,62.8583471673,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2018Q2,67.8466114562,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2018Q3,69.5531179183,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2018Q4,58.6776952757,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2019Q1,54.8534665286,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2019Q2,59.7838596838,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2019Q3,56.4198591505,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2019Q4,56.9964222975,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2020Q1,46.263013834,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2020Q2,28.0135209235,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2020Q3,40.9270791769,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2020Q4,42.7425089403,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2021Q1,57.7942336094,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2021Q2,66.0857936508,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2021Q3,70.5693939394,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2021Q4,77.2153265575,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2022Q1,94.294073844,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2022Q2,108.512929293,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2022Q3,91.7464034758,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2022Q4,82.5933477633,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2023Q1,76.181157444,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2023Q2,73.8369163373,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2023Q3,82.101242236,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2023Q4,78.3409379509,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2024Q1,76.9943340235,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2024Q2,80.606088274,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2024Q3,75.2113984566,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2024Q4,70.2608033754,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2025Q1,71.3990659075,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2025Q2,63.9002741703,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2025Q3,64.9357036201,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2025Q4,59.1316521739,3,66,True,CL1 Comdty,USD per barrel,True
+WTI,2026Q1,71.8439848485,3,64,True,CL1 Comdty,USD per barrel,True
+WTI,2026Q2,92.8832178932,3,65,True,CL1 Comdty,USD per barrel,True
+WTI,2026Q3,,1,22,False,CL1 Comdty,USD per barrel,True
+WTI,2026Q4,,1,22,False,CL1 Comdty,USD per barrel,True

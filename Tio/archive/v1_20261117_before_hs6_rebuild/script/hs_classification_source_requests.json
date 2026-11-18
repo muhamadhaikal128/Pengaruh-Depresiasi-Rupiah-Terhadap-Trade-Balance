@@ -1,0 +1,62 @@
+[
+  {
+    "filename": "unsd_correlations_2022.xlsx",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS-SITC-BEC%20Correlations_2022.xlsx",
+    "sha256": "ec4460c94a1b06bf026eda174842a0ed995d9d501ac13451c47c9dea97a1e5a9"
+  },
+  {
+    "filename": "unsd_classifications_catalog.html",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/",
+    "sha256": "1201a4416d90f8bdb7bbbcc518a7dfce58a4613f35a34a3ee5f65e345a154dde"
+  },
+  {
+    "filename": "unsd_conversion_methodology_2022.pdf",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/corr-notes/HS2022%20conversion%20to%20earlier%20HS%20versions%20and%20other%20classifications%20%20-%20v.1.0.pdf",
+    "sha256": "ac3671c241646b3d98668473d003a7546ca45e3304d44a777b551cc19e5a26ff"
+  },
+  {
+    "filename": "unctad_sitc3_groupings_2025.pdf",
+    "url": "https://unctadstat.unctad.org/EN/Classifications/DimSitcRev3Products_DsibSpecialGroupings_Hierarchy.pdf",
+    "sha256": "e04c8aff535bc7a3063a0855dd9baeb79faa4df4a7939d4b4decad37d410f04e"
+  },
+  {
+    "filename": "hs2022_codes.json",
+    "url": "https://comtradeapi.un.org/files/v1/app/reference/H6.json",
+    "sha256": "e266823e1299d1307c5d7986eb738b83aa5e5bd9af675bf19bf372220660be15"
+  },
+  {
+    "filename": "HS2022_SITC3.xlsx",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS2022toSITC3ConversionAndCorrelationTables.xlsx",
+    "sha256": "179fdfa9248676b1a0bfaa028dd3e2525829f750299e4c97d702371c49d24e9e"
+  },
+  {
+    "filename": "HS2017_SITC3.xlsx",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS2017toSITC3ConversionAndCorrelationTables.xlsx",
+    "sha256": "e2c2b0dab369f7b23bd9c2db73cb5d081e54504b46d87810e90597f5122f32fd"
+  },
+  {
+    "filename": "HS2012_SITC3.xls",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS 2012 to SITC3 Correlation and conversion tables.xls",
+    "sha256": "aa6aab7b77b8c80fc6ee471d21fb0b0bd83b3525139c7a9ed9c3c12db3d1e56d"
+  },
+  {
+    "filename": "HS2002_SITC3.xls",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS2002 to SITC3 Conversion and Correlation Tables.xls",
+    "sha256": "8a03712c47dfc0f4ab355d61396563fd2c197988719f0bf4385cba4050e57354"
+  },
+  {
+    "filename": "HS1996_SITC3.xls",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS1996 to SITC3 Conversion and Correlation Tables.xls",
+    "sha256": "e727200511711f759cdaaebb472f00d5d121cfe11187bb01df7356fc507a1237"
+  },
+  {
+    "filename": "HS1992_SITC3.xls",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/HS1992 to SITC3 Conversion and Correlation Tables.xls",
+    "sha256": "5baf470a940cf359f9396c03b66189e48b7f53758baf91a0510aff1449beaaf6"
+  },
+  {
+    "filename": "HS2007_SITC3.xls",
+    "url": "https://unstats.un.org/unsd/classifications/Econ/tables/UN%20Comtrade%20Conversion%20table%20HS2007%20to%20SITCRev3.xls",
+    "sha256": "2ca79b2effa4751251e0b742c7651316a82700a43a89fa1e90acd3f18eb3ff7e"
+  }
+]

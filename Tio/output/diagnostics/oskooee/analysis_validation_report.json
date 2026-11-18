@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "models_expected": 516,
+  "models_estimated": 516,
+  "primary_models": 176,
+  "nonfatal_bounds_test_failures": [
+    {
+      "model_id": "PRICE_IND_commodity_NARDL_AIC4",
+      "stage": "bounds_test",
+      "rc": 198
+    },
+    {
+      "model_id": "PRICE_IND_energy_mining_NARDL_AIC4",
+      "stage": "bounds_test",
+      "rc": 198
+    },
+    {
+      "model_id": "PRICE_IND_intermediate_NARDL_AIC4",
+      "stage": "bounds_test",
+      "rc": 198
+    }
+  ],
+  "substantive_validity": "MODEL_SPECIFIC; see bounds and diagnostics",
+  "all_levels_ECM_equivalence_pass": true,
+  "all_independent_OLS_prediction_checks_pass": true,
+  "input_files_unchanged": true,
+  "input_import_hypothesis": "EXCLUDED",
+  "primary_bounds5_rejections": 95,
+  "primary_levels_supported5": 62,
+  "primary_levels_and_diagnostics_supported5": 28,
+  "primary_by_scope": {
+    "aggregate": 2,
+    "bilateral": 20,
+    "goods": 154
+  },
+  "CUSUMSQ_reference": "19999 Gaussian Monte Carlo draws, fixed seed, sample-size specific; approximate diagnostic",
+  "inference_limits": [
+    "Nominal post-AIC inference",
+    "No causal identification from ARDL alone",
+    "World demand proxy is top10, not global GDP",
+    "HS6 goods groups cover World and ten partners; categories overlap",
+    "Historical source/revision issues remain; see input/reference/audit_validitas_data_macro.md"
+  ],
+  "official_Stata_CUSUM_paths_verified": 176,
+  "independent_CUSUM_initialization_exceptions": [
+    "TYPE_AUS_capital_NARDL_AIC4",
+    "TYPE_AUS_consumption_NARDL_AIC4"
+  ]
+}

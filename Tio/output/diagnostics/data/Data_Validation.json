@@ -1,0 +1,19 @@
+{
+  "workbooks": 22,
+  "monthly_start": "2006-01",
+  "monthly_end": "2026-08",
+  "groups": {
+    "manufacturing": "Non-komoditas (manufaktur)",
+    "consumption": "Barang konsumsi",
+    "agriculture": "Komoditas pertanian & pangan",
+    "intermediate": "Bahan baku/penolong",
+    "capital": "Barang modal",
+    "commodity": "Komoditas (total)",
+    "energy_mining": "Komoditas energi & tambang"
+  },
+  "classification_policy": "Consensus across possible HS revisions; no automatic time-series harmonization",
+  "BEC": "UNSD complete correlations 2022, BEC revision5; SNA end use from third code digit",
+  "group_overlap": "BEC end-use categories overlap commodity categories; do not sum seven groups",
+  "import_input_dependency": "excluded",
+  "original_inputs_unchanged": true
+}

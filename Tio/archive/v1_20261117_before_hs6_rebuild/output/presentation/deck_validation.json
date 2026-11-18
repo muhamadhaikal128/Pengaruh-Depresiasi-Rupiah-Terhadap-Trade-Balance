@@ -1,0 +1,50 @@
+{
+  "slides": 35,
+  "template": "F:\\Trade-Balance\\Tio\\input\\reference\\presentation_template\\Simulasi Nilai Tukar Rupiah_Meeting Sore_rev.pptx",
+  "template_sha256": "55300fce04f69e7da469465e9175fbeab64b12b3a838b7b54f6bdabb37a21774",
+  "pptx_sha256": "a586cf3b2bacac57d25ebdc8f176767542e8b4ff2f7c4cd46cbffd8900087729",
+  "input_sha256": {
+    "output\\tables\\oskooee\\results_primary_models.csv": "2ea6e27d540f07946117f520c748f31fa70716aaee415b8b50d9524bf16389e7",
+    "output\\tables\\oskooee\\results_all_models.csv": "068679846704982114dab0fbaa292e18efaa4f15225d0d210d111819dd604151",
+    "intermediate\\Panel_World_Quarter.csv": "c62a06a48341a7cd23a9e70685dc3dccce0bd372445511e938ebebebf516d099",
+    "intermediate\\Panel_Country_Quarter.csv": "8ea981e3385379e98988666082239652ebfab79b1b433f58849e5c628c8fde54",
+    "intermediate\\Panel_CommodityGroup_Country_Quarter.csv": "b3947cbb562d201d0ea06436e776760e9bb72a73f2171b62b2f62f39faca6416",
+    "intermediate\\Oskooee_Quarterly_Analysis.csv": "0ba4359ed79a41b1618e75cc08d9bfc8919fe9f8f787f444dca9fb6c8988a3b7"
+  },
+  "input_unchanged": true,
+  "original_master_layout_theme_xml_parts": 8,
+  "preserved_xml_parts_canonical": 8,
+  "all_master_layout_theme_parts_preserved": true,
+  "main_models": 62,
+  "sensitivity_models": 112,
+  "world_estimation_N": 61,
+  "render_validation": "completed",
+  "powerpoint_rendered_slides": 35,
+  "pdf_pages": 35,
+  "pdf_sha256": "005b71f43fb3c73cd2a02dd697cb3728122d83d3ce9151c0f692059b8c6f19dd",
+  "pdf_fonts": [
+    "BCDEEE+Arial-BoldMT",
+    "BCDFEE+Arial Nova,Bold",
+    "BCDGEE+Arial Nova,Bold",
+    "BCDHEE+ArialMT",
+    "BCDIEE+ArialMT",
+    "BCDJEE+Arial-BoldMT",
+    "BCDKEE+CambriaMath",
+    "BCDLEE+SegoeUISymbol"
+  ],
+  "slide_png_count": 35,
+  "text_height_overflow_candidates": [],
+  "preview_files": [
+    "preview_01.png",
+    "preview_02.png",
+    "preview_03.png"
+  ],
+  "visual_review": "All 35 slides reviewed through rendered contact sheets; cover, descriptive statistics, aggregate result and forest charts also inspected at full size.",
+  "key_result_counts_independently_rechecked": {
+    "bounds_Ft5": 27,
+    "levels5": 18,
+    "levels_and_diagnostics5": 7
+  },
+  "delivery_pptx": "Depresiasi_Rupiah_Trade_Balance_Tio_20261117_final.pptx",
+  "delivery_pdf": "Depresiasi_Rupiah_Trade_Balance_Tio_20261117_final.pdf"
+}

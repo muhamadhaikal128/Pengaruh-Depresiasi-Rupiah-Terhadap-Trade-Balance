@@ -1,0 +1,8 @@
+Group,Label,Overlapping
+manufacturing,Non-komoditas (manufaktur),True
+consumption,Barang konsumsi,True
+agriculture,Komoditas pertanian & pangan,True
+intermediate,Bahan baku/penolong,True
+capital,Barang modal,True
+commodity,Komoditas (total),True
+energy_mining,Komoditas energi & tambang,True

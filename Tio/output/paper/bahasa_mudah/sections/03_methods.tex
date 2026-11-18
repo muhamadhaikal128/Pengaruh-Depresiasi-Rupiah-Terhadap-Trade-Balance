@@ -1,0 +1,152 @@
+\section{Memahami model dan cara membaca hasilnya}\label{sec:methods}
+\subsection{Apa yang sebenarnya diprediksi model?}
+Trade balance dalam nilai dolar biasanya ditulis sebagai ekspor dikurangi impor. Untuk regresi, penelitian ini mengikuti paper acuan dan memakai log rasio impor terhadap ekspor:
+\begin{equation}
+ y_{s,t}=\ln\left(\frac{M_{s,t}}{X_{s,t}}\right),
+ \qquad TB_{s,t}=X_{s,t}-M_{s,t}.\label{eq:outcome}
+\end{equation}
+$M$ adalah nilai impor Indonesia dan $X$ nilai ekspornya. Indeks $s$ menunjukkan cakupan, misalnya total Indonesia, Indonesia--Australia, atau komoditas Indonesia--Tiongkok. Indeks $t$ menunjukkan waktu.
+
+Saat impor mengecil dibandingkan ekspor, rasio $M/X$ turun. Karena itu, penurunan $y$ berarti posisi perdagangan membaik. Rasio ini bisa digunakan untuk membandingkan pasar dengan ukuran perdagangan berbeda. Kedua arus harus positif agar log-nya dapat dihitung.
+
+Trade balance dalam dolar tetap ditampilkan sebagai statistik deskriptif. Selisih dolar tidak di-log karena bisa bernilai negatif. Hasil regresi rasio juga tidak bisa langsung dibaca sebagai perubahan surplus dalam dolar.
+
+\readingbox{\textbf{Contoh sederhana.} Jika ekspor turun 5\% dan impor turun 10\%, ekspor relatif terhadap impor justru membaik. Jadi, hasil model yang menunjukkan perbaikan rasio belum membuktikan bahwa ekspor meningkat.}
+
+Nilai perdagangan juga memuat harga dan volume. Secara konsep, jika indeks harga dan volume dibentuk secara konsisten:
+\begin{equation}
+ \ln(M/X)=\ln P_M-\ln P_X+\ln Q_M-\ln Q_X.\label{eq:value}
+\end{equation}
+Persamaan ini membantu menjelaskan sumber perubahan nilai. Penelitian belum mengestimasi komponen tersebut secara terpisah karena belum memakai data kuantitas dan harga setiap produk.
+
+\subsection{Kapan suatu respons disebut J-curve?}
+Pola J berarti kondisi perdagangan memburuk lebih dahulu setelah depresiasi, lalu membaik. Salah satu kemungkinan penjelasannya adalah kontrak dan volume belum langsung menyesuaikan. Perbaikan baru terlihat setelah beberapa waktu.
+
+Kurva yang langsung membaik tidak otomatis disebut J-curve. Kurva yang terlihat membentuk J pun masih perlu diperiksa confidence interval dan modelnya. Pada paper acuan, pembahasan ini menghubungkan respons jangka pendek dengan hubungan jangka panjang \cite{bahmani}.
+
+Grafik penelitian ini berhenti pada kuartal ke-24, atau enam tahun setelah perubahan kurs. Titik terakhir grafik membantu membaca respons akhir periode, tetapi belum tentu persis sama dengan posisi long run yang sudah tercapai.
+
+\subsection{ARDL: memasukkan pengaruh saat ini dan beberapa kuartal sebelumnya}
+ARDL memakai nilai saat ini dan lag. Lag adalah nilai variabel pada periode sebelumnya. Misalnya, lag satu berarti satu kuartal sebelumnya. Dengan cara ini, model tidak memaksakan semua penyesuaian selesai pada kuartal yang sama.
+
+Notasi dasarnya:
+\begin{equation}
+ y_t=a+\sum_{\ell=1}^{p}\phi_\ell y_{t-\ell}
+       +\sum_{v\in\mathcal Z}\sum_{j=0}^{q_v}b_{v,j}v_{t-j}+\varepsilon_t,
+ \qquad \mathcal Z=\{d,f,q\}.\label{eq:ardl}
+\end{equation}
+$d$ adalah log real GDP Indonesia, $f$ log aktivitas luar negeri, dan $q$ kurs riil. Rumus ini mengatakan bahwa rasio perdagangan sekarang dapat berkaitan dengan rasionya sendiri pada kuartal sebelumnya, aktivitas ekonomi, dan kurs pada beberapa periode.
+
+Aktivitas Indonesia dimasukkan karena perubahan ekonomi domestik dapat memengaruhi kebutuhan impor sekaligus produksi. Aktivitas mitra membantu menangkap perubahan permintaan dari luar negeri. Tanda hasilnya tidak dipaksakan harus mengikuti satu dugaan.
+
+Jika model stabil dan hubungan jangka panjangnya didukung, koefisien long run dihitung sebagai
+\begin{equation}
+ \beta_v=\frac{\sum_{j=0}^{q_v}b_{v,j}}{1-\sum_{\ell=1}^{p}\phi_\ell}.
+ \label{eq:lr}
+\end{equation}
+ARDL memakai satu hubungan kurs untuk apresiasi dan depresiasi. Dengan kata lain, kedua arah dibatasi simetris dalam log. Ini berguna sebagai model pembanding yang lebih sederhana.
+
+\subsection{NARDL: membedakan kurs menguat dan melemah}
+NARDL memisahkan perubahan kurs positif dan negatif:
+\begin{align}
+ q_t^+&=\sum_{j=1}^{t}\max(\Delta q_j,0),&
+ q_t^-&=\sum_{j=1}^{t}\min(\Delta q_j,0),\\
+ q_t&=q_0+q_t^++q_t^-.
+\end{align}
+$\Delta q_t=q_t-q_{t-1}$ adalah perubahan kurs. Semua perubahan positif dijumlahkan ke $q^+$, sedangkan perubahan negatif dijumlahkan ke $q^-$. Ini disebut partial sums.
+
+Dalam penelitian ini, kenaikan $q$ berarti apresiasi. Jadi, $q^+$ mewakili akumulasi penguatan dan $q^-$ akumulasi pelemahan. Nilai perubahan negatif tetap bertanda negatif, tidak diubah menjadi positif.
+
+Regressor menjadi $\{d,f,q^+,q^-\}$. Untuk model pembanding harga, ditambahkan log BCOM. Pemisahan ini memungkinkan apresiasi dan depresiasi mempunyai hasil berbeda. Ia tidak sama dengan memasukkan volatilitas kurs sebagai variabel baru \cite{shin}.
+
+\subsection{Apa fungsi error correction?}
+Error correction membantu menghubungkan gerak jangka pendek dengan hubungan jangka panjang. Bentuk umum NARDL dapat ditulis:
+\begin{align}
+\Delta y_t={}&\alpha+\rho y_{t-1}+\theta_d d_{t-1}+\theta_f f_{t-1}
+ +\theta_+q^+_{t-1}+\theta_-q^-_{t-1}\nonumber\\
+ &+\sum_{j=1}^{P}\psi_j\Delta y_{t-j}
+ +\sum_{j=0}^{Q_d}\gamma_{d,j}\Delta d_{t-j}
+ +\sum_{j=0}^{Q_f}\gamma_{f,j}\Delta f_{t-j}\nonumber\\
+ &+\sum_{j=0}^{Q_+}\pi_j^+\Delta q^+_{t-j}
+ +\sum_{j=0}^{Q_-}\pi_j^-\Delta q^-_{t-j}+\eta_t.
+ \label{eq:ecm}
+\end{align}
+
+Bagian dengan nilai periode sebelumnya membantu menjelaskan hubungan long run. Bagian dengan simbol $\Delta$ menjelaskan perubahan jangka pendek. Rumus ini menunjukkan bentuk umum; tidak semua suku harus bebas diestimasi pada setiap model. Itu bergantung pada lag yang terpilih.
+
+Koefisien penyesuaian dan koefisien long run berhubungan melalui
+\begin{equation}
+ \rho=\sum_{\ell=1}^{p}\phi_\ell-1,\qquad
+ \beta_-=-\theta_-/\rho,\qquad \beta_+=-\theta_+/\rho.
+\end{equation}
+Koefisien $\rho$ yang negatif sesuai dengan gagasan bahwa penyimpangan akan dikoreksi. Tetapi satu tanda negatif ini belum cukup untuk mengatakan bahwa seluruh hubungan long run sudah terbukti.
+
+\subsection{Mengapa tanda koefisien bisa terasa terbalik?}
+Pada total Indonesia dipakai $q=\ln(\mathrm{REER})$. Pada bilateral, tanda log RER dibalik agar arahnya sama: naik berarti apresiasi.
+
+Depresiasi berarti perubahan negatif, $\delta^-<0$. Perubahan long run yang dihitung dari koefisien adalah
+\begin{equation}
+ \Delta y_\infty^-=\beta_-\delta^-.
+\end{equation}
+Jika $\beta_-$ positif, dikalikan perubahan kurs negatif hasilnya negatif. Karena $y$ adalah log impor/ekspor, hasil negatif berarti rasio perdagangan membaik. Jika koefisiennya negatif, arah hasilnya menjadi pemburukan.
+
+Supaya grafik lebih mudah dibaca, tampilannya dibalik:
+\begin{equation}
+ R_h^J=-100\,\Delta_h y=100\,\Delta_h\ln(X/M).\label{eq:display}
+\end{equation}
+Dengan tampilan ini, positif selalu berarti perbaikan. Confidence interval ikut dibalik dengan cara yang sama. Angka hasil estimasi tidak berubah; yang berubah hanya arah penyajian.
+
+Besarnya perubahan kurs yang digunakan adalah $-\ln(1.10)$ untuk depresiasi dan $+\ln(1.10)$ untuk apresiasi. Keduanya sama besar dalam log. Dalam persen biasa, ini berarti penurunan sekitar 9,09\% dan kenaikan 10\%.
+
+\subsection{Apa yang dipakai untuk mewakili permintaan luar negeri?}
+Model bilateral memakai real GDP mitra. Model total Indonesia memakai gabungan sepuluh mitra:
+\begin{equation}
+ f_t=\ln\left(\sum_{i=1}^{10}w_iY^{(2015=100)}_{i,t}\right),
+ \qquad \sum_{i=1}^{10}w_i=1.
+\end{equation}
+$w_i$ adalah bobot berdasarkan pangsa ekspor 2006--2008. GDP tiap mitra diubah menjadi indeks agar tidak menjumlahkan angka uang dari mata uang yang berbeda.
+
+Proksi ini mempunyai keterbatasan. Negara di luar sepuluh mitra tidak terwakili langsung, dan bobot tetap tidak mengikuti perubahan pangsa ekspor. Karena itu, hasil total Indonesia tetap bergantung pada cara permintaan luar negeri diukur.
+
+\subsection{Bagaimana lag dipilih?}
+Model mencoba beberapa pilihan lag lalu memakai AIC untuk memilih. AIC mempertimbangkan kecocokan model sekaligus memberi penalti jika parameter bertambah:
+\begin{equation}
+ \mathrm{AIC}=N\ln(\mathrm{RSS}/N)+2K,\qquad
+ \mathrm{BIC}=N\ln(\mathrm{RSS}/N)+K\ln N.
+\end{equation}
+$N$ adalah jumlah kuartal dan $K$ jumlah parameter. RSS merangkum besarnya residual. Residual adalah selisih angka aktual dengan angka yang diperkirakan model.
+
+Maksimum lag level pada model utama adalah empat. Maksimum dua digunakan sebagai robustness check, yaitu pemeriksaan apakah hasil berubah saat pilihan model diubah. ARDL dan NARDL pada batas lag yang sama memakai awal sampel efektif yang sama.
+
+Mengurangi maksimum lag menjadi dua bisa menambah dua kuartal awal ke sampel. Jadi, pembanding ini mengubah lag dan sedikit mengubah periode data. Ia belum menjadi perbandingan lag pada sampel yang benar-benar identik.
+
+Paper acuan memakai maksimum delapan lag first difference pada sampel yang lebih panjang. Empat lag level di sini adalah penyesuaian untuk data Indonesia, bukan padanan persis delapan lag first difference.
+
+\subsection{Kapan hasil boleh dibaca sebagai hubungan long run?}
+Bounds test membantu memeriksa apakah model memberi bukti hubungan jangka panjang \cite{pss,ks}. Run ini memakai statistik F dan t serta p-value finite-sample dari implementasi Stata. Keputusan utama memakai ambang 5\% untuk keduanya.
+
+Ada pemeriksaan tambahan. Joint-X test melihat apakah variabel penjelas dalam bentuk level bersama-sama ikut mendukung hubungan itu. Model juga diperiksa dari kestabilan dinamika, sifat time series, dan sisa derajat bebas. Dalam run ini, minimal sisa derajat bebas adalah 15.
+
+Sifat time series diperiksa dengan unit root tests ADF dan PP. Secara sederhana, ini berkaitan dengan apakah sifat statistik seri sudah stabil atau perlu diambil perubahannya. ARDL bounds dirancang untuk kombinasi $I(0)$ dan $I(1)$, bukan variabel $I(2)$.
+
+ADF memilih lag melalui BIC pada nol sampai empat; PP memakai empat lag. Jika keduanya gagal menolak unit root pada first difference di ambang 10\%, run memberi catatan risiko $I(2)$. Catatan ini belum membuktikan bahwa variabel benar-benar $I(2)$; sampel kecil juga bisa membuat tes kurang kuat.
+
+Paper acuan membahas pula beberapa hasil pada 10\%. Run ini menyimpan keputusan F-only 10\% sebagai pembanding. Kesimpulan utama tetap memakai F dan t 5\% beserta pemeriksaan tambahan, sehingga kriterianya lebih ketat daripada sebagian pembacaan dalam paper acuan.
+
+\subsection{P-value, confidence interval, dan asymmetry}
+P-value membantu menilai seberapa jauh data bertentangan dengan hipotesis nol di bawah asumsi model. P-value kecil bukan berarti kita sudah mengetahui peluang hipotesis itu benar atau salah.
+
+Confidence interval menunjukkan ketidakpastian di sekitar koefisien atau respons. Interval yang lebar bisa mencakup kemungkinan pengaruh negatif maupun positif. Jadi, hasil yang tidak signifikan belum membuktikan bahwa pengaruhnya nol.
+
+Asymmetry berarti apresiasi dan depresiasi bisa mempunyai koefisien berbeda. Uji Wald long run memeriksa $H_0:\beta_+=\beta_-$. Untuk jangka pendek, pembandingnya memakai jumlah koefisien perubahan. Asymmetry yang signifikan belum menggantikan bounds test; kedua tes menilai hal berbeda.
+
+Dynamic multipliers menunjukkan bagaimana respons berubah menurut waktu:
+\begin{equation}
+ m_h^\pm=\frac{\partial y_{t+h}}{\partial q_t^\pm},\qquad
+ R_h^{J,\pm}=-100\,m_h^\pm\delta^\pm,\qquad h=0,\ldots,24.
+\end{equation}
+Confidence interval 95\% dihitung dengan delta method dan kuantil t dari model. Intervalnya pointwise: berlaku pada tiap horizon, bukan jaminan 95\% untuk seluruh jalur sekaligus.
+
+AIC sudah dipakai untuk memilih model sebelum p-value dan interval dihitung. Angka tersebut belum mengoreksi ketidakpastian pemilihan model. BH \cite{bh} juga dilaporkan untuk mengurangi risiko pembacaan terlalu optimistis ketika banyak koefisien diuji. BH diterapkan dalam kelompok pengujian tertentu: satu model total, sepuluh bilateral, dan 77 model barang per estimator. Ini belum menjadi koreksi lengkap seluruh pencarian 516 model.
+
+\readingbox{\textbf{Cara membaca satu hasil.} Mulai dari arah koefisien, lihat confidence interval, cek hubungan long run, lalu baca diagnostic tests dan robustness checks. Jangan mengambil kesimpulan hanya dari satu p-value atau bentuk garis.}

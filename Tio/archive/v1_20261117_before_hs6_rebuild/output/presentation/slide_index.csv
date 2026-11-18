@@ -1,0 +1,36 @@
+﻿Slide,Judul
+1,Depresiasi Rupiah dan Neraca Perdagangan Indonesia
+2,Apakah depresiasi selalu memperbaiki perdagangan Indonesia?
+3,"Perdagangan Indonesia meningkat, dengan dinamika ekspor dan impor berbeda"
+4,Sepuluh mitra memiliki skala dan posisi perdagangan yang berbeda
+5,"Komoditas mencakup 49,5% ekspor pada sampel sepuluh mitra tahun 2025"
+6,Variabel utama mengikuti spesifikasi trade balance dalam paper
+7,Statistik deskriptif memakai sampel estimasi agregat yang sama
+8,Ketersediaan data membatasi kesetaraan sampel antarmitra
+9,Dua mekanisme memberi arah respons yang perlu diuji
+10,ARDL menghubungkan dinamika jangka pendek dan hubungan level
+11,NARDL memisahkan apresiasi dan depresiasi secara eksplisit
+12,Estimasi mencakup 62 model utama dan 112 model sensitivitas
+13,Hubungan jangka panjang dinilai melalui beberapa tahap pemeriksaan
+14,Agregat dunia belum mendukung hubungan level pada taraf 5%
+15,Respons dinamis agregat perlu dibaca bersama batas modelnya
+16,Bukti bilateral bervariasi; dukungan paling jelas muncul pada Australia
+17,Australia menunjukkan arah perbaikan dengan dukungan diagnostik lebih kuat
+18,Komoditas: arah koefisien berbeda dan ketidakpastian tetap besar
+19,Nonkomoditas belum memperoleh dukungan hubungan level pada 5%
+20,Penyaringan mempersempit jumlah model yang layak dibaca lebih jauh
+21,Diagnostik mengingatkan bahwa inferensi OLS perlu kehati-hatian
+22,Hasil peka terhadap panjang lag dan kontrol harga komoditas
+23,Kesimpulan awal: manfaat depresiasi belum dapat digeneralisasi
+24,Prioritas lanjutan: perkuat data dan uji perbedaan secara langsung
+25,Lampiran
+26,Lampiran | NARDL bilateral: koefisien dan status interpretasi
+27,Lampiran | NARDL komoditas: koefisien dan status interpretasi
+28,Lampiran | NARDL nonkomoditas: koefisien dan status interpretasi
+29,Lampiran | ARDL linear melengkapi pembacaan model nonlinear
+30,Lampiran | Statistik variabel hasil transformasi pada sampel agregat
+31,Lampiran | Stabilitas dunia dan Australia memberi hasil berbeda
+32,Lampiran | Catatan data yang memengaruhi pembacaan hasil
+33,Lampiran | Peta sumber dan konstruksi variabel
+34,"Lampiran | Hasil dapat dilacak ke data, kode, dan diagnostik"
+35,Lampiran | Referensi metodologi utama

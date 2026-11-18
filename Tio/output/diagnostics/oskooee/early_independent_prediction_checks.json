@@ -1,0 +1,17 @@
+[
+  {
+    "model": "WORLD_ARDL_AIC4",
+    "N": 61,
+    "max_prediction_difference": 3.3306690738754696e-14
+  },
+  {
+    "model": "WORLD_NARDL_AIC4",
+    "N": 61,
+    "max_prediction_difference": 1.9984014443252818e-14
+  },
+  {
+    "model": "BIL_AUS_NARDL_AIC4",
+    "N": 77,
+    "max_prediction_difference": 9.237055564881302e-14
+  }
+]
