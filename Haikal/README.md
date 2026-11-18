@@ -1,10 +1,43 @@
 # Folder kerja Haikal
 
-Analisis ARDL pengaruh depresiasi rupiah terhadap trade balance, untuk menjawab tiga pertanyaan:
-(1) efek agregat, (2) per mitra dagang, (3) per kelompok barang.
+Pengaruh depresiasi rupiah terhadap trade balance Indonesia dengan 10 mitra utama (bulanan 2006–2026):
+(1) efek agregat, (2) per mitra dagang, (3) per kelompok barang. Metode: ARDL dan local projections.
 
-- **Hasil:** [notes/hasil_rq.md](notes/hasil_rq.md)
-- **Tinjauan literatur metode (apakah ARDL terbaik):** [notes/litrev_metode_ardl.md](notes/litrev_metode_ardl.md)
+**Hasil terbaru (versi HS-6): [output/3_ppt/Depresiasi_Rupiah_Trade_Balance.pptx](output/3_ppt/Depresiasi_Rupiah_Trade_Balance.pptx)** (35 slide, template DEN).
+Catatan hasil versi HS-4 lama ada di `archive/v1_hs4_20261116/`.
+
+## Struktur
+
+```
+Haikal/
+├── notes/
+│   ├── 4_litrev_metode.md      tinjauan literatur + alasan pilihan metode
+│   ├── catatan_data.md         sumber, definisi, keterbatasan data
+│   └── definisi_kelompok_hs6_tio.md  aturan 7 kelompok HS-6 (dari Tio)
+├── script/                     nomor = urutan jalan
+│   ├── 00_master.do            jalankan semuanya
+│   ├── 01_build_panel.py       (Tio) data mentah -> intermediate/dari_tio/
+│   ├── 02_prep_data.do         dataset analisis HS-6 + harga komoditas DEN
+│   ├── 03_prep_kurs_bilateral.do  kurs riil bilateral (BIS) + data LP
+│   ├── 04_ardl_agregat.do      RQ1
+│   ├── 05_ardl_mitra.do        RQ2
+│   ├── 06_ardl_kelompok.do     RQ3
+│   ├── 07_local_projections.do RQ1–RQ3 dengan LP
+│   ├── 08_deskriptif_episode.py episode depresiasi, event study, driver R², statistik deskriptif
+│   ├── 09_build_ppt.py         bangun PPT dari output/ (template DEN)
+│   └── helper_ardl.do          program bantu ARDL
+├── output/
+│   ├── 0_deskriptif/           grafik TB vs REER, uji akar unit, pangsa kelompok
+│   ├── 1_ardl/                 tabel (CSV) + grafik ARDL
+│   ├── 2_lp/                   tabel (CSV) + grafik LP
+│   └── 3_ppt/                  deck PPT + grafik gaya DEN
+├── intermediate/
+│   ├── dari_tio/               data Tio: Trade_Total/Goods_Month (HS-6), HS6_Classification, Panel_Country_Month
+│   └── analisis/               dataset olahan, dibuat ulang oleh script 02–03
+├── input/raw/                  data unduhan: fred/ (harga komoditas, USD, inflasi VN), bis/ (kurs, CPI)
+├── input/reference/            template_DEN.pptx (layout DEN dari deck Banking Stress Test)
+└── archive/v1_hs4_20261116/    versi HS-4 (data, output, catatan hasil)
+```
 
 ## Menjalankan
 
@@ -14,21 +47,30 @@ Butuh Stata 17+ (dikembangkan di StataNow 19 MP). Dari folder `Haikal/`:
 do script/00_master.do
 ```
 
-Paket `ardl` dan `xtpmg` diinstal otomatis dari SSC bila belum ada. Waktu jalan sekitar 3 menit.
+Atau dari terminal (mode batch, log di `00_master.log`):
 
-| Script | Isi |
-|:--|:--|
-| `01_build_panel.py` | (Tio) data mentah → `intermediate/` panel & HS-4 |
-| `02_prep_data.do` | dataset analisis, harga komoditas IMF (FRED), klasifikasi HS-4 → kelompok |
-| `ardl_helpers.do` | program `ardl_post`: ARDL-EC, uji bounds, diagnostik, dynamic multiplier |
-| `03_ardl_agregat.do` | RQ1: agregat, 10 spesifikasi robustness, NARDL, grafik J-curve |
-| `04_ardl_mitra.do` | RQ2: ARDL per negara + panel PMG/MG |
-| `05_ardl_kelompok.do` | RQ3: per kelompok barang (komoditas/manufaktur, konsumsi/bahan baku/modal) |
+```bash
+MSYS_NO_PATHCONV=1 "/c/Program Files/StataNow19/StataMP-64.exe" /e do script/00_master.do
+```
 
-## Data tambahan
+Paket SSC `ardl`, `xtpmg` dan `xtscc` diinstal otomatis. Waktu jalan sekitar 14 menit (LP sekitar 10 menit).
 
-`input/raw/fred/`: indeks harga komoditas IMF (all, energi, pangan; 2016 = 100), diunduh dari FRED pada 16 Nov 2026. Seri: `PALLFNFINDEXM`, `PNRGINDEXM`, `PFANDBINDEXM`. IPI Indonesia (`IDNPROINDMISMEI`) tidak tersedia di FRED, sehingga pendapatan domestik belum masuk model.
+PPT dibangun setelah Stata selesai (butuh `uv`):
 
-## Changelog Haikal
+```bash
+uv run --with pandas --with matplotlib python script/08_deskriptif_episode.py
+uv run --with python-pptx --with pandas --with matplotlib python script/09_build_ppt.py
+```
 
-- **16 Nov 2026:** analisis ARDL RQ1–RQ3, NARDL, PMG/MG, klasifikasi HS-4, catatan hasil dan litrev.
+## Konvensi
+
+- **Trade balance** = ln(Ekspor/Impor). Efek dilaporkan sebagai % perubahan rasio X/M akibat depresiasi riil 10%; **positif = membaik**.
+- **Hasil akhir hanya CSV dan PNG** di `output/`. Tabel `.dta` sementara tidak disimpan.
+
+## Changelog
+
+- **16 Nov 2026:** ARDL RQ1–RQ3, NARDL, PMG/MG, klasifikasi HS-4.
+- **16 Nov 2026:** local projections dengan kurs riil bilateral (BIS).
+- **16 Nov 2026:** struktur folder dirapikan: notes bernomor, output per metode, data Tio dipisah dari dataset olahan, script bernomor sesuai urutan jalan.
+- **18 Nov 2026:** versi HS-6: kelompok barang dari klasifikasi UNSD (data Tio), agregat Indonesia–dunia, kontrol harga komoditas BCOM/batu bara/CPO (database DEN), uji tambahan (10 mitra, indeks IMF, PDB Indonesia). Versi HS-4 diarsipkan.
+- **18 Nov 2026 (2):** PPT disusun ulang (35 slide): teori Marshall-Lerner & J-curve, literatur Indonesia, pertanyaan riset, statistik deskriptif 8 episode depresiasi (event study, heatmap mitra/kelompok, driver R²), literatur metode, daftar variabel, hasil, diagnostik & robustness.

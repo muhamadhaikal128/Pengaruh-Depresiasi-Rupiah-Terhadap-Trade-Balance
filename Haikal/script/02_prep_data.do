@@ -1,21 +1,33 @@
 * =============================================================================
-* 02_prep_data.do : bangun dataset analisis dari intermediate/ (output 01_build_panel.py)
-*   1. Indeks harga komoditas IMF (FRED)        -> intermediate/commodity_prices.dta
-*   2. Panel negara x bulan + variabel log       -> intermediate/ana_partner.dta
-*   3. Agregat 10 mitra x bulan                  -> intermediate/ana_aggregate.dta
-*   4. Klasifikasi HS-4 (komoditas / end-use)    -> intermediate/hs4_groups.csv
-*   5. Perdagangan per kelompok barang x bulan   -> intermediate/ana_group.dta
-* Dijalankan dari folder Haikal/ (lihat 00_master.do)
+* 02_prep_data.do : dataset analisis versi HS-6 (data olahan Tio, 17 Nov 2026)
+*
+* Input (intermediate/dari_tio/, disalin dari Tio/intermediate/):
+*   Trade_Total_Month.csv : ekspor/impor TOTAL per mitra + dunia (WLD), harga komoditas
+*                           database DEN (BCOM, batu bara, CPO, ...), PDB riil Indonesia
+*   Trade_Goods_Month.csv : ekspor/impor per kelompok barang HS-6 (klasifikasi UNSD HS->SITC3->BEC5)
+*   Panel_Country_Month.csv : IPI YoY mitra, REER BIS, JISDOR (panel lama Tio)
+*   input/raw/fred/       : indeks harga komoditas IMF (robustness)
+*
+* Output (intermediate/analisis/):
+*   commodity_prices.dta  : ln BCOM, batu bara, CPO, indeks IMF
+*   ana_partner.dta       : 10 mitra x bulan
+*   ana_aggregate.dta     : Indonesia vs DUNIA x bulan (+ versi 10 mitra: lntb10)
+*   ana_group.dta         : 7 kelompok barang, Indonesia vs dunia x bulan
+*   trade_group_partner.dta : 7 kelompok x 10 mitra x bulan (panel LP)
+*   output/0_deskriptif/group_shares.csv
+*
+* Kode kelompok (dipertahankan dari versi HS-4 supaya script 04-07 tetap sama):
+*   comm = commodity, sec1 = agriculture, sec2 = energy_mining, noncomm = manufacturing,
+*   eu1 = consumption, eu2 = intermediate, eu3 = capital
 * =============================================================================
 version 19
 clear
 set more off
 
 * -----------------------------------------------------------------------------
-* 1. Harga komoditas IMF Primary Commodity Prices (2016=100), sumber FRED
-*    PALLFNFINDEXM = all commodities, PNRGINDEXM = energi, PFANDBINDEXM = pangan & minuman
+* 1. Harga komoditas (database DEN via Tio; IMF/FRED sebagai pembanding)
 * -----------------------------------------------------------------------------
-tempfile com
+tempfile imf
 local first = 1
 foreach s in PALLFNFINDEXM PNRGINDEXM PFANDBINDEXM {
     import delimited using "input/raw/fred/`s'.csv", clear varnames(1)
@@ -23,27 +35,53 @@ foreach s in PALLFNFINDEXM PNRGINDEXM PFANDBINDEXM {
     rename `=lower("`s'")' `s'
     gen mdate = mofd(date(d, "YMD"))
     keep mdate `s'
-    if !`first' merge 1:1 mdate using `com', nogen
-    save `com', replace
+    if !`first' merge 1:1 mdate using `imf', nogen
+    save `imf', replace
     local first = 0
 }
+
+import delimited using intermediate/dari_tio/Trade_Total_Month.csv, clear encoding(utf8)
+keep if iso3 == "WLD"
+gen mdate = monthly(date, "YM")
+keep mdate cmd_bcom_mean cmd_coal_newcastle_mean cmd_cpo_front_mean cmd_nickel_front_mean ///
+     cmd_brent_mean idn_gdp_real_index_2015mean100
+merge 1:1 mdate using `imf', keep(master match) nogen
 format mdate %tm
-gen lncom     = ln(PALLFNFINDEXM)
-gen lncom_nrg = ln(PNRGINDEXM)
-gen lncom_fd  = ln(PFANDBINDEXM)
-label var lncom     "ln harga komoditas IMF (all)"
-label var lncom_nrg "ln harga komoditas IMF (energi)"
-label var lncom_fd  "ln harga komoditas IMF (pangan)"
-save intermediate/commodity_prices.dta, replace
+tsset mdate
+gen lncom      = ln(cmd_bcom_mean)                 // utama: Bloomberg Commodity Index
+gen lncom_nrg  = ln(cmd_coal_newcastle_mean)       // energi & tambang: batu bara Newcastle (2009+)
+gen lncom_fd   = ln(cmd_cpo_front_mean)            // pertanian & pangan: CPO
+gen lncom_imf  = ln(PALLFNFINDEXM)                 // robustness: indeks IMF all commodities
+* PDB riil Indonesia: kuartalan (bulan akhir kuartal) -> bulanan, interpolasi log-linear
+gen lngdp_q = ln(idn_gdp_real_index_2015mean100)
+ipolate lngdp_q mdate, gen(lngdp_idn)
+label var lncom     "ln BCOM (database DEN)"
+label var lncom_nrg "ln harga batu bara Newcastle"
+label var lncom_fd  "ln harga CPO"
+label var lncom_imf "ln indeks komoditas IMF (all)"
+label var lngdp_idn "ln PDB riil Indonesia (interpolasi bulanan)"
+keep mdate lncom lncom_nrg lncom_fd lncom_imf lngdp_idn
+save intermediate/analisis/commodity_prices.dta, replace
 
 * -----------------------------------------------------------------------------
-* 2. Panel negara x bulan
+* 2. Panel 10 mitra x bulan
+*    nilai perdagangan dari baris TOTAL Trade_Total_Month (HS-6, Trade Map);
+*    IPI, REER, JISDOR dari Panel_Country_Month
 * -----------------------------------------------------------------------------
-import delimited using intermediate/Panel_Country_Month.csv, clear encoding(utf8)
+import delimited using intermediate/dari_tio/Trade_Total_Month.csv, clear encoding(utf8)
+keep iso3 date exports_usdk imports_usdk
+rename (exports_usdk imports_usdk) (x m)
+tempfile tot
+save `tot'
+
+import delimited using intermediate/dari_tio/Panel_Country_Month.csv, clear encoding(utf8)
+drop exports_usdk imports_usdk trade_balance_usdk total_trade_usdk
+merge 1:1 iso3 date using `tot', keep(match) nogen
+rename (x m) (exports_usdk imports_usdk)
 gen mdate = monthly(date, "YM")
 format mdate %tm
-keep if !missing(exports_usdk)                 // perdagangan s.d. 2026m8
-merge m:1 mdate using intermediate/commodity_prices.dta, keep(master match) nogen
+keep if !missing(exports_usdk) & !missing(imports_usdk)
+merge m:1 mdate using intermediate/analisis/commodity_prices.dta, keep(master match) nogen
 
 encode iso3, gen(cid)
 xtset cid mdate
@@ -59,14 +97,13 @@ gen lnjis   = ln(jisdor_avg)
 gen covid   = inrange(mdate, tm(2020m3), tm(2020m8))
 gen gfc     = inrange(mdate, tm(2008m10), tm(2009m6))
 
-* Permintaan luar negeri: rata-rata IPI YoY mitra tertimbang ekspor (bobot = pangsa ekspor
-* rata-rata 2006-2026 di antara negara yang IPI-nya tersedia bulan itu).
+* Permintaan luar negeri: IPI YoY mitra tertimbang ekspor (bobot = pangsa ekspor 2006-2026
+* di antara negara yang IPI-nya tersedia bulan itu)
 bysort cid: egen xw = total(exports_usdk)
 gen w_ipi = xw * !missing(ipi_yoy_pct)
 bysort mdate: egen sw = total(w_ipi)
 bysort mdate: egen yf_avg = total(w_ipi * ipi_yoy_pct / sw)
 replace yf_avg = . if sw == 0
-* IPI mitra: pakai IPI negara itu sendiri bila tersedia, kalau tidak pakai rata-rata mitra
 gen yf = ipi_yoy_pct
 gen yf_own = !missing(ipi_yoy_pct)
 replace yf = yf_avg if missing(yf)
@@ -77,165 +114,93 @@ label var lnreer "ln REER BIS (naik = apresiasi riil)"
 label var lnjis  "ln JISDOR Rp/USD (naik = depresiasi)"
 label var yf     "IPI YoY mitra (%)"
 label var yf_avg "IPI YoY rata-rata 10 mitra tertimbang ekspor (%)"
-save intermediate/ana_partner.dta, replace
+save intermediate/analisis/ana_partner.dta, replace
 
 * -----------------------------------------------------------------------------
-* 3. Agregat 10 mitra
+* 3. Agregat: Indonesia vs DUNIA (utama) + jumlah 10 mitra (robustness)
 * -----------------------------------------------------------------------------
-collapse (sum) exports_usdk imports_usdk (first) reer_bis_broad jisdor_avg lncom lncom_nrg lncom_fd ///
-         yf_avg month m2-m12 covid gfc, by(mdate)
+collapse (sum) x_10m = exports_usdk m_10m = imports_usdk ///
+         (first) reer_bis_broad jisdor_avg yf_avg month m2-m12 covid gfc, by(mdate)
+tempfile ag10
+save `ag10'
+use `tot', clear
+keep if iso3 == "WLD"
+gen mdate = monthly(date, "YM")
+rename (x m) (exports_usdk imports_usdk)
+keep mdate exports_usdk imports_usdk
+merge 1:1 mdate using `ag10', keep(match) nogen
+merge 1:1 mdate using intermediate/analisis/commodity_prices.dta, keep(master match) nogen
+format mdate %tm
 tsset mdate
 gen lntb   = ln(exports_usdk / imports_usdk)
+gen lntb10 = ln(x_10m / m_10m)
 gen lnx    = ln(exports_usdk)
 gen lnm    = ln(imports_usdk)
 gen lnreer = ln(reer_bis_broad)
 gen lnjis  = ln(jisdor_avg)
 gen t      = _n
-label var lntb   "ln(Ekspor/Impor), 10 mitra"
+label var lntb   "ln(Ekspor/Impor), Indonesia vs dunia"
+label var lntb10 "ln(Ekspor/Impor), jumlah 10 mitra"
 label var lnreer "ln REER BIS (naik = apresiasi riil)"
 label var lnjis  "ln JISDOR Rp/USD (naik = depresiasi)"
 label var yf_avg "IPI YoY mitra tertimbang (%)"
-save intermediate/ana_aggregate.dta, replace
+save intermediate/analisis/ana_aggregate.dta, replace
 
 * -----------------------------------------------------------------------------
-* 4. Klasifikasi HS-4
-*    sector : 1 Komoditas pertanian/pangan, 2 Komoditas energi & tambang, 3 Manufaktur
-*             (komoditas ~ definisi UNCTAD: SITC 0,1,2,3,4,68,667,971; dipetakan ke HS-4,
-*              ditambah 7202 ferroalloy/feronikel karena relevan untuk hilirisasi nikel)
-*    enduse : 1 Barang konsumsi, 2 Bahan baku/penolong, 3 Barang modal
-*             (pendekatan BEC / klasifikasi impor BPS, aturan per bab + pengecualian HS-4)
+* 4. Kelompok barang HS-6 (Trade_Goods_Month, klasifikasi Tio)
 * -----------------------------------------------------------------------------
-import delimited using intermediate/HS_Lookup.csv, clear stringcols(1) encoding(utf8)
-rename hs_code hs4
-replace hs4 = substr("0000" + hs4, -4, 4)
-gen ch = real(substr(hs4, 1, 2))
-gen h  = real(hs4)
-
-* --- sektor / komoditas
-gen sector = 3
-replace sector = 1 if inrange(ch, 1, 24)
-replace sector = 1 if h == 4001 | inrange(h, 4101, 4103) | inrange(h, 4401, 4407) | inrange(h, 4701, 4707)
-replace sector = 1 if inrange(h, 5001, 5003) | inrange(h, 5101, 5105) | inrange(h, 5201, 5203) | inrange(h, 5301, 5305)
-replace sector = 2 if inrange(ch, 25, 27)
-replace sector = 2 if inrange(h, 7101, 7112)                       // mutiara, batu mulia, emas/perak mentah
-replace sector = 2 if inlist(h, 7202, 7401, 7402, 7403, 7501, 7502, 7601, 7801, 7901) | h == 8001
-replace sector = 2 if inrange(h, 8101, 8112)
-gen commodity = sector < 3
-
-* --- end use (BEC-like)
-gen enduse = 2                                                      // default: bahan baku/penolong
-* konsumsi, per bab
-replace enduse = 1 if inlist(ch, 2, 3, 4, 7, 8, 9, 16, 19, 20, 21, 22, 30, 33, 42, 43, 49)
-replace enduse = 1 if inrange(ch, 61, 67) | inlist(ch, 91, 92, 93, 94, 95, 96, 97)
-* pengecualian pangan
-replace enduse = 1 if inlist(h, 1006, 1704, 1806, 2402, 2403, 3401)  // beras, permen, cokelat, rokok, sabun
-replace enduse = 1 if inrange(h, 7113, 7118)                        // perhiasan
-replace enduse = 2 if inrange(h, 1801, 1805)                        // kakao (bahan)
-* mesin & listrik
-replace enduse = 3 if ch == 84
-replace enduse = 2 if inlist(h, 8409, 8473, 8481, 8482, 8483, 8484, 8487)                  // suku cadang
-replace enduse = 1 if inlist(h, 8418, 8450)                                                // kulkas, mesin cuci
-replace enduse = 3 if inlist(h, 8501, 8502, 8504, 8514, 8515, 8517, 8525, 8526) | inlist(h, 8530, 8531, 8543)
-replace enduse = 1 if inlist(h, 8508, 8509, 8510, 8516, 8519, 8527, 8528)                  // elektronik rumah tangga
-* kendaraan, pesawat, kapal, instrumen
-replace enduse = 3 if inlist(ch, 86, 88, 89)
-replace enduse = 3 if inlist(h, 8701, 8702, 8704, 8705, 8709, 8716)
-replace enduse = 1 if inlist(h, 8703, 8711, 8712, 8713)
-replace enduse = 2 if inlist(h, 8706, 8707, 8708, 8714)
-replace enduse = 3 if ch == 90
-replace enduse = 2 if inlist(h, 9001, 9002)
-replace enduse = 1 if inlist(h, 9003, 9004)
-replace enduse = 2 if ch == 99 | ch == 98
-
-label define sector 1 "Komoditas pertanian & pangan" 2 "Komoditas energi & tambang" 3 "Manufaktur"
-label define enduse 1 "Barang konsumsi" 2 "Bahan baku/penolong" 3 "Barang modal"
-label values sector sector
-label values enduse enduse
-keep hs4 product sector commodity enduse
-export delimited using intermediate/hs4_groups.csv, replace
-save intermediate/hs4_groups.dta, replace
-
-* -----------------------------------------------------------------------------
-* 5. Perdagangan per kelompok (semua 10 mitra dijumlah) x bulan
-* -----------------------------------------------------------------------------
-local isos AUS CHN IND JPN KOR MYS SGP THA USA VNM
-tempfile acc
-local first = 1
-foreach fl in Export Import {
-    foreach c of local isos {
-        import delimited using "intermediate/hs_panel/`fl'_`c'.csv", clear ///
-            stringcols(3) encoding(utf8) colrange(:5)
-        rename hs_code hs4
-        replace hs4 = substr("0000" + hs4, -4, 4)
-        merge m:1 hs4 using intermediate/hs4_groups.dta, keep(master match) keepusing(sector enduse)
-        quietly count if _merge == 1
-        if r(N) > 0 di as error "`fl' `c': `r(N)' baris HS tanpa klasifikasi -> diberi manufaktur/bahan baku"
-        replace sector = 3 if _merge == 1
-        replace enduse = 2 if _merge == 1
-        drop _merge
-        gen mdate = monthly(date, "YM")
-        * simpan dua dimensi: sektor dan end use
-        preserve
-            collapse (sum) v = value_usdk, by(mdate sector)
-            gen str20 grp = "sec" + string(sector)
-            drop sector
-            tempfile s
-            save `s'
-        restore
-        collapse (sum) v = value_usdk, by(mdate enduse)
-        gen str20 grp = "eu" + string(enduse)
-        drop enduse
-        append using `s'
-        gen str6 flow = "`fl'"
-        gen str3 iso3 = "`c'"
-        if !`first' append using `acc'
-        save `acc', replace
-        local first = 0
-    }
-}
-* total per kelompok (10 mitra), plus komoditas vs non-komoditas
-collapse (sum) v, by(flow grp mdate)
-reshape wide v, i(grp mdate) j(flow) string
-rename (vExport vImport) (x m)
-tempfile g
-save `g'
-keep if inlist(grp, "sec1", "sec2")
-collapse (sum) x m, by(mdate)
-gen grp = "comm"
-append using `g'
-* non-komoditas = manufaktur
-expand 2 if grp == "sec3", gen(dup)
-replace grp = "noncomm" if dup
-drop dup
-
+import delimited using intermediate/dari_tio/Trade_Goods_Month.csv, clear encoding(utf8)
+keep iso3 group date exports_usdk imports_usdk
+rename (exports_usdk imports_usdk) (x m)
+gen mdate = monthly(date, "YM")
+format mdate %tm
+gen str8 grp = ""
+replace grp = "comm"    if group == "commodity"
+replace grp = "sec1"    if group == "agriculture"
+replace grp = "sec2"    if group == "energy_mining"
+replace grp = "noncomm" if group == "manufacturing"
+replace grp = "eu1"     if group == "consumption"
+replace grp = "eu2"     if group == "intermediate"
+replace grp = "eu3"     if group == "capital"
+assert grp != ""
 gen str40 grp_label = ""
 replace grp_label = "Komoditas (total)"            if grp == "comm"
 replace grp_label = "Non-komoditas (manufaktur)"   if grp == "noncomm"
 replace grp_label = "Komoditas pertanian & pangan" if grp == "sec1"
 replace grp_label = "Komoditas energi & tambang"   if grp == "sec2"
-replace grp_label = "Manufaktur"                   if grp == "sec3"
 replace grp_label = "Barang konsumsi"              if grp == "eu1"
 replace grp_label = "Bahan baku/penolong"          if grp == "eu2"
 replace grp_label = "Barang modal"                 if grp == "eu3"
-drop if grp == "sec3"                                  // sama dengan noncomm
+keep iso3 grp grp_label mdate x m
 
-format mdate %tm
-merge m:1 mdate using intermediate/ana_aggregate.dta, keep(match) ///
-    keepusing(lnreer lnjis lncom lncom_nrg lncom_fd yf_avg month m2-m12 covid gfc t) nogen
+* panel mitra x kelompok (dipakai 03 dan 07)
+preserve
+    drop if iso3 == "WLD"
+    save intermediate/analisis/trade_group_partner.dta, replace
+restore
+
+* Indonesia vs dunia per kelompok
+keep if iso3 == "WLD"
+drop iso3
+merge m:1 mdate using intermediate/analisis/ana_aggregate.dta, keep(match) ///
+    keepusing(lnreer lnjis lncom lncom_nrg lncom_fd lncom_imf lngdp_idn yf_avg month m2-m12 covid gfc t) nogen
 gen lntb = ln(x / m)
 encode grp, gen(gid)
 xtset gid mdate
-save intermediate/ana_group.dta, replace
+save intermediate/analisis/ana_group.dta, replace
 
-* ringkasan pangsa per kelompok
+* ringkasan pangsa per kelompok (dunia, kumulatif seluruh periode)
 preserve
+use intermediate/analisis/ana_aggregate.dta, clear
+quietly summarize exports_usdk
+local X = r(sum)
+quietly summarize imports_usdk
+local M = r(sum)
+restore
 collapse (sum) x m, by(grp grp_label)
-egen X = total(x * inlist(grp, "comm", "noncomm"))
-egen M = total(m * inlist(grp, "comm", "noncomm"))
-gen share_x = 100 * x / X
-gen share_m = 100 * m / M
+gen share_x = 100 * x / `X'
+gen share_m = 100 * m / `M'
 gen tb_usdbn = (x - m) / 1e6
 keep grp grp_label share_x share_m tb_usdbn
 list, clean noobs
-export delimited using output/tables/group_shares.csv, replace
-restore
+export delimited using output/0_deskriptif/group_shares.csv, replace
