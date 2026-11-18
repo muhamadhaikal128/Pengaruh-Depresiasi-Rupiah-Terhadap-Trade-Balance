@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-11-17T06:25:26.460177+00:00",
+  "sources": [
+    {
+      "filename": "product_reference_H0.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/H0.json",
+      "sha256": "05cd59ce7156f373214162eb6c2be702c924b41b795c098b4eb595429711ee07"
+    },
+    {
+      "filename": "product_reference_H1.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/H1.json",
+      "sha256": "061715cee302b21e4399975b315255ff4c70b7c130a337aab6bc4bb0d5176dad"
+    },
+    {
+      "filename": "product_reference_H3.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/H3.json",
+      "sha256": "a49afade7d921b4eac6a7fbefcc2fa4f5085b1299c0f958f4728a38aca7db0be"
+    },
+    {
+      "filename": "product_reference_H4.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/H4.json",
+      "sha256": "29b35dfc510f94e8360cfe3d2eefdabfb47c69a28e6b5628f9a3b6d824789a33"
+    },
+    {
+      "filename": "product_reference_H5.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/H5.json",
+      "sha256": "079987eba4e5e1f60e63368e2aa8d7ac68c29fa6f3a889466dbd5276272f2431"
+    },
+    {
+      "filename": "product_reference_H6.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/H6.json",
+      "sha256": "e266823e1299d1307c5d7986eb738b83aa5e5bd9af675bf19bf372220660be15"
+    }
+  ]
+}

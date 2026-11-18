@@ -1,0 +1,67 @@
+\contentsline {section}{Ringkasan penelitian}{i}{section*.1}%
+\contentsline {section}{Mulai membaca dari sini}{i}{section*.2}%
+\contentsline {section}{\numberline {1}Apa yang ingin diketahui penelitian ini?}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Mengapa rupiah melemah belum tentu memperbaiki perdagangan}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Apa saja yang dibandingkan?}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Bagaimana penelitian ini mengikuti paper acuan?}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Batas pertanyaan yang bisa dijawab}{2}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Data yang dipakai}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Semua data perdagangan adalah milik Indonesia}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Dari data bulanan menjadi kuartalan}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Mengapa ada tujuh kelompok barang?}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Data GDP, kurs, dan harga}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Mengapa periode data tiap negara berbeda?}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Memahami model dan cara membaca hasilnya}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Apa yang sebenarnya diprediksi model?}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Kapan suatu respons disebut J-curve?}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}ARDL: memasukkan pengaruh saat ini dan beberapa kuartal sebelumnya}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}NARDL: membedakan kurs menguat dan melemah}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Apa fungsi error correction?}{9}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Mengapa tanda koefisien bisa terasa terbalik?}{9}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Apa yang dipakai untuk mewakili permintaan luar negeri?}{10}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Bagaimana lag dipilih?}{10}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Kapan hasil boleh dibaca sebagai hubungan long run?}{10}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}P-value, confidence interval, dan asymmetry}{11}{subsection.3.10}%
+\contentsline {section}{\numberline {4}Hasil untuk total perdagangan Indonesia}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Bukti long run masih belum cukup}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Apa yang bisa dibaca dari grafik?}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Contoh: apa arti koefisien 3,356?}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Hasil tiap mitra}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Gambaran umumnya}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Indonesia--Australia}{16}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Indonesia--Tiongkok}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Indonesia--India}{18}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Indonesia--Jepang}{19}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Indonesia--Korea Selatan}{20}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Indonesia--Malaysia}{21}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Indonesia--Singapura}{22}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Indonesia--Thailand}{23}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Indonesia--Amerika Serikat}{24}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Indonesia--Vietnam}{25}{subsection.5.11}%
+\contentsline {section}{\numberline {6}Hasil menurut kelompok barang}{26}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Mengapa berbeda dari hasil total?}{26}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Komoditas total dan energi/tambang}{26}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Manufaktur nonkomoditas}{28}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Konsumsi, pertanian, bahan baku/penolong, dan modal}{29}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Contoh hasil yang berbeda menurut mitra}{29}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Seberapa kuat hasilnya?}{32}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Tidak cukup hanya melihat p-value}{32}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Bagaimana stabilitas diperiksa?}{32}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Apa itu robustness check?}{33}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Mengapa pola J berkurang setelah diperiksa?}{34}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Mengapa ARDL dan NARDL bisa berbeda?}{34}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Apa kesimpulan yang bisa diambil?}{36}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Depresiasi belum menjadi jaminan perbaikan}{36}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Tiga kesimpulan yang belum bisa dibuat}{36}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Apa keterbatasan yang paling berpengaruh?}{36}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Apa langkah berikutnya?}{37}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Ringkasan akhir}{37}{subsection.8.5}%
+\contentsline {section}{Daftar pustaka}{38}{section*.4}%
+\contentsline {section}{\numberline {A}Cara membaca tabel lengkap}{39}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Kode yang dipakai}{39}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Arti status dan p-value}{39}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Di mana rincian lainnya?}{39}{subsection.A.3}%
+\contentsline {section}{\numberline {B}Semua 176 model utama}{40}{appendix.B}%
+\contentsline {section}{\numberline {C}Semua 340 robustness checks}{44}{appendix.C}%
+\contentsline {section}{\numberline {D}Glosarium singkat}{52}{appendix.D}%
+\contentsline {section}{\numberline {E}Catatan revisi dan sumber file}{53}{appendix.E}%

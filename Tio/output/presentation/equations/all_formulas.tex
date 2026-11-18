@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[paperwidth=13in,paperheight=3.6in,margin=0.15in]{geometry}
+\usepackage{amsmath,amssymb}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\begin{document}
+\fontsize{22}{30}\selectfont
+\vspace*{0.15in}\noindent\(\displaystyle y_t=\ln\!\left(\frac{M_t}{X_t}\right),\qquad TB_t=X_t-M_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle d_t=\ln Y_{\mathrm{IDN},t},\qquad f_t=\ln Y_{\mathrm{mitra},t}\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle q_t=\ln(\mathrm{REER}_t),\qquad q_t\uparrow\ \Longleftrightarrow\ \mathrm{apresiasi}\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle q_{i,t}=-\ln(\mathrm{RER}_{i,t})\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle q_t^+=\sum_{s=1}^{t}\max(\Delta q_s,0),\qquad q_t^-=\sum_{s=1}^{t}\min(\Delta q_s,0)\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle y_t=\alpha+\beta_d d_t+\beta_f f_t+\beta_q q_t+u_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle y_t=\alpha+\beta_d d_t+\beta_f f_t+\beta_+q_t^++\beta_-q_t^-+u_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \begin{aligned}\Delta y_t={}&a+\rho y_{t-1}+\theta_d d_{t-1}+\theta_f f_{t-1}+\theta_+q_{t-1}^{+}+\theta_-q_{t-1}^{-}\\ &+\sum_{j=1}^{P}\phi_j\Delta y_{t-j}+\sum_{j=0}^{Q_d}\gamma_{d,j}\Delta d_{t-j}+\sum_{j=0}^{Q_f}\gamma_{f,j}\Delta f_{t-j}\\ &+\sum_{j=0}^{Q_+}\pi_j^+\Delta q_{t-j}^++\sum_{j=0}^{Q_-}\pi_j^-\Delta q_{t-j}^-+\varepsilon_t\end{aligned}\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \beta_-=-\frac{\theta_-}{\rho},\qquad \beta_+=-\frac{\theta_+}{\rho},\qquad \rho<0\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle H_0^{\mathrm{LR}}:\ \beta_+=\beta_-,\qquad H_0^{\mathrm{SR}}:\ \sum_j\pi_j^+=\sum_j\pi_j^-\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle H_0:\ \rho=\theta_d=\theta_f=\theta_+=\theta_-=0\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle R_h^{J}=-100\,\Delta_h y=100\,\Delta_h\ln\!\left(\frac{X}{M}\right)\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \Delta q^-=-\ln(1.10),\qquad \Delta q^+=+\ln(1.10)\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \Delta y_{\infty}^{-}=\beta_-\,\Delta q^-,\qquad \beta_->0,\ \Delta q^-<0\ \Longrightarrow\ \Delta y_\infty^-<0\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle m_h^{\pm}=\frac{\partial y_{t+h}}{\partial q_t^\pm},\qquad R_h^{J,\pm}=-100\,m_h^\pm\Delta q^\pm\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \min_{0\leq h\leq4}R_h^{J,-}<0,\qquad \frac{1}{9}\sum_{h=16}^{24}R_h^{J,-}>0\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle y_t=\alpha+\beta_d d_t+\beta_f f_t+\beta_+q_t^++\beta_-q_t^-+\beta_c\ln(\mathrm{BCOM}_t)+u_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle f_t=\ln\!\left(\sum_{i=1}^{10}w_iY_{i,t}^{(2015=100)}\right),\qquad \sum_{i=1}^{10}w_i=1\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle y_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle d_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle f_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle q_t\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle q_t^+\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle q_t^-\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \ln(\mathrm{BCOM}_t)\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \beta_q\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \beta_-\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \beta_+\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle I(0),\ I(1),\ I(2)\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle \beta_-\)
+\newpage
+\vspace*{0.15in}\noindent\(\displaystyle N\)
+\end{document}

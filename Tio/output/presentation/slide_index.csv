@@ -1,0 +1,241 @@
+﻿Slide,Bagian,Judul,Model
+1,Utama,"Depresiasi Rupiah dan
+Neraca Perdagangan Indonesia",
+2,Utama,Apakah depresiasi selalu memperbaiki neraca perdagangan?,
+3,Utama,Seluruh analisis berpusat pada ekspor dan impor Indonesia,
+4,Utama,Surplus perdagangan tidak dengan sendirinya mengungkapkan pengaruh kurs,
+5,Utama,Sampel agregat mencakup 61 kuartal dengan variasi neraca yang besar,
+6,Utama,"Sepuluh mitra mencakup sebagian besar perdagangan, tetapi polanya berbeda",
+7,Utama,"Komoditas penting bagi ekspor, tetapi manufaktur juga berperan besar",
+8,Utama,"BEC menjelaskan penggunaan barang, bukan kandungan impor dalam ekspor",
+9,Utama,Tujuh kelompok memakai dua dimensi klasifikasi yang bertumpang tindih,
+10,Utama,Variabel model mempertahankan definisi paper dan orientasi kurs,
+11,Utama,Kurs dan neraca bergerak bersama banyak perubahan ekonomi,
+12,Utama,Perbedaan rentang sampel membatasi perbandingan antarmitra,
+13,Utama,Pengaruh harga relatif bergantung pada cara barang diperdagangkan,
+14,Utama,J-curve memerlukan fase awal memburuk dan fase berikutnya membaik,
+15,Utama,"Penelitian ini mengadaptasi paper, bukan menyalin seluruh spesifikasinya",
+16,Utama,ARDL memberi satu hubungan kurs untuk apresiasi dan depresiasi,
+17,Utama,NARDL memisahkan akumulasi apresiasi dan depresiasi,
+18,Utama,Error correction menghubungkan penyesuaian awal dan hubungan level,
+19,Utama,Asimetri dan kointegrasi menjawab pertanyaan yang berbeda,
+20,Utama,Tanda grafik diubah agar perbaikan neraca berada di atas nol,
+21,Utama,Hanya sebagian model lolos seluruh penyaringan yang digunakan,
+22,Utama,Agregat Indonesia belum memberi hubungan jangka panjang yang kuat,
+23,Utama,Signifikansi depresiasi pada NARDL agregat Indonesia belum menyelesaikan masalah level,
+24,Utama,Perpanjangan sampel menjadi pemeriksaan ketahanan hasil agregat,
+25,Utama,Respons bilateral tidak dapat dirangkum menjadi satu elastisitas nasional,
+26,Utama,Australia memperlihatkan pemburukan awal sebelum perbaikan,
+27,Utama,"Malaysia mengarah pada perbaikan, tetapi dukungan signifikansinya terbatas",
+28,Utama,Tanda negatif di Tiongkok dan Jepang belum cukup menjadi kesimpulan,
+29,Utama,Enam mitra lainnya memperlihatkan variasi bentuk dan ketepatan respons,
+30,Utama,"Asimetri, signifikansi, dan kelayakan model tidak selalu sejalan",
+31,Utama,Pemisahan barang mengubah kesimpulan agregat Indonesia,
+32,Utama,Hubungan negatif komoditas bertahan pada beberapa pembanding linier,
+33,Utama,Komoditas total: pembacaan linier dan nonlinear belum sepenuhnya sejalan,
+34,Utama,"Energi dan tambang: koefisien linier kuat, ketidakpastian nonlinear besar",
+35,Utama,Manufaktur nonkomoditas belum menunjukkan perbaikan yang dapat dipastikan,
+36,Utama,"Barang konsumsi memberi arah perbaikan, dengan catatan pada model nonlinear",
+37,Utama,"Pertanian, bahan baku/penolong, dan modal belum memberi satu pola dunia",
+38,Utama,Efek depresiasi berbeda menurut barang dan tujuan perdagangan,
+39,Utama,Pertanian ke Tiongkok memberi contoh arah pemburukan yang lebih terukur,
+40,Utama,Sebagian kelompok justru memberi pola J yang lebih jelas,
+41,Utama,Bentuk J lebih sering terlihat daripada dukungan statistik dua fasenya,
+42,Utama,Kontrol harga tidak menghapus arah negatif komoditas pada ARDL,
+43,Utama,Koreksi pengujian berganda mengubah sebagian pembacaan signifikansi,
+44,Utama,Diagnostik menunjukkan bahwa masalahnya tidak hanya ada pada signifikansi,
+45,Utama,Stabilitas agregat Indonesia berbeda dari Australia dan Malaysia,
+46,Utama,Keterbatasan data tetap memengaruhi arti hasil penelitian,
+47,Utama,"Komposisi barang membantu menjelaskan heterogenitas, tetapi belum menentukan mekanismenya",
+48,Utama,Hasil belum memberi dasar bahwa depresiasi merupakan jaminan perbaikan neraca,
+49,Utama,Sumber dan referensi memungkinkan setiap hasil ditelusuri kembali,
+50,Utama,Panduan membaca atlas hasil lengkap,
+51,Pembatas,Atlas respons model utama,
+52,A,Atlas A | Indonesia–seluruh dunia,WORLD_ARDL_AIC4;WORLD_NARDL_AIC4
+53,A,Atlas A | Indonesia–Australia,BIL_AUS_ARDL_AIC4;BIL_AUS_NARDL_AIC4
+54,A,Atlas A | Indonesia–Tiongkok,BIL_CHN_ARDL_AIC4;BIL_CHN_NARDL_AIC4
+55,A,Atlas A | Indonesia–India,BIL_IND_ARDL_AIC4;BIL_IND_NARDL_AIC4
+56,A,Atlas A | Indonesia–Jepang,BIL_JPN_ARDL_AIC4;BIL_JPN_NARDL_AIC4
+57,A,Atlas A | Indonesia–Korea Selatan,BIL_KOR_ARDL_AIC4;BIL_KOR_NARDL_AIC4
+58,A,Atlas A | Indonesia–Malaysia,BIL_MYS_ARDL_AIC4;BIL_MYS_NARDL_AIC4
+59,A,Atlas A | Indonesia–Singapura,BIL_SGP_ARDL_AIC4;BIL_SGP_NARDL_AIC4
+60,A,Atlas A | Indonesia–Thailand,BIL_THA_ARDL_AIC4;BIL_THA_NARDL_AIC4
+61,A,Atlas A | Indonesia–Amerika Serikat,BIL_USA_ARDL_AIC4;BIL_USA_NARDL_AIC4
+62,A,Atlas A | Indonesia–Vietnam,BIL_VNM_ARDL_AIC4;BIL_VNM_NARDL_AIC4
+63,A,Atlas A | Indonesia–seluruh dunia | manufaktur nonkomoditas,TYPE_WLD_manufacturing_ARDL_AIC4;TYPE_WLD_manufacturing_NARDL_AIC4
+64,A,Atlas A | Indonesia–seluruh dunia | barang konsumsi,TYPE_WLD_consumption_ARDL_AIC4;TYPE_WLD_consumption_NARDL_AIC4
+65,A,Atlas A | Indonesia–seluruh dunia | pertanian dan pangan,TYPE_WLD_agriculture_ARDL_AIC4;TYPE_WLD_agriculture_NARDL_AIC4
+66,A,Atlas A | Indonesia–seluruh dunia | bahan baku/penolong,TYPE_WLD_intermediate_ARDL_AIC4;TYPE_WLD_intermediate_NARDL_AIC4
+67,A,Atlas A | Indonesia–seluruh dunia | barang modal,TYPE_WLD_capital_ARDL_AIC4;TYPE_WLD_capital_NARDL_AIC4
+68,A,Atlas A | Indonesia–seluruh dunia | komoditas total,TYPE_WLD_commodity_ARDL_AIC4;TYPE_WLD_commodity_NARDL_AIC4
+69,A,Atlas A | Indonesia–seluruh dunia | energi dan tambang,TYPE_WLD_energy_mining_ARDL_AIC4;TYPE_WLD_energy_mining_NARDL_AIC4
+70,A,Atlas A | Indonesia–Australia | manufaktur nonkomoditas,TYPE_AUS_manufacturing_ARDL_AIC4;TYPE_AUS_manufacturing_NARDL_AIC4
+71,A,Atlas A | Indonesia–Australia | barang konsumsi,TYPE_AUS_consumption_ARDL_AIC4;TYPE_AUS_consumption_NARDL_AIC4
+72,A,Atlas A | Indonesia–Australia | pertanian dan pangan,TYPE_AUS_agriculture_ARDL_AIC4;TYPE_AUS_agriculture_NARDL_AIC4
+73,A,Atlas A | Indonesia–Australia | bahan baku/penolong,TYPE_AUS_intermediate_ARDL_AIC4;TYPE_AUS_intermediate_NARDL_AIC4
+74,A,Atlas A | Indonesia–Australia | barang modal,TYPE_AUS_capital_ARDL_AIC4;TYPE_AUS_capital_NARDL_AIC4
+75,A,Atlas A | Indonesia–Australia | komoditas total,TYPE_AUS_commodity_ARDL_AIC4;TYPE_AUS_commodity_NARDL_AIC4
+76,A,Atlas A | Indonesia–Australia | energi dan tambang,TYPE_AUS_energy_mining_ARDL_AIC4;TYPE_AUS_energy_mining_NARDL_AIC4
+77,A,Atlas A | Indonesia–Tiongkok | manufaktur nonkomoditas,TYPE_CHN_manufacturing_ARDL_AIC4;TYPE_CHN_manufacturing_NARDL_AIC4
+78,A,Atlas A | Indonesia–Tiongkok | barang konsumsi,TYPE_CHN_consumption_ARDL_AIC4;TYPE_CHN_consumption_NARDL_AIC4
+79,A,Atlas A | Indonesia–Tiongkok | pertanian dan pangan,TYPE_CHN_agriculture_ARDL_AIC4;TYPE_CHN_agriculture_NARDL_AIC4
+80,A,Atlas A | Indonesia–Tiongkok | bahan baku/penolong,TYPE_CHN_intermediate_ARDL_AIC4;TYPE_CHN_intermediate_NARDL_AIC4
+81,A,Atlas A | Indonesia–Tiongkok | barang modal,TYPE_CHN_capital_ARDL_AIC4;TYPE_CHN_capital_NARDL_AIC4
+82,A,Atlas A | Indonesia–Tiongkok | komoditas total,TYPE_CHN_commodity_ARDL_AIC4;TYPE_CHN_commodity_NARDL_AIC4
+83,A,Atlas A | Indonesia–Tiongkok | energi dan tambang,TYPE_CHN_energy_mining_ARDL_AIC4;TYPE_CHN_energy_mining_NARDL_AIC4
+84,A,Atlas A | Indonesia–India | manufaktur nonkomoditas,TYPE_IND_manufacturing_ARDL_AIC4;TYPE_IND_manufacturing_NARDL_AIC4
+85,A,Atlas A | Indonesia–India | barang konsumsi,TYPE_IND_consumption_ARDL_AIC4;TYPE_IND_consumption_NARDL_AIC4
+86,A,Atlas A | Indonesia–India | pertanian dan pangan,TYPE_IND_agriculture_ARDL_AIC4;TYPE_IND_agriculture_NARDL_AIC4
+87,A,Atlas A | Indonesia–India | bahan baku/penolong,TYPE_IND_intermediate_ARDL_AIC4;TYPE_IND_intermediate_NARDL_AIC4
+88,A,Atlas A | Indonesia–India | barang modal,TYPE_IND_capital_ARDL_AIC4;TYPE_IND_capital_NARDL_AIC4
+89,A,Atlas A | Indonesia–India | komoditas total,TYPE_IND_commodity_ARDL_AIC4;TYPE_IND_commodity_NARDL_AIC4
+90,A,Atlas A | Indonesia–India | energi dan tambang,TYPE_IND_energy_mining_ARDL_AIC4;TYPE_IND_energy_mining_NARDL_AIC4
+91,A,Atlas A | Indonesia–Jepang | manufaktur nonkomoditas,TYPE_JPN_manufacturing_ARDL_AIC4;TYPE_JPN_manufacturing_NARDL_AIC4
+92,A,Atlas A | Indonesia–Jepang | barang konsumsi,TYPE_JPN_consumption_ARDL_AIC4;TYPE_JPN_consumption_NARDL_AIC4
+93,A,Atlas A | Indonesia–Jepang | pertanian dan pangan,TYPE_JPN_agriculture_ARDL_AIC4;TYPE_JPN_agriculture_NARDL_AIC4
+94,A,Atlas A | Indonesia–Jepang | bahan baku/penolong,TYPE_JPN_intermediate_ARDL_AIC4;TYPE_JPN_intermediate_NARDL_AIC4
+95,A,Atlas A | Indonesia–Jepang | barang modal,TYPE_JPN_capital_ARDL_AIC4;TYPE_JPN_capital_NARDL_AIC4
+96,A,Atlas A | Indonesia–Jepang | komoditas total,TYPE_JPN_commodity_ARDL_AIC4;TYPE_JPN_commodity_NARDL_AIC4
+97,A,Atlas A | Indonesia–Jepang | energi dan tambang,TYPE_JPN_energy_mining_ARDL_AIC4;TYPE_JPN_energy_mining_NARDL_AIC4
+98,A,Atlas A | Indonesia–Korea Selatan | manufaktur nonkomoditas,TYPE_KOR_manufacturing_ARDL_AIC4;TYPE_KOR_manufacturing_NARDL_AIC4
+99,A,Atlas A | Indonesia–Korea Selatan | barang konsumsi,TYPE_KOR_consumption_ARDL_AIC4;TYPE_KOR_consumption_NARDL_AIC4
+100,A,Atlas A | Indonesia–Korea Selatan | pertanian dan pangan,TYPE_KOR_agriculture_ARDL_AIC4;TYPE_KOR_agriculture_NARDL_AIC4
+101,A,Atlas A | Indonesia–Korea Selatan | bahan baku/penolong,TYPE_KOR_intermediate_ARDL_AIC4;TYPE_KOR_intermediate_NARDL_AIC4
+102,A,Atlas A | Indonesia–Korea Selatan | barang modal,TYPE_KOR_capital_ARDL_AIC4;TYPE_KOR_capital_NARDL_AIC4
+103,A,Atlas A | Indonesia–Korea Selatan | komoditas total,TYPE_KOR_commodity_ARDL_AIC4;TYPE_KOR_commodity_NARDL_AIC4
+104,A,Atlas A | Indonesia–Korea Selatan | energi dan tambang,TYPE_KOR_energy_mining_ARDL_AIC4;TYPE_KOR_energy_mining_NARDL_AIC4
+105,A,Atlas A | Indonesia–Malaysia | manufaktur nonkomoditas,TYPE_MYS_manufacturing_ARDL_AIC4;TYPE_MYS_manufacturing_NARDL_AIC4
+106,A,Atlas A | Indonesia–Malaysia | barang konsumsi,TYPE_MYS_consumption_ARDL_AIC4;TYPE_MYS_consumption_NARDL_AIC4
+107,A,Atlas A | Indonesia–Malaysia | pertanian dan pangan,TYPE_MYS_agriculture_ARDL_AIC4;TYPE_MYS_agriculture_NARDL_AIC4
+108,A,Atlas A | Indonesia–Malaysia | bahan baku/penolong,TYPE_MYS_intermediate_ARDL_AIC4;TYPE_MYS_intermediate_NARDL_AIC4
+109,A,Atlas A | Indonesia–Malaysia | barang modal,TYPE_MYS_capital_ARDL_AIC4;TYPE_MYS_capital_NARDL_AIC4
+110,A,Atlas A | Indonesia–Malaysia | komoditas total,TYPE_MYS_commodity_ARDL_AIC4;TYPE_MYS_commodity_NARDL_AIC4
+111,A,Atlas A | Indonesia–Malaysia | energi dan tambang,TYPE_MYS_energy_mining_ARDL_AIC4;TYPE_MYS_energy_mining_NARDL_AIC4
+112,A,Atlas A | Indonesia–Singapura | manufaktur nonkomoditas,TYPE_SGP_manufacturing_ARDL_AIC4;TYPE_SGP_manufacturing_NARDL_AIC4
+113,A,Atlas A | Indonesia–Singapura | barang konsumsi,TYPE_SGP_consumption_ARDL_AIC4;TYPE_SGP_consumption_NARDL_AIC4
+114,A,Atlas A | Indonesia–Singapura | pertanian dan pangan,TYPE_SGP_agriculture_ARDL_AIC4;TYPE_SGP_agriculture_NARDL_AIC4
+115,A,Atlas A | Indonesia–Singapura | bahan baku/penolong,TYPE_SGP_intermediate_ARDL_AIC4;TYPE_SGP_intermediate_NARDL_AIC4
+116,A,Atlas A | Indonesia–Singapura | barang modal,TYPE_SGP_capital_ARDL_AIC4;TYPE_SGP_capital_NARDL_AIC4
+117,A,Atlas A | Indonesia–Singapura | komoditas total,TYPE_SGP_commodity_ARDL_AIC4;TYPE_SGP_commodity_NARDL_AIC4
+118,A,Atlas A | Indonesia–Singapura | energi dan tambang,TYPE_SGP_energy_mining_ARDL_AIC4;TYPE_SGP_energy_mining_NARDL_AIC4
+119,A,Atlas A | Indonesia–Thailand | manufaktur nonkomoditas,TYPE_THA_manufacturing_ARDL_AIC4;TYPE_THA_manufacturing_NARDL_AIC4
+120,A,Atlas A | Indonesia–Thailand | barang konsumsi,TYPE_THA_consumption_ARDL_AIC4;TYPE_THA_consumption_NARDL_AIC4
+121,A,Atlas A | Indonesia–Thailand | pertanian dan pangan,TYPE_THA_agriculture_ARDL_AIC4;TYPE_THA_agriculture_NARDL_AIC4
+122,A,Atlas A | Indonesia–Thailand | bahan baku/penolong,TYPE_THA_intermediate_ARDL_AIC4;TYPE_THA_intermediate_NARDL_AIC4
+123,A,Atlas A | Indonesia–Thailand | barang modal,TYPE_THA_capital_ARDL_AIC4;TYPE_THA_capital_NARDL_AIC4
+124,A,Atlas A | Indonesia–Thailand | komoditas total,TYPE_THA_commodity_ARDL_AIC4;TYPE_THA_commodity_NARDL_AIC4
+125,A,Atlas A | Indonesia–Thailand | energi dan tambang,TYPE_THA_energy_mining_ARDL_AIC4;TYPE_THA_energy_mining_NARDL_AIC4
+126,A,Atlas A | Indonesia–Amerika Serikat | manufaktur nonkomoditas,TYPE_USA_manufacturing_ARDL_AIC4;TYPE_USA_manufacturing_NARDL_AIC4
+127,A,Atlas A | Indonesia–Amerika Serikat | barang konsumsi,TYPE_USA_consumption_ARDL_AIC4;TYPE_USA_consumption_NARDL_AIC4
+128,A,Atlas A | Indonesia–Amerika Serikat | pertanian dan pangan,TYPE_USA_agriculture_ARDL_AIC4;TYPE_USA_agriculture_NARDL_AIC4
+129,A,Atlas A | Indonesia–Amerika Serikat | bahan baku/penolong,TYPE_USA_intermediate_ARDL_AIC4;TYPE_USA_intermediate_NARDL_AIC4
+130,A,Atlas A | Indonesia–Amerika Serikat | barang modal,TYPE_USA_capital_ARDL_AIC4;TYPE_USA_capital_NARDL_AIC4
+131,A,Atlas A | Indonesia–Amerika Serikat | komoditas total,TYPE_USA_commodity_ARDL_AIC4;TYPE_USA_commodity_NARDL_AIC4
+132,A,Atlas A | Indonesia–Amerika Serikat | energi dan tambang,TYPE_USA_energy_mining_ARDL_AIC4;TYPE_USA_energy_mining_NARDL_AIC4
+133,A,Atlas A | Indonesia–Vietnam | manufaktur nonkomoditas,TYPE_VNM_manufacturing_ARDL_AIC4;TYPE_VNM_manufacturing_NARDL_AIC4
+134,A,Atlas A | Indonesia–Vietnam | barang konsumsi,TYPE_VNM_consumption_ARDL_AIC4;TYPE_VNM_consumption_NARDL_AIC4
+135,A,Atlas A | Indonesia–Vietnam | pertanian dan pangan,TYPE_VNM_agriculture_ARDL_AIC4;TYPE_VNM_agriculture_NARDL_AIC4
+136,A,Atlas A | Indonesia–Vietnam | bahan baku/penolong,TYPE_VNM_intermediate_ARDL_AIC4;TYPE_VNM_intermediate_NARDL_AIC4
+137,A,Atlas A | Indonesia–Vietnam | barang modal,TYPE_VNM_capital_ARDL_AIC4;TYPE_VNM_capital_NARDL_AIC4
+138,A,Atlas A | Indonesia–Vietnam | komoditas total,TYPE_VNM_commodity_ARDL_AIC4;TYPE_VNM_commodity_NARDL_AIC4
+139,A,Atlas A | Indonesia–Vietnam | energi dan tambang,TYPE_VNM_energy_mining_ARDL_AIC4;TYPE_VNM_energy_mining_NARDL_AIC4
+140,Pembatas,Atlas koefisien tujuh kelompok,
+141,B,Atlas B | Indonesia–seluruh dunia: kelompok barang,TYPE_WLD_agriculture_ARDL_AIC4;TYPE_WLD_agriculture_NARDL_AIC4;TYPE_WLD_capital_ARDL_AIC4;TYPE_WLD_capital_NARDL_AIC4;TYPE_WLD_commodity_ARDL_AIC4;TYPE_WLD_commodity_NARDL_AIC4;TYPE_WLD_consumption_ARDL_AIC4;TYPE_WLD_consumption_NARDL_AIC4;TYPE_WLD_energy_mining_ARDL_AIC4;TYPE_WLD_energy_mining_NARDL_AIC4;TYPE_WLD_intermediate_ARDL_AIC4;TYPE_WLD_intermediate_NARDL_AIC4;TYPE_WLD_manufacturing_ARDL_AIC4;TYPE_WLD_manufacturing_NARDL_AIC4
+142,B,Atlas B | Indonesia–Australia: kelompok barang,TYPE_AUS_agriculture_ARDL_AIC4;TYPE_AUS_agriculture_NARDL_AIC4;TYPE_AUS_capital_ARDL_AIC4;TYPE_AUS_capital_NARDL_AIC4;TYPE_AUS_commodity_ARDL_AIC4;TYPE_AUS_commodity_NARDL_AIC4;TYPE_AUS_consumption_ARDL_AIC4;TYPE_AUS_consumption_NARDL_AIC4;TYPE_AUS_energy_mining_ARDL_AIC4;TYPE_AUS_energy_mining_NARDL_AIC4;TYPE_AUS_intermediate_ARDL_AIC4;TYPE_AUS_intermediate_NARDL_AIC4;TYPE_AUS_manufacturing_ARDL_AIC4;TYPE_AUS_manufacturing_NARDL_AIC4
+143,B,Atlas B | Indonesia–Tiongkok: kelompok barang,TYPE_CHN_agriculture_ARDL_AIC4;TYPE_CHN_agriculture_NARDL_AIC4;TYPE_CHN_capital_ARDL_AIC4;TYPE_CHN_capital_NARDL_AIC4;TYPE_CHN_commodity_ARDL_AIC4;TYPE_CHN_commodity_NARDL_AIC4;TYPE_CHN_consumption_ARDL_AIC4;TYPE_CHN_consumption_NARDL_AIC4;TYPE_CHN_energy_mining_ARDL_AIC4;TYPE_CHN_energy_mining_NARDL_AIC4;TYPE_CHN_intermediate_ARDL_AIC4;TYPE_CHN_intermediate_NARDL_AIC4;TYPE_CHN_manufacturing_ARDL_AIC4;TYPE_CHN_manufacturing_NARDL_AIC4
+144,B,Atlas B | Indonesia–India: kelompok barang,TYPE_IND_agriculture_ARDL_AIC4;TYPE_IND_agriculture_NARDL_AIC4;TYPE_IND_capital_ARDL_AIC4;TYPE_IND_capital_NARDL_AIC4;TYPE_IND_commodity_ARDL_AIC4;TYPE_IND_commodity_NARDL_AIC4;TYPE_IND_consumption_ARDL_AIC4;TYPE_IND_consumption_NARDL_AIC4;TYPE_IND_energy_mining_ARDL_AIC4;TYPE_IND_energy_mining_NARDL_AIC4;TYPE_IND_intermediate_ARDL_AIC4;TYPE_IND_intermediate_NARDL_AIC4;TYPE_IND_manufacturing_ARDL_AIC4;TYPE_IND_manufacturing_NARDL_AIC4
+145,B,Atlas B | Indonesia–Jepang: kelompok barang,TYPE_JPN_agriculture_ARDL_AIC4;TYPE_JPN_agriculture_NARDL_AIC4;TYPE_JPN_capital_ARDL_AIC4;TYPE_JPN_capital_NARDL_AIC4;TYPE_JPN_commodity_ARDL_AIC4;TYPE_JPN_commodity_NARDL_AIC4;TYPE_JPN_consumption_ARDL_AIC4;TYPE_JPN_consumption_NARDL_AIC4;TYPE_JPN_energy_mining_ARDL_AIC4;TYPE_JPN_energy_mining_NARDL_AIC4;TYPE_JPN_intermediate_ARDL_AIC4;TYPE_JPN_intermediate_NARDL_AIC4;TYPE_JPN_manufacturing_ARDL_AIC4;TYPE_JPN_manufacturing_NARDL_AIC4
+146,B,Atlas B | Indonesia–Korea Selatan: kelompok barang,TYPE_KOR_agriculture_ARDL_AIC4;TYPE_KOR_agriculture_NARDL_AIC4;TYPE_KOR_capital_ARDL_AIC4;TYPE_KOR_capital_NARDL_AIC4;TYPE_KOR_commodity_ARDL_AIC4;TYPE_KOR_commodity_NARDL_AIC4;TYPE_KOR_consumption_ARDL_AIC4;TYPE_KOR_consumption_NARDL_AIC4;TYPE_KOR_energy_mining_ARDL_AIC4;TYPE_KOR_energy_mining_NARDL_AIC4;TYPE_KOR_intermediate_ARDL_AIC4;TYPE_KOR_intermediate_NARDL_AIC4;TYPE_KOR_manufacturing_ARDL_AIC4;TYPE_KOR_manufacturing_NARDL_AIC4
+147,B,Atlas B | Indonesia–Malaysia: kelompok barang,TYPE_MYS_agriculture_ARDL_AIC4;TYPE_MYS_agriculture_NARDL_AIC4;TYPE_MYS_capital_ARDL_AIC4;TYPE_MYS_capital_NARDL_AIC4;TYPE_MYS_commodity_ARDL_AIC4;TYPE_MYS_commodity_NARDL_AIC4;TYPE_MYS_consumption_ARDL_AIC4;TYPE_MYS_consumption_NARDL_AIC4;TYPE_MYS_energy_mining_ARDL_AIC4;TYPE_MYS_energy_mining_NARDL_AIC4;TYPE_MYS_intermediate_ARDL_AIC4;TYPE_MYS_intermediate_NARDL_AIC4;TYPE_MYS_manufacturing_ARDL_AIC4;TYPE_MYS_manufacturing_NARDL_AIC4
+148,B,Atlas B | Indonesia–Singapura: kelompok barang,TYPE_SGP_agriculture_ARDL_AIC4;TYPE_SGP_agriculture_NARDL_AIC4;TYPE_SGP_capital_ARDL_AIC4;TYPE_SGP_capital_NARDL_AIC4;TYPE_SGP_commodity_ARDL_AIC4;TYPE_SGP_commodity_NARDL_AIC4;TYPE_SGP_consumption_ARDL_AIC4;TYPE_SGP_consumption_NARDL_AIC4;TYPE_SGP_energy_mining_ARDL_AIC4;TYPE_SGP_energy_mining_NARDL_AIC4;TYPE_SGP_intermediate_ARDL_AIC4;TYPE_SGP_intermediate_NARDL_AIC4;TYPE_SGP_manufacturing_ARDL_AIC4;TYPE_SGP_manufacturing_NARDL_AIC4
+149,B,Atlas B | Indonesia–Thailand: kelompok barang,TYPE_THA_agriculture_ARDL_AIC4;TYPE_THA_agriculture_NARDL_AIC4;TYPE_THA_capital_ARDL_AIC4;TYPE_THA_capital_NARDL_AIC4;TYPE_THA_commodity_ARDL_AIC4;TYPE_THA_commodity_NARDL_AIC4;TYPE_THA_consumption_ARDL_AIC4;TYPE_THA_consumption_NARDL_AIC4;TYPE_THA_energy_mining_ARDL_AIC4;TYPE_THA_energy_mining_NARDL_AIC4;TYPE_THA_intermediate_ARDL_AIC4;TYPE_THA_intermediate_NARDL_AIC4;TYPE_THA_manufacturing_ARDL_AIC4;TYPE_THA_manufacturing_NARDL_AIC4
+150,B,Atlas B | Indonesia–Amerika Serikat: kelompok barang,TYPE_USA_agriculture_ARDL_AIC4;TYPE_USA_agriculture_NARDL_AIC4;TYPE_USA_capital_ARDL_AIC4;TYPE_USA_capital_NARDL_AIC4;TYPE_USA_commodity_ARDL_AIC4;TYPE_USA_commodity_NARDL_AIC4;TYPE_USA_consumption_ARDL_AIC4;TYPE_USA_consumption_NARDL_AIC4;TYPE_USA_energy_mining_ARDL_AIC4;TYPE_USA_energy_mining_NARDL_AIC4;TYPE_USA_intermediate_ARDL_AIC4;TYPE_USA_intermediate_NARDL_AIC4;TYPE_USA_manufacturing_ARDL_AIC4;TYPE_USA_manufacturing_NARDL_AIC4
+151,B,Atlas B | Indonesia–Vietnam: kelompok barang,TYPE_VNM_agriculture_ARDL_AIC4;TYPE_VNM_agriculture_NARDL_AIC4;TYPE_VNM_capital_ARDL_AIC4;TYPE_VNM_capital_NARDL_AIC4;TYPE_VNM_commodity_ARDL_AIC4;TYPE_VNM_commodity_NARDL_AIC4;TYPE_VNM_consumption_ARDL_AIC4;TYPE_VNM_consumption_NARDL_AIC4;TYPE_VNM_energy_mining_ARDL_AIC4;TYPE_VNM_energy_mining_NARDL_AIC4;TYPE_VNM_intermediate_ARDL_AIC4;TYPE_VNM_intermediate_NARDL_AIC4;TYPE_VNM_manufacturing_ARDL_AIC4;TYPE_VNM_manufacturing_NARDL_AIC4
+152,Pembatas,Atlas respons sensitivitas,
+153,C,Atlas C | Kontrol harga BCOM,PRICE_AUS_agriculture_ARDL_AIC4;PRICE_AUS_agriculture_NARDL_AIC4;PRICE_AUS_capital_ARDL_AIC4;PRICE_AUS_capital_NARDL_AIC4
+154,C,Atlas C | Kontrol harga BCOM,PRICE_AUS_commodity_ARDL_AIC4;PRICE_AUS_commodity_NARDL_AIC4;PRICE_AUS_consumption_ARDL_AIC4;PRICE_AUS_consumption_NARDL_AIC4
+155,C,Atlas C | Kontrol harga BCOM,PRICE_AUS_energy_mining_ARDL_AIC4;PRICE_AUS_energy_mining_NARDL_AIC4;PRICE_AUS_intermediate_ARDL_AIC4;PRICE_AUS_intermediate_NARDL_AIC4
+156,C,Atlas C | Kontrol harga BCOM,PRICE_AUS_manufacturing_ARDL_AIC4;PRICE_AUS_manufacturing_NARDL_AIC4;PRICE_CHN_agriculture_ARDL_AIC4;PRICE_CHN_agriculture_NARDL_AIC4
+157,C,Atlas C | Kontrol harga BCOM,PRICE_CHN_capital_ARDL_AIC4;PRICE_CHN_capital_NARDL_AIC4;PRICE_CHN_commodity_ARDL_AIC4;PRICE_CHN_commodity_NARDL_AIC4
+158,C,Atlas C | Kontrol harga BCOM,PRICE_CHN_consumption_ARDL_AIC4;PRICE_CHN_consumption_NARDL_AIC4;PRICE_CHN_energy_mining_ARDL_AIC4;PRICE_CHN_energy_mining_NARDL_AIC4
+159,C,Atlas C | Kontrol harga BCOM,PRICE_CHN_intermediate_ARDL_AIC4;PRICE_CHN_intermediate_NARDL_AIC4;PRICE_CHN_manufacturing_ARDL_AIC4;PRICE_CHN_manufacturing_NARDL_AIC4
+160,C,Atlas C | Kontrol harga BCOM,PRICE_IND_agriculture_ARDL_AIC4;PRICE_IND_agriculture_NARDL_AIC4;PRICE_IND_capital_ARDL_AIC4;PRICE_IND_capital_NARDL_AIC4
+161,C,Atlas C | Kontrol harga BCOM,PRICE_IND_commodity_ARDL_AIC4;PRICE_IND_commodity_NARDL_AIC4;PRICE_IND_consumption_ARDL_AIC4;PRICE_IND_consumption_NARDL_AIC4
+162,C,Atlas C | Kontrol harga BCOM,PRICE_IND_energy_mining_ARDL_AIC4;PRICE_IND_energy_mining_NARDL_AIC4;PRICE_IND_intermediate_ARDL_AIC4;PRICE_IND_intermediate_NARDL_AIC4
+163,C,Atlas C | Kontrol harga BCOM,PRICE_IND_manufacturing_ARDL_AIC4;PRICE_IND_manufacturing_NARDL_AIC4;PRICE_JPN_agriculture_ARDL_AIC4;PRICE_JPN_agriculture_NARDL_AIC4
+164,C,Atlas C | Kontrol harga BCOM,PRICE_JPN_capital_ARDL_AIC4;PRICE_JPN_capital_NARDL_AIC4;PRICE_JPN_commodity_ARDL_AIC4;PRICE_JPN_commodity_NARDL_AIC4
+165,C,Atlas C | Kontrol harga BCOM,PRICE_JPN_consumption_ARDL_AIC4;PRICE_JPN_consumption_NARDL_AIC4;PRICE_JPN_energy_mining_ARDL_AIC4;PRICE_JPN_energy_mining_NARDL_AIC4
+166,C,Atlas C | Kontrol harga BCOM,PRICE_JPN_intermediate_ARDL_AIC4;PRICE_JPN_intermediate_NARDL_AIC4;PRICE_JPN_manufacturing_ARDL_AIC4;PRICE_JPN_manufacturing_NARDL_AIC4
+167,C,Atlas C | Kontrol harga BCOM,PRICE_KOR_agriculture_ARDL_AIC4;PRICE_KOR_agriculture_NARDL_AIC4;PRICE_KOR_capital_ARDL_AIC4;PRICE_KOR_capital_NARDL_AIC4
+168,C,Atlas C | Kontrol harga BCOM,PRICE_KOR_commodity_ARDL_AIC4;PRICE_KOR_commodity_NARDL_AIC4;PRICE_KOR_consumption_ARDL_AIC4;PRICE_KOR_consumption_NARDL_AIC4
+169,C,Atlas C | Kontrol harga BCOM,PRICE_KOR_energy_mining_ARDL_AIC4;PRICE_KOR_energy_mining_NARDL_AIC4;PRICE_KOR_intermediate_ARDL_AIC4;PRICE_KOR_intermediate_NARDL_AIC4
+170,C,Atlas C | Kontrol harga BCOM,PRICE_KOR_manufacturing_ARDL_AIC4;PRICE_KOR_manufacturing_NARDL_AIC4;PRICE_MYS_agriculture_ARDL_AIC4;PRICE_MYS_agriculture_NARDL_AIC4
+171,C,Atlas C | Kontrol harga BCOM,PRICE_MYS_capital_ARDL_AIC4;PRICE_MYS_capital_NARDL_AIC4;PRICE_MYS_commodity_ARDL_AIC4;PRICE_MYS_commodity_NARDL_AIC4
+172,C,Atlas C | Kontrol harga BCOM,PRICE_MYS_consumption_ARDL_AIC4;PRICE_MYS_consumption_NARDL_AIC4;PRICE_MYS_energy_mining_ARDL_AIC4;PRICE_MYS_energy_mining_NARDL_AIC4
+173,C,Atlas C | Kontrol harga BCOM,PRICE_MYS_intermediate_ARDL_AIC4;PRICE_MYS_intermediate_NARDL_AIC4;PRICE_MYS_manufacturing_ARDL_AIC4;PRICE_MYS_manufacturing_NARDL_AIC4
+174,C,Atlas C | Kontrol harga BCOM,PRICE_SGP_agriculture_ARDL_AIC4;PRICE_SGP_agriculture_NARDL_AIC4;PRICE_SGP_capital_ARDL_AIC4;PRICE_SGP_capital_NARDL_AIC4
+175,C,Atlas C | Kontrol harga BCOM,PRICE_SGP_commodity_ARDL_AIC4;PRICE_SGP_commodity_NARDL_AIC4;PRICE_SGP_consumption_ARDL_AIC4;PRICE_SGP_consumption_NARDL_AIC4
+176,C,Atlas C | Kontrol harga BCOM,PRICE_SGP_energy_mining_ARDL_AIC4;PRICE_SGP_energy_mining_NARDL_AIC4;PRICE_SGP_intermediate_ARDL_AIC4;PRICE_SGP_intermediate_NARDL_AIC4
+177,C,Atlas C | Kontrol harga BCOM,PRICE_SGP_manufacturing_ARDL_AIC4;PRICE_SGP_manufacturing_NARDL_AIC4;PRICE_THA_agriculture_ARDL_AIC4;PRICE_THA_agriculture_NARDL_AIC4
+178,C,Atlas C | Kontrol harga BCOM,PRICE_THA_capital_ARDL_AIC4;PRICE_THA_capital_NARDL_AIC4;PRICE_THA_commodity_ARDL_AIC4;PRICE_THA_commodity_NARDL_AIC4
+179,C,Atlas C | Kontrol harga BCOM,PRICE_THA_consumption_ARDL_AIC4;PRICE_THA_consumption_NARDL_AIC4;PRICE_THA_energy_mining_ARDL_AIC4;PRICE_THA_energy_mining_NARDL_AIC4
+180,C,Atlas C | Kontrol harga BCOM,PRICE_THA_intermediate_ARDL_AIC4;PRICE_THA_intermediate_NARDL_AIC4;PRICE_THA_manufacturing_ARDL_AIC4;PRICE_THA_manufacturing_NARDL_AIC4
+181,C,Atlas C | Kontrol harga BCOM,PRICE_USA_agriculture_ARDL_AIC4;PRICE_USA_agriculture_NARDL_AIC4;PRICE_USA_capital_ARDL_AIC4;PRICE_USA_capital_NARDL_AIC4
+182,C,Atlas C | Kontrol harga BCOM,PRICE_USA_commodity_ARDL_AIC4;PRICE_USA_commodity_NARDL_AIC4;PRICE_USA_consumption_ARDL_AIC4;PRICE_USA_consumption_NARDL_AIC4
+183,C,Atlas C | Kontrol harga BCOM,PRICE_USA_energy_mining_ARDL_AIC4;PRICE_USA_energy_mining_NARDL_AIC4;PRICE_USA_intermediate_ARDL_AIC4;PRICE_USA_intermediate_NARDL_AIC4
+184,C,Atlas C | Kontrol harga BCOM,PRICE_USA_manufacturing_ARDL_AIC4;PRICE_USA_manufacturing_NARDL_AIC4;PRICE_VNM_agriculture_ARDL_AIC4;PRICE_VNM_agriculture_NARDL_AIC4
+185,C,Atlas C | Kontrol harga BCOM,PRICE_VNM_capital_ARDL_AIC4;PRICE_VNM_capital_NARDL_AIC4;PRICE_VNM_commodity_ARDL_AIC4;PRICE_VNM_commodity_NARDL_AIC4
+186,C,Atlas C | Kontrol harga BCOM,PRICE_VNM_consumption_ARDL_AIC4;PRICE_VNM_consumption_NARDL_AIC4;PRICE_VNM_energy_mining_ARDL_AIC4;PRICE_VNM_energy_mining_NARDL_AIC4
+187,C,Atlas C | Kontrol harga BCOM,PRICE_VNM_intermediate_ARDL_AIC4;PRICE_VNM_intermediate_NARDL_AIC4;PRICE_VNM_manufacturing_ARDL_AIC4;PRICE_VNM_manufacturing_NARDL_AIC4
+188,C,Atlas C | Kontrol harga BCOM,PRICE_WLD_agriculture_ARDL_AIC4;PRICE_WLD_agriculture_NARDL_AIC4;PRICE_WLD_capital_ARDL_AIC4;PRICE_WLD_capital_NARDL_AIC4
+189,C,Atlas C | Kontrol harga BCOM,PRICE_WLD_commodity_ARDL_AIC4;PRICE_WLD_commodity_NARDL_AIC4;PRICE_WLD_consumption_ARDL_AIC4;PRICE_WLD_consumption_NARDL_AIC4
+190,C,Atlas C | Kontrol harga BCOM,PRICE_WLD_energy_mining_ARDL_AIC4;PRICE_WLD_energy_mining_NARDL_AIC4;PRICE_WLD_intermediate_ARDL_AIC4;PRICE_WLD_intermediate_NARDL_AIC4
+191,C,Atlas C | Kontrol harga BCOM,PRICE_WLD_manufacturing_ARDL_AIC4;PRICE_WLD_manufacturing_NARDL_AIC4
+192,C,Atlas C | Keluarga kurs GEM alternatif,GEM_KOR_ARDL_AIC4;GEM_KOR_NARDL_AIC4;GEM_THA_ARDL_AIC4;GEM_THA_NARDL_AIC4
+193,C,Atlas C | Keluarga kurs GEM alternatif,GEM_VNM_ARDL_AIC4;GEM_VNM_NARDL_AIC4
+194,C,Atlas C | India: WPI alternatif,IND_WPI_ARDL_AIC4;IND_WPI_NARDL_AIC4
+195,C,Atlas C | Maksimum dua lag level,BIL_AUS_ARDL_AIC2;BIL_AUS_NARDL_AIC2;BIL_CHN_ARDL_AIC2;BIL_CHN_NARDL_AIC2
+196,C,Atlas C | Maksimum dua lag level,BIL_IND_ARDL_AIC2;BIL_IND_NARDL_AIC2;BIL_JPN_ARDL_AIC2;BIL_JPN_NARDL_AIC2
+197,C,Atlas C | Maksimum dua lag level,BIL_KOR_ARDL_AIC2;BIL_KOR_NARDL_AIC2;BIL_MYS_ARDL_AIC2;BIL_MYS_NARDL_AIC2
+198,C,Atlas C | Maksimum dua lag level,BIL_SGP_ARDL_AIC2;BIL_SGP_NARDL_AIC2;BIL_THA_ARDL_AIC2;BIL_THA_NARDL_AIC2
+199,C,Atlas C | Maksimum dua lag level,BIL_USA_ARDL_AIC2;BIL_USA_NARDL_AIC2;BIL_VNM_ARDL_AIC2;BIL_VNM_NARDL_AIC2
+200,C,Atlas C | Maksimum dua lag level,TYPE_AUS_agriculture_ARDL_AIC2;TYPE_AUS_agriculture_NARDL_AIC2;TYPE_AUS_capital_ARDL_AIC2;TYPE_AUS_capital_NARDL_AIC2
+201,C,Atlas C | Maksimum dua lag level,TYPE_AUS_commodity_ARDL_AIC2;TYPE_AUS_commodity_NARDL_AIC2;TYPE_AUS_consumption_ARDL_AIC2;TYPE_AUS_consumption_NARDL_AIC2
+202,C,Atlas C | Maksimum dua lag level,TYPE_AUS_energy_mining_ARDL_AIC2;TYPE_AUS_energy_mining_NARDL_AIC2;TYPE_AUS_intermediate_ARDL_AIC2;TYPE_AUS_intermediate_NARDL_AIC2
+203,C,Atlas C | Maksimum dua lag level,TYPE_AUS_manufacturing_ARDL_AIC2;TYPE_AUS_manufacturing_NARDL_AIC2;TYPE_CHN_agriculture_ARDL_AIC2;TYPE_CHN_agriculture_NARDL_AIC2
+204,C,Atlas C | Maksimum dua lag level,TYPE_CHN_capital_ARDL_AIC2;TYPE_CHN_capital_NARDL_AIC2;TYPE_CHN_commodity_ARDL_AIC2;TYPE_CHN_commodity_NARDL_AIC2
+205,C,Atlas C | Maksimum dua lag level,TYPE_CHN_consumption_ARDL_AIC2;TYPE_CHN_consumption_NARDL_AIC2;TYPE_CHN_energy_mining_ARDL_AIC2;TYPE_CHN_energy_mining_NARDL_AIC2
+206,C,Atlas C | Maksimum dua lag level,TYPE_CHN_intermediate_ARDL_AIC2;TYPE_CHN_intermediate_NARDL_AIC2;TYPE_CHN_manufacturing_ARDL_AIC2;TYPE_CHN_manufacturing_NARDL_AIC2
+207,C,Atlas C | Maksimum dua lag level,TYPE_IND_agriculture_ARDL_AIC2;TYPE_IND_agriculture_NARDL_AIC2;TYPE_IND_capital_ARDL_AIC2;TYPE_IND_capital_NARDL_AIC2
+208,C,Atlas C | Maksimum dua lag level,TYPE_IND_commodity_ARDL_AIC2;TYPE_IND_commodity_NARDL_AIC2;TYPE_IND_consumption_ARDL_AIC2;TYPE_IND_consumption_NARDL_AIC2
+209,C,Atlas C | Maksimum dua lag level,TYPE_IND_energy_mining_ARDL_AIC2;TYPE_IND_energy_mining_NARDL_AIC2;TYPE_IND_intermediate_ARDL_AIC2;TYPE_IND_intermediate_NARDL_AIC2
+210,C,Atlas C | Maksimum dua lag level,TYPE_IND_manufacturing_ARDL_AIC2;TYPE_IND_manufacturing_NARDL_AIC2;TYPE_JPN_agriculture_ARDL_AIC2;TYPE_JPN_agriculture_NARDL_AIC2
+211,C,Atlas C | Maksimum dua lag level,TYPE_JPN_capital_ARDL_AIC2;TYPE_JPN_capital_NARDL_AIC2;TYPE_JPN_commodity_ARDL_AIC2;TYPE_JPN_commodity_NARDL_AIC2
+212,C,Atlas C | Maksimum dua lag level,TYPE_JPN_consumption_ARDL_AIC2;TYPE_JPN_consumption_NARDL_AIC2;TYPE_JPN_energy_mining_ARDL_AIC2;TYPE_JPN_energy_mining_NARDL_AIC2
+213,C,Atlas C | Maksimum dua lag level,TYPE_JPN_intermediate_ARDL_AIC2;TYPE_JPN_intermediate_NARDL_AIC2;TYPE_JPN_manufacturing_ARDL_AIC2;TYPE_JPN_manufacturing_NARDL_AIC2
+214,C,Atlas C | Maksimum dua lag level,TYPE_KOR_agriculture_ARDL_AIC2;TYPE_KOR_agriculture_NARDL_AIC2;TYPE_KOR_capital_ARDL_AIC2;TYPE_KOR_capital_NARDL_AIC2
+215,C,Atlas C | Maksimum dua lag level,TYPE_KOR_commodity_ARDL_AIC2;TYPE_KOR_commodity_NARDL_AIC2;TYPE_KOR_consumption_ARDL_AIC2;TYPE_KOR_consumption_NARDL_AIC2
+216,C,Atlas C | Maksimum dua lag level,TYPE_KOR_energy_mining_ARDL_AIC2;TYPE_KOR_energy_mining_NARDL_AIC2;TYPE_KOR_intermediate_ARDL_AIC2;TYPE_KOR_intermediate_NARDL_AIC2
+217,C,Atlas C | Maksimum dua lag level,TYPE_KOR_manufacturing_ARDL_AIC2;TYPE_KOR_manufacturing_NARDL_AIC2;TYPE_MYS_agriculture_ARDL_AIC2;TYPE_MYS_agriculture_NARDL_AIC2
+218,C,Atlas C | Maksimum dua lag level,TYPE_MYS_capital_ARDL_AIC2;TYPE_MYS_capital_NARDL_AIC2;TYPE_MYS_commodity_ARDL_AIC2;TYPE_MYS_commodity_NARDL_AIC2
+219,C,Atlas C | Maksimum dua lag level,TYPE_MYS_consumption_ARDL_AIC2;TYPE_MYS_consumption_NARDL_AIC2;TYPE_MYS_energy_mining_ARDL_AIC2;TYPE_MYS_energy_mining_NARDL_AIC2
+220,C,Atlas C | Maksimum dua lag level,TYPE_MYS_intermediate_ARDL_AIC2;TYPE_MYS_intermediate_NARDL_AIC2;TYPE_MYS_manufacturing_ARDL_AIC2;TYPE_MYS_manufacturing_NARDL_AIC2
+221,C,Atlas C | Maksimum dua lag level,TYPE_SGP_agriculture_ARDL_AIC2;TYPE_SGP_agriculture_NARDL_AIC2;TYPE_SGP_capital_ARDL_AIC2;TYPE_SGP_capital_NARDL_AIC2
+222,C,Atlas C | Maksimum dua lag level,TYPE_SGP_commodity_ARDL_AIC2;TYPE_SGP_commodity_NARDL_AIC2;TYPE_SGP_consumption_ARDL_AIC2;TYPE_SGP_consumption_NARDL_AIC2
+223,C,Atlas C | Maksimum dua lag level,TYPE_SGP_energy_mining_ARDL_AIC2;TYPE_SGP_energy_mining_NARDL_AIC2;TYPE_SGP_intermediate_ARDL_AIC2;TYPE_SGP_intermediate_NARDL_AIC2
+224,C,Atlas C | Maksimum dua lag level,TYPE_SGP_manufacturing_ARDL_AIC2;TYPE_SGP_manufacturing_NARDL_AIC2;TYPE_THA_agriculture_ARDL_AIC2;TYPE_THA_agriculture_NARDL_AIC2
+225,C,Atlas C | Maksimum dua lag level,TYPE_THA_capital_ARDL_AIC2;TYPE_THA_capital_NARDL_AIC2;TYPE_THA_commodity_ARDL_AIC2;TYPE_THA_commodity_NARDL_AIC2
+226,C,Atlas C | Maksimum dua lag level,TYPE_THA_consumption_ARDL_AIC2;TYPE_THA_consumption_NARDL_AIC2;TYPE_THA_energy_mining_ARDL_AIC2;TYPE_THA_energy_mining_NARDL_AIC2
+227,C,Atlas C | Maksimum dua lag level,TYPE_THA_intermediate_ARDL_AIC2;TYPE_THA_intermediate_NARDL_AIC2;TYPE_THA_manufacturing_ARDL_AIC2;TYPE_THA_manufacturing_NARDL_AIC2
+228,C,Atlas C | Maksimum dua lag level,TYPE_USA_agriculture_ARDL_AIC2;TYPE_USA_agriculture_NARDL_AIC2;TYPE_USA_capital_ARDL_AIC2;TYPE_USA_capital_NARDL_AIC2
+229,C,Atlas C | Maksimum dua lag level,TYPE_USA_commodity_ARDL_AIC2;TYPE_USA_commodity_NARDL_AIC2;TYPE_USA_consumption_ARDL_AIC2;TYPE_USA_consumption_NARDL_AIC2
+230,C,Atlas C | Maksimum dua lag level,TYPE_USA_energy_mining_ARDL_AIC2;TYPE_USA_energy_mining_NARDL_AIC2;TYPE_USA_intermediate_ARDL_AIC2;TYPE_USA_intermediate_NARDL_AIC2
+231,C,Atlas C | Maksimum dua lag level,TYPE_USA_manufacturing_ARDL_AIC2;TYPE_USA_manufacturing_NARDL_AIC2;TYPE_VNM_agriculture_ARDL_AIC2;TYPE_VNM_agriculture_NARDL_AIC2
+232,C,Atlas C | Maksimum dua lag level,TYPE_VNM_capital_ARDL_AIC2;TYPE_VNM_capital_NARDL_AIC2;TYPE_VNM_commodity_ARDL_AIC2;TYPE_VNM_commodity_NARDL_AIC2
+233,C,Atlas C | Maksimum dua lag level,TYPE_VNM_consumption_ARDL_AIC2;TYPE_VNM_consumption_NARDL_AIC2;TYPE_VNM_energy_mining_ARDL_AIC2;TYPE_VNM_energy_mining_NARDL_AIC2
+234,C,Atlas C | Maksimum dua lag level,TYPE_VNM_intermediate_ARDL_AIC2;TYPE_VNM_intermediate_NARDL_AIC2;TYPE_VNM_manufacturing_ARDL_AIC2;TYPE_VNM_manufacturing_NARDL_AIC2
+235,C,Atlas C | Maksimum dua lag level,TYPE_WLD_agriculture_ARDL_AIC2;TYPE_WLD_agriculture_NARDL_AIC2;TYPE_WLD_capital_ARDL_AIC2;TYPE_WLD_capital_NARDL_AIC2
+236,C,Atlas C | Maksimum dua lag level,TYPE_WLD_commodity_ARDL_AIC2;TYPE_WLD_commodity_NARDL_AIC2;TYPE_WLD_consumption_ARDL_AIC2;TYPE_WLD_consumption_NARDL_AIC2
+237,C,Atlas C | Maksimum dua lag level,TYPE_WLD_energy_mining_ARDL_AIC2;TYPE_WLD_energy_mining_NARDL_AIC2;TYPE_WLD_intermediate_ARDL_AIC2;TYPE_WLD_intermediate_NARDL_AIC2
+238,C,Atlas C | Maksimum dua lag level,TYPE_WLD_manufacturing_ARDL_AIC2;TYPE_WLD_manufacturing_NARDL_AIC2;WORLD_ARDL_AIC2;WORLD_NARDL_AIC2
+239,C,Atlas C | Agregat Indonesia 2006+,WORLD_FULL_ARDL_AIC4;WORLD_FULL_NARDL_AIC4

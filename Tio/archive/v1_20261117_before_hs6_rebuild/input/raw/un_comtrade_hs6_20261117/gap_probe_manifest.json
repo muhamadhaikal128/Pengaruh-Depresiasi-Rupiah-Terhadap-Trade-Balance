@@ -1,0 +1,13 @@
+{
+  "endpoint": "https://comtradeapi.un.org/data/v1/get/C/M/HS",
+  "params": {
+    "reporterCode": "360",
+    "period": "201309,201411,201412",
+    "partnerCode": "0",
+    "cmdCode": "TOTAL",
+    "flowCode": "X,M",
+    "maxRecords": 1000
+  },
+  "response_sha256": "c3e776ec66c37dfeb575ddb3f01ab6f629514979350bc0b302892f98ee740cbb",
+  "records": 0
+}

@@ -1,0 +1,273 @@
+{
+  "world2025": {
+    "Exports_USDbn": 282.908943,
+    "Imports_USDbn": 241.856739,
+    "Trade_Balance_USDbn": 41.052204
+  },
+  "partner_export_share": 68.58939556392885,
+  "partner_import_share": 75.3853412370701,
+  "classification_2025": [
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "capital",
+      "Value_USDk": 5324138,
+      "Value_Share_pct": 1.88192873099
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "consumption",
+      "Value_USDk": 97977893,
+      "Value_Share_pct": 34.6323502205
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "intermediate",
+      "Value_USDk": 168881043,
+      "Value_Share_pct": 59.6945621884
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "mixed",
+      "Value_USDk": 9520922,
+      "Value_Share_pct": 3.36537044255
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "unclassified",
+      "Value_USDk": 1204592,
+      "Value_Share_pct": 0.425788417565
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "commodity",
+      "Value_USDk": 144681762,
+      "Value_Share_pct": 51.1408165524
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "mixed",
+      "Value_USDk": 3681701,
+      "Value_Share_pct": 1.30137477481
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "noncommodity",
+      "Value_USDk": 133306199,
+      "Value_Share_pct": 47.1198841797
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Export",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "unclassified",
+      "Value_USDk": 1238926,
+      "Value_Share_pct": 0.437924493123
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "capital",
+      "Value_USDk": 34098658,
+      "Value_Share_pct": 14.0987101868
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "consumption",
+      "Value_USDk": 47411346,
+      "Value_Share_pct": 19.6030831132
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "intermediate",
+      "Value_USDk": 144268543,
+      "Value_Share_pct": 59.6504524264
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "mixed",
+      "Value_USDk": 14721224,
+      "Value_Share_pct": 6.08675774781
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "BEC5_EndUse",
+      "Class": "unclassified",
+      "Value_USDk": 1356807,
+      "Value_Share_pct": 0.560996525801
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "commodity",
+      "Value_USDk": 80987144,
+      "Value_Share_pct": 33.4856073255
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "mixed",
+      "Value_USDk": 1720985,
+      "Value_Share_pct": 0.711572541972
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "noncommodity",
+      "Value_USDk": 157791446,
+      "Value_Share_pct": 65.241742567
+    },
+    {
+      "ISO3": "WLD",
+      "Flow": "Import",
+      "Year": 2025,
+      "Classification": "Commodity_Class",
+      "Class": "unclassified",
+      "Value_USDk": 1357003,
+      "Value_Share_pct": 0.561077565564
+    }
+  ],
+  "descriptive_rows": [
+    [
+      "Ekspor, USD miliar",
+      "61",
+      "51,15",
+      "12,46",
+      "33,60",
+      "78,20"
+    ],
+    [
+      "Impor, USD miliar",
+      "61",
+      "46,92",
+      "9,06",
+      "31,73",
+      "65,54"
+    ],
+    [
+      "Neraca, USD miliar",
+      "61",
+      "4,24",
+      "5,08",
+      "-4,80",
+      "15,61"
+    ],
+    [
+      "PDB riil Indonesia, indeks",
+      "61",
+      "114,85",
+      "21,27",
+      "79,40",
+      "156,49"
+    ],
+    [
+      "Aktivitas luar negeri, indeks",
+      "61",
+      "109,43",
+      "13,98",
+      "86,16",
+      "135,66"
+    ],
+    [
+      "REER, indeks",
+      "61",
+      "100,99",
+      "4,32",
+      "92,89",
+      "111,01"
+    ]
+  ],
+  "world_sample": [
+    "2011Q1",
+    "2026Q1",
+    61
+  ],
+  "pattern_counts": {
+    "Akhir horizon belum membaik": {
+      "ARDL": 39,
+      "NARDL": 37
+    },
+    "Perbaikan tanpa fase awal memburuk": {
+      "ARDL": 39,
+      "NARDL": 27
+    },
+    "Pola J pada estimasi titik": {
+      "ARDL": 10,
+      "NARDL": 24
+    }
+  },
+  "assets": {
+    "world": "world_flows_annual.png",
+    "partner_trade": "partner_trade_2025.png",
+    "composition_commodity": "composition_commodity.png",
+    "composition_BEC": "composition_BEC.png",
+    "goods_trade": "world_goods_trade_2025.png",
+    "world_macro": "world_ratio_and_REER.png",
+    "coverage": "estimation_windows.png",
+    "theory_J": "theoretical_J_illustration.png",
+    "forest_bilateral": "forest_bilateral.png",
+    "forest_WLD": "forest_goods_WLD.png",
+    "forest_AUS": "forest_goods_AUS.png",
+    "forest_CHN": "forest_goods_CHN.png",
+    "forest_IND": "forest_goods_IND.png",
+    "forest_JPN": "forest_goods_JPN.png",
+    "forest_KOR": "forest_goods_KOR.png",
+    "forest_MYS": "forest_goods_MYS.png",
+    "forest_SGP": "forest_goods_SGP.png",
+    "forest_THA": "forest_goods_THA.png",
+    "forest_USA": "forest_goods_USA.png",
+    "forest_VNM": "forest_goods_VNM.png",
+    "diagnostics": "diagnostic_rejections.png",
+    "stability": "CUSUMSQ_world_AUS_MYS.png"
+  },
+  "reporter": "Indonesia (360)",
+  "scope_metadata": {
+    "world2025": "Indonesia exports to and imports from all partners",
+    "partner_trade": "Indonesia bilateral trade with each partner",
+    "goods": "Seven HS6 categories of Indonesia trade",
+    "world2025_units": "USD billion"
+  }
+}

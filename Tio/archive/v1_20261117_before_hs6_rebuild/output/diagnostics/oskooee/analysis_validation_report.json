@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "models_expected": 174,
+  "models_estimated": 174,
+  "primary_models": 62,
+  "nonfatal_bounds_test_failures": [
+    {
+      "model_id": "PRICE_IND_commodity_NARDL_AIC4",
+      "stage": "bounds_test",
+      "rc": 198
+    }
+  ],
+  "substantive_validity": "MODEL_SPECIFIC; see bounds and diagnostics",
+  "all_levels_ECM_equivalence_pass": true,
+  "all_independent_OLS_prediction_checks_pass": true,
+  "input_files_unchanged": true,
+  "input_import_hypothesis": "ON_HOLD",
+  "primary_bounds5_rejections": 27,
+  "primary_levels_supported5": 18,
+  "primary_levels_and_diagnostics_supported5": 7,
+  "primary_by_scope": {
+    "aggregate": 2,
+    "bilateral": 20,
+    "goods": 40
+  },
+  "CUSUMSQ_reference": "19999 Gaussian Monte Carlo draws, fixed seed, sample-size specific; approximate diagnostic",
+  "inference_limits": [
+    "Nominal post-AIC inference",
+    "No causal identification from ARDL alone",
+    "World demand proxy is top10, not global GDP",
+    "Goods groups cover ten partners, not world",
+    "Historical source/revision issues remain; see audit_validitas_data_macro.md"
+  ]
+}

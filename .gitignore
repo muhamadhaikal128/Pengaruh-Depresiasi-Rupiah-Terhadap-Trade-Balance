@@ -7,3 +7,6 @@
 .Rhistory
 .RData
 .Rproj.user/
+
+# Local UN Comtrade credential
+/.env.comtrade

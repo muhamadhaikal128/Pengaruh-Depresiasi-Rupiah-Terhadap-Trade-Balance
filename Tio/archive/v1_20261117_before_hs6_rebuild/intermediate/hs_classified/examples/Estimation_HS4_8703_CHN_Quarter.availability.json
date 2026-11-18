@@ -1,0 +1,13 @@
+{
+  "output": "F:\\Trade-Balance\\Tio\\intermediate\\hs_classified\\examples\\Estimation_HS4_8703_CHN_Quarter.csv",
+  "HS4": "8703",
+  "Product": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars (excl. motor vehicles of heading 8702)",
+  "Commodity_Class": "noncommodity",
+  "quarters": 84,
+  "quarters_variables_available": 45,
+  "quarters_variables_and_BCOM_available": 45,
+  "longest_contiguous_available_quarters": 10,
+  "longest_contiguous_start": "2017Q2",
+  "longest_contiguous_end": "2019Q3",
+  "note": "Availability only; assess continuity, integration order, cointegration and identification separately."
+}

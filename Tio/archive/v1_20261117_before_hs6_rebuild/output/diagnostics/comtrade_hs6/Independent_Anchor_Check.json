@@ -1,0 +1,12 @@
+{
+  "anchor_product": "151190",
+  "partner": "IND",
+  "quarter": "2013Q1",
+  "source_months": 3,
+  "export_value_USD": 424170108.0,
+  "net_weight_kg": 569586592.0,
+  "unit_value_USD_per_kg": 0.744698196828341,
+  "Jan2013_HS6_vs_TOTAL_all_11_partners_both_flows": "PASS",
+  "missing_quarter_not_filled": "PASS",
+  "monthly_GDP_not_interpolated": "PASS"
+}

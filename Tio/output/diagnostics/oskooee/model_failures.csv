@@ -1,0 +1,4 @@
+model_id,stage,rc
+PRICE_IND_commodity_NARDL_AIC4,bounds_test,198
+PRICE_IND_energy_mining_NARDL_AIC4,bounds_test,198
+PRICE_IND_intermediate_NARDL_AIC4,bounds_test,198

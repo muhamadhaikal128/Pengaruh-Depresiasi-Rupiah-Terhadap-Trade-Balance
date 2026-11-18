@@ -1,0 +1,1542 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/oskooee/cusum_paths.log
+  log type:  text
+ opened on:  17 Nov 2026, 15:22:11
+
+. import delimited "$OP/output/diagnostics/oskooee/case_registry.csv", clear case(preserve)
+(encoding automatically selected: ISO-8859-1)
+(17 vars, 170 obs)
+
+. keep series_id scope scenario sid
+
+. tempfile registry summaries
+
+. save `registry'
+file F:\Trade-Balance\Tio\intermediate\oskooee\temp\ST_3c84_000001.tmp saved as .dta format
+
+. use "$OP/output/tables/oskooee/model_summary.dta", clear
+
+. merge m:1 series_id scope scenario using `registry', keep(match) nogen
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                               516  
+    -----------------------------------------
+
+. keep if scenario=="main" & cap==4
+(340 observations deleted)
+
+. save `summaries'
+file F:\Trade-Balance\Tio\intermediate\oskooee\temp\ST_3c84_000002.tmp saved as .dta format
+
+. levelsof model_id, local(models)
+`"BIL_AUS_ARDL_AIC4"' `"BIL_AUS_NARDL_AIC4"' `"BIL_CHN_ARDL_AIC4"' `"BIL_CHN_NARDL_AIC4"' `"BIL_IND_ARDL_AIC4"' `"BIL_IND_NARDL_AIC4"' `"BIL_JPN_ARDL_AIC4"' `"BIL_JPN_NARDL_AIC4"' 
+> `"BIL_KOR_ARDL_AIC4"' `"BIL_KOR_NARDL_AIC4"' `"BIL_MYS_ARDL_AIC4"' `"BIL_MYS_NARDL_AIC4"' `"BIL_SGP_ARDL_AIC4"' `"BIL_SGP_NARDL_AIC4"' `"BIL_THA_ARDL_AIC4"' `"BIL_THA_NARDL_AIC4"
+> ' `"BIL_USA_ARDL_AIC4"' `"BIL_USA_NARDL_AIC4"' `"BIL_VNM_ARDL_AIC4"' `"BIL_VNM_NARDL_AIC4"' `"TYPE_AUS_agriculture_ARDL_AIC4"' `"TYPE_AUS_agriculture_NARDL_AIC4"' `"TYPE_AUS_capi
+> tal_ARDL_AIC4"' `"TYPE_AUS_capital_NARDL_AIC4"' `"TYPE_AUS_commodity_ARDL_AIC4"' `"TYPE_AUS_commodity_NARDL_AIC4"' `"TYPE_AUS_consumption_ARDL_AIC4"' `"TYPE_AUS_consumption_NARDL
+> _AIC4"' `"TYPE_AUS_energy_mining_ARDL_AIC4"' `"TYPE_AUS_energy_mining_NARDL_AIC4"' `"TYPE_AUS_intermediate_ARDL_AIC4"' `"TYPE_AUS_intermediate_NARDL_AIC4"' `"TYPE_AUS_manufacturi
+> ng_ARDL_AIC4"' `"TYPE_AUS_manufacturing_NARDL_AIC4"' `"TYPE_CHN_agriculture_ARDL_AIC4"' `"TYPE_CHN_agriculture_NARDL_AIC4"' `"TYPE_CHN_capital_ARDL_AIC4"' `"TYPE_CHN_capital_NARD
+> L_AIC4"' `"TYPE_CHN_commodity_ARDL_AIC4"' `"TYPE_CHN_commodity_NARDL_AIC4"' `"TYPE_CHN_consumption_ARDL_AIC4"' `"TYPE_CHN_consumption_NARDL_AIC4"' `"TYPE_CHN_energy_mining_ARDL_A
+> IC4"' `"TYPE_CHN_energy_mining_NARDL_AIC4"' `"TYPE_CHN_intermediate_ARDL_AIC4"' `"TYPE_CHN_intermediate_NARDL_AIC4"' `"TYPE_CHN_manufacturing_ARDL_AIC4"' `"TYPE_CHN_manufacturing
+> _NARDL_AIC4"' `"TYPE_IND_agriculture_ARDL_AIC4"' `"TYPE_IND_agriculture_NARDL_AIC4"' `"TYPE_IND_capital_ARDL_AIC4"' `"TYPE_IND_capital_NARDL_AIC4"' `"TYPE_IND_commodity_ARDL_AIC4
+> "' `"TYPE_IND_commodity_NARDL_AIC4"' `"TYPE_IND_consumption_ARDL_AIC4"' `"TYPE_IND_consumption_NARDL_AIC4"' `"TYPE_IND_energy_mining_ARDL_AIC4"' `"TYPE_IND_energy_mining_NARDL_AI
+> C4"' `"TYPE_IND_intermediate_ARDL_AIC4"' `"TYPE_IND_intermediate_NARDL_AIC4"' `"TYPE_IND_manufacturing_ARDL_AIC4"' `"TYPE_IND_manufacturing_NARDL_AIC4"' `"TYPE_JPN_agriculture_AR
+> DL_AIC4"' `"TYPE_JPN_agriculture_NARDL_AIC4"' `"TYPE_JPN_capital_ARDL_AIC4"' `"TYPE_JPN_capital_NARDL_AIC4"' `"TYPE_JPN_commodity_ARDL_AIC4"' `"TYPE_JPN_commodity_NARDL_AIC4"' `"
+> TYPE_JPN_consumption_ARDL_AIC4"' `"TYPE_JPN_consumption_NARDL_AIC4"' `"TYPE_JPN_energy_mining_ARDL_AIC4"' `"TYPE_JPN_energy_mining_NARDL_AIC4"' `"TYPE_JPN_intermediate_ARDL_AIC4"
+> ' `"TYPE_JPN_intermediate_NARDL_AIC4"' `"TYPE_JPN_manufacturing_ARDL_AIC4"' `"TYPE_JPN_manufacturing_NARDL_AIC4"' `"TYPE_KOR_agriculture_ARDL_AIC4"' `"TYPE_KOR_agriculture_NARDL_
+> AIC4"' `"TYPE_KOR_capital_ARDL_AIC4"' `"TYPE_KOR_capital_NARDL_AIC4"' `"TYPE_KOR_commodity_ARDL_AIC4"' `"TYPE_KOR_commodity_NARDL_AIC4"' `"TYPE_KOR_consumption_ARDL_AIC4"' `"TYPE
+> _KOR_consumption_NARDL_AIC4"' `"TYPE_KOR_energy_mining_ARDL_AIC4"' `"TYPE_KOR_energy_mining_NARDL_AIC4"' `"TYPE_KOR_intermediate_ARDL_AIC4"' `"TYPE_KOR_intermediate_NARDL_AIC4"' 
+> `"TYPE_KOR_manufacturing_ARDL_AIC4"' `"TYPE_KOR_manufacturing_NARDL_AIC4"' `"TYPE_MYS_agriculture_ARDL_AIC4"' `"TYPE_MYS_agriculture_NARDL_AIC4"' `"TYPE_MYS_capital_ARDL_AIC4"' `
+> "TYPE_MYS_capital_NARDL_AIC4"' `"TYPE_MYS_commodity_ARDL_AIC4"' `"TYPE_MYS_commodity_NARDL_AIC4"' `"TYPE_MYS_consumption_ARDL_AIC4"' `"TYPE_MYS_consumption_NARDL_AIC4"' `"TYPE_MY
+> S_energy_mining_ARDL_AIC4"' `"TYPE_MYS_energy_mining_NARDL_AIC4"' `"TYPE_MYS_intermediate_ARDL_AIC4"' `"TYPE_MYS_intermediate_NARDL_AIC4"' `"TYPE_MYS_manufacturing_ARDL_AIC4"' `"
+> TYPE_MYS_manufacturing_NARDL_AIC4"' `"TYPE_SGP_agriculture_ARDL_AIC4"' `"TYPE_SGP_agriculture_NARDL_AIC4"' `"TYPE_SGP_capital_ARDL_AIC4"' `"TYPE_SGP_capital_NARDL_AIC4"' `"TYPE_S
+> GP_commodity_ARDL_AIC4"' `"TYPE_SGP_commodity_NARDL_AIC4"' `"TYPE_SGP_consumption_ARDL_AIC4"' `"TYPE_SGP_consumption_NARDL_AIC4"' `"TYPE_SGP_energy_mining_ARDL_AIC4"' `"TYPE_SGP_
+> energy_mining_NARDL_AIC4"' `"TYPE_SGP_intermediate_ARDL_AIC4"' `"TYPE_SGP_intermediate_NARDL_AIC4"' `"TYPE_SGP_manufacturing_ARDL_AIC4"' `"TYPE_SGP_manufacturing_NARDL_AIC4"' `"T
+> YPE_THA_agriculture_ARDL_AIC4"' `"TYPE_THA_agriculture_NARDL_AIC4"' `"TYPE_THA_capital_ARDL_AIC4"' `"TYPE_THA_capital_NARDL_AIC4"' `"TYPE_THA_commodity_ARDL_AIC4"' `"TYPE_THA_com
+> modity_NARDL_AIC4"' `"TYPE_THA_consumption_ARDL_AIC4"' `"TYPE_THA_consumption_NARDL_AIC4"' `"TYPE_THA_energy_mining_ARDL_AIC4"' `"TYPE_THA_energy_mining_NARDL_AIC4"' `"TYPE_THA_i
+> ntermediate_ARDL_AIC4"' `"TYPE_THA_intermediate_NARDL_AIC4"' `"TYPE_THA_manufacturing_ARDL_AIC4"' `"TYPE_THA_manufacturing_NARDL_AIC4"' `"TYPE_USA_agriculture_ARDL_AIC4"' `"TYPE_
+> USA_agriculture_NARDL_AIC4"' `"TYPE_USA_capital_ARDL_AIC4"' `"TYPE_USA_capital_NARDL_AIC4"' `"TYPE_USA_commodity_ARDL_AIC4"' `"TYPE_USA_commodity_NARDL_AIC4"' `"TYPE_USA_consumpt
+> ion_ARDL_AIC4"' `"TYPE_USA_consumption_NARDL_AIC4"' `"TYPE_USA_energy_mining_ARDL_AIC4"' `"TYPE_USA_energy_mining_NARDL_AIC4"' `"TYPE_USA_intermediate_ARDL_AIC4"' `"TYPE_USA_inte
+> rmediate_NARDL_AIC4"' `"TYPE_USA_manufacturing_ARDL_AIC4"' `"TYPE_USA_manufacturing_NARDL_AIC4"' `"TYPE_VNM_agriculture_ARDL_AIC4"' `"TYPE_VNM_agriculture_NARDL_AIC4"' `"TYPE_VNM
+> _capital_ARDL_AIC4"' `"TYPE_VNM_capital_NARDL_AIC4"' `"TYPE_VNM_commodity_ARDL_AIC4"' `"TYPE_VNM_commodity_NARDL_AIC4"' `"TYPE_VNM_consumption_ARDL_AIC4"' `"TYPE_VNM_consumption_
+> NARDL_AIC4"' `"TYPE_VNM_energy_mining_ARDL_AIC4"' `"TYPE_VNM_energy_mining_NARDL_AIC4"' `"TYPE_VNM_intermediate_ARDL_AIC4"' `"TYPE_VNM_intermediate_NARDL_AIC4"' `"TYPE_VNM_manufa
+> cturing_ARDL_AIC4"' `"TYPE_VNM_manufacturing_NARDL_AIC4"' `"TYPE_WLD_agriculture_ARDL_AIC4"' `"TYPE_WLD_agriculture_NARDL_AIC4"' `"TYPE_WLD_capital_ARDL_AIC4"' `"TYPE_WLD_capital
+> _NARDL_AIC4"' `"TYPE_WLD_commodity_ARDL_AIC4"' `"TYPE_WLD_commodity_NARDL_AIC4"' `"TYPE_WLD_consumption_ARDL_AIC4"' `"TYPE_WLD_consumption_NARDL_AIC4"' `"TYPE_WLD_energy_mining_A
+> RDL_AIC4"' `"TYPE_WLD_energy_mining_NARDL_AIC4"' `"TYPE_WLD_intermediate_ARDL_AIC4"' `"TYPE_WLD_intermediate_NARDL_AIC4"' `"TYPE_WLD_manufacturing_ARDL_AIC4"' `"TYPE_WLD_manufact
+> uring_NARDL_AIC4"' `"WORLD_ARDL_AIC4"' `"WORLD_NARDL_AIC4"'
+
+. tempname PATHS
+
+. postfile `PATHS' str80 model_id double tq CUSUM cusum_lower cusum_upper cusum_expected official_stat using "$OP/output/diagnostics/oskooee/stata_cusum_paths.dta", replace
+
+. foreach id of local models {
+  2.     use `summaries', clear
+  3.     keep if model_id=="`id'"
+  4.     local sid=sid[1]
+  5.     local estimator=estimator[1]
+  6.     local expected_stat=cusum[1]
+  7.     local expected_N=N[1]
+  8.     estimates use "$OP/output/diagnostics/oskooee/models/`id'.ster"
+  9.     local terms : colnames e(b)
+ 10.     local xx "yd yf q"
+ 11.     if "`estimator'"=="NARDL" local xx "yd yf pos neg"
+ 12.     local lags ""
+ 13.     foreach v in y `xx' {
+ 14.         local mx=0
+ 15.         foreach term of local terms {
+ 16.             if "`term'"=="L.`v'" local mx=max(`mx',1)
+ 17.             if regexm("`term'","^L([0-9]+)[.]`v'$") local mx=max(`mx',real(regexs(1)))
+ 18.         }
+ 19.         local lags "`lags' `mx'"
+ 20.     }
+ 21.     use "$OP/output/diagnostics/oskooee/models/`id'_design.dta", clear
+ 22.     quietly summarize tq
+ 23.     local first=r(min)
+ 24.     local last=r(max)
+ 25.     use "$OP/intermediate/oskooee/analysis_quarterly.dta", clear
+ 26.     keep if sid==`sid'
+ 27.     tsset tq
+ 28.     gen double dq=D.q
+ 29.     gen double pos=sum(cond(missing(dq),0,max(dq,0)))
+ 30.     gen double neg=sum(cond(missing(dq),0,min(dq,0)))
+ 31.     quietly ardl y `xx' if inrange(tq,`first',`last'), lags(`lags') ec1 regstore(uecm)
+ 32.     assert e(N)==`expected_N'
+ 33.     estimates restore uecm
+ 34.     local kk=e(rank)
+ 35.     gen byte es=e(sample)
+ 36.     quietly estat sbcusum, nograph generate(official, ci)
+ 37.     local official_stat=r(cusum)
+ 38.     assert abs(`official_stat'-`expected_stat')<1e-7
+ 39.     keep if es
+ 40.     gen double tau=(_n-`kk')/(_N-`kk')
+ 41.     forvalues i=1/`=_N' {
+ 42.         if !missing(official[`i']) post `PATHS' ("`id'") (tq[`i']) (official[`i']) (official_lb[`i']) (official_ub[`i']) (tau[`i']) (`official_stat')
+ 43.     }
+ 44. }
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,047 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,075 observations deleted)
+
+Time variable: tq, 2013q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,046 observations deleted)
+
+Time variable: tq, 2006q1 to 2026q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,049 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q3
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,050 observations deleted)
+
+Time variable: tq, 2006q1 to 2025q2
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+(175 observations deleted)
+(13,063 observations deleted)
+
+Time variable: tq, 2010q1 to 2026q1
+        Delta: 1 quarter
+(1 missing value generated)
+(results uecm are active now)
+(4 observations deleted)
+
+. postclose `PATHS'
+
+. use "$OP/output/diagnostics/oskooee/stata_cusum_paths.dta", clear
+
+. export delimited "$OP/output/diagnostics/oskooee/stata_cusum_paths.csv", replace
+file F:/Trade-Balance/Tio/output/diagnostics/oskooee/stata_cusum_paths.csv saved
+
+. display "STATA_CUSUM_PATHS_COMPLETED"
+STATA_CUSUM_PATHS_COMPLETED
+
+. log close
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/oskooee/cusum_paths.log
+  log type:  text
+ closed on:  17 Nov 2026, 15:23:17
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,47 @@
+[
+  {
+    "filename": "oecd_tiva_structure.xml",
+    "url": "https://sdmx.oecd.org/sti-public/rest/v1/dataflow/OECD.STI.PIE/DSD_TIVA_MAINSH@DF_MAINSH/1.1?references=all",
+    "accept": "application/vnd.sdmx.structure+xml;version=2.1",
+    "status": 200,
+    "download_utc": "2026-11-17T01:46:12.837135+00:00",
+    "bytes": 2171556,
+    "sha256": "a03ac592ab2882ff4daf9c97dca3a1f90608e9e2e099417da034f73eae96ad27"
+  },
+  {
+    "filename": "uncomtrade_bec_enduse.html",
+    "url": "https://uncomtrade.org/docs/intermediate-goods-in-trade-statistics/",
+    "accept": "text/html",
+    "status": 200,
+    "download_utc": "2026-11-17T01:46:13.749171+00:00",
+    "bytes": 426575,
+    "sha256": "59bdc10d674a337e07f2903cc32ae4adf80e69d46fdbed93ab6bb7b2b1a08c91"
+  },
+  {
+    "filename": "unsd_bec5_codes.json",
+    "url": "https://comtradeapi.un.org/files/v1/app/reference/B5.json",
+    "accept": "application/json",
+    "status": 200,
+    "download_utc": "2026-11-17T01:46:12.622359+00:00",
+    "bytes": 35396,
+    "sha256": "2e5161193381cf9af8a94c3af16b30de13d4ecb7e9bf8b878e25e302bb1360df"
+  },
+  {
+    "filename": "unsd_bec5_manual.pdf",
+    "url": "https://unstats.un.org/unsd/trade/classifications/Manual%20of%20the%20Fifth%20Revision%20of%20the%20BEC%20%28Edited%29-%20EN.pdf",
+    "accept": "application/pdf",
+    "status": 200,
+    "download_utc": "2026-11-17T01:46:13.458172+00:00",
+    "bytes": 1362392,
+    "sha256": "1b1e22a4883b7edf45b0c4442205962f19cbc5a5232eca92b94f05e787851e9f"
+  },
+  {
+    "filename": "oecd_tiva_idn_export_va_shares.csv",
+    "url": "https://sdmx.oecd.org/sti-public/rest/v1/data/OECD.STI.PIE,DSD_TIVA_MAINSH@DF_MAINSH,1.1/EXGR_FVA+EXGR_DVA.IDN..W.PT_EXGR.A?startPeriod=1995&dimensionAtObservation=AllDimensions",
+    "accept": "text/csv;version=2.0.0;labels=both",
+    "status": 200,
+    "download_utc": "2026-11-17T01:47:26.430157+00:00",
+    "bytes": 1100857,
+    "sha256": "7578a33d625d4c8a8402c6c733f545b4abde6d8fa7b9c8ee3cfd5d1a7ad93eb5"
+  }
+]

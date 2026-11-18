@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "integrity_status": "PASS",
+  "substantive_validity": "CONDITIONAL_REVIEW_REQUIRED",
+  "audit_note": "PASS is integration/integrity only; see audit_validitas_data_macro.md",
+  "monthly_rows": 2500,
+  "monthly_columns": 110,
+  "quarterly_rows": 840,
+  "gdp_countries": 11,
+  "world_months": 246,
+  "annual_source_discrepancies_over_1pct": [
+    {
+      "Year": 2006,
+      "Exports_GEM_vs_WDI_pct": -2.63544775759,
+      "Imports_GEM_vs_WDI_pct": -24.2833230006
+    },
+    {
+      "Year": 2007,
+      "Exports_GEM_vs_WDI_pct": -3.31488903765,
+      "Imports_GEM_vs_WDI_pct": -20.0079483572
+    },
+    {
+      "Year": 2008,
+      "Exports_GEM_vs_WDI_pct": -1.8520693953,
+      "Imports_GEM_vs_WDI_pct": 1.30102400853
+    },
+    {
+      "Year": 2009,
+      "Exports_GEM_vs_WDI_pct": -2.62098189659,
+      "Imports_GEM_vs_WDI_pct": 3.24483398375
+    }
+  ],
+  "quarter_availability_by_country": {
+    "AUS": {
+      "Ready_NARDL_CPI": 81,
+      "Ready_NARDL_WithPriceProxy": 81
+    },
+    "CHN": {
+      "Ready_NARDL_CPI": 82,
+      "Ready_NARDL_WithPriceProxy": 82
+    },
+    "IND": {
+      "Ready_NARDL_CPI": 53,
+      "Ready_NARDL_WithPriceProxy": 81
+    },
+    "JPN": {
+      "Ready_NARDL_CPI": 82,
+      "Ready_NARDL_WithPriceProxy": 82
+    },
+    "KOR": {
+      "Ready_NARDL_CPI": 82,
+      "Ready_NARDL_WithPriceProxy": 82
+    },
+    "MYS": {
+      "Ready_NARDL_CPI": 82,
+      "Ready_NARDL_WithPriceProxy": 82
+    },
+    "SGP": {
+      "Ready_NARDL_CPI": 82,
+      "Ready_NARDL_WithPriceProxy": 82
+    },
+    "THA": {
+      "Ready_NARDL_CPI": 82,
+      "Ready_NARDL_WithPriceProxy": 82
+    },
+    "USA": {
+      "Ready_NARDL_CPI": 81,
+      "Ready_NARDL_WithPriceProxy": 81
+    },
+    "VNM": {
+      "Ready_NARDL_CPI": 81,
+      "Ready_NARDL_WithPriceProxy": 81
+    }
+  },
+  "scope": "availability and data integrity; not stationarity, cointegration or causal identification"
+}

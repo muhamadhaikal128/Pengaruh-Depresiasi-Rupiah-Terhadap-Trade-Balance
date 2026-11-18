@@ -1,0 +1,51 @@
+\section{Panduan membaca tabel lengkap}\label{app:read}
+Lampiran mempertahankan 176 model utama dan 340 sensitivitas, termasuk model yang belum mendukung level atau mempunyai catatan diagnostik. Kolom koefisien menggunakan $\beta_q$ pada ARDL dan $\beta_-$ pada NARDL. Dengan definisi kurs yang digunakan, koefisien positif mengarah pada perbaikan rasio neraca ketika depresiasi, sedangkan negatif mengarah pada pemburukan. Penafsiran itu tetap memerlukan kelayakan hubungan level.
+
+\subsection{Kode pasar, kelompok, dan varian}
+Negara pelapor semua tabel adalah Indonesia. \texttt{WLD} berarti seluruh negara mitra; \texttt{AUS}, \texttt{CHN}, \texttt{IND}, \texttt{JPN}, \texttt{KOR}, \texttt{MYS}, \texttt{SGP}, \texttt{THA}, \texttt{USA}, dan \texttt{VNM} adalah mitra yang sudah dibahas. G0 berarti seluruh barang pada cakupan pasar tersebut. G1--G7 mengikuti Tabel~\ref{tab:groups}.
+
+Varian U adalah baseline maksimum empat lag level; L2 maksimum dua; P tambahan kontrol BCOM; W06 perluasan window agregat Indonesia 2006+; WPI memakai proksi harga WPI India; FX memakai keluarga kurs GEM alternatif. Perbedaan varian dapat melibatkan perubahan window atau konsep sumber. Tabel tidak menjadikan varian-varian tersebut sebagai eksperimen yang hanya berbeda satu unsur.
+
+\subsection{Arti status}
+\texttt{L+D} berarti syarat level dan penyaringan diagnostik yang digunakan terpenuhi. \texttt{L} berarti syarat level terpenuhi tetapi ada catatan diagnostik. Tanda -- berarti dukungan level lengkap belum terpenuhi atau inferensinya tidak tersedia. Model dengan tanda -- tetap dapat mempunyai koefisien nominal signifikan. Status tidak secara otomatis menentukan bahwa suatu efek berbeda dari nol.
+
+Probabilitas BH hanya dihitung pada keluarga model utama. Kolom BH sensitivitas karena itu ditulis --. Probabilitas lebih kecil dari 0,001 dicetak sebagai $<0{,}001$, bukan sebagai nol persis. Jumlah observasi adalah sampel estimasi setelah lag, bukan jumlah bulan atau kuartal raw.
+
+\subsection{Berkas yang memuat rincian lebih jauh}
+Workbook \path{output/tables/oskooee/Oskooee_Results.xlsx} memuat seluruh koefisien, unit root, registry sampel dan status. \path{results_all_models.csv} serta \path{diagnostic_summary.csv} menyimpan probabilitas masing-masing diagnostik. Identitas model lengkap pada \path{assets/all_516_models_source.csv} memungkinkan tabel ringkas ini dipadankan dengan hasil Stata.
+
+Atlas respons lengkap berada dalam PPT versi lengkap dan dipetakan melalui \path{model_response_slide_index.csv} pada folder presentasi. Paper memuat grafik terpilih untuk pendalaman, sedangkan tabel berikut mempertahankan semua estimasi numeriknya.
+
+\clearpage\section{Seluruh 176 model utama}
+\noindent Negara pelapor: Indonesia. Mitra \texttt{WLD} adalah seluruh negara. Kelompok dan status mengikuti Lampiran~\ref{app:read}. Koefisien belum menjadi hubungan jangka panjang yang mapan pada baris tanpa dukungan level.
+\input{tables/all_primary.tex}
+
+\clearpage\section{Seluruh 340 model sensitivitas}
+\noindent Varian dan status mengikuti Lampiran~\ref{app:read}. Estimasi yang berbeda dapat mempunyai window berbeda. BH tidak dihitung untuk keluarga sensitivitas dalam run ini.
+\input{tables/all_sensitivity.tex}
+
+\clearpage\section{Glosarium interpretasi}
+\begin{longtable}{p{.24\linewidth}p{.65\linewidth}}
+\toprule Istilah & Arti dalam penelitian\\\midrule\endfirsthead
+\toprule Istilah & Arti dalam penelitian\\\midrule\endhead
+Outcome $y$ & Log impor Indonesia dibagi ekspor pada cakupan tertentu; turun berarti perbaikan relatif.\\
+Kurs $q$ & Log indeks kurs riil dengan orientasi naik sebagai apresiasi.\\
+Partial sums & Akumulasi perubahan positif dan negatif; bukan ukuran volatilitas.\\
+Koefisien $\beta_-$ & Hubungan jangka panjang dengan partial sum depresiasi; tanda harus dikalikan perubahan kurs negatif.\\
+Error correction $\rho$ & Parameter penyesuaian terhadap deviasi level. Negatif saja belum membuktikan hubungan level sah.\\
+Bounds F dan t & Pemeriksaan hubungan level memakai distribusi kritis khusus, bukan sekadar p-value regresi biasa.\\
+Joint-X & Uji tambahan komponen level regressor untuk menilai bentuk hubungan yang didukung.\\
+CI pointwise & Interval pada setiap horizon, bukan jaminan simultan seluruh kurva.\\
+Nominal pascaseleksi & Probabilitas dan interval belum mengoreksi proses pemilihan lag dengan AIC.\\
+BH & Koreksi pengujian berganda dalam keluarga yang ditetapkan; penerapan di sini eksploratif.\\
+Pola J titik & Klasifikasi operasional pemburukan awal dan perbaikan akhir pada estimasi titik.\\
+Horizon 24 & Enam tahun sejak guncangan dalam simulasi dinamis, tidak otomatis long-run limit.\\
+Tidak signifikan & Bukti belum cukup menolak efek nol di bawah asumsi, bukan bukti efek benar-benar nol.\\
+Mekanisme & Penjelasan seperti harga atau volume yang memerlukan pengukuran dan identifikasi lebih lanjut.\\
+Integritas pengolahan & Konsistensi asal, aritmetika, kunci waktu dan numerik; berbeda dari validitas kausal atau keseragaman konsep sumber.\\
+\bottomrule\end{longtable}
+
+\section{Jejak reproduksi}
+Data perdagangan mentah berada pada \path{input/raw/trademap_hs6_20261117/}; referensi klasifikasi dan paper pada \path{input/reference/}. Panel antara dibentuk oleh skrip persiapan dan tidak diperlakukan sebagai data mentah. Master Stata menjalankan model serta diagnostik; hasil pelaporan diperiksa melalui ekuivalensi ECM--level dan prediksi OLS independen.
+
+Pembuatan paper menggunakan \path{script/12_build_research_paper.py}, sumber \path{paper.tex}, dan folder \path{sections/}. Generator menarik angka dan grafik dari hasil yang telah selesai, tanpa mengubah data atau mengestimasi ulang model. \path{paper_validation.json} memuat checksum sumber, jumlah model yang dilaporkan, dan hasil pemeriksaan PDF. Source LaTeX disertakan agar uraian dapat diperbarui ketika penelitian berkembang.

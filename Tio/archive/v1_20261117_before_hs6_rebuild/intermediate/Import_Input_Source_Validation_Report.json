@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "raw_sources_sha256_checked": 5,
+  "annual_rows": 2212,
+  "industry_codes_including_overlapping_aggregates": 79,
+  "first_year": 1995,
+  "last_year": 2022,
+  "FVA_plus_DVA_equals_100_with_rounding_tolerance": true,
+  "BEC5_codes": 178,
+  "HS4_assignment_performed": false,
+  "monthly_or_quarterly_interpolation_performed": false,
+  "2023_onward_extrapolation_performed": false,
+  "scope": "Industry-level foreign value added proxy, not a direct HS4 imported input coefficient",
+  "next_required_bridge": "HS revision/HS6 to ISIC4/OECD industry with ambiguity and aggregation controls"
+}

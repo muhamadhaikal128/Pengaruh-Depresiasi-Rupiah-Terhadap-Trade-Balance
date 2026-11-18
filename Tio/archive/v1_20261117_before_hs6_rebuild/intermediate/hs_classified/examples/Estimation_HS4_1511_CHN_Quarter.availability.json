@@ -1,0 +1,13 @@
+{
+  "output": "F:\\Trade-Balance\\Tio\\intermediate\\hs_classified\\examples\\Estimation_HS4_1511_CHN_Quarter.csv",
+  "HS4": "1511",
+  "Product": "Palm oil and its fractions, whether or not refined (excl. chemically modified)",
+  "Commodity_Class": "commodity",
+  "quarters": 84,
+  "quarters_variables_available": 39,
+  "quarters_variables_and_BCOM_available": 39,
+  "longest_contiguous_available_quarters": 13,
+  "longest_contiguous_start": "2021Q2",
+  "longest_contiguous_end": "2024Q2",
+  "note": "Availability only; assess continuity, integration order, cointegration and identification separately."
+}

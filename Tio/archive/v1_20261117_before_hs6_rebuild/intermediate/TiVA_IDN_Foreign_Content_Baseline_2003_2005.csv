@@ -1,0 +1,80 @@
+ISO3,Industry_ISIC4_OECD,Industry_Label,FVA_Share_Baseline_2003_2005_pct,N_Years,Interpretation
+IDN,A,"Agriculture, forestry and fishing",3.01433333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,A01,"Crop and animal production, hunting and related service activities",3.19733333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,A01_02,"Crop and animal production, hunting and related service activities; Forestry and logging",3.17633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,A02,Forestry and logging,1.59633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,A03,Fishing and aquaculture,1.945,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B,Mining and quarrying,7.705,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B05,Mining of coal and lignite,5.26633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B05_06,Mining and extraction of energy producing products,7.59633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B06,Extraction of crude petroleum and natural gas,8.13933333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B07,Mining of metal ores,7.98366666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B07_08,Mining and quarrying of non-energy producing products,8.06633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B08,Other mining and quarrying,10.0556666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,B09,Mining support service activities,15.4563333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,BTE,Industry (except construction),17.6943333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C,Manufacturing,22.4393333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C10T12,Manufacture of food products; beverages and tobacco products,9.21133333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C13T15,"Manufacture of textiles, wearing apparel, leather and related products",23.9743333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C16,"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",9.24633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C16T18,"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials; manufacture of paper and paper products; printing and reproduction of recorded media",14.714,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C17_18,Manufacture of paper and paper products; printing and reproduction of recorded media,20.6606666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C19,Manufacture of coke and refined petroleum products,20.6246666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C19T23,Manufacture of chemicals and non-metallic mineral products,23.9956666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C20,Manufacture of chemicals and chemical products,25.991,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C20_21,Manufacture of chemicals and pharmaceuticals,25.4393333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,15.4833333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C22,Manufacture of rubber and plastics products,27.727,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C23,Manufacture of other non-metallic mineral products,13.2323333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C24,Manufacture of basic metals,16.817,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C241_2431,"Manufacture of basic iron and steel and of ferro-alloys; of tubes, pipes, hollow profiles, related fittings and other products of first processing of steel; casting of iron and steel",18.6583333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C242_2432,Manufacture of basic precious and other non-ferrous metals; casting of light metals and other non-ferrous metals,16.0316666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C24_25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",19.74,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C25,"Manufacture of fabricated metal products, except machinery and equipment",25.8836666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C26,"Manufacture of computer, electronic and optical products",35.822,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C26_27,"Manufacture of computer, electronic and optical products; manufacture of electrical equipment",34.598,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C27,Manufacture of electrical equipment,31.6336666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C28,Manufacture of machinery and equipment n.e.c.,32.92,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C29,"Manufacture of motor vehicles, trailers and semi-trailers",12.3206666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C29_30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",27.7006666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C30,Manufacture of other transport equipment,38.95,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C301,Building of ships and boats,32.486,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C302T309,"Manufacture of railroad equipment, aircraft, military fighting vehicles and other transport equipment n.e.c",43.4353333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,C31T33,"Manufacture of furniture; jewellery, musical instruments, toys, etc.; repair and installation of machinery and equipment",19.6153333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,D,"Electricity, gas, steam and air conditioning supply",16.151,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,D_E,"Electricity, gas, steam and air conditioning supply; Water supply; sewerage, waste management and remediation activities",16.4693333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,E,"Water supply; sewerage, waste management and remediation activities",23.145,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,F,Construction,17.2776666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,FTT,Total services (incl. construction),11.2743333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,7.194,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,GTI,Wholesale and retail trade; repair of motor vehicles and motorcycles; transportation and storage; accommodation and food service activities,10.7633333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,GTN,Services of the business economy - sections G to N,11.172,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,GTT,Services (except extra-territorial organisations and bodies),11.194,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,H,Transportation and storage,18.872,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,H49,Land transport and transport via pipelines,12.4903333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,H50,Water transport,22.9546666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,H51,Air transport,23.9233333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,H52,Warehousing and support activities for transportation,15.2826666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,H53,Postal and courier activities,16.7703333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,I,Accommodation and food service activities,8.28766666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,INFO,Information industries,31.9623333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,J,Information and communication,7.96666666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,J58T60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",8.33333333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,J61,Telecommunications,5.34566666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,J62_63,"Computer programming, consultancy, and information service activities",18.807,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,JTN,Information and communication; Financial intermediation; Real estate; Professional and business suport services,12.6666666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,K,Financial and insurance activities,6.56233333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,L,Real estate activities,4.94866666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,M,"Professional, scientific and technical activities",12.7143333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,M_N,"Professional, scientific and technical activities; administrative and support service activities",16.2853333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,N,Administrative and support service activities,19.333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,O,Public administration and defence; compulsory social security,9.80533333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,OTQ,"Public administration, defence, education, human health and social work activities",10.2073333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,OTT,"Public admin, education and health; social and personal services",12.3046666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,P,Education,8.668,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,Q,Human health and social work activities,12.1133333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,R,"Arts, entertainment and recreation",13.719,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,RTT,"Arts, entertainment and recreation; Other service activities; Activities of households as employers",13.303,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,R_S,"Arts, entertainment and recreation; Other service activities",13.303,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,S,Other service activities,12.1096666667,3,Pre-sample industry structural proxy; not time-varying imported-input usage
+IDN,_T,Total - All activities,16.0003333333,3,Pre-sample industry structural proxy; not time-varying imported-input usage

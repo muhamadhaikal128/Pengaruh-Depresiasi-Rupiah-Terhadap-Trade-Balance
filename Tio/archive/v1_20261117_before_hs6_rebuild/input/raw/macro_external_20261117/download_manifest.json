@@ -1,0 +1,906 @@
+[
+  {
+    "label": "VALEXPIDM052N",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VALEXPIDM052N",
+    "retrieved_utc": "2026-11-16T20:55:58.291515+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VALEXPIDM052N",
+    "bytes": 4186,
+    "content_type": "application/csv",
+    "sha256": "29b7e611c3290716443fc54da7062f78e462126606e0951689fa900f02d68ead",
+    "path": "input/raw/macro_external_20261117/VALEXPIDM052N.csv",
+    "header": [
+      "observation_date,VALEXPIDM052N"
+    ],
+    "first": [
+      "2006-01-01,7812"
+    ],
+    "last": [
+      "2026-06-01,25459"
+    ]
+  },
+  {
+    "label": "NGDPRNSAXDCIDQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCIDQ",
+    "retrieved_utc": "2026-11-16T20:55:58.423198+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCIDQ",
+    "bytes": 1660,
+    "content_type": "application/csv",
+    "sha256": "665e7c221323fb31308776e92ae50cd30262e8bc840c61f0d4cc9c4e10558ae9",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCIDQ.csv",
+    "header": [
+      "observation_date,NGDPRNSAXDCIDQ"
+    ],
+    "first": [
+      "2008-01-01,1475278000"
+    ],
+    "last": [
+      "2026-04-01,3576209300"
+    ]
+  },
+  {
+    "label": "VALIMPIDM052N",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VALIMPIDM052N",
+    "retrieved_utc": "2026-11-16T20:55:58.293568+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VALIMPIDM052N",
+    "bytes": 4166,
+    "content_type": "application/csv",
+    "sha256": "5fe5879777c8d45aa88aa0587434b4920321bfcd1afcc674ed88b1d578969724",
+    "path": "input/raw/macro_external_20261117/VALIMPIDM052N.csv",
+    "header": [
+      "observation_date,VALIMPIDM052N"
+    ],
+    "first": [
+      "2006-01-01,5684"
+    ],
+    "last": [
+      "2026-06-01,25909"
+    ]
+  },
+  {
+    "label": "NGDPRNSAXDCIDQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCIDQ",
+    "retrieved_utc": "2026-11-16T20:55:58.886637+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCIDQ",
+    "bytes": 75162,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "f7e27f9534e0a4e0d2c7a18bef127660d0b3c4ba1d0c220e67651b2f3192811f",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCIDQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for Indonesia (NGDPRNSAXDCIDQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "PCPI_IXIDM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXIDM",
+    "retrieved_utc": "2026-11-16T20:55:58.964750+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXIDM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXIDM.response.html"
+  },
+  {
+    "label": "VALEXPIDM052N_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/VALEXPIDM052N",
+    "retrieved_utc": "2026-11-16T20:55:58.292518+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/VALEXPIDM052N",
+    "bytes": 76161,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "a65e997603369a285dec46b041af93c2bd1a24f88b559b71d7056971271c62f5",
+    "path": "input/raw/macro_external_20261117/VALEXPIDM052N_metadata.html",
+    "title": "Exports of Goods for Indonesia (VALEXPIDM052N) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "VALIMPIDM052N_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/VALIMPIDM052N",
+    "retrieved_utc": "2026-11-16T20:55:58.294488+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/VALIMPIDM052N",
+    "bytes": 76170,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "29e97c7ec31d55dbc7085521335eee0724aa9d7174cf1ec72fef2ae2246d8590",
+    "path": "input/raw/macro_external_20261117/VALIMPIDM052N_metadata.html",
+    "title": "Imports of Goods for Indonesia (VALIMPIDM052N) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "PCPI_IXIDM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXIDM",
+    "retrieved_utc": "2026-11-16T20:55:59.501991+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXIDM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXIDM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCCNQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCCNQ",
+    "retrieved_utc": "2026-11-16T20:55:59.507309+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCCNQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCCNQ.response.html"
+  },
+  {
+    "label": "PCPI_IXCNM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXCNM",
+    "retrieved_utc": "2026-11-16T20:55:59.861548+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXCNM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXCNM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCCNQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCCNQ",
+    "retrieved_utc": "2026-11-16T20:55:59.555702+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCCNQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCCNQ_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXCNM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXCNM",
+    "retrieved_utc": "2026-11-16T20:55:59.707053+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXCNM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXCNM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCUSQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCUSQ",
+    "retrieved_utc": "2026-11-16T20:55:59.959550+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCUSQ",
+    "bytes": 1894,
+    "content_type": "application/csv",
+    "sha256": "57147ddc3caf57f6c182143eb2574e9b9965ca35ec2d563f43c424987156e5d5",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCUSQ.csv",
+    "header": [
+      "observation_date,NGDPRNSAXDCUSQ"
+    ],
+    "first": [
+      "2002-01-01,3501118"
+    ],
+    "last": [
+      "2026-04-01,6069701"
+    ]
+  },
+  {
+    "label": "PCPI_IXUSM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXUSM",
+    "retrieved_utc": "2026-11-16T20:56:00.320838+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXUSM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXUSM_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXUSM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXUSM",
+    "retrieved_utc": "2026-11-16T20:56:00.316838+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXUSM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXUSM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCUSQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCUSQ",
+    "retrieved_utc": "2026-11-16T20:56:00.316838+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCUSQ",
+    "bytes": 74330,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "2f5bbb2f8044ea70ba9fb2f5a67db38c2c952b709a2959df307fe6f43ba6f1bd",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCUSQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for United States (NGDPRNSAXDCUSQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "PCPI_IXSGM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXSGM",
+    "retrieved_utc": "2026-11-16T20:56:00.909103+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXSGM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXSGM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCSGQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCSGQ",
+    "retrieved_utc": "2026-11-16T20:56:00.904096+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCSGQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCSGQ.response.html"
+  },
+  {
+    "label": "PCPI_IXSGM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXSGM",
+    "retrieved_utc": "2026-11-16T20:56:01.224077+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXSGM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXSGM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCJPQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCJPQ",
+    "retrieved_utc": "2026-11-16T20:56:01.783397+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCJPQ",
+    "bytes": 2762,
+    "content_type": "application/csv",
+    "sha256": "14bd881d059fdf6069e0fa78e8bbbcf94b11ce34c98478645f69d4f1927bd939",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCJPQ.csv",
+    "header": [
+      "observation_date,NGDPRNSAXDCJPQ"
+    ],
+    "first": [
+      "1994-01-01,113629400"
+    ],
+    "last": [
+      "2026-04-01,146228100"
+    ]
+  },
+  {
+    "label": "PCPI_IXJPM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXJPM",
+    "retrieved_utc": "2026-11-16T20:56:01.825771+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXJPM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXJPM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCJPQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCJPQ",
+    "retrieved_utc": "2026-11-16T20:56:01.784403+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCJPQ",
+    "bytes": 74196,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "3042800678c726382947eb4b51770c31e46af289a537c167bdef32a61212da97",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCJPQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for Japan (NGDPRNSAXDCJPQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "NGDPRNSAXDCSGQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCSGQ",
+    "retrieved_utc": "2026-11-16T20:56:00.908104+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCSGQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCSGQ_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXJPM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXJPM",
+    "retrieved_utc": "2026-11-16T20:56:02.609707+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXJPM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXJPM_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXMYM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXMYM",
+    "retrieved_utc": "2026-11-16T20:56:02.624306+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXMYM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXMYM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCMYQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCMYQ",
+    "retrieved_utc": "2026-11-16T20:56:02.617991+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCMYQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCMYQ_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCMYQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCMYQ",
+    "retrieved_utc": "2026-11-16T20:56:02.613920+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCMYQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCMYQ.response.html"
+  },
+  {
+    "label": "PCPI_IXMYM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXMYM",
+    "retrieved_utc": "2026-11-16T20:56:03.632819+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXMYM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXMYM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCINQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCINQ",
+    "retrieved_utc": "2026-11-16T20:56:03.638229+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCINQ",
+    "bytes": 74135,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "a83582a9655c3b24cdb19e1bcc2596bb1f428aefe6f6adbe275e13d1ed558be6",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCINQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for India (NGDPRNSAXDCINQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "NGDPRNSAXDCINQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCINQ",
+    "retrieved_utc": "2026-11-16T20:56:03.636240+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCINQ",
+    "bytes": 1990,
+    "content_type": "application/csv",
+    "sha256": "100a6a9c05ab698e9e1a21c9a3d337bee01c0114802e5772ea732fea156fa660",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCINQ.csv",
+    "header": [
+      "observation_date,NGDPRNSAXDCINQ"
+    ],
+    "first": [
+      "2004-04-01,18650362.7"
+    ],
+    "last": [
+      "2026-04-01,81361530.0"
+    ]
+  },
+  {
+    "label": "PCPI_IXINM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXINM",
+    "retrieved_utc": "2026-11-16T20:56:03.641232+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXINM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXINM.response.html"
+  },
+  {
+    "label": "PCPI_IXINM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXINM",
+    "retrieved_utc": "2026-11-16T20:56:04.327073+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXINM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXINM_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXKRM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXKRM",
+    "retrieved_utc": "2026-11-16T20:56:04.404156+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXKRM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXKRM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCKRQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCKRQ",
+    "retrieved_utc": "2026-11-16T20:56:04.335072+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCKRQ",
+    "bytes": 5488,
+    "content_type": "application/csv",
+    "sha256": "6168f680c0356155ad4c89c2deda0bc19d271918b6468a27ad3125bfe1b9c18d",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCKRQ.csv",
+    "header": [
+      "observation_date,NGDPRNSAXDCKRQ"
+    ],
+    "first": [
+      "1960-01-01,7031000"
+    ],
+    "last": [
+      "2026-04-01,599411200"
+    ]
+  },
+  {
+    "label": "NGDPRNSAXDCKRQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCKRQ",
+    "retrieved_utc": "2026-11-16T20:56:04.383860+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCKRQ",
+    "bytes": 74763,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "8b98b1e3e1122ff829e4fc3d9870117b4f1e51355b9822ff58461c587c4f6950",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCKRQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for Republic of Korea (NGDPRNSAXDCKRQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "PCPI_IXKRM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXKRM",
+    "retrieved_utc": "2026-11-16T20:56:04.929843+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXKRM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXKRM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCTHQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCTHQ",
+    "retrieved_utc": "2026-11-16T20:56:04.939844+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCTHQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCTHQ.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCTHQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCTHQ",
+    "retrieved_utc": "2026-11-16T20:56:04.961280+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCTHQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCTHQ_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXTHM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXTHM",
+    "retrieved_utc": "2026-11-16T20:56:05.283995+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXTHM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXTHM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCVNQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCVNQ",
+    "retrieved_utc": "2026-11-16T20:56:05.392970+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCVNQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCVNQ.response.html"
+  },
+  {
+    "label": "PCPI_IXTHM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXTHM",
+    "retrieved_utc": "2026-11-16T20:56:05.143110+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXTHM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXTHM.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCVNQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCVNQ",
+    "retrieved_utc": "2026-11-16T20:56:05.582088+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCVNQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRNSAXDCVNQ_metadata.response.html"
+  },
+  {
+    "label": "PCPI_IXVNM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXVNM",
+    "retrieved_utc": "2026-11-16T20:56:05.622080+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXVNM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXVNM.response.html"
+  },
+  {
+    "label": "PCPI_IXVNM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXVNM",
+    "retrieved_utc": "2026-11-16T20:56:05.836551+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXVNM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXVNM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCAUQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCAUQ",
+    "retrieved_utc": "2026-11-16T20:56:05.863606+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRNSAXDCAUQ",
+    "bytes": 4834,
+    "content_type": "application/csv",
+    "sha256": "33cf5bf5d56534742ee1a96265a9ec0fe70dafa58c6c1cbd6d1a9a48cf4a5107",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCAUQ.csv",
+    "header": [
+      "observation_date,NGDPRNSAXDCAUQ"
+    ],
+    "first": [
+      "1959-07-01,78803"
+    ],
+    "last": [
+      "2026-04-01,703981"
+    ]
+  },
+  {
+    "label": "PCPI_IXAUM",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXAUM",
+    "retrieved_utc": "2026-11-16T20:56:06.091420+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCPI_IXAUM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXAUM.response.html"
+  },
+  {
+    "label": "PCPI_IXAUM_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/PCPI_IXAUM",
+    "retrieved_utc": "2026-11-16T20:56:06.232225+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/PCPI_IXAUM",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/PCPI_IXAUM_metadata.response.html"
+  },
+  {
+    "label": "NGDPRNSAXDCAUQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCAUQ",
+    "retrieved_utc": "2026-11-16T20:56:06.003221+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRNSAXDCAUQ",
+    "bytes": 74583,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "cec844981865e48b61d0760a415190db560cc5be83854770d0ca16dc48117ef4",
+    "path": "input/raw/macro_external_20261117/NGDPRNSAXDCAUQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for Australia (NGDPRNSAXDCAUQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "investing_usd_idr",
+    "requested_url": "https://www.investing.com/currencies/usd-idr-historical-data",
+    "retrieved_utc": "2026-11-16T20:56:06.518278+00:00",
+    "status": 403,
+    "final_url": "https://www.investing.com/currencies/usd-idr-historical-data",
+    "bytes": 5542,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "99a39d4ca76f33a942df6885071d1d2883f98828941c329b01202c15cdf66a9c",
+    "path": "input/raw/macro_external_20261117/failed_requests/investing_usd_idr.response.html"
+  },
+  {
+    "label": "bis_bulk_index",
+    "requested_url": "https://data.bis.org/bulkdownload",
+    "retrieved_utc": "2026-11-16T20:56:06.558518+00:00",
+    "status": 200,
+    "final_url": "https://data.bis.org/bulkdownload",
+    "bytes": 330113,
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "5312cbf2bd86f849771a0cec888f45aa4821f687daaf1013ba5d388bee7e1420",
+    "path": "input/raw/macro_external_20261117/bis_bulk_index.html",
+    "title": "Bulk downloads | BIS Data Portal"
+  },
+  {
+    "label": "dbnomics_vietnam_gdp",
+    "requested_url": "https://api.db.nomics.world/v22/series/IMF/IFS/Q.VN.NGDP_R_XDC?observations=1",
+    "retrieved_utc": "2026-11-16T20:56:06.689419+00:00",
+    "status": 404,
+    "final_url": "https://api.db.nomics.world/v22/series/IMF/IFS/Q.VN.NGDP_R_XDC?observations=1",
+    "bytes": 308,
+    "content_type": "application/json",
+    "sha256": "11ea32bb60b399b8b9fba9684c02a1acf16d41d468bc4e8be6b9ced7e9f8403b",
+    "path": "input/raw/macro_external_20261117/failed_requests/dbnomics_vietnam_gdp.response.json"
+  },
+  {
+    "label": "bis_cpi_bulk",
+    "requested_url": "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip",
+    "retrieved_utc": "2026-11-16T20:56:06.668428+00:00",
+    "status": 200,
+    "final_url": "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip",
+    "bytes": 463411,
+    "content_type": "application/zip",
+    "sha256": "21bc0caa238580d3bd37e07ff6c62b5eb9b5f116243929300fa06d1197da2b56",
+    "path": "input/raw/macro_external_20261117/bis_cpi_bulk.zip"
+  },
+  {
+    "label": "bis_fx_bulk",
+    "requested_url": "https://data.bis.org/static/bulk/WS_XRU_csv_col.zip",
+    "retrieved_utc": "2026-11-16T20:56:06.681418+00:00",
+    "status": 200,
+    "final_url": "https://data.bis.org/static/bulk/WS_XRU_csv_col.zip",
+    "bytes": 4880198,
+    "content_type": "application/zip",
+    "sha256": "3c1249078bd7c57b11ba2ff670bce779f57a7c458c21758b5b1309a91a3e622e",
+    "path": "input/raw/macro_external_20261117/bis_fx_bulk.zip"
+  },
+  {
+    "label": "wb_gem_vnm_cpi",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/VNM/series/CPTOTNSXN/time/all?format=json&per_page=20000",
+    "retrieved_utc": "2026-11-16T20:57:27.014355+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/VNM/series/CPTOTNSXN/time/all?format=json&per_page=20000",
+    "bytes": 142491,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "88abaa1cb82cdaa93fbdb16b1557c1bb82403a38df36b6d29df3b2797f066b44",
+    "path": "input/raw/macro_external_20261117/wb_gem_vnm_cpi.json"
+  },
+  {
+    "label": "wb_gem_indicators",
+    "requested_url": "https://api.worldbank.org/v2/indicator?source=15&format=json&per_page=1000",
+    "retrieved_utc": "2026-11-16T20:57:27.015302+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/indicator?source=15&format=json&per_page=1000",
+    "bytes": 13208,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "09aac77865125797b6d90b1947bd6de4490b414d22cceb2f43d64c814c422899",
+    "path": "input/raw/macro_external_20261117/wb_gem_indicators.json"
+  },
+  {
+    "label": "dbnomics_vnm_search",
+    "requested_url": "https://api.db.nomics.world/v22/series/IMF/IFS?limit=5&q=Vietnam%20gross",
+    "retrieved_utc": "2026-11-16T20:57:27.016277+00:00",
+    "status": 200,
+    "final_url": "https://api.db.nomics.world/v22/series/IMF/IFS?limit=5&q=Vietnam%20gross",
+    "bytes": 227690,
+    "content_type": "application/json",
+    "sha256": "dd0d8ec1d7ac34af554bf7cf3f8003e69d1ae0e612cc0116734048b8286b3672",
+    "path": "input/raw/macro_external_20261117/dbnomics_vnm_search.json"
+  },
+  {
+    "label": "dbnomics_ifs_meta",
+    "requested_url": "https://api.db.nomics.world/v22/series/IMF/IFS?limit=1",
+    "retrieved_utc": "2026-11-16T20:57:27.016277+00:00",
+    "status": 200,
+    "final_url": "https://api.db.nomics.world/v22/series/IMF/IFS?limit=1",
+    "bytes": 228115,
+    "content_type": "application/json",
+    "sha256": "901f85861f862cc217700587c3c775df61efccfab979a3b4b49f3d609cba21d6",
+    "path": "input/raw/macro_external_20261117/dbnomics_ifs_meta.json"
+  },
+  {
+    "label": "malaysia_gdp",
+    "requested_url": "https://storage.dosm.gov.my/gdp/gdp_qtr_real_supply.csv",
+    "retrieved_utc": "2026-11-16T20:57:29.247074+00:00",
+    "status": 200,
+    "final_url": "https://storage.dosm.gov.my/gdp/gdp_qtr_real_supply.csv",
+    "bytes": 26724,
+    "content_type": "binary/octet-stream",
+    "sha256": "349486196591a815d5f702452d9650db367677b2745e18788cc05dcfa222f92b",
+    "path": "input/raw/macro_external_20261117/malaysia_gdp.csv",
+    "header": [
+      "series,date,sector,value"
+    ],
+    "first": [
+      "abs,2015-01-01,p0,282255.0"
+    ],
+    "last": [
+      "growth_qoq,2026-04-01,p6,18.3"
+    ]
+  },
+  {
+    "label": "sg_gdp_meta",
+    "requested_url": "https://tablebuilder.singstat.gov.sg/api/table/metadata/M015731",
+    "retrieved_utc": "2026-11-16T20:57:29.562170+00:00",
+    "status": 200,
+    "final_url": "https://tablebuilder.singstat.gov.sg/api/table/metadata/M015731",
+    "bytes": 3968,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "fa15ca3c6a91d9a7ec073921c9db92f498ecc8e18c52c41660e45bfc510f43dc",
+    "path": "input/raw/macro_external_20261117/sg_gdp_meta.json"
+  },
+  {
+    "label": "sg_gdp_data",
+    "requested_url": "https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015731",
+    "retrieved_utc": "2026-11-16T20:57:30.030900+00:00",
+    "status": 200,
+    "final_url": "https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015731",
+    "bytes": 48445,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "41950c08cbfd0a56372dbc8bf30fd33b7464add52d4fa7160a8734e37d5a1cea",
+    "path": "input/raw/macro_external_20261117/sg_gdp_data.json"
+  },
+  {
+    "label": "wb_gem_gdp_real_all",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/NYGDPMKTPSAKN/time/all?format=json&per_page=30000",
+    "retrieved_utc": "2026-11-16T20:58:29.498809+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/NYGDPMKTPSAKN/time/all?format=json&per_page=30000",
+    "bytes": 1688759,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "6fde93a97127c175234f16a141f166d6341616fb26b95c25611365101cc2ecda",
+    "path": "input/raw/macro_external_20261117/wb_gem_gdp_real_all.json"
+  },
+  {
+    "label": "sg_real_gdp",
+    "requested_url": "https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015661",
+    "retrieved_utc": "2026-11-16T20:58:29.499809+00:00",
+    "status": 200,
+    "final_url": "https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015661",
+    "bytes": 162765,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "fe481d926777b31773637fe57814b712718b3d97b5c314cdd08b5d9c5b37b11b",
+    "path": "input/raw/macro_external_20261117/sg_real_gdp.json"
+  },
+  {
+    "label": "sg_real_gdp_meta",
+    "requested_url": "https://tablebuilder.singstat.gov.sg/api/table/metadata/M015661",
+    "retrieved_utc": "2026-11-16T20:58:29.500808+00:00",
+    "status": 200,
+    "final_url": "https://tablebuilder.singstat.gov.sg/api/table/metadata/M015661",
+    "bytes": 4447,
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "6cfe7a39703684319ddc6e70cf4b2a4bdea0a4d785ca6804cf1117c39fd33010",
+    "path": "input/raw/macro_external_20261117/sg_real_gdp_meta.json"
+  },
+  {
+    "label": "vnm_nsdp",
+    "requested_url": "https://nsdp.nso.gov.vn/GSO-chung/",
+    "retrieved_utc": "2026-11-16T20:58:29.500808+00:00",
+    "status": 200,
+    "final_url": "https://nsdp.nso.gov.vn/GSO-chung/",
+    "bytes": 49071,
+    "content_type": "text/html",
+    "sha256": "115544af613064feab829ddd80972250af04e2412c617e3bcec3e57c387425e0",
+    "path": "input/raw/macro_external_20261117/vnm_nsdp.html",
+    "title": ""
+  },
+  {
+    "label": "bis_cpi_documentation",
+    "requested_url": "https://www.bis.org/statistics/cp/cp_long_documentation.pdf",
+    "retrieved_utc": "2026-11-16T20:58:29.738526+00:00",
+    "status": 200,
+    "final_url": "https://www.bis.org/pages/statistics/cp-long-series-documentation.pdf",
+    "bytes": 200849,
+    "content_type": "application/pdf",
+    "sha256": "23af85b5cd81fe1ee3f6c1ffe4213f8510f0b320607666a8e229538b9df2b0e2",
+    "path": "input/raw/macro_external_20261117/bis_cpi_documentation.pdf"
+  },
+  {
+    "label": "NGDPRSAXDCAUQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCAUQ",
+    "retrieved_utc": "2026-11-16T21:00:55.184278+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCAUQ",
+    "bytes": 4834,
+    "content_type": "application/csv",
+    "sha256": "7670459f1687663c01bed687a05f63e954669007113f69fedddc229ea8adfe68",
+    "path": "input/raw/macro_external_20261117/NGDPRSAXDCAUQ.csv",
+    "header": [
+      "observation_date,NGDPRSAXDCAUQ"
+    ],
+    "first": [
+      "1959-07-01,80842"
+    ],
+    "last": [
+      "2026-04-01,699461"
+    ]
+  },
+  {
+    "label": "NGDPRSAXDCAUQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRSAXDCAUQ",
+    "retrieved_utc": "2026-11-16T21:00:55.185296+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRSAXDCAUQ",
+    "bytes": 74621,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "c893d8972591bfdf48c63f4602d6597f2a69527cc2771d2dc4ce7ebd1aff739a",
+    "path": "input/raw/macro_external_20261117/NGDPRSAXDCAUQ_metadata.html",
+    "title": "Real Gross Domestic Product (GDP) for Australia (NGDPRSAXDCAUQ) | FRED | St. Louis Fed"
+  },
+  {
+    "label": "NGDPRSAXDCINQ",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCINQ",
+    "retrieved_utc": "2026-11-16T21:00:55.186186+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCINQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRSAXDCINQ.response.html"
+  },
+  {
+    "label": "NGDPRSAXDCINQ_metadata",
+    "requested_url": "https://fred.stlouisfed.org/series/NGDPRSAXDCINQ",
+    "retrieved_utc": "2026-11-16T21:00:55.187272+00:00",
+    "status": 404,
+    "final_url": "https://fred.stlouisfed.org/series/NGDPRSAXDCINQ",
+    "bytes": 29441,
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "aa16998cc80c47498d521aaf05f35310c8b94775a4b98dd339edd29d12c601cc",
+    "path": "input/raw/macro_external_20261117/failed_requests/NGDPRSAXDCINQ_metadata.response.html"
+  },
+  {
+    "label": "wb_gem_idn_DXGSRMRCHNSCD",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/IDN/series/DXGSRMRCHNSCD/time/all?format=json&per_page=10000",
+    "retrieved_utc": "2026-11-16T21:00:55.736145+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/IDN/series/DXGSRMRCHNSCD/time/all?format=json&per_page=10000",
+    "bytes": 171850,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "800a5079a96261f297ec2adc7f6add6044edaf084199f3614be8b9aca989dd48",
+    "path": "input/raw/macro_external_20261117/wb_gem_idn_DXGSRMRCHNSCD.json"
+  },
+  {
+    "label": "wb_gem_idn_DMGSRMRCHNSCD",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/IDN/series/DMGSRMRCHNSCD/time/all?format=json&per_page=10000",
+    "retrieved_utc": "2026-11-16T21:00:55.787847+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/IDN/series/DMGSRMRCHNSCD/time/all?format=json&per_page=10000",
+    "bytes": 171832,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "9bf33923e25c5c426602d54e0436d9a6894d0cdd26dd839e1c43df51ed2fe5b3",
+    "path": "input/raw/macro_external_20261117/wb_gem_idn_DMGSRMRCHNSCD.json"
+  },
+  {
+    "label": "wdi_trade_annual",
+    "requested_url": "https://api.worldbank.org/v2/country/IDN/indicator/TX.VAL.MRCH.CD.WT;TM.VAL.MRCH.CD.WT?source=2&format=json&per_page=2000",
+    "retrieved_utc": "2026-11-16T21:13:47.897738+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/country/IDN/indicator/TX.VAL.MRCH.CD.WT;TM.VAL.MRCH.CD.WT?source=2&format=json&per_page=2000",
+    "bytes": 29511,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "925f99531113963ede385c74ac1f077fc12cb6caad7070f472ad0c30ce3fd0c9",
+    "path": "input/raw/macro_external_20261117/wdi_trade_annual.json"
+  },
+  {
+    "label": "wb_gem_vnm_fx",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/VNM/series/DPANUSLCU/time/all?format=json&per_page=10000",
+    "retrieved_utc": "2026-11-16T21:13:47.899997+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/VNM/series/DPANUSLCU/time/all?format=json&per_page=10000",
+    "bytes": 162338,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "22f16daef8b828b638780789a532a26229c805b7e893611d53093e2a0f9c9834",
+    "path": "input/raw/macro_external_20261117/wb_gem_vnm_fx.json"
+  }
+]

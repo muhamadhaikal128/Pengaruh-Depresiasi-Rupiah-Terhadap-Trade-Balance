@@ -1,0 +1,112 @@
+\section{Kerangka ekonomi dan metode}\label{sec:methods}
+\subsection{Neraca nominal dan rasio yang diestimasi}
+Untuk cakupan pasar dan barang $s$, outcome ditulis
+\begin{equation}
+ y_{s,t}=\ln\left(\frac{M_{s,t}}{X_{s,t}}\right),
+ \qquad TB_{s,t}=X_{s,t}-M_{s,t}.\label{eq:outcome}
+\end{equation}
+$M$ dan $X$ adalah impor dan ekspor Indonesia. Penurunan $y$ berarti perbaikan ekspor relatif terhadap impor. Selisih dolar $TB$ digunakan sebagai statistik deskriptif, tetapi tidak di-log karena dapat negatif. Rasio menghilangkan satuan skala dolar dan mensyaratkan kedua arus positif dalam kuartal yang digunakan.
+
+Rasio membaik tidak mengidentifikasi kenaikan ekspor secara khusus. Sebagai contoh konseptual, bila ekspor turun lima persen dan impor turun sepuluh persen, ekspor relatif terhadap impor meningkat walaupun ekspor sendiri turun. Nilai nominal juga mencampur harga dan volume. Untuk indeks harga dan volume yang konsisten secara definisi, dekomposisi konseptualnya adalah
+\begin{equation}
+ \ln(M/X)=\ln P_M-\ln P_X+\ln Q_M-\ln Q_X.\label{eq:value}
+\end{equation}
+Ini penjelasan akuntansi, bukan estimasi komponen yang tersedia dalam data. Kuantitas dan harga ekspor/impor produk belum digunakan secara langsung. BCOM adalah kontrol harga luas, bukan pengganti otomatis semua harga produk.
+
+\subsection{J-curve dan penyesuaian perdagangan}
+Harga, kontrak, dan volume dapat menyesuaikan pada waktu berbeda. Urutan J-curve memerlukan pemburukan awal setelah depresiasi, lalu perbaikan berikutnya. Kemungkinan ini tidak mengharuskan semua pasar mengikuti urutan sama. Respons yang langsung membaik merupakan hasil berbeda dari J-curve, walaupun arah akhirnya sama-sama positif.
+
+Paper acuan mengaitkan J-curve dengan hubungan jangka pendek dan panjang dalam perdagangan bilateral \cite{bahmani}. Grafik multiplier dalam penelitian ini menggambarkan jalur penyesuaian, sementara syarat hubungan level menilai apakah hubungan akhirnya layak ditafsirkan. Kuartal ke-24 pada grafik tetap horizon simulasi terbatas. Nilai positif pada titik itu tidak otomatis membuktikan keseimbangan jangka panjang.
+
+\subsection{ARDL sebagai pembanding linier}
+Indeks $s$ selanjutnya dihilangkan agar notasi mudah dibaca. $d_t$ adalah log PDB riil Indonesia, $f_t$ log aktivitas luar negeri, dan $q_t$ kurs berorientasi apresiasi. Bentuk level ARDL adalah
+\begin{equation}
+ y_t=a+\sum_{\ell=1}^{p}\phi_\ell y_{t-\ell}
+       +\sum_{v\in\mathcal Z}\sum_{j=0}^{q_v}b_{v,j}v_{t-j}+\varepsilon_t,
+ \qquad \mathcal Z=\{d,f,q\}.\label{eq:ardl}
+\end{equation}
+Bila model stabil dan hubungan level didukung, koefisien jangka panjang regressor $v$ adalah
+\begin{equation}
+ \beta_v=\frac{\sum_{j=0}^{q_v}b_{v,j}}{1-\sum_{\ell=1}^{p}\phi_\ell}.
+ \label{eq:lr}
+\end{equation}
+Satu koefisien kurs membatasi hubungan apresiasi dan depresiasi menjadi simetris dalam log. ARDL memberi pembanding yang lebih hemat parameter, tetapi dapat merangkum penyesuaian yang berbeda menjadi satu hubungan rata-rata. Dataset disusun dalam format panel, namun estimator yang dipakai adalah deret waktu terpisah untuk tiap kasus; bukan regresi panel yang memaksakan satu koefisien bersama.
+
+\subsection{NARDL dan pemisahan arah kurs}
+Dekomposisi partial sums adalah
+\begin{align}
+ q_t^+&=\sum_{j=1}^{t}\max(\Delta q_j,0),&
+ q_t^-&=\sum_{j=1}^{t}\min(\Delta q_j,0),\\
+ q_t&=q_0+q_t^++q_t^-.
+\end{align}
+Karena kenaikan $q$ berarti apresiasi, partial sum negatif mewakili depresiasi. Tanda negatifnya dipertahankan. Himpunan regressor menjadi $\mathcal Z=\{d,f,q^+,q^-\}$. Pada sensitivitas harga ditambahkan $\ln(\mathrm{BCOM})$. Ini pemisahan arah perubahan kurs, tidak sama dengan penggunaan variabel volatilitas.
+
+Representasi error correction umumnya adalah
+\begin{align}
+\Delta y_t={}&\alpha+\rho y_{t-1}+\theta_d d_{t-1}+\theta_f f_{t-1}
+ +\theta_+q^+_{t-1}+\theta_-q^-_{t-1}\nonumber\\
+ &+\sum_{j=1}^{P}\psi_j\Delta y_{t-j}
+ +\sum_{j=0}^{Q_d}\gamma_{d,j}\Delta d_{t-j}
+ +\sum_{j=0}^{Q_f}\gamma_{f,j}\Delta f_{t-j}\nonumber\\
+ &+\sum_{j=0}^{Q_+}\pi_j^+\Delta q^+_{t-j}
+ +\sum_{j=0}^{Q_-}\pi_j^-\Delta q^-_{t-j}+\eta_t.
+ \label{eq:ecm}
+\end{align}
+Koefisien dapat nol atau terikat sesuai lag level yang terpilih. Bentuk ini menjelaskan struktur umum, bukan klaim bahwa semua suku diestimasi bebas pada setiap kasus. Normalisasi memenuhi
+\begin{equation}
+ \rho=\sum_{\ell=1}^{p}\phi_\ell-1,\qquad
+ \beta_-=-\theta_-/\rho,\qquad \beta_+=-\theta_+/\rho.
+\end{equation}
+Tanda $\rho<0$ konsisten dengan koreksi deviasi, tetapi belum cukup sendirian untuk mengesahkan hubungan level.
+
+\subsection{Orientasi kurs dan tanda koefisien}
+Agregat menggunakan $q_t=\ln(\mathrm{REER}_t)$. Bilateral menggunakan negatif log RER panel agar kenaikan juga berarti apresiasi. Untuk depresiasi $\delta^-<0$, perubahan jangka panjang yang diimplikasikan koefisien adalah
+\begin{equation}
+ \Delta y_\infty^-=\beta_-\delta^-.
+\end{equation}
+Karena $y$ adalah log impor/ekspor, $\beta_->0$ mengarah pada perbaikan ketika dikalikan guncangan negatif. Koefisien negatif mengarah pada pemburukan. Definisi ini harus diperiksa terlebih dahulu bila pembaca terbiasa dengan ekspor/impor sebagai outcome.
+
+Grafik paper dan PPT memakai transformasi tepat
+\begin{equation}
+ R_h^J=-100\,\Delta_h y=100\,\Delta_h\ln(X/M).\label{eq:display}
+\end{equation}
+Positif berarti perbaikan, dengan interval ikut dibalik dan batasnya ditukar. Guncangannya adalah $\delta^-=-\ln(1.10)$ serta $\delta^+=+\ln(1.10)$. Keduanya simetris dalam log. Dalam persen aritmetika, kenaikan indeks sepuluh persen berpasangan dengan penurunan sekitar 9,09 persen, bukan dua perubahan sepuluh persen yang sama besar.
+
+\subsection{Proksi aktivitas luar negeri}
+Bilateral memakai GDP mitra. Proksi agregat dibentuk sebagai
+\begin{equation}
+ f_t=\ln\left(\sum_{i=1}^{10}w_iY^{(2015=100)}_{i,t}\right),
+ \qquad \sum_{i=1}^{10}w_i=1.
+\end{equation}
+Bobot $w_i$ adalah pangsa ekspor tetap 2006--2008 di antara sepuluh mitra. Penggunaan indeks menghindari penjumlahan GDP dalam mata uang yang berbeda, tetapi tetap membatasi representasi permintaan asing. Bobot tidak mengikuti perubahan komposisi ekspor, dan negara di luar sepuluh mitra tidak terwakili langsung. Proksi ini bukan GDP seluruh dunia.
+
+\subsection{Lag dan sampel efektif}
+AIC memilih lag level dengan maksimum empat. Maksimum dua dijalankan sebagai sensitivitas. Kriteria yang digunakan sepadan dengan
+\begin{equation}
+ \mathrm{AIC}=N\ln(\mathrm{RSS}/N)+2K,\qquad
+ \mathrm{BIC}=N\ln(\mathrm{RSS}/N)+K\ln N,
+\end{equation}
+dengan $K$ jumlah parameter. Dalam suatu cap, ARDL dan NARDL memakai holdback maksimum yang sama. Cap dua dapat memasukkan dua kuartal lebih awal daripada cap empat. Perbandingannya karena itu mengubah batas lag sekaligus sedikit mengubah window, belum menjadi uji panjang lag pada sampel yang persis sama.
+
+Paper pengguna memilih maksimum delapan lag first difference pada sampel jauh lebih panjang. Empat lag level di sini adalah adaptasi terhadap keterbatasan sampel, bukan padanan mekanis delapan lag first difference. Banyaknya parameter, terutama pada NARDL dengan tambahan BCOM, perlu dibaca bersama jumlah kuartal dan derajat bebas residual.
+
+\subsection{Unit root dan penyaringan hubungan level}
+Bounds memakai F dan t serta probabilitas finite-sample implementasi \texttt{ardl} \cite{pss,ks}. Keputusan utama lima persen mensyaratkan penolakan menurut keduanya. Penyaringan level tambahan memerlukan penolakan joint-X, akar dinamis stabil, tidak ada flag risiko integrasi orde dua, dan minimal 15 derajat bebas residual. Joint-X membantu memastikan penolakan melibatkan regressor level dan tidak hanya dinamika outcome.
+
+ADF memilih lag melalui BIC pada kandidat nol sampai empat; PP memakai empat lag. ADF dengan tren juga dilaporkan pada level. Flag integrasi orde dua dibuat ketika ADF dan PP pada first difference sama-sama gagal menolak pada sepuluh persen untuk variabel yang digunakan. Ini peringatan operasional, bukan diagnosis pasti bahwa variabel berorde dua. Kegagalan menolak dapat mencerminkan daya uji rendah. Dukungan level yang dilaporkan harus dipahami dengan syarat-syarat tersebut.
+
+Paper acuan juga membahas sejumlah hasil pada taraf sepuluh persen. Run ini menyimpan keputusan F-only sepuluh persen sebagai pembanding bergaya paper, tetapi kesimpulan utama memakai F dan t lima persen serta penyaringan tambahan. Karena ambang dan kriterianya berbeda, jumlah model yang dinilai mendukung tidak boleh diklaim mereplikasi keputusan paper secara identik. Pemilihan ambang tidak diubah setelah melihat tanda hasil.
+
+\subsection{Asimetri, multiplier, dan interval}
+Asimetri jangka panjang diuji melalui $H_0:\beta_+=\beta_-$. Pembandingan jangka pendek memakai jumlah koefisien perubahan partial sums dalam parameterisasi yang digunakan. Penolakan Wald dan keberadaan hubungan level menjawab pertanyaan berbeda. Asimetri pada model yang belum mendukung level belum cukup untuk menyatakan perbedaan jangka panjang yang mapan.
+
+Multiplier dan respons tampilan memenuhi
+\begin{equation}
+ m_h^\pm=\frac{\partial y_{t+h}}{\partial q_t^\pm},\qquad
+ R_h^{J,\pm}=-100\,m_h^\pm\delta^\pm,\qquad h=0,\ldots,24.
+\end{equation}
+Band nominal 95\% dihitung melalui delta method dari kovarians persamaan level dan kuantil t residual. Band bersifat pointwise, tidak simultan seluruh jalur. Pemilihan AIC terjadi sebelum inferensi, sehingga interval belum mengoreksi ketidakpastian seleksi lag.
+
+Koreksi Benjamini--Hochberg (BH) \cite{bh} digunakan secara eksploratif dalam keluarga cakupan dan estimator model utama. Keluarga agregat berisi satu model per estimator, bilateral sepuluh, dan barang 77. Koreksi ini bukan pengendalian lengkap pencarian 516 model, terutama karena kelompok bertumpang tindih dan sensitivitas juga diperiksa.
+
+\readingbox{\textbf{Urutan pembacaan.} Periksa outcome dan orientasi kurs, kemudian dukungan level, besarnya koefisien serta interval, diagnostik, dan sensitivitas. Probabilitas koefisien yang kecil tidak menggantikan pemeriksaan lainnya.}

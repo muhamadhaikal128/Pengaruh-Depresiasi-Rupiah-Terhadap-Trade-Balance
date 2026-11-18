@@ -1,0 +1,517 @@
+model_id,scope,scenario,cap,ISO3,Group,estimator,point_pattern,early_negative_point,late_positive_point,early_CI_below_zero,terminal_CI_above_zero,phase_CI_separated,response_impact,response_q4,response_q24,Levels_supported5,Diagnostic_clean5
+WORLD_ARDL_AIC4,aggregate,main,4,WLD,,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-2.18349355791,-4.10734142632,3.96514509501,False,True
+WORLD_ARDL_AIC2,aggregate,main,2,WLD,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.51147586653,-6.20281308378,-6.9350058734,False,True
+WORLD_NARDL_AIC4,aggregate,main,4,WLD,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,5.83196931676,10.5589087276,24.4256322265,False,False
+WORLD_NARDL_AIC2,aggregate,main,2,WLD,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,6.43094126782,14.656932252,17.5858370051,False,False
+WORLD_FULL_ARDL_AIC4,aggregate,world_2006_sensitivity,4,WLD,,ARDL,Pola J pada estimasi titik,True,True,False,False,False,1.03997025859,-0.230270922742,14.0232961856,False,False
+WORLD_FULL_NARDL_AIC4,aggregate,world_2006_sensitivity,4,WLD,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.2312088564,16.9957055358,52.802460033,False,False
+BIL_AUS_ARDL_AIC4,bilateral,main,4,AUS,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,3.06680629387,18.2046889471,19.8579054104,True,True
+BIL_AUS_ARDL_AIC2,bilateral,main,2,AUS,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,6.74140715933,10.4105423774,10.4705442375,True,False
+BIL_AUS_NARDL_AIC4,bilateral,main,4,AUS,,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-7.32364463889,25.3562464187,31.986222142,True,True
+BIL_AUS_NARDL_AIC2,bilateral,main,2,AUS,,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-3.95351337799,17.0180150396,17.3277472436,True,True
+BIL_CHN_ARDL_AIC4,bilateral,main,4,CHN,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.76071144133,-10.2026577802,-17.5725624959,False,False
+BIL_CHN_ARDL_AIC2,bilateral,main,2,CHN,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.4156530794,-10.998120017,-15.3498265042,False,False
+BIL_CHN_NARDL_AIC4,bilateral,main,4,CHN,,NARDL,Akhir horizon belum membaik,True,False,True,False,False,3.41952693467,-26.7650785245,-25.7482992251,False,False
+BIL_CHN_NARDL_AIC2,bilateral,main,2,CHN,,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.42088470938,-11.0136393997,-15.3691055371,False,False
+BIL_IND_ARDL_AIC4,bilateral,main,4,IND,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,33.6738554056,19.5543923889,49.712407515,False,False
+BIL_IND_ARDL_AIC2,bilateral,main,2,IND,,ARDL,Akhir horizon belum membaik,False,False,False,False,False,30.5432673035,4.40322410734,-9.13209879434,False,False
+BIL_IND_NARDL_AIC4,bilateral,main,4,IND,,NARDL,Akhir horizon belum membaik,True,False,True,False,False,5.83808925784,-51.8927701349,-61.3879581521,False,True
+BIL_IND_NARDL_AIC2,bilateral,main,2,IND,,NARDL,Akhir horizon belum membaik,True,False,False,False,False,15.9698052726,-35.9578941964,-44.2663515549,False,False
+BIL_JPN_ARDL_AIC4,bilateral,main,4,JPN,,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-15.9979746457,-21.4646254025,-20.064985298,False,False
+BIL_JPN_ARDL_AIC2,bilateral,main,2,JPN,,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-13.4941819412,-18.7687717954,-23.5483617038,False,False
+BIL_JPN_NARDL_AIC4,bilateral,main,4,JPN,,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-18.1135699009,-23.8304516352,-23.4123944488,False,False
+BIL_JPN_NARDL_AIC2,bilateral,main,2,JPN,,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-18.9697025832,-22.6547307732,-26.9845189406,False,False
+BIL_KOR_ARDL_AIC4,bilateral,main,4,KOR,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.163422486719,-0.421337665142,-0.695969138148,False,False
+BIL_KOR_ARDL_AIC2,bilateral,main,2,KOR,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.161203187729,-0.376067958506,-0.409696931087,False,False
+BIL_KOR_NARDL_AIC4,bilateral,main,4,KOR,,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-10.8932484442,15.9909965276,36.6138470772,False,False
+BIL_KOR_NARDL_AIC2,bilateral,main,2,KOR,,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-8.35825654537,8.87943910931,14.2588961045,True,False
+BIL_MYS_ARDL_AIC4,bilateral,main,4,MYS,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.37636159244,-6.78582002635,-6.82647810775,True,False
+BIL_MYS_ARDL_AIC2,bilateral,main,2,MYS,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.26124493287,-6.74797809742,-6.79710635016,True,False
+BIL_MYS_NARDL_AIC4,bilateral,main,4,MYS,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,10.2632077675,12.8253335232,12.8294417101,True,True
+BIL_MYS_NARDL_AIC2,bilateral,main,2,MYS,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,10.197914557,12.9147724141,12.9201371665,True,True
+BIL_SGP_ARDL_AIC4,bilateral,main,4,SGP,,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-4.10175014157,-6.50229328762,-4.29482493088,False,True
+BIL_SGP_ARDL_AIC2,bilateral,main,2,SGP,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.8198294365,-6.05802064057,-6.10272335794,False,False
+BIL_SGP_NARDL_AIC4,bilateral,main,4,SGP,,NARDL,Akhir horizon belum membaik,True,False,True,False,False,1.72100824819,-14.7655614166,-2.50156655364,False,False
+BIL_SGP_NARDL_AIC2,bilateral,main,2,SGP,,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.2528307285,-14.4739792832,-14.5053941974,False,False
+BIL_THA_ARDL_AIC4,bilateral,main,4,THA,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,7.13238726829,11.1695768669,11.2430308773,True,False
+BIL_THA_ARDL_AIC2,bilateral,main,2,THA,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,5.62518160452,10.6150551881,10.905222211,True,False
+BIL_THA_NARDL_AIC4,bilateral,main,4,THA,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.74892451108,8.99734361098,9.05616735574,True,False
+BIL_THA_NARDL_AIC2,bilateral,main,2,THA,,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.07493270017,-3.73935924048,-3.8146164213,True,False
+BIL_USA_ARDL_AIC4,bilateral,main,4,USA,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.48450337702,7.43347979486,9.41823053283,False,False
+BIL_USA_ARDL_AIC2,bilateral,main,2,USA,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.54648427855,7.86103106419,10.2860792793,False,False
+BIL_USA_NARDL_AIC4,bilateral,main,4,USA,,NARDL,Pola J pada estimasi titik,True,True,False,True,False,2.10638500982,22.3652300747,29.4965250413,False,False
+BIL_USA_NARDL_AIC2,bilateral,main,2,USA,,NARDL,Pola J pada estimasi titik,True,True,False,True,False,1.08553933463,23.9853907,31.3020712463,True,False
+BIL_VNM_ARDL_AIC4,bilateral,main,4,VNM,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.15619070877,9.21376433261,13.1813123678,False,False
+BIL_VNM_ARDL_AIC2,bilateral,main,2,VNM,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.43700393603,6.79638998699,7.04448839647,True,False
+BIL_VNM_NARDL_AIC4,bilateral,main,4,VNM,,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.80063852694,-3.29121806255,-5.18346414959,False,False
+BIL_VNM_NARDL_AIC2,bilateral,main,2,VNM,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.08639319281,2.16359402401,2.24598931837,True,False
+IND_WPI_ARDL_AIC4,bilateral,WPI_proxy,4,IND,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,17.8991214206,4.82063638382,1.82169661083,False,False
+IND_WPI_NARDL_AIC4,bilateral,WPI_proxy,4,IND,,NARDL,Akhir horizon belum membaik,True,False,False,False,False,23.5443684229,-12.8146880495,-19.9671638573,False,False
+GEM_THA_ARDL_AIC4,bilateral,GEM_FX,4,THA,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,6.42322303016,10.5433911684,10.6480996133,True,False
+GEM_THA_NARDL_AIC4,bilateral,GEM_FX,4,THA,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.1937239406,5.22272810949,5.27300056281,True,False
+GEM_VNM_ARDL_AIC4,bilateral,GEM_FX,4,VNM,,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.8590872248,8.75571583923,12.6707110613,False,False
+GEM_VNM_NARDL_AIC4,bilateral,GEM_FX,4,VNM,,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.307464723776,0.561047805597,0.857484711294,False,False
+GEM_KOR_ARDL_AIC4,bilateral,GEM_FX,4,KOR,,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.204262566871,-0.526512895883,-0.869325019111,False,False
+GEM_KOR_NARDL_AIC4,bilateral,GEM_FX,4,KOR,,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-10.6822595379,15.3948521594,35.7371158838,False,False
+TYPE_AUS_agriculture_ARDL_AIC4,goods,main,4,AUS,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.15669120882,-15.0968710049,-16.8730788644,False,False
+TYPE_AUS_agriculture_ARDL_AIC2,goods,main,2,AUS,agriculture,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-5.75136896891,-18.7188199469,-20.8273108002,True,False
+TYPE_AUS_agriculture_NARDL_AIC4,goods,main,4,AUS,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-21.7386538775,-31.7740577001,-31.8778242596,True,False
+TYPE_AUS_agriculture_NARDL_AIC2,goods,main,2,AUS,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-11.5162526576,-35.5999904786,-37.2115229419,True,True
+PRICE_AUS_agriculture_ARDL_AIC4,goods,BCOM_control,4,AUS,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.26541371856,-15.4012335906,-17.1849880848,False,False
+PRICE_AUS_agriculture_NARDL_AIC4,goods,BCOM_control,4,AUS,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-26.2590962073,-34.6521463473,-34.6814401923,True,False
+TYPE_AUS_capital_ARDL_AIC4,goods,main,4,AUS,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,21.9567439662,37.6176388839,38.1424782324,False,False
+TYPE_AUS_capital_ARDL_AIC2,goods,main,2,AUS,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,15.7403965475,27.2704284175,27.684226489,False,False
+TYPE_AUS_capital_NARDL_AIC4,goods,main,4,AUS,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,41.997705178,70.3381171966,71.1607421099,False,False
+TYPE_AUS_capital_NARDL_AIC2,goods,main,2,AUS,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,30.8533389978,52.5457673596,53.2462486935,False,False
+PRICE_AUS_capital_ARDL_AIC4,goods,BCOM_control,4,AUS,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,21.7929225858,37.3332238028,37.8536981023,False,False
+PRICE_AUS_capital_NARDL_AIC4,goods,BCOM_control,4,AUS,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,38.3872997299,63.9794614423,64.6991829366,False,False
+TYPE_AUS_commodity_ARDL_AIC4,goods,main,4,AUS,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,11.3345146099,16.1718994491,16.2118556993,True,True
+TYPE_AUS_commodity_ARDL_AIC2,goods,main,2,AUS,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.72729817493,13.6569796288,13.746166868,True,False
+TYPE_AUS_commodity_NARDL_AIC4,goods,main,4,AUS,commodity,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-10.6127289772,12.9747080953,13.1441933249,True,True
+TYPE_AUS_commodity_NARDL_AIC2,goods,main,2,AUS,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.67018804648,7.23922478372,7.28247501201,True,False
+PRICE_AUS_commodity_ARDL_AIC4,goods,BCOM_control,4,AUS,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.52813341364,-3.4491198074,-3.5602868483,True,True
+PRICE_AUS_commodity_NARDL_AIC4,goods,BCOM_control,4,AUS,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-33.604310958,-8.74642738833,-8.70920154181,True,False
+TYPE_AUS_consumption_ARDL_AIC4,goods,main,4,AUS,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.76086536455,6.71020644715,6.71058746081,False,True
+TYPE_AUS_consumption_ARDL_AIC2,goods,main,2,AUS,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.04403376575,5.88116353884,5.88150781113,False,True
+TYPE_AUS_consumption_NARDL_AIC4,goods,main,4,AUS,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.93448339645,10.3705023417,10.3710311675,False,False
+TYPE_AUS_consumption_NARDL_AIC2,goods,main,2,AUS,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,7.60455853988,8.84211920426,8.84259492064,False,True
+PRICE_AUS_consumption_ARDL_AIC4,goods,BCOM_control,4,AUS,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.5501177414,11.8586746951,11.8588688338,False,True
+PRICE_AUS_consumption_NARDL_AIC4,goods,BCOM_control,4,AUS,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.0277466661,10.8720360953,10.8720668058,False,True
+TYPE_AUS_energy_mining_ARDL_AIC4,goods,main,4,AUS,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,18.7026412996,30.8003263558,31.1146291077,True,False
+TYPE_AUS_energy_mining_ARDL_AIC2,goods,main,2,AUS,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,18.4210846031,34.080370254,34.8993831053,True,False
+TYPE_AUS_energy_mining_NARDL_AIC4,goods,main,4,AUS,energy_mining,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-13.6682172395,53.0234145644,54.5677700528,True,False
+TYPE_AUS_energy_mining_NARDL_AIC2,goods,main,2,AUS,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,22.1331144586,40.6958697105,41.6345490213,True,False
+PRICE_AUS_energy_mining_ARDL_AIC4,goods,BCOM_control,4,AUS,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,14.8962505371,19.8059667902,19.8247927787,True,True
+PRICE_AUS_energy_mining_NARDL_AIC4,goods,BCOM_control,4,AUS,energy_mining,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-37.1930244214,39.0805827785,39.4320495854,True,True
+TYPE_AUS_intermediate_ARDL_AIC4,goods,main,4,AUS,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,9.64921929062,15.2211018252,15.3280957939,True,False
+TYPE_AUS_intermediate_ARDL_AIC2,goods,main,2,AUS,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,9.37815978883,14.4243242577,14.5043013711,True,False
+TYPE_AUS_intermediate_NARDL_AIC4,goods,main,4,AUS,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,15.6265531724,23.8747169943,23.9987214603,True,True
+TYPE_AUS_intermediate_NARDL_AIC2,goods,main,2,AUS,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.6177412315,17.7795138284,17.8733851298,True,False
+PRICE_AUS_intermediate_ARDL_AIC4,goods,BCOM_control,4,AUS,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,6.33694687601,9.45646409586,9.4951164588,True,False
+PRICE_AUS_intermediate_NARDL_AIC4,goods,BCOM_control,4,AUS,intermediate,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-13.4991405998,15.1907391439,15.4219540728,True,True
+TYPE_AUS_manufacturing_ARDL_AIC4,goods,main,4,AUS,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.20233378246,7.8581742769,8.75756415866,False,False
+TYPE_AUS_manufacturing_ARDL_AIC2,goods,main,2,AUS,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.62994618565,4.09075205306,4.61186481416,False,False
+TYPE_AUS_manufacturing_NARDL_AIC4,goods,main,4,AUS,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-7.06914982441,28.3277989742,53.6432696515,False,True
+TYPE_AUS_manufacturing_NARDL_AIC2,goods,main,2,AUS,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,9.25480204753,21.5719993147,23.4928714123,False,False
+PRICE_AUS_manufacturing_ARDL_AIC4,goods,BCOM_control,4,AUS,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.20371215329,7.86146899272,8.76118789355,False,False
+PRICE_AUS_manufacturing_NARDL_AIC4,goods,BCOM_control,4,AUS,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-7.12013025042,24.1162007972,43.9344934393,False,False
+TYPE_CHN_agriculture_ARDL_AIC4,goods,main,4,CHN,agriculture,ARDL,Akhir horizon belum membaik,True,False,True,False,False,10.3971214004,-1.68897506113,-7.6830592473,True,True
+TYPE_CHN_agriculture_ARDL_AIC2,goods,main,2,CHN,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,10.6355587187,-5.39523890639,-5.42209583361,False,False
+TYPE_CHN_agriculture_NARDL_AIC4,goods,main,4,CHN,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,12.1438918349,-10.1590427409,-19.3896028807,True,True
+TYPE_CHN_agriculture_NARDL_AIC2,goods,main,2,CHN,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,11.3887347099,-15.6342730366,-15.6590716143,False,False
+PRICE_CHN_agriculture_ARDL_AIC4,goods,BCOM_control,4,CHN,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,10.2100869354,1.54481375544,-1.61182784862,True,True
+PRICE_CHN_agriculture_NARDL_AIC4,goods,BCOM_control,4,CHN,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,16.2037366854,-5.48520373276,-12.6939010974,True,True
+TYPE_CHN_capital_ARDL_AIC4,goods,main,4,CHN,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-6.02774601665,6.36839211523,11.5393301836,True,False
+TYPE_CHN_capital_ARDL_AIC2,goods,main,2,CHN,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-18.2227262988,10.6072971373,10.3033377705,True,False
+TYPE_CHN_capital_NARDL_AIC4,goods,main,4,CHN,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,9.63016766084,-3.7469441161,5.67074850099,True,False
+TYPE_CHN_capital_NARDL_AIC2,goods,main,2,CHN,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.72662561715,5.13854610982,5.14677864818,True,False
+PRICE_CHN_capital_ARDL_AIC4,goods,BCOM_control,4,CHN,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.59283633441,8.08003889605,9.24363002816,False,False
+PRICE_CHN_capital_NARDL_AIC4,goods,BCOM_control,4,CHN,capital,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-11.9338152189,-15.8744088356,-15.8896042763,True,False
+TYPE_CHN_commodity_ARDL_AIC4,goods,main,4,CHN,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,3.15677800079,-12.4148174306,-20.9906161541,True,False
+TYPE_CHN_commodity_ARDL_AIC2,goods,main,2,CHN,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,3.39931560258,-11.6293062063,-12.6308689561,True,False
+TYPE_CHN_commodity_NARDL_AIC4,goods,main,4,CHN,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,12.9567448845,-25.2313087468,-32.9553225517,True,False
+TYPE_CHN_commodity_NARDL_AIC2,goods,main,2,CHN,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,18.8485528864,-28.438976667,-29.0809388111,True,False
+PRICE_CHN_commodity_ARDL_AIC4,goods,BCOM_control,4,CHN,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,2.59315149857,-9.69166912588,-13.6422174812,True,False
+PRICE_CHN_commodity_NARDL_AIC4,goods,BCOM_control,4,CHN,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,11.0450646087,-20.4283769074,-27.0488775414,True,False
+TYPE_CHN_consumption_ARDL_AIC4,goods,main,4,CHN,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,16.7479660259,2.25116655415,-5.42656637571,False,False
+TYPE_CHN_consumption_ARDL_AIC2,goods,main,2,CHN,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.14685037085,2.51694051012,2.68161098838,False,False
+TYPE_CHN_consumption_NARDL_AIC4,goods,main,4,CHN,consumption,NARDL,Akhir horizon belum membaik,True,False,True,False,False,6.42860117571,-24.9778832047,-25.8342964258,True,True
+TYPE_CHN_consumption_NARDL_AIC2,goods,main,2,CHN,consumption,NARDL,Akhir horizon belum membaik,True,False,True,False,False,4.24363136643,-18.1655601771,-16.6793381543,False,False
+PRICE_CHN_consumption_ARDL_AIC4,goods,BCOM_control,4,CHN,consumption,ARDL,Pola J pada estimasi titik,True,True,False,False,False,18.1110337794,7.37830888472,2.01197727929,False,False
+PRICE_CHN_consumption_NARDL_AIC4,goods,BCOM_control,4,CHN,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,7.39785876112,-21.570925169,-22.3287466518,True,True
+TYPE_CHN_energy_mining_ARDL_AIC4,goods,main,4,CHN,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.11566244232,-13.5927542935,-18.2713653766,False,False
+TYPE_CHN_energy_mining_ARDL_AIC2,goods,main,2,CHN,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.21132385609,-10.8422771987,-13.1147409516,False,False
+TYPE_CHN_energy_mining_NARDL_AIC4,goods,main,4,CHN,energy_mining,NARDL,Akhir horizon belum membaik,True,False,True,False,False,9.11066525336,-26.9821113206,-34.8222134072,True,False
+TYPE_CHN_energy_mining_NARDL_AIC2,goods,main,2,CHN,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,15.4509809337,-15.6115506772,-19.0156117526,True,False
+PRICE_CHN_energy_mining_ARDL_AIC4,goods,BCOM_control,4,CHN,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.73827360034,-12.2807227581,-16.0765907329,False,False
+PRICE_CHN_energy_mining_NARDL_AIC4,goods,BCOM_control,4,CHN,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,8.1712383063,-28.4938270166,-37.328230064,False,False
+TYPE_CHN_intermediate_ARDL_AIC4,goods,main,4,CHN,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.93081889796,-14.0040317998,-29.1160088251,False,True
+TYPE_CHN_intermediate_ARDL_AIC2,goods,main,2,CHN,intermediate,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-5.12843028532,-16.3966065194,-22.6793346818,False,False
+TYPE_CHN_intermediate_NARDL_AIC4,goods,main,4,CHN,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,0.123904284691,-37.1360321651,-57.4178975098,False,True
+TYPE_CHN_intermediate_NARDL_AIC2,goods,main,2,CHN,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-0.186485153714,-38.448936555,-55.3135790778,False,False
+PRICE_CHN_intermediate_ARDL_AIC4,goods,BCOM_control,4,CHN,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.45029119635,-14.3303536239,-50.1027723379,False,True
+PRICE_CHN_intermediate_NARDL_AIC4,goods,BCOM_control,4,CHN,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,7.32579226852,-31.8744690989,-48.8120103907,False,True
+TYPE_CHN_manufacturing_ARDL_AIC4,goods,main,4,CHN,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.355148938037,1.22013493878,2.66835904685,False,False
+TYPE_CHN_manufacturing_ARDL_AIC2,goods,main,2,CHN,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.23964683882,4.27574247539,10.3982685748,False,False
+TYPE_CHN_manufacturing_NARDL_AIC4,goods,main,4,CHN,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.2197326956,9.73753970543,24.734241962,False,True
+TYPE_CHN_manufacturing_NARDL_AIC2,goods,main,2,CHN,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.1476796436,37.5808438949,135.500268077,False,False
+PRICE_CHN_manufacturing_ARDL_AIC4,goods,BCOM_control,4,CHN,manufacturing,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.663806635071,-2.23283960919,-5.30569440582,False,True
+PRICE_CHN_manufacturing_NARDL_AIC4,goods,BCOM_control,4,CHN,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,13.7008254176,15.7251501651,27.8164302819,False,True
+TYPE_IND_agriculture_ARDL_AIC4,goods,main,4,IND,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.6839972344,25.4948427726,54.5559981184,False,True
+TYPE_IND_agriculture_ARDL_AIC2,goods,main,2,IND,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,49.181563499,13.8414113791,10.3266876781,False,False
+TYPE_IND_agriculture_NARDL_AIC4,goods,main,4,IND,agriculture,NARDL,Akhir horizon belum membaik,True,False,False,False,False,47.1994675225,-55.3499730371,-48.3817500627,True,False
+TYPE_IND_agriculture_NARDL_AIC2,goods,main,2,IND,agriculture,NARDL,Akhir horizon belum membaik,True,False,False,False,False,41.9314708042,-36.4593406833,-37.8353498936,True,False
+PRICE_IND_agriculture_ARDL_AIC4,goods,BCOM_control,4,IND,agriculture,ARDL,Pola J pada estimasi titik,True,True,False,False,False,66.0131268138,41.168185802,56.2639138467,False,True
+PRICE_IND_agriculture_NARDL_AIC4,goods,BCOM_control,4,IND,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.8153436013,16.4738038094,22.4263075552,False,True
+TYPE_IND_capital_ARDL_AIC4,goods,main,4,IND,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.01041944478,8.98772386211,9.6435635838,False,True
+TYPE_IND_capital_ARDL_AIC2,goods,main,2,IND,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,22.5480479658,49.8162230819,53.1915566777,False,True
+TYPE_IND_capital_NARDL_AIC4,goods,main,4,IND,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.22611327765,7.239901544,7.77193472912,False,True
+TYPE_IND_capital_NARDL_AIC2,goods,main,2,IND,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,25.0702491668,55.0966165589,58.7276221464,False,True
+PRICE_IND_capital_ARDL_AIC4,goods,BCOM_control,4,IND,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,19.1940240088,39.4880510667,38.4218557528,False,True
+PRICE_IND_capital_NARDL_AIC4,goods,BCOM_control,4,IND,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,20.3025484989,41.6774596801,40.5401452041,False,True
+TYPE_IND_commodity_ARDL_AIC4,goods,main,4,IND,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,36.0611478265,49.5212996757,52.1865626674,False,True
+TYPE_IND_commodity_ARDL_AIC2,goods,main,2,IND,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,44.6790057874,13.5359729755,6.75720066244,False,False
+TYPE_IND_commodity_NARDL_AIC4,goods,main,4,IND,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,33.2007195497,-52.8829784232,-43.5431215877,True,True
+TYPE_IND_commodity_NARDL_AIC2,goods,main,2,IND,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,24.1614927175,-45.0991974783,-48.255158549,True,False
+PRICE_IND_commodity_ARDL_AIC4,goods,BCOM_control,4,IND,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,32.0918747578,41.6396739925,41.6663694068,True,True
+PRICE_IND_commodity_NARDL_AIC4,goods,BCOM_control,4,IND,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.246761659539,14.4307167791,-21.4430587402,False,False
+TYPE_IND_consumption_ARDL_AIC4,goods,main,4,IND,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,15.928594837,35.455809307,37.9536534809,False,False
+TYPE_IND_consumption_ARDL_AIC2,goods,main,2,IND,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.41327062743,-5.34578332478,-5.71300860159,False,False
+TYPE_IND_consumption_NARDL_AIC4,goods,main,4,IND,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,31.3612190022,-61.4215980545,-84.8684656443,True,False
+TYPE_IND_consumption_NARDL_AIC2,goods,main,2,IND,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-17.8067343187,-30.8155425704,-31.2792188206,True,False
+PRICE_IND_consumption_ARDL_AIC4,goods,BCOM_control,4,IND,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,22.9155216543,34.2086741073,34.3490330477,False,False
+PRICE_IND_consumption_NARDL_AIC4,goods,BCOM_control,4,IND,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-39.7472432968,-41.6932859461,-42.9707409936,True,False
+TYPE_IND_energy_mining_ARDL_AIC4,goods,main,4,IND,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,28.7499699761,68.0614678323,74.6058166074,False,False
+TYPE_IND_energy_mining_ARDL_AIC2,goods,main,2,IND,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.47534533306,10.6423841989,11.6884760147,False,False
+TYPE_IND_energy_mining_NARDL_AIC4,goods,main,4,IND,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,45.6961623088,-15.8676861175,-42.944844907,True,True
+TYPE_IND_energy_mining_NARDL_AIC2,goods,main,2,IND,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-43.2193696009,-76.1846403687,-77.4965225044,True,False
+PRICE_IND_energy_mining_ARDL_AIC4,goods,BCOM_control,4,IND,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,30.5684577827,55.8952972563,57.1375066725,False,False
+PRICE_IND_energy_mining_NARDL_AIC4,goods,BCOM_control,4,IND,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-39.0055472026,-48.4059690792,-68.3302186574,False,False
+TYPE_IND_intermediate_ARDL_AIC4,goods,main,4,IND,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,49.8691754426,40.7053450085,102.810499621,False,True
+TYPE_IND_intermediate_ARDL_AIC2,goods,main,2,IND,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,44.5425509174,19.7462255618,21.2579210813,False,False
+TYPE_IND_intermediate_NARDL_AIC4,goods,main,4,IND,intermediate,NARDL,Pola J pada estimasi titik,True,True,False,False,False,7.67167721007,-18.9762966775,27.8334624573,False,True
+TYPE_IND_intermediate_NARDL_AIC2,goods,main,2,IND,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,20.3820734139,-29.3334596931,-36.9898993068,False,True
+PRICE_IND_intermediate_ARDL_AIC4,goods,BCOM_control,4,IND,intermediate,ARDL,Pola J pada estimasi titik,True,True,False,False,False,39.28731503,18.6476008702,112.901167061,False,False
+PRICE_IND_intermediate_NARDL_AIC4,goods,BCOM_control,4,IND,intermediate,NARDL,Pola J pada estimasi titik,True,True,True,False,False,1.78989163629,-21.1494856764,59.4429599629,False,False
+TYPE_IND_manufacturing_ARDL_AIC4,goods,main,4,IND,manufacturing,ARDL,Akhir horizon belum membaik,True,False,False,False,False,13.012516633,-25.375364253,-42.8006111519,False,False
+TYPE_IND_manufacturing_ARDL_AIC2,goods,main,2,IND,manufacturing,ARDL,Akhir horizon belum membaik,True,False,False,False,False,8.52674469928,-11.98468793,-19.8908206283,False,False
+TYPE_IND_manufacturing_NARDL_AIC4,goods,main,4,IND,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,14.9448772083,-42.1892081239,-60.7667139872,False,False
+TYPE_IND_manufacturing_NARDL_AIC2,goods,main,2,IND,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-9.89403456168,-21.1535639761,-25.3184147067,False,False
+PRICE_IND_manufacturing_ARDL_AIC4,goods,BCOM_control,4,IND,manufacturing,ARDL,Pola J pada estimasi titik,True,True,False,False,False,11.0564370598,-0.487125782689,2.59063625994,False,False
+PRICE_IND_manufacturing_NARDL_AIC4,goods,BCOM_control,4,IND,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-6.67253701845,0.891849238152,2.04473254167,False,False
+TYPE_JPN_agriculture_ARDL_AIC4,goods,main,4,JPN,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.181283820039,-0.358408559428,-0.680155371682,False,False
+TYPE_JPN_agriculture_ARDL_AIC2,goods,main,2,JPN,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.24945299196,-5.235095571,-5.69765341883,True,False
+TYPE_JPN_agriculture_NARDL_AIC4,goods,main,4,JPN,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.38005045202,-11.9821043944,-16.263156942,False,False
+TYPE_JPN_agriculture_NARDL_AIC2,goods,main,2,JPN,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.9719588845,-18.9507096094,-19.2317509798,True,False
+PRICE_JPN_agriculture_ARDL_AIC4,goods,BCOM_control,4,JPN,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.15744172583,-2.30940652997,-4.70589657186,False,False
+PRICE_JPN_agriculture_NARDL_AIC4,goods,BCOM_control,4,JPN,agriculture,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.45848598617,-12.7207898758,-18.8538182946,False,False
+TYPE_JPN_capital_ARDL_AIC4,goods,main,4,JPN,capital,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-19.3854777414,-16.5057838126,-28.4948766452,False,False
+TYPE_JPN_capital_ARDL_AIC2,goods,main,2,JPN,capital,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-19.4441990445,-12.1411438836,-18.5637889384,False,False
+TYPE_JPN_capital_NARDL_AIC4,goods,main,4,JPN,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-24.2554406986,-29.1768272968,-44.4781927379,False,False
+TYPE_JPN_capital_NARDL_AIC2,goods,main,2,JPN,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-24.9819061817,-25.968174918,-36.9082829611,False,False
+PRICE_JPN_capital_ARDL_AIC4,goods,BCOM_control,4,JPN,capital,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-14.366325964,-18.1389449166,-31.3087532059,False,True
+PRICE_JPN_capital_NARDL_AIC4,goods,BCOM_control,4,JPN,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-18.4912352604,-41.8661677594,-61.9965670796,False,True
+TYPE_JPN_commodity_ARDL_AIC4,goods,main,4,JPN,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-8.42436747693,-18.0824588187,-16.8797174125,True,False
+TYPE_JPN_commodity_ARDL_AIC2,goods,main,2,JPN,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.0794068077,-17.9520107143,-18.2847707155,True,False
+TYPE_JPN_commodity_NARDL_AIC4,goods,main,4,JPN,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-3.83914712989,-9.48614208526,-6.76856372069,True,True
+TYPE_JPN_commodity_NARDL_AIC2,goods,main,2,JPN,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-5.22244699296,-9.60826573253,-9.83078567437,True,True
+PRICE_JPN_commodity_ARDL_AIC4,goods,BCOM_control,4,JPN,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.98687148212,-14.3416650931,-14.6231530866,True,True
+PRICE_JPN_commodity_NARDL_AIC4,goods,BCOM_control,4,JPN,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.12886958797,2.10496051151,2.15822529047,True,True
+TYPE_JPN_consumption_ARDL_AIC4,goods,main,4,JPN,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.80544980429,-6.7248939056,-6.84280082643,True,False
+TYPE_JPN_consumption_ARDL_AIC2,goods,main,2,JPN,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.65003221091,-9.01758023746,-9.31009023719,True,True
+TYPE_JPN_consumption_NARDL_AIC4,goods,main,4,JPN,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.79878452501,-11.7021402788,-11.8712242431,True,False
+TYPE_JPN_consumption_NARDL_AIC2,goods,main,2,JPN,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-8.03766051264,-15.0708781467,-15.4662345283,True,False
+PRICE_JPN_consumption_ARDL_AIC4,goods,BCOM_control,4,JPN,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.3866067317,-6.26743605191,-6.28318061648,True,False
+PRICE_JPN_consumption_NARDL_AIC4,goods,BCOM_control,4,JPN,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.85216538626,-4.28569958553,-4.30452160304,True,False
+TYPE_JPN_energy_mining_ARDL_AIC4,goods,main,4,JPN,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-12.0718200046,-21.6038587841,-20.0791432547,True,False
+TYPE_JPN_energy_mining_ARDL_AIC2,goods,main,2,JPN,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-12.1085257659,-21.2557106586,-21.6109086398,True,False
+TYPE_JPN_energy_mining_NARDL_AIC4,goods,main,4,JPN,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.46746464163,-4.28759766897,-1.52734360391,True,True
+TYPE_JPN_energy_mining_NARDL_AIC2,goods,main,2,JPN,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.58097803019,-4.51976928672,-4.59397960534,True,True
+PRICE_JPN_energy_mining_ARDL_AIC4,goods,BCOM_control,4,JPN,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.4728982182,-18.7624588545,-19.1248506505,True,False
+PRICE_JPN_energy_mining_NARDL_AIC4,goods,BCOM_control,4,JPN,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.00982379849,7.20910035809,7.35180725983,True,True
+TYPE_JPN_intermediate_ARDL_AIC4,goods,main,4,JPN,intermediate,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-14.3818946035,-17.3798356023,-22.02711548,False,False
+TYPE_JPN_intermediate_ARDL_AIC2,goods,main,2,JPN,intermediate,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-9.56258483576,-17.4292235041,-20.5077642475,False,False
+TYPE_JPN_intermediate_NARDL_AIC4,goods,main,4,JPN,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-19.4203901248,-21.7267981229,-28.9646932259,False,False
+TYPE_JPN_intermediate_NARDL_AIC2,goods,main,2,JPN,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-13.8684762632,-20.0580308343,-22.3515037732,False,False
+PRICE_JPN_intermediate_ARDL_AIC4,goods,BCOM_control,4,JPN,intermediate,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-13.0110010456,-18.328632933,-23.7786216942,False,False
+PRICE_JPN_intermediate_NARDL_AIC4,goods,BCOM_control,4,JPN,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-15.6706626611,-22.1632755501,-27.6794235602,False,False
+TYPE_JPN_manufacturing_ARDL_AIC4,goods,main,4,JPN,manufacturing,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-6.39309413415,-6.60101530078,-11.1268870984,False,False
+TYPE_JPN_manufacturing_ARDL_AIC2,goods,main,2,JPN,manufacturing,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-6.71793351436,-7.39335350791,-14.063159517,False,False
+TYPE_JPN_manufacturing_NARDL_AIC4,goods,main,4,JPN,manufacturing,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-8.13015114496,-8.06967548813,-14.0466990675,False,False
+TYPE_JPN_manufacturing_NARDL_AIC2,goods,main,2,JPN,manufacturing,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-8.69980262643,-9.30083779172,-17.6819043313,False,False
+PRICE_JPN_manufacturing_ARDL_AIC4,goods,BCOM_control,4,JPN,manufacturing,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-8.14786418013,-13.51933246,-21.4614432163,False,False
+PRICE_JPN_manufacturing_NARDL_AIC4,goods,BCOM_control,4,JPN,manufacturing,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.190887141,-17.4922538631,-26.1358762382,False,False
+TYPE_KOR_agriculture_ARDL_AIC4,goods,main,4,KOR,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,3.5175044764,6.92577385475,13.0710138371,False,False
+TYPE_KOR_agriculture_ARDL_AIC2,goods,main,2,KOR,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,3.68873763625,8.8413996936,12.2259200927,False,False
+TYPE_KOR_agriculture_NARDL_AIC4,goods,main,4,KOR,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.98292019494,7.8039328052,14.5129207661,False,False
+TYPE_KOR_agriculture_NARDL_AIC2,goods,main,2,KOR,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-5.52204803426,15.7742218884,21.7865676886,False,False
+PRICE_KOR_agriculture_ARDL_AIC4,goods,BCOM_control,4,KOR,agriculture,ARDL,Pola J pada estimasi titik,True,True,False,True,False,-3.2876886111,8.42534522402,13.248163199,True,False
+PRICE_KOR_agriculture_NARDL_AIC4,goods,BCOM_control,4,KOR,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-10.0499846125,20.0420677647,22.3825922301,True,False
+TYPE_KOR_capital_ARDL_AIC4,goods,main,4,KOR,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-38.1517949332,9.47479219531,13.5272808929,False,False
+TYPE_KOR_capital_ARDL_AIC2,goods,main,2,KOR,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-40.0244937384,5.13455971297,9.42757696129,False,False
+TYPE_KOR_capital_NARDL_AIC4,goods,main,4,KOR,capital,NARDL,Pola J pada estimasi titik,True,True,True,True,True,-37.4823121241,16.4036021514,67.9551647128,True,True
+TYPE_KOR_capital_NARDL_AIC2,goods,main,2,KOR,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-56.2257205471,31.9783449947,41.8617815085,True,False
+PRICE_KOR_capital_ARDL_AIC4,goods,BCOM_control,4,KOR,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-38.2429162045,9.23459729476,13.3437877937,False,False
+PRICE_KOR_capital_NARDL_AIC4,goods,BCOM_control,4,KOR,capital,NARDL,Pola J pada estimasi titik,True,True,True,True,True,-38.0727197217,20.6268011396,68.9292220184,False,True
+TYPE_KOR_commodity_ARDL_AIC4,goods,main,4,KOR,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.715101037464,-1.62911519818,-3.28747711067,False,True
+TYPE_KOR_commodity_ARDL_AIC2,goods,main,2,KOR,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.60022078396,-4.97823704195,-5.12737079814,False,True
+TYPE_KOR_commodity_NARDL_AIC4,goods,main,4,KOR,commodity,NARDL,Pola J pada estimasi titik,True,True,False,False,False,3.47755374039,21.2503621107,44.3206292271,False,False
+TYPE_KOR_commodity_NARDL_AIC2,goods,main,2,KOR,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.9821186497,20.1159811908,20.5682876258,False,False
+PRICE_KOR_commodity_ARDL_AIC4,goods,BCOM_control,4,KOR,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.18287070336,-2.8468326937,-6.19500792285,False,True
+PRICE_KOR_commodity_NARDL_AIC4,goods,BCOM_control,4,KOR,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.1507613683,24.9231158228,47.1568848236,False,False
+TYPE_KOR_consumption_ARDL_AIC4,goods,main,4,KOR,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.218397424,28.4550586834,66.2716635251,False,False
+TYPE_KOR_consumption_ARDL_AIC2,goods,main,2,KOR,consumption,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-4.50914331877,17.9782779835,53.5565414157,False,False
+TYPE_KOR_consumption_NARDL_AIC4,goods,main,4,KOR,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.03590995918,2.66331272957,6.80945503758,False,False
+TYPE_KOR_consumption_NARDL_AIC2,goods,main,2,KOR,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,24.4458652732,72.2960823339,111.142704631,False,False
+PRICE_KOR_consumption_ARDL_AIC4,goods,BCOM_control,4,KOR,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,13.0031828084,32.2552314289,71.4433697956,False,False
+PRICE_KOR_consumption_NARDL_AIC4,goods,BCOM_control,4,KOR,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.89545670112,9.80576530432,23.6262387666,False,False
+TYPE_KOR_energy_mining_ARDL_AIC4,goods,main,4,KOR,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.38446392607,-3.23627338506,-6.38542410483,False,True
+TYPE_KOR_energy_mining_ARDL_AIC2,goods,main,2,KOR,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.44236425773,-6.61791788437,-6.82136755541,False,True
+TYPE_KOR_energy_mining_NARDL_AIC4,goods,main,4,KOR,energy_mining,NARDL,Pola J pada estimasi titik,True,True,False,False,False,7.33596088528,25.9232316502,55.2225141804,False,False
+TYPE_KOR_energy_mining_NARDL_AIC2,goods,main,2,KOR,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,13.2348602572,24.6133232634,25.2254592991,False,False
+PRICE_KOR_energy_mining_ARDL_AIC4,goods,BCOM_control,4,KOR,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.79187020009,-4.4482395957,-9.95484114722,False,True
+PRICE_KOR_energy_mining_NARDL_AIC4,goods,BCOM_control,4,KOR,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,13.8268191809,31.7034514043,61.2937100702,False,True
+TYPE_KOR_intermediate_ARDL_AIC4,goods,main,4,KOR,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.941538161825,2.59271904794,6.82838296945,False,True
+TYPE_KOR_intermediate_ARDL_AIC2,goods,main,2,KOR,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.680053765,11.6923480123,17.2590075084,False,False
+TYPE_KOR_intermediate_NARDL_AIC4,goods,main,4,KOR,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,12.5192428094,33.1631653619,85.5674119668,False,False
+TYPE_KOR_intermediate_NARDL_AIC2,goods,main,2,KOR,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,13.0372882847,41.0862461562,94.5211660262,False,False
+PRICE_KOR_intermediate_ARDL_AIC4,goods,BCOM_control,4,KOR,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.05141132582,2.88005907268,6.77743451004,False,True
+PRICE_KOR_intermediate_NARDL_AIC4,goods,BCOM_control,4,KOR,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,15.8014063437,42.6628518265,111.577647849,False,False
+TYPE_KOR_manufacturing_ARDL_AIC4,goods,main,4,KOR,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.78345180125,9.38592496472,16.2702809623,False,True
+TYPE_KOR_manufacturing_ARDL_AIC2,goods,main,2,KOR,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,4.0294055585,11.2309203263,16.273490803,False,False
+TYPE_KOR_manufacturing_NARDL_AIC4,goods,main,4,KOR,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-13.9895520517,19.8024860146,44.6079029281,False,True
+TYPE_KOR_manufacturing_NARDL_AIC2,goods,main,2,KOR,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-12.723180068,20.3070904474,34.47101589,True,False
+PRICE_KOR_manufacturing_ARDL_AIC4,goods,BCOM_control,4,KOR,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.58637509401,8.96265401273,15.8190969116,False,True
+PRICE_KOR_manufacturing_NARDL_AIC4,goods,BCOM_control,4,KOR,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-13.907685076,19.7974833317,44.7441749257,False,True
+TYPE_MYS_agriculture_ARDL_AIC4,goods,main,4,MYS,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.11764448349,2.83902253095,3.22179924628,False,False
+TYPE_MYS_agriculture_ARDL_AIC2,goods,main,2,MYS,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.199786604316,-0.452877117172,-0.487915941208,False,True
+TYPE_MYS_agriculture_NARDL_AIC4,goods,main,4,MYS,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,12.2255592669,29.7494266407,33.0197352362,False,False
+TYPE_MYS_agriculture_NARDL_AIC2,goods,main,2,MYS,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,14.6336870606,32.6179045283,34.9321443483,False,False
+PRICE_MYS_agriculture_ARDL_AIC4,goods,BCOM_control,4,MYS,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.51240043836,-3.4408726966,-3.71209667458,False,False
+PRICE_MYS_agriculture_NARDL_AIC4,goods,BCOM_control,4,MYS,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,13.4416418445,24.8424581884,25.4354160815,False,False
+TYPE_MYS_capital_ARDL_AIC4,goods,main,4,MYS,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.65134029281,1.69192698534,1.69192699878,True,True
+TYPE_MYS_capital_ARDL_AIC2,goods,main,2,MYS,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.94391673856,1.9754473941,1.97544739614,True,True
+TYPE_MYS_capital_NARDL_AIC4,goods,main,4,MYS,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,7.76406224171,7.47044269986,7.47044199914,True,True
+TYPE_MYS_capital_NARDL_AIC2,goods,main,2,MYS,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.01326850763,5.05381688302,5.05381688319,True,True
+PRICE_MYS_capital_ARDL_AIC4,goods,BCOM_control,4,MYS,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.08795305376,0.984323638784,0.984310899267,True,True
+PRICE_MYS_capital_NARDL_AIC4,goods,BCOM_control,4,MYS,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.61408934772,3.24857068548,3.24851205032,True,True
+TYPE_MYS_commodity_ARDL_AIC4,goods,main,4,MYS,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-7.41104321085,-13.1836458681,-12.2982444813,True,True
+TYPE_MYS_commodity_ARDL_AIC2,goods,main,2,MYS,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-8.1456044263,-12.1858876722,-12.2370162647,True,True
+TYPE_MYS_commodity_NARDL_AIC4,goods,main,4,MYS,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,9.71641886472,14.9425985469,13.7667745073,True,True
+TYPE_MYS_commodity_NARDL_AIC2,goods,main,2,MYS,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.57118078582,11.4315237565,11.4429150903,True,True
+PRICE_MYS_commodity_ARDL_AIC4,goods,BCOM_control,4,MYS,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.04864351799,-6.91026031358,-6.68549587317,False,False
+PRICE_MYS_commodity_NARDL_AIC4,goods,BCOM_control,4,MYS,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,7.46678932166,11.6238321901,10.9816079294,True,True
+TYPE_MYS_consumption_ARDL_AIC4,goods,main,4,MYS,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-19.8752084613,-7.84056623191,-7.14793277073,False,False
+TYPE_MYS_consumption_ARDL_AIC2,goods,main,2,MYS,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.8093311046,-9.6054358632,-14.5217789432,False,False
+TYPE_MYS_consumption_NARDL_AIC4,goods,main,4,MYS,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,17.9965707726,33.3094963607,42.7603934435,False,False
+TYPE_MYS_consumption_NARDL_AIC2,goods,main,2,MYS,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,19.9030856955,38.4418474491,44.2139959373,False,False
+PRICE_MYS_consumption_ARDL_AIC4,goods,BCOM_control,4,MYS,consumption,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-13.4217513077,2.79018945719,12.4087285744,False,False
+PRICE_MYS_consumption_NARDL_AIC4,goods,BCOM_control,4,MYS,consumption,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-1.45845075324,46.5953679997,59.6081389171,False,False
+TYPE_MYS_energy_mining_ARDL_AIC4,goods,main,4,MYS,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-7.67628297198,-12.9555429339,-13.1165408107,True,True
+TYPE_MYS_energy_mining_ARDL_AIC2,goods,main,2,MYS,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-7.36649712377,-12.0091057055,-12.1217210922,True,True
+TYPE_MYS_energy_mining_NARDL_AIC4,goods,main,4,MYS,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,6.53790933074,10.5566793096,10.6479125057,True,True
+TYPE_MYS_energy_mining_NARDL_AIC2,goods,main,2,MYS,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.41774886469,6.86105773232,6.90279994353,True,True
+PRICE_MYS_energy_mining_ARDL_AIC4,goods,BCOM_control,4,MYS,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.92082364611,-7.67733031674,-7.72608648075,True,True
+PRICE_MYS_energy_mining_NARDL_AIC4,goods,BCOM_control,4,MYS,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,2.8401887528,4.37722292883,4.40196932931,True,True
+TYPE_MYS_intermediate_ARDL_AIC4,goods,main,4,MYS,intermediate,ARDL,Akhir horizon belum membaik,False,False,False,False,False,13.3844324787,2.74690540021,-6.15036798187,False,False
+TYPE_MYS_intermediate_ARDL_AIC2,goods,main,2,MYS,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,12.9686745185,5.19150237231,3.9242217181,False,False
+TYPE_MYS_intermediate_NARDL_AIC4,goods,main,4,MYS,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,21.7639861912,12.1763284234,11.2071075106,False,False
+TYPE_MYS_intermediate_NARDL_AIC2,goods,main,2,MYS,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,24.1065053363,14.2549086633,12.2515920173,False,False
+PRICE_MYS_intermediate_ARDL_AIC4,goods,BCOM_control,4,MYS,intermediate,ARDL,Akhir horizon belum membaik,False,False,False,False,False,12.0875650722,0.255321997096,-4.98516706528,False,False
+PRICE_MYS_intermediate_NARDL_AIC4,goods,BCOM_control,4,MYS,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,21.9569389808,14.8979657991,14.7315029683,True,False
+TYPE_MYS_manufacturing_ARDL_AIC4,goods,main,4,MYS,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.368559822353,0.972526513103,2.33811269416,False,False
+TYPE_MYS_manufacturing_ARDL_AIC2,goods,main,2,MYS,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.277980043791,0.827960086718,1.35955387058,False,False
+TYPE_MYS_manufacturing_NARDL_AIC4,goods,main,4,MYS,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.07305317631,7.77791946681,16.8388752329,False,False
+TYPE_MYS_manufacturing_NARDL_AIC2,goods,main,2,MYS,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.10978480011,11.4807156268,16.9387069008,False,False
+PRICE_MYS_manufacturing_ARDL_AIC4,goods,BCOM_control,4,MYS,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.229965836809,0.574463289133,1.27823572277,False,False
+PRICE_MYS_manufacturing_NARDL_AIC4,goods,BCOM_control,4,MYS,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,2.05927095838,4.99439941631,10.0762495485,False,False
+TYPE_SGP_agriculture_ARDL_AIC4,goods,main,4,SGP,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,4.92004266328,14.8113979549,52.3490944312,False,True
+TYPE_SGP_agriculture_ARDL_AIC2,goods,main,2,SGP,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,6.07103840172,17.9001265152,28.6342534568,False,True
+TYPE_SGP_agriculture_NARDL_AIC4,goods,main,4,SGP,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,25.8008715723,25.0205839125,46.5986621906,False,True
+TYPE_SGP_agriculture_NARDL_AIC2,goods,main,2,SGP,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,12.2107909766,33.9947277284,50.4762196661,False,True
+PRICE_SGP_agriculture_ARDL_AIC4,goods,BCOM_control,4,SGP,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,3.86983551823,12.5426645947,55.6246882267,False,True
+PRICE_SGP_agriculture_NARDL_AIC4,goods,BCOM_control,4,SGP,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,25.8454274693,23.9545665819,41.5143398651,False,False
+TYPE_SGP_capital_ARDL_AIC4,goods,main,4,SGP,capital,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.84209614044,-4.44340336771,-4.47217524136,False,False
+TYPE_SGP_capital_ARDL_AIC2,goods,main,2,SGP,capital,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.76408869481,-4.22496115105,-4.24700310619,False,False
+TYPE_SGP_capital_NARDL_AIC4,goods,main,4,SGP,capital,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-8.03107942891,-12.3545408971,-12.4231563415,False,False
+TYPE_SGP_capital_NARDL_AIC2,goods,main,2,SGP,capital,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-7.18878229966,-10.7952026163,-10.8423083786,False,False
+PRICE_SGP_capital_ARDL_AIC4,goods,BCOM_control,4,SGP,capital,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.09289481086,-6.2822546629,-6.31639840504,False,False
+PRICE_SGP_capital_NARDL_AIC4,goods,BCOM_control,4,SGP,capital,NARDL,Pola J pada estimasi titik,True,True,True,False,False,-20.2633384296,-20.2210472214,3.48571061344,False,False
+TYPE_SGP_commodity_ARDL_AIC4,goods,main,4,SGP,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-8.69219046683,-11.3500488903,-11.3581404274,False,False
+TYPE_SGP_commodity_ARDL_AIC2,goods,main,2,SGP,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-8.30924465611,-11.2797313957,-11.2942968096,False,False
+TYPE_SGP_commodity_NARDL_AIC4,goods,main,4,SGP,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.60786128823,-6.65896579756,-6.67808540368,False,False
+TYPE_SGP_commodity_NARDL_AIC2,goods,main,2,SGP,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.08215330574,-4.085937456,-4.08964828215,False,False
+PRICE_SGP_commodity_ARDL_AIC4,goods,BCOM_control,4,SGP,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.39199297989,-7.30100610913,-7.30122477963,True,False
+PRICE_SGP_commodity_NARDL_AIC4,goods,BCOM_control,4,SGP,commodity,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.56770648813,-1.99617826684,-1.99709588268,True,False
+TYPE_SGP_consumption_ARDL_AIC4,goods,main,4,SGP,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.56701150743,19.5063776211,24.9183028186,True,False
+TYPE_SGP_consumption_ARDL_AIC2,goods,main,2,SGP,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.594622679,20.0762888294,26.3983869471,False,False
+TYPE_SGP_consumption_NARDL_AIC4,goods,main,4,SGP,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.283274004522,-0.713612430107,-0.969424583471,False,False
+TYPE_SGP_consumption_NARDL_AIC2,goods,main,2,SGP,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-10.1353811896,-21.3323252763,-25.2683456367,True,False
+PRICE_SGP_consumption_ARDL_AIC4,goods,BCOM_control,4,SGP,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,7.80064670742,17.5833654355,22.2212219723,False,False
+PRICE_SGP_consumption_NARDL_AIC4,goods,BCOM_control,4,SGP,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.74051059323,-1.88401547961,-2.59432849,False,False
+TYPE_SGP_energy_mining_ARDL_AIC4,goods,main,4,SGP,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.5509263327,-13.1796609171,-13.1838490619,False,False
+TYPE_SGP_energy_mining_ARDL_AIC2,goods,main,2,SGP,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.1983420185,-13.1461401748,-13.1536709772,False,False
+TYPE_SGP_energy_mining_NARDL_AIC4,goods,main,4,SGP,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.90145394189,-6.74271340263,-6.75318110584,False,False
+TYPE_SGP_energy_mining_NARDL_AIC2,goods,main,2,SGP,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.96094110371,-4.98110318656,-4.9829114378,False,False
+PRICE_SGP_energy_mining_ARDL_AIC4,goods,BCOM_control,4,SGP,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.27417881624,-2.55561195058,-2.55565336846,True,False
+PRICE_SGP_energy_mining_NARDL_AIC4,goods,BCOM_control,4,SGP,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.293058495934,-0.31572479836,-0.318231619395,True,False
+TYPE_SGP_intermediate_ARDL_AIC4,goods,main,4,SGP,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.47242728922,3.61912446708,4.03662030627,False,False
+TYPE_SGP_intermediate_ARDL_AIC2,goods,main,2,SGP,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.27483968004,3.31437021018,3.81232418282,False,False
+TYPE_SGP_intermediate_NARDL_AIC4,goods,main,4,SGP,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.8570400472,-19.0496439295,-19.3668681396,True,False
+TYPE_SGP_intermediate_NARDL_AIC2,goods,main,2,SGP,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.9743917403,-20.068498767,-20.5147246969,True,False
+PRICE_SGP_intermediate_ARDL_AIC4,goods,BCOM_control,4,SGP,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.782549274805,1.88741768356,2.08618712051,False,False
+PRICE_SGP_intermediate_NARDL_AIC4,goods,BCOM_control,4,SGP,intermediate,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-11.093588009,-19.3688136377,-19.6799493607,True,False
+TYPE_SGP_manufacturing_ARDL_AIC4,goods,main,4,SGP,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.0270811118669,0.0647888740498,0.0713480561172,False,False
+TYPE_SGP_manufacturing_ARDL_AIC2,goods,main,2,SGP,manufacturing,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.691024658747,-1.81878555108,-2.40182123839,False,False
+TYPE_SGP_manufacturing_NARDL_AIC4,goods,main,4,SGP,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.36032356811,-13.8465387952,-14.7145895325,False,False
+TYPE_SGP_manufacturing_NARDL_AIC2,goods,main,2,SGP,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.30743975819,-15.0756730468,-16.5949026556,False,False
+PRICE_SGP_manufacturing_ARDL_AIC4,goods,BCOM_control,4,SGP,manufacturing,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.12118394755,-2.58100284946,-2.7969278523,False,False
+PRICE_SGP_manufacturing_NARDL_AIC4,goods,BCOM_control,4,SGP,manufacturing,NARDL,Pola J pada estimasi titik,True,True,True,False,False,-3.25306669242,-21.3993954289,4.76792436336,False,False
+TYPE_THA_agriculture_ARDL_AIC4,goods,main,4,THA,agriculture,ARDL,Pola J pada estimasi titik,True,True,False,False,False,21.1748934824,20.0124662949,18.1653283123,False,False
+TYPE_THA_agriculture_ARDL_AIC2,goods,main,2,THA,agriculture,ARDL,Pola J pada estimasi titik,True,True,False,False,False,22.6311195646,19.8259021184,16.9084465284,True,True
+TYPE_THA_agriculture_NARDL_AIC4,goods,main,4,THA,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,False,False,49.0304814775,43.0312320771,36.6734937868,True,False
+TYPE_THA_agriculture_NARDL_AIC2,goods,main,2,THA,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,False,False,46.1472380639,36.2417539932,30.9531138179,True,True
+PRICE_THA_agriculture_ARDL_AIC4,goods,BCOM_control,4,THA,agriculture,ARDL,Pola J pada estimasi titik,True,True,False,False,False,25.9229482988,20.4830288675,17.7651244863,True,False
+PRICE_THA_agriculture_NARDL_AIC4,goods,BCOM_control,4,THA,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,True,False,66.7661026131,58.8820070645,49.8237284794,True,False
+TYPE_THA_capital_ARDL_AIC4,goods,main,4,THA,capital,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-41.7727287955,-11.889543023,-9.78900478966,False,False
+TYPE_THA_capital_ARDL_AIC2,goods,main,2,THA,capital,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-41.4648166008,-18.4401087058,-18.6811613795,False,False
+TYPE_THA_capital_NARDL_AIC4,goods,main,4,THA,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-43.2121654826,21.3808641881,24.7147000085,False,False
+TYPE_THA_capital_NARDL_AIC2,goods,main,2,THA,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-51.6975514182,-4.60452185372,-4.92967707409,False,False
+PRICE_THA_capital_ARDL_AIC4,goods,BCOM_control,4,THA,capital,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-31.5336199107,-11.9973736087,-11.2560635026,False,False
+PRICE_THA_capital_NARDL_AIC4,goods,BCOM_control,4,THA,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-24.9524167336,17.7202363876,19.0516487454,True,False
+TYPE_THA_commodity_ARDL_AIC4,goods,main,4,THA,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.6875176735,9.71206024592,9.97819543273,False,False
+TYPE_THA_commodity_ARDL_AIC2,goods,main,2,THA,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,7.44125487569,9.52695586267,9.61138245402,False,False
+TYPE_THA_commodity_NARDL_AIC4,goods,main,4,THA,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,35.2524343058,37.5158654389,32.9203402346,False,True
+TYPE_THA_commodity_NARDL_AIC2,goods,main,2,THA,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,2.7847783704,3.55611249251,3.58908152919,False,False
+PRICE_THA_commodity_ARDL_AIC4,goods,BCOM_control,4,THA,commodity,ARDL,Pola J pada estimasi titik,True,True,False,False,False,21.9708159094,14.483766701,12.0253815059,False,False
+PRICE_THA_commodity_NARDL_AIC4,goods,BCOM_control,4,THA,commodity,NARDL,Pola J pada estimasi titik,True,True,False,False,False,44.5284876644,33.6529961369,28.8761962471,False,True
+TYPE_THA_consumption_ARDL_AIC4,goods,main,4,THA,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,12.4849800819,23.5916509547,24.2421186033,True,False
+TYPE_THA_consumption_ARDL_AIC2,goods,main,2,THA,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,11.5163155,22.693695674,23.5050755719,True,False
+TYPE_THA_consumption_NARDL_AIC4,goods,main,4,THA,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,28.2530833648,6.51594513527,3.3714364266,False,False
+TYPE_THA_consumption_NARDL_AIC2,goods,main,2,THA,consumption,NARDL,Akhir horizon belum membaik,True,False,False,False,False,24.4617283033,-3.92081779025,-9.17592966076,False,False
+PRICE_THA_consumption_ARDL_AIC4,goods,BCOM_control,4,THA,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,12.7306913628,22.5268574008,22.9255382135,True,False
+PRICE_THA_consumption_NARDL_AIC4,goods,BCOM_control,4,THA,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,51.9302729077,2.2896592714,0.830164749142,True,False
+TYPE_THA_energy_mining_ARDL_AIC4,goods,main,4,THA,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-5.43737201939,-5.57233841362,-5.64540667182,False,True
+TYPE_THA_energy_mining_ARDL_AIC2,goods,main,2,THA,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.09686106068,-5.33968620736,-5.34337791423,False,False
+TYPE_THA_energy_mining_NARDL_AIC4,goods,main,4,THA,energy_mining,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-16.1061440957,2.98737852068,7.19897859919,False,True
+TYPE_THA_energy_mining_NARDL_AIC2,goods,main,2,THA,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-28.2365484683,-1.4417921997,-1.33378229218,False,False
+PRICE_THA_energy_mining_ARDL_AIC4,goods,BCOM_control,4,THA,energy_mining,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-7.16290587692,-7.55128635118,-7.72664589119,False,True
+PRICE_THA_energy_mining_NARDL_AIC4,goods,BCOM_control,4,THA,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.39071622909,-3.5165968868,-3.60317847345,False,True
+TYPE_THA_intermediate_ARDL_AIC4,goods,main,4,THA,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,5.59433544442,9.94919048079,10.1317016997,True,True
+TYPE_THA_intermediate_ARDL_AIC2,goods,main,2,THA,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.9725188941,8.67716014567,9.23085409945,True,False
+TYPE_THA_intermediate_NARDL_AIC4,goods,main,4,THA,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.96473533012,-7.01274823098,-14.9431522712,True,True
+TYPE_THA_intermediate_NARDL_AIC2,goods,main,2,THA,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-15.9952516682,-3.17605660724,-1.88185311601,True,False
+PRICE_THA_intermediate_ARDL_AIC4,goods,BCOM_control,4,THA,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.01775630361,7.91077631716,8.19222407031,True,True
+PRICE_THA_intermediate_NARDL_AIC4,goods,BCOM_control,4,THA,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.58846032556,-8.8779417793,-9.16191431717,True,False
+TYPE_THA_manufacturing_ARDL_AIC4,goods,main,4,THA,manufacturing,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-0.313226168291,6.19295423864,9.53677287184,False,False
+TYPE_THA_manufacturing_ARDL_AIC2,goods,main,2,THA,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.490607878311,5.32612566297,1.82346794293,False,False
+TYPE_THA_manufacturing_NARDL_AIC4,goods,main,4,THA,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,False,False,7.5450368816,4.74830034706,5.37097953074,False,False
+TYPE_THA_manufacturing_NARDL_AIC2,goods,main,2,THA,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.71732322214,-9.1019506265,-18.066092158,False,False
+PRICE_THA_manufacturing_ARDL_AIC4,goods,BCOM_control,4,THA,manufacturing,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-0.0156459027319,5.89922101511,8.41763923734,False,False
+PRICE_THA_manufacturing_NARDL_AIC4,goods,BCOM_control,4,THA,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,False,False,11.1550456305,4.36456937119,5.29400515833,False,False
+TYPE_USA_agriculture_ARDL_AIC4,goods,main,4,USA,agriculture,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.07498726958,-7.97197941776,-7.97212329611,True,True
+TYPE_USA_agriculture_ARDL_AIC2,goods,main,2,USA,agriculture,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.27520841516,-7.8476124331,-7.84762863705,True,True
+TYPE_USA_agriculture_NARDL_AIC4,goods,main,4,USA,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-10.9686362082,5.92464589752,5.9248266808,True,True
+TYPE_USA_agriculture_NARDL_AIC2,goods,main,2,USA,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-8.98351482667,5.46319223694,5.46319275539,True,True
+PRICE_USA_agriculture_ARDL_AIC4,goods,BCOM_control,4,USA,agriculture,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-6.67049886601,-7.47124367553,-7.4713493965,True,True
+PRICE_USA_agriculture_NARDL_AIC4,goods,BCOM_control,4,USA,agriculture,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-10.8826807049,5.66301679697,5.66326645717,True,False
+TYPE_USA_capital_ARDL_AIC4,goods,main,4,USA,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,35.4618644179,29.9646364866,11.8294774898,False,False
+TYPE_USA_capital_ARDL_AIC2,goods,main,2,USA,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,8.36155906008,22.4405768684,38.9112374638,False,True
+TYPE_USA_capital_NARDL_AIC4,goods,main,4,USA,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,8.11664839816,40.2755837853,43.0450699454,False,False
+TYPE_USA_capital_NARDL_AIC2,goods,main,2,USA,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,6.32558395964,16.158151488,26.1820844409,False,True
+PRICE_USA_capital_ARDL_AIC4,goods,BCOM_control,4,USA,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,49.9491343059,29.1893222387,3.96135188887,False,False
+PRICE_USA_capital_NARDL_AIC4,goods,BCOM_control,4,USA,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,6.35139095227,35.5915849334,2.68009213553,False,False
+TYPE_USA_commodity_ARDL_AIC4,goods,main,4,USA,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-4.2046485675,-4.3333940741,-0.867243701497,False,False
+TYPE_USA_commodity_ARDL_AIC2,goods,main,2,USA,commodity,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-2.13340972794,-3.21645432458,-3.36635199424,True,False
+TYPE_USA_commodity_NARDL_AIC4,goods,main,4,USA,commodity,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-2.79671901754,25.4686249769,34.2109385937,True,False
+TYPE_USA_commodity_NARDL_AIC2,goods,main,2,USA,commodity,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-12.3208089732,15.8224154919,15.8150082549,True,False
+PRICE_USA_commodity_ARDL_AIC4,goods,BCOM_control,4,USA,commodity,ARDL,Pola J pada estimasi titik,True,True,True,False,False,-1.10942407964,0.910392772379,11.1312575333,False,False
+PRICE_USA_commodity_NARDL_AIC4,goods,BCOM_control,4,USA,commodity,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-5.4949060338,24.6639585481,31.4859536281,True,True
+TYPE_USA_consumption_ARDL_AIC4,goods,main,4,USA,consumption,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.689289530968,-1.35305117633,-2.86787231358,False,False
+TYPE_USA_consumption_ARDL_AIC2,goods,main,2,USA,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,2.91081534565,6.1189250332,8.28115796554,False,False
+TYPE_USA_consumption_NARDL_AIC4,goods,main,4,USA,consumption,NARDL,Pola J pada estimasi titik,True,True,True,True,True,-4.36956048945,48.4206143174,55.8568718537,True,True
+TYPE_USA_consumption_NARDL_AIC2,goods,main,2,USA,consumption,NARDL,Pola J pada estimasi titik,True,True,True,True,True,-4.87042390425,47.8092846775,48.0721656515,True,True
+PRICE_USA_consumption_ARDL_AIC4,goods,BCOM_control,4,USA,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.868243122876,1.73708312248,4.04336924734,False,False
+PRICE_USA_consumption_NARDL_AIC4,goods,BCOM_control,4,USA,consumption,NARDL,Pola J pada estimasi titik,True,True,True,True,True,-12.5674912471,42.0603354439,48.7380556917,True,True
+TYPE_USA_energy_mining_ARDL_AIC4,goods,main,4,USA,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,14.0281818323,27.7076899607,52.8369268676,False,False
+TYPE_USA_energy_mining_ARDL_AIC2,goods,main,2,USA,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.87936319588,11.9925985425,18.2124771522,False,False
+TYPE_USA_energy_mining_NARDL_AIC4,goods,main,4,USA,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,22.1434988033,46.1245041085,109.0267322,False,True
+TYPE_USA_energy_mining_NARDL_AIC2,goods,main,2,USA,energy_mining,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.00868997254,12.3148329726,18.7145941831,False,False
+PRICE_USA_energy_mining_ARDL_AIC4,goods,BCOM_control,4,USA,energy_mining,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,22.2109051484,44.1122131449,88.9773283761,False,True
+PRICE_USA_energy_mining_NARDL_AIC4,goods,BCOM_control,4,USA,energy_mining,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-32.2509031908,65.8736135643,113.274028832,False,True
+TYPE_USA_intermediate_ARDL_AIC4,goods,main,4,USA,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.57988037064,-2.91679663712,-2.9859294311,True,False
+TYPE_USA_intermediate_ARDL_AIC2,goods,main,2,USA,intermediate,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.300786603172,0.648709878526,0.76103043996,False,False
+TYPE_USA_intermediate_NARDL_AIC4,goods,main,4,USA,intermediate,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-4.7683047676,25.3681238788,27.8708451286,True,False
+TYPE_USA_intermediate_NARDL_AIC2,goods,main,2,USA,intermediate,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-8.08146912243,15.4558976179,15.899316622,True,False
+PRICE_USA_intermediate_ARDL_AIC4,goods,BCOM_control,4,USA,intermediate,ARDL,Pola J pada estimasi titik,True,True,False,False,False,0.964021345236,8.10482330697,18.2631033228,False,False
+PRICE_USA_intermediate_NARDL_AIC4,goods,BCOM_control,4,USA,intermediate,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-4.54301741306,26.5587160718,29.1968092896,True,False
+TYPE_USA_manufacturing_ARDL_AIC4,goods,main,4,USA,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.51362725591,10.7433856907,14.4400055048,False,False
+TYPE_USA_manufacturing_ARDL_AIC2,goods,main,2,USA,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.81571277964,11.707563905,15.6466894978,False,False
+TYPE_USA_manufacturing_NARDL_AIC4,goods,main,4,USA,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,False,False,10.3605914253,13.9593201189,20.8634815422,False,False
+TYPE_USA_manufacturing_NARDL_AIC2,goods,main,2,USA,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,False,False,5.92832584875,20.329517023,32.4218924153,False,True
+PRICE_USA_manufacturing_ARDL_AIC4,goods,BCOM_control,4,USA,manufacturing,ARDL,Pola J pada estimasi titik,True,True,False,False,False,15.9304848382,8.63105598237,3.66295867181,False,False
+PRICE_USA_manufacturing_NARDL_AIC4,goods,BCOM_control,4,USA,manufacturing,NARDL,Pola J pada estimasi titik,True,True,False,False,False,5.17574114363,15.4680986923,6.1330916612,False,False
+TYPE_VNM_agriculture_ARDL_AIC4,goods,main,4,VNM,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,27.0414141102,56.9873047361,56.3399573627,False,True
+TYPE_VNM_agriculture_ARDL_AIC2,goods,main,2,VNM,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,28.669282077,57.642229638,56.5997545536,True,True
+TYPE_VNM_agriculture_NARDL_AIC4,goods,main,4,VNM,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,34.4566063692,70.3132509569,69.1998777927,False,True
+TYPE_VNM_agriculture_NARDL_AIC2,goods,main,2,VNM,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,38.4405505122,74.3232690623,72.7746220976,False,True
+PRICE_VNM_agriculture_ARDL_AIC4,goods,BCOM_control,4,VNM,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,41.3294438399,66.8309495739,66.091301663,True,True
+PRICE_VNM_agriculture_NARDL_AIC4,goods,BCOM_control,4,VNM,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,56.5143568414,85.6471043271,85.3194844248,True,False
+TYPE_VNM_capital_ARDL_AIC4,goods,main,4,VNM,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-19.5256412718,18.6961034554,26.424977757,False,False
+TYPE_VNM_capital_ARDL_AIC2,goods,main,2,VNM,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-15.7588210289,21.664829047,26.4059362172,False,False
+TYPE_VNM_capital_NARDL_AIC4,goods,main,4,VNM,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-77.5580454528,-11.0672686806,-9.16114221601,True,False
+TYPE_VNM_capital_NARDL_AIC2,goods,main,2,VNM,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-69.940609442,-5.20720210913,-4.54894328587,True,False
+PRICE_VNM_capital_ARDL_AIC4,goods,BCOM_control,4,VNM,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-20.4195312562,24.4438883859,34.673326335,False,False
+PRICE_VNM_capital_NARDL_AIC4,goods,BCOM_control,4,VNM,capital,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-77.5037319639,-11.8718836164,-10.0281700945,True,False
+TYPE_VNM_commodity_ARDL_AIC4,goods,main,4,VNM,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,10.9398582578,19.8193117073,20.2328873623,False,False
+TYPE_VNM_commodity_ARDL_AIC2,goods,main,2,VNM,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.3743109176,20.9853836835,21.4805702593,True,False
+TYPE_VNM_commodity_NARDL_AIC4,goods,main,4,VNM,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.8276260347,21.363849935,21.8006193879,False,False
+TYPE_VNM_commodity_NARDL_AIC2,goods,main,2,VNM,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,13.2257203991,24.2448462382,24.7929071549,False,False
+PRICE_VNM_commodity_ARDL_AIC4,goods,BCOM_control,4,VNM,commodity,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,22.558817779,35.1127675855,35.3308837017,True,False
+PRICE_VNM_commodity_NARDL_AIC4,goods,BCOM_control,4,VNM,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,26.9881073428,41.4508347264,41.6775152336,True,False
+TYPE_VNM_consumption_ARDL_AIC4,goods,main,4,VNM,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,21.71290398,37.5140384455,38.0716665812,True,False
+TYPE_VNM_consumption_ARDL_AIC2,goods,main,2,VNM,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,21.6944975699,37.8396300255,38.4430426554,True,False
+TYPE_VNM_consumption_NARDL_AIC4,goods,main,4,VNM,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,25.8669058295,44.0591828223,44.6471169333,True,False
+TYPE_VNM_consumption_NARDL_AIC2,goods,main,2,VNM,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,26.0133114839,44.8179753367,45.4703050973,True,False
+PRICE_VNM_consumption_ARDL_AIC4,goods,BCOM_control,4,VNM,consumption,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,32.1041979175,42.4391434901,42.5631939977,True,False
+PRICE_VNM_consumption_NARDL_AIC4,goods,BCOM_control,4,VNM,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,90.0344877315,34.7443384391,35.9415795317,True,False
+TYPE_VNM_energy_mining_ARDL_AIC4,goods,main,4,VNM,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-33.8540768019,-37.8031938595,-37.8036644284,True,False
+TYPE_VNM_energy_mining_ARDL_AIC2,goods,main,2,VNM,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-30.7403128685,-36.0406870206,-36.043171631,True,False
+TYPE_VNM_energy_mining_NARDL_AIC4,goods,main,4,VNM,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-35.8825330818,-40.0864565597,-40.0869653327,True,False
+TYPE_VNM_energy_mining_NARDL_AIC2,goods,main,2,VNM,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-29.1537821108,-34.1630025349,-34.1653226747,True,False
+PRICE_VNM_energy_mining_ARDL_AIC4,goods,BCOM_control,4,VNM,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-34.4842120626,-38.5389506877,-38.5394478046,True,False
+PRICE_VNM_energy_mining_NARDL_AIC4,goods,BCOM_control,4,VNM,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-37.1936962241,-41.6024021033,-41.6029584337,True,False
+TYPE_VNM_intermediate_ARDL_AIC4,goods,main,4,VNM,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-5.49483384741,-9.27349327443,-12.2028056374,True,False
+TYPE_VNM_intermediate_ARDL_AIC2,goods,main,2,VNM,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.47285308132,-7.64812785898,-8.15769294947,True,False
+TYPE_VNM_intermediate_NARDL_AIC4,goods,main,4,VNM,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-8.53246717104,-14.5634497658,-19.6883013234,True,False
+TYPE_VNM_intermediate_NARDL_AIC2,goods,main,2,VNM,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,4.97147112345,-23.051354811,-23.1323333614,True,False
+PRICE_VNM_intermediate_ARDL_AIC4,goods,BCOM_control,4,VNM,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.67930594971,-1.02418309053,-1.47237254324,True,False
+PRICE_VNM_intermediate_NARDL_AIC4,goods,BCOM_control,4,VNM,intermediate,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-5.44428128901,-8.54754952213,-13.1568032258,False,False
+TYPE_VNM_manufacturing_ARDL_AIC4,goods,main,4,VNM,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.81849400818,10.9307753569,23.9283448727,False,False
+TYPE_VNM_manufacturing_ARDL_AIC2,goods,main,2,VNM,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,3.45517240946,9.12068647229,12.4790871766,False,False
+TYPE_VNM_manufacturing_NARDL_AIC4,goods,main,4,VNM,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.0619471818575,-0.129075380526,-0.233094776607,False,False
+TYPE_VNM_manufacturing_NARDL_AIC2,goods,main,2,VNM,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-3.35213839599,-7.63608070935,-8.24185330256,False,False
+PRICE_VNM_manufacturing_ARDL_AIC4,goods,BCOM_control,4,VNM,manufacturing,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-0.172454419449,-0.324098276835,-0.502746502639,False,False
+PRICE_VNM_manufacturing_NARDL_AIC4,goods,BCOM_control,4,VNM,manufacturing,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-8.57756317152,-14.0520931839,-18.6842245256,False,False
+TYPE_WLD_agriculture_ARDL_AIC4,goods,main,4,WLD,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.0337892529346,0.0503986379393,0.0506036004455,False,True
+TYPE_WLD_agriculture_ARDL_AIC2,goods,main,2,WLD,agriculture,ARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.7788114054,-2.65006408685,-2.66070795241,False,True
+TYPE_WLD_agriculture_NARDL_AIC4,goods,main,4,WLD,agriculture,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-11.3803547765,-15.4334665294,-15.4531173668,False,True
+TYPE_WLD_agriculture_NARDL_AIC2,goods,main,2,WLD,agriculture,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.86716098245,2.77370927735,2.78451585244,False,True
+PRICE_WLD_agriculture_ARDL_AIC4,goods,BCOM_control,4,WLD,agriculture,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,0.511665821989,0.754198142453,0.756900574182,False,False
+PRICE_WLD_agriculture_NARDL_AIC4,goods,BCOM_control,4,WLD,agriculture,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-9.48873363928,-12.7102932596,-12.7238125957,False,True
+TYPE_WLD_capital_ARDL_AIC4,goods,main,4,WLD,capital,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-15.1858144026,6.74075968743,13.5819327173,False,True
+TYPE_WLD_capital_ARDL_AIC2,goods,main,2,WLD,capital,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.28278665271,8.12796568651,8.35835186821,False,False
+TYPE_WLD_capital_NARDL_AIC4,goods,main,4,WLD,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-5.63980440718,17.0210791745,15.1435814717,False,True
+TYPE_WLD_capital_NARDL_AIC2,goods,main,2,WLD,capital,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,7.03987620635,13.2048617184,13.5520927672,False,False
+PRICE_WLD_capital_ARDL_AIC4,goods,BCOM_control,4,WLD,capital,ARDL,Pola J pada estimasi titik,True,True,True,False,False,-26.7068184632,2.52226289601,37.0627128378,False,True
+PRICE_WLD_capital_NARDL_AIC4,goods,BCOM_control,4,WLD,capital,NARDL,Pola J pada estimasi titik,True,True,False,False,False,-3.50191387336,23.8436160279,22.126559362,False,True
+TYPE_WLD_commodity_ARDL_AIC4,goods,main,4,WLD,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.0124208879,-12.9034101351,-12.9107712855,True,True
+TYPE_WLD_commodity_ARDL_AIC2,goods,main,2,WLD,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.5530756942,-14.6181810705,-14.6430746225,True,True
+TYPE_WLD_commodity_NARDL_AIC4,goods,main,4,WLD,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.75532700367,-8.66189777224,-4.80823528675,False,True
+TYPE_WLD_commodity_NARDL_AIC2,goods,main,2,WLD,commodity,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,4.22071705927,6.45988425954,6.49402189067,True,True
+PRICE_WLD_commodity_ARDL_AIC4,goods,BCOM_control,4,WLD,commodity,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-10.1652574987,-13.1240347062,-13.1317603028,True,False
+PRICE_WLD_commodity_NARDL_AIC4,goods,BCOM_control,4,WLD,commodity,NARDL,Akhir horizon belum membaik,True,False,True,False,False,-7.3053892581,-7.33551167549,-3.16615883925,False,True
+TYPE_WLD_consumption_ARDL_AIC4,goods,main,4,WLD,consumption,ARDL,Pola J pada estimasi titik,True,True,False,True,False,-9.93449054938,8.97462649054,19.3054666153,True,True
+TYPE_WLD_consumption_ARDL_AIC2,goods,main,2,WLD,consumption,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-9.47510096709,5.67327697106,11.8503478102,False,False
+TYPE_WLD_consumption_NARDL_AIC4,goods,main,4,WLD,consumption,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-2.91464080003,27.3904199598,43.6508136472,True,False
+TYPE_WLD_consumption_NARDL_AIC2,goods,main,2,WLD,consumption,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,12.0995653564,26.4522450584,33.2857211004,False,False
+PRICE_WLD_consumption_ARDL_AIC4,goods,BCOM_control,4,WLD,consumption,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-12.2006682276,5.05560955046,7.47728961833,True,False
+PRICE_WLD_consumption_NARDL_AIC4,goods,BCOM_control,4,WLD,consumption,NARDL,Pola J pada estimasi titik,True,True,False,True,False,-3.59778856577,22.9937638003,27.6538347027,True,False
+TYPE_WLD_energy_mining_ARDL_AIC4,goods,main,4,WLD,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-21.3401380608,-19.4423923804,-19.4422200333,True,True
+TYPE_WLD_energy_mining_ARDL_AIC2,goods,main,2,WLD,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-15.6120965634,-20.8430422203,-21.1807943847,True,False
+TYPE_WLD_energy_mining_NARDL_AIC4,goods,main,4,WLD,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-1.05558117825,-1.06501634342,-1.06501634348,True,False
+TYPE_WLD_energy_mining_NARDL_AIC2,goods,main,2,WLD,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-6.08549713935,-6.81492561932,-6.81502141145,True,True
+PRICE_WLD_energy_mining_ARDL_AIC4,goods,BCOM_control,4,WLD,energy_mining,ARDL,Akhir horizon belum membaik,True,False,True,False,False,-19.2620115146,-21.9765087284,-21.9707088507,True,False
+PRICE_WLD_energy_mining_NARDL_AIC4,goods,BCOM_control,4,WLD,energy_mining,NARDL,Akhir horizon belum membaik,True,False,False,False,False,-4.97803965863,-5.0030827662,-5.00308276622,True,False
+TYPE_WLD_intermediate_ARDL_AIC4,goods,main,4,WLD,intermediate,ARDL,Akhir horizon belum membaik,True,False,True,False,False,0.170353451784,-3.86385263764,-2.84489778219,False,True
+TYPE_WLD_intermediate_ARDL_AIC2,goods,main,2,WLD,intermediate,ARDL,Akhir horizon belum membaik,True,False,False,False,False,1.7073559524,-12.1891038517,-17.9664433395,False,False
+TYPE_WLD_intermediate_NARDL_AIC4,goods,main,4,WLD,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,11.0999781489,18.8008009073,54.7584812206,False,False
+TYPE_WLD_intermediate_NARDL_AIC2,goods,main,2,WLD,intermediate,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,15.1593617813,11.3526046997,9.61054025161,False,False
+PRICE_WLD_intermediate_ARDL_AIC4,goods,BCOM_control,4,WLD,intermediate,ARDL,Pola J pada estimasi titik,True,True,True,False,False,1.48277227198,-2.90816258122,3.80662131428,False,True
+PRICE_WLD_intermediate_NARDL_AIC4,goods,BCOM_control,4,WLD,intermediate,NARDL,Pola J pada estimasi titik,True,True,False,False,False,10.5017257737,9.40197691204,14.5919766238,True,False
+TYPE_WLD_manufacturing_ARDL_AIC4,goods,main,4,WLD,manufacturing,ARDL,Pola J pada estimasi titik,True,True,False,False,False,0.587899199547,2.25246887799,8.24403392964,False,True
+TYPE_WLD_manufacturing_ARDL_AIC2,goods,main,2,WLD,manufacturing,ARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,1.3071058308,3.60850712463,4.3222660949,False,True
+TYPE_WLD_manufacturing_NARDL_AIC4,goods,main,4,WLD,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,False,False,5.70805703221,12.2372492028,12.9438496351,False,True
+TYPE_WLD_manufacturing_NARDL_AIC2,goods,main,2,WLD,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,11.707498067,24.3183578002,25.4984451557,True,True
+PRICE_WLD_manufacturing_ARDL_AIC4,goods,BCOM_control,4,WLD,manufacturing,ARDL,Pola J pada estimasi titik,True,True,False,False,False,-2.39481509903,4.13030681973,12.9837924003,False,True
+PRICE_WLD_manufacturing_NARDL_AIC4,goods,BCOM_control,4,WLD,manufacturing,NARDL,Perbaikan tanpa fase awal memburuk,False,True,False,True,False,4.50790277589,30.6837885886,35.038403647,True,True

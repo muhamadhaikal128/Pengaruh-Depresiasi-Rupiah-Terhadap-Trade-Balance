@@ -1,0 +1,3993 @@
+
+  ___  ____  ____  ____  ____ ®
+ /__    /   ____/   /   ____/      StataNow 19.5
+___/   /   /___/   /   /___/       MP—Parallel Edition
+
+ Statistics and Data Science       Copyright 1985-2025 StataCorp LLC
+                                   StataCorp
+                                   4905 Lakeway Drive
+                                   College Station, Texas 77845 USA
+                                   800-782-8272        https://www.stata.com
+                                   979-696-4600        service@stata.com
+
+Stata license: Unlimited-user 2-core network, expiring 31 Mar 2027
+Serial number: 501909306700
+  Licensed to: USER
+               FEB UI
+
+Notes:
+      1. Stata is running in batch mode.
+      2. Unicode is supported; see help unicode_advice.
+      3. More than 2 billion observations are allowed; see help obs_advice.
+      4. Maximum number of variables is set to 5,000 but can be increased;
+          see help set_maxvar.
+
+. do F:/Trade-Balance/Tio/script/07_export.do graphs F:/Trade-Balance/Tio 
+
+. args phase project
+
+. if `"`project'"'!="" global OP "`project'"
+
+. if "$OP"=="" global OP "F:/Trade-Balance/Tio"
+
+. if "`phase'"=="graphs" {
+.     do "$OP/script/graph_helpers.do" "$OP"
+
+. * Native editable Stata graphs from the exact numerical plotting data.
+. * PNG/PDF are rendered by 14_report_oskooee_results.py (batch needs no Graph 
+> window).
+. version 19
+
+. clear all
+
+. set more off
+
+. args project
+
+. if `"`project'"'=="" local project "F:/Trade-Balance/Tio"
+
+. cd "`project'"
+F:\Trade-Balance\Tio
+
+. global OP "`project'"
+
+. capture log close
+
+. log using "$OP/output/diagnostics/oskooee/native_graphs.log", text replace
+(file F:/Trade-Balance/Tio/output/diagnostics/oskooee/native_graphs.log not
+    found)
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/oskooee/native_graphs.log
+  log type:  text
+ opened on:  17 Nov 2026, 15:34:33
+
+. import delimited "$OP/output/tables/oskooee/results_primary_models.csv", clea
+> r varnames(1) case(preserve) encoding(utf8)
+(105 vars, 176 obs)
+
+. levelsof model_id, local(models)
+`"BIL_AUS_ARDL_AIC4"' `"BIL_AUS_NARDL_AIC4"' `"BIL_CHN_ARDL_AIC4"' `"BIL_CHN_NA
+> RDL_AIC4"' `"BIL_IND_ARDL_AIC4"' `"BIL_IND_NARDL_AIC4"' `"BIL_JPN_ARDL_AIC4"'
+>  `"BIL_JPN_NARDL_AIC4"' `"BIL_KOR_ARDL_AIC4"' `"BIL_KOR_NARDL_AIC4"' `"BIL_MY
+> S_ARDL_AIC4"' `"BIL_MYS_NARDL_AIC4"' `"BIL_SGP_ARDL_AIC4"' `"BIL_SGP_NARDL_AI
+> C4"' `"BIL_THA_ARDL_AIC4"' `"BIL_THA_NARDL_AIC4"' `"BIL_USA_ARDL_AIC4"' `"BIL
+> _USA_NARDL_AIC4"' `"BIL_VNM_ARDL_AIC4"' `"BIL_VNM_NARDL_AIC4"' `"TYPE_AUS_agr
+> iculture_ARDL_AIC4"' `"TYPE_AUS_agriculture_NARDL_AIC4"' `"TYPE_AUS_capital_A
+> RDL_AIC4"' `"TYPE_AUS_capital_NARDL_AIC4"' `"TYPE_AUS_commodity_ARDL_AIC4"' `
+> "TYPE_AUS_commodity_NARDL_AIC4"' `"TYPE_AUS_consumption_ARDL_AIC4"' `"TYPE_AU
+> S_consumption_NARDL_AIC4"' `"TYPE_AUS_energy_mining_ARDL_AIC4"' `"TYPE_AUS_en
+> ergy_mining_NARDL_AIC4"' `"TYPE_AUS_intermediate_ARDL_AIC4"' `"TYPE_AUS_inter
+> mediate_NARDL_AIC4"' `"TYPE_AUS_manufacturing_ARDL_AIC4"' `"TYPE_AUS_manufact
+> uring_NARDL_AIC4"' `"TYPE_CHN_agriculture_ARDL_AIC4"' `"TYPE_CHN_agriculture_
+> NARDL_AIC4"' `"TYPE_CHN_capital_ARDL_AIC4"' `"TYPE_CHN_capital_NARDL_AIC4"' `
+> "TYPE_CHN_commodity_ARDL_AIC4"' `"TYPE_CHN_commodity_NARDL_AIC4"' `"TYPE_CHN_
+> consumption_ARDL_AIC4"' `"TYPE_CHN_consumption_NARDL_AIC4"' `"TYPE_CHN_energy
+> _mining_ARDL_AIC4"' `"TYPE_CHN_energy_mining_NARDL_AIC4"' `"TYPE_CHN_intermed
+> iate_ARDL_AIC4"' `"TYPE_CHN_intermediate_NARDL_AIC4"' `"TYPE_CHN_manufacturin
+> g_ARDL_AIC4"' `"TYPE_CHN_manufacturing_NARDL_AIC4"' `"TYPE_IND_agriculture_AR
+> DL_AIC4"' `"TYPE_IND_agriculture_NARDL_AIC4"' `"TYPE_IND_capital_ARDL_AIC4"' 
+> `"TYPE_IND_capital_NARDL_AIC4"' `"TYPE_IND_commodity_ARDL_AIC4"' `"TYPE_IND_c
+> ommodity_NARDL_AIC4"' `"TYPE_IND_consumption_ARDL_AIC4"' `"TYPE_IND_consumpti
+> on_NARDL_AIC4"' `"TYPE_IND_energy_mining_ARDL_AIC4"' `"TYPE_IND_energy_mining
+> _NARDL_AIC4"' `"TYPE_IND_intermediate_ARDL_AIC4"' `"TYPE_IND_intermediate_NAR
+> DL_AIC4"' `"TYPE_IND_manufacturing_ARDL_AIC4"' `"TYPE_IND_manufacturing_NARDL
+> _AIC4"' `"TYPE_JPN_agriculture_ARDL_AIC4"' `"TYPE_JPN_agriculture_NARDL_AIC4"
+> ' `"TYPE_JPN_capital_ARDL_AIC4"' `"TYPE_JPN_capital_NARDL_AIC4"' `"TYPE_JPN_c
+> ommodity_ARDL_AIC4"' `"TYPE_JPN_commodity_NARDL_AIC4"' `"TYPE_JPN_consumption
+> _ARDL_AIC4"' `"TYPE_JPN_consumption_NARDL_AIC4"' `"TYPE_JPN_energy_mining_ARD
+> L_AIC4"' `"TYPE_JPN_energy_mining_NARDL_AIC4"' `"TYPE_JPN_intermediate_ARDL_A
+> IC4"' `"TYPE_JPN_intermediate_NARDL_AIC4"' `"TYPE_JPN_manufacturing_ARDL_AIC4
+> "' `"TYPE_JPN_manufacturing_NARDL_AIC4"' `"TYPE_KOR_agriculture_ARDL_AIC4"' `
+> "TYPE_KOR_agriculture_NARDL_AIC4"' `"TYPE_KOR_capital_ARDL_AIC4"' `"TYPE_KOR_
+> capital_NARDL_AIC4"' `"TYPE_KOR_commodity_ARDL_AIC4"' `"TYPE_KOR_commodity_NA
+> RDL_AIC4"' `"TYPE_KOR_consumption_ARDL_AIC4"' `"TYPE_KOR_consumption_NARDL_AI
+> C4"' `"TYPE_KOR_energy_mining_ARDL_AIC4"' `"TYPE_KOR_energy_mining_NARDL_AIC4
+> "' `"TYPE_KOR_intermediate_ARDL_AIC4"' `"TYPE_KOR_intermediate_NARDL_AIC4"' `
+> "TYPE_KOR_manufacturing_ARDL_AIC4"' `"TYPE_KOR_manufacturing_NARDL_AIC4"' `"T
+> YPE_MYS_agriculture_ARDL_AIC4"' `"TYPE_MYS_agriculture_NARDL_AIC4"' `"TYPE_MY
+> S_capital_ARDL_AIC4"' `"TYPE_MYS_capital_NARDL_AIC4"' `"TYPE_MYS_commodity_AR
+> DL_AIC4"' `"TYPE_MYS_commodity_NARDL_AIC4"' `"TYPE_MYS_consumption_ARDL_AIC4"
+> ' `"TYPE_MYS_consumption_NARDL_AIC4"' `"TYPE_MYS_energy_mining_ARDL_AIC4"' `"
+> TYPE_MYS_energy_mining_NARDL_AIC4"' `"TYPE_MYS_intermediate_ARDL_AIC4"' `"TYP
+> E_MYS_intermediate_NARDL_AIC4"' `"TYPE_MYS_manufacturing_ARDL_AIC4"' `"TYPE_M
+> YS_manufacturing_NARDL_AIC4"' `"TYPE_SGP_agriculture_ARDL_AIC4"' `"TYPE_SGP_a
+> griculture_NARDL_AIC4"' `"TYPE_SGP_capital_ARDL_AIC4"' `"TYPE_SGP_capital_NAR
+> DL_AIC4"' `"TYPE_SGP_commodity_ARDL_AIC4"' `"TYPE_SGP_commodity_NARDL_AIC4"' 
+> `"TYPE_SGP_consumption_ARDL_AIC4"' `"TYPE_SGP_consumption_NARDL_AIC4"' `"TYPE
+> _SGP_energy_mining_ARDL_AIC4"' `"TYPE_SGP_energy_mining_NARDL_AIC4"' `"TYPE_S
+> GP_intermediate_ARDL_AIC4"' `"TYPE_SGP_intermediate_NARDL_AIC4"' `"TYPE_SGP_m
+> anufacturing_ARDL_AIC4"' `"TYPE_SGP_manufacturing_NARDL_AIC4"' `"TYPE_THA_agr
+> iculture_ARDL_AIC4"' `"TYPE_THA_agriculture_NARDL_AIC4"' `"TYPE_THA_capital_A
+> RDL_AIC4"' `"TYPE_THA_capital_NARDL_AIC4"' `"TYPE_THA_commodity_ARDL_AIC4"' `
+> "TYPE_THA_commodity_NARDL_AIC4"' `"TYPE_THA_consumption_ARDL_AIC4"' `"TYPE_TH
+> A_consumption_NARDL_AIC4"' `"TYPE_THA_energy_mining_ARDL_AIC4"' `"TYPE_THA_en
+> ergy_mining_NARDL_AIC4"' `"TYPE_THA_intermediate_ARDL_AIC4"' `"TYPE_THA_inter
+> mediate_NARDL_AIC4"' `"TYPE_THA_manufacturing_ARDL_AIC4"' `"TYPE_THA_manufact
+> uring_NARDL_AIC4"' `"TYPE_USA_agriculture_ARDL_AIC4"' `"TYPE_USA_agriculture_
+> NARDL_AIC4"' `"TYPE_USA_capital_ARDL_AIC4"' `"TYPE_USA_capital_NARDL_AIC4"' `
+> "TYPE_USA_commodity_ARDL_AIC4"' `"TYPE_USA_commodity_NARDL_AIC4"' `"TYPE_USA_
+> consumption_ARDL_AIC4"' `"TYPE_USA_consumption_NARDL_AIC4"' `"TYPE_USA_energy
+> _mining_ARDL_AIC4"' `"TYPE_USA_energy_mining_NARDL_AIC4"' `"TYPE_USA_intermed
+> iate_ARDL_AIC4"' `"TYPE_USA_intermediate_NARDL_AIC4"' `"TYPE_USA_manufacturin
+> g_ARDL_AIC4"' `"TYPE_USA_manufacturing_NARDL_AIC4"' `"TYPE_VNM_agriculture_AR
+> DL_AIC4"' `"TYPE_VNM_agriculture_NARDL_AIC4"' `"TYPE_VNM_capital_ARDL_AIC4"' 
+> `"TYPE_VNM_capital_NARDL_AIC4"' `"TYPE_VNM_commodity_ARDL_AIC4"' `"TYPE_VNM_c
+> ommodity_NARDL_AIC4"' `"TYPE_VNM_consumption_ARDL_AIC4"' `"TYPE_VNM_consumpti
+> on_NARDL_AIC4"' `"TYPE_VNM_energy_mining_ARDL_AIC4"' `"TYPE_VNM_energy_mining
+> _NARDL_AIC4"' `"TYPE_VNM_intermediate_ARDL_AIC4"' `"TYPE_VNM_intermediate_NAR
+> DL_AIC4"' `"TYPE_VNM_manufacturing_ARDL_AIC4"' `"TYPE_VNM_manufacturing_NARDL
+> _AIC4"' `"TYPE_WLD_agriculture_ARDL_AIC4"' `"TYPE_WLD_agriculture_NARDL_AIC4"
+> ' `"TYPE_WLD_capital_ARDL_AIC4"' `"TYPE_WLD_capital_NARDL_AIC4"' `"TYPE_WLD_c
+> ommodity_ARDL_AIC4"' `"TYPE_WLD_commodity_NARDL_AIC4"' `"TYPE_WLD_consumption
+> _ARDL_AIC4"' `"TYPE_WLD_consumption_NARDL_AIC4"' `"TYPE_WLD_energy_mining_ARD
+> L_AIC4"' `"TYPE_WLD_energy_mining_NARDL_AIC4"' `"TYPE_WLD_intermediate_ARDL_A
+> IC4"' `"TYPE_WLD_intermediate_NARDL_AIC4"' `"TYPE_WLD_manufacturing_ARDL_AIC4
+> "' `"TYPE_WLD_manufacturing_NARDL_AIC4"' `"WORLD_ARDL_AIC4"' `"WORLD_NARDL_AI
+> C4"'
+
+. foreach id of local models {
+  2.     import delimited "$OP/output/diagnostics/oskooee/dynamic_multipliers.c
+> sv", clear varnames(1) case(preserve)
+  3.     keep if model_id=="`id'"
+  4.     twoway (rarea lower95_logpoints upper95_logpoints horizon_quarters if 
+> direction=="depreciation", color(navy%15) lwidth(none)) (line effect_logpoint
+> s horizon_quarters if direction=="depreciation", lcolor(navy)) (rarea lower95
+> _logpoints upper95_logpoints horizon_quarters if direction=="appreciation", c
+> olor(orange%15) lwidth(none)) (line effect_logpoints horizon_quarters if dire
+> ction=="appreciation", lcolor(orange)), yline(0) title("`id'") subtitle("Dyna
+> mic response to +/-ln(1.10) q shock") xtitle("Quarter") ytitle("100 x change 
+> in ln(M/X)") legend(order(2 "Depreciation" 4 "Appreciation")) name(dm,replace
+> ) nodraw
+  5.     graph save dm "$OP/output/gph/oskooee/`id'_multipliers.gph", replace
+  6.     import delimited "$OP/output/diagnostics/oskooee/stability_paths.csv",
+>  clear varnames(1) case(preserve)
+  7.     keep if model_id=="`id'"
+  8.     format tq %tq
+  9.     if _N>0 {
+ 10.         twoway (rarea lower upper tq, color(navy%15) lwidth(none)) (line C
+> USUMSQ tq, lcolor(navy)) (line expected tq, lpattern(dash) lcolor(gs8)), titl
+> e("`id': CUSUMSQ") subtitle("Gaussian-reference MC 95% band; 19,999 draws") l
+> egend(order(2 "CUSUMSQ" 3 "Expected path")) name(sq,replace) nodraw
+ 11.         graph save sq "$OP/output/gph/oskooee/`id'_cusumsq.gph", replace
+ 12.     }
+ 13.     use "$OP/output/diagnostics/oskooee/models/`id'_design.dta", clear
+ 14.     format tq %tq
+ 15.     twoway line residual tq, yline(0) title("`id': residuals") name(re,rep
+> lace) nodraw
+ 16.     graph save re "$OP/output/gph/oskooee/`id'_residuals.gph", replace
+ 17.     capture graph drop _all
+ 18. }
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_AUS_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,739 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_CHN_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,762 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,763 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_IND_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,738 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_JPN_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,738 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_KOR_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,725 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_MYS_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,737 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_SGP_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_THA_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,740 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_USA_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_ARDL_AIC4_multipliers.gph 
+> saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_ARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_ARDL_AIC4_cusumsq.gph save
+> d
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_ARDL_AIC4_residuals.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_NARDL_AIC4_multipliers.gp
+    > h not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_NARDL_AIC4_multipliers.gph
+>  saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,734 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_NARDL_AIC4_cusumsq.gph sav
+> ed
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/BIL_VNM_NARDL_AIC4_residuals.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,734 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_AUS_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,739 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,737 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_CHN_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,762 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,760 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,754 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,755 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,763 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,760 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,754 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,767 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,758 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,771 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,762 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,764 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,756 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,759 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_IND_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_JPN_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,737 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,737 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_KOR_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,734 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,725 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_MYS_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,725 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,725 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,726 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_SGP_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,725 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,727 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,738 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,735 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_THA_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,728 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,734 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,740 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,736 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,737 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_USA_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,731 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,729 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,730 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,734 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,732 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,733 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_VNM_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,743 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,746 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_agriculture_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_ARDL_AIC4_multip
+    > liers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_ARDL_AIC4_multipl
+> iers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,745 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_ARDL_AIC4_cusums
+    > q.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_ARDL_AIC4_cusumsq
+> .gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_ARDL_AIC4_residu
+    > als.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_ARDL_AIC4_residua
+> ls.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_NARDL_AIC4_multi
+    > pliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_NARDL_AIC4_multip
+> liers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,748 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_NARDL_AIC4_cusum
+    > sq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_NARDL_AIC4_cusums
+> q.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_NARDL_AIC4_resid
+    > uals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_capital_NARDL_AIC4_residu
+> als.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_ARDL_AIC4_mult
+    > ipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_ARDL_AIC4_multi
+> pliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,745 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_ARDL_AIC4_cusu
+    > msq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_ARDL_AIC4_cusum
+> sq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_ARDL_AIC4_resi
+    > duals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_ARDL_AIC4_resid
+> uals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_NARDL_AIC4_mul
+    > tipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_NARDL_AIC4_mult
+> ipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,751 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_NARDL_AIC4_cus
+    > umsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_NARDL_AIC4_cusu
+> msq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_NARDL_AIC4_res
+    > iduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_commodity_NARDL_AIC4_resi
+> duals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_ARDL_AIC4_mu
+    > ltipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_ARDL_AIC4_mul
+> tipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_ARDL_AIC4_cu
+    > sumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_ARDL_AIC4_cus
+> umsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_ARDL_AIC4_re
+    > siduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_ARDL_AIC4_res
+> iduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_NARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_NARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,748 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_NARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_NARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_NARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_consumption_NARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,748 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,749 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_energy_mining_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_ARDL_AIC4_m
+    > ultipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_ARDL_AIC4_mu
+> ltipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_ARDL_AIC4_c
+    > usumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_ARDL_AIC4_cu
+> sumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_ARDL_AIC4_r
+    > esiduals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_ARDL_AIC4_re
+> siduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_NARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_NARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,749 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_NARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_NARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_NARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_intermediate_NARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_ARDL_AIC4_
+    > multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_ARDL_AIC4_m
+> ultipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,751 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_ARDL_AIC4_
+    > cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_ARDL_AIC4_c
+> usumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_ARDL_AIC4_
+    > residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_ARDL_AIC4_r
+> esiduals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_NARDL_AIC4
+    > _multipliers.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_NARDL_AIC4_
+> multipliers.gph saved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,752 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_NARDL_AIC4
+    > _cusumsq.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_NARDL_AIC4_
+> cusumsq.gph saved
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_NARDL_AIC4
+    > _residuals.gph not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/TYPE_WLD_manufacturing_NARDL_AIC4_
+> residuals.gph saved
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_ARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_ARDL_AIC4_multipliers.gph sa
+> ved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,750 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_ARDL_AIC4_cusumsq.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_ARDL_AIC4_cusumsq.gph saved
+(file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_ARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_ARDL_AIC4_residuals.gph save
+> d
+(encoding automatically selected: ISO-8859-1)
+(7 vars, 25,800 obs)
+(25,750 observations deleted)
+(file
+    F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_NARDL_AIC4_multipliers.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_NARDL_AIC4_multipliers.gph s
+> aved
+(encoding automatically selected: ISO-8859-1)
+(12 vars, 32,798 obs)
+(32,751 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_NARDL_AIC4_cusumsq.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_NARDL_AIC4_cusumsq.gph saved
+(file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_NARDL_AIC4_residuals.gph
+    not found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/WORLD_NARDL_AIC4_residuals.gph sav
+> ed
+
+. do "$OP/script/group_forests.do"
+
+. * Seven overlapping groups; one editable forest per partner and estimator.
+. import delimited "$OP/output/tables/oskooee/Forest_Goods_Data.csv", clear var
+> names(1) case(preserve) encoding(utf8) asdouble
+(11 vars, 154 obs)
+
+. levelsof ISO3, local(partners)
+`"AUS"' `"CHN"' `"IND"' `"JPN"' `"KOR"' `"MYS"' `"SGP"' `"THA"' `"USA"' `"VNM"'
+>  `"WLD"'
+
+. foreach iso of local partners {
+  2.     foreach est in ARDL NARDL {
+  3.         preserve
+  4.         keep if ISO3=="`iso'" & estimator=="`est'"
+  5.         gen byte axis=8-Order
+  6.         label define goods_axis 7 "Non-komoditas (manufaktur)" 6 "Barang k
+> onsumsi" 5 "Komoditas pertanian & pangan" 4 "Bahan baku/penolong" 3 "Barang m
+> odal" 2 "Komoditas (total)" 1 "Komoditas energi & tambang", replace
+  7.         label values axis goods_axis
+  8.         local term "q"
+  9.         if "`est'"=="NARDL" local term "NEG"
+ 10.         twoway (rcap Lo95 Hi95 axis, horizontal lcolor(gs9)) (scatter axis
+>  Estimate if Supported==1 & Clean==1, msymbol(O) mcolor("165 100 78")) (scatt
+> er axis Estimate if Supported==1 & Clean==0, msymbol(O) mcolor("193 117 41"))
+>  (scatter axis Estimate if Supported==0, msymbol(Oh) mcolor(gs7)), xline(0,lc
+> olor(maroon)) ylabel(1(1)7,valuelabel angle(0) labsize(small)) yscale(range(.
+> 5 7.5)) ytitle("") xtitle("Koefisien jangka panjang `term' (CI nominal 95%)",
+> size(small)) title("Efek jangka panjang per kelompok: `iso'") subtitle("`est'
+>  | y = ln(M/X); q naik = apresiasi",size(small)) note("Positif: arah perbaika
+> n neraca saat depresiasi. Kelompok saling tumpang tindih." "Koefisien tanpa d
+> ukungan levels belum layak ditafsirkan sebagai hubungan LR mapan.",size(vsmal
+> l)) legend(order(2 "Levels + diagnostik" 3 "Levels; caveat diagnostik" 4 "Lev
+> els belum didukung") rows(1) size(vsmall)) graphregion(color(white)) plotregi
+> on(color(white)) xsize(12) ysize(7) name(groupforest,replace) nodraw
+ 11.         graph save groupforest "$OP/output/gph/oskooee/forest_`iso'_`est'_
+> goods.gph", replace
+ 12.         * PNG/PDF use the identical coefficient data through the reporting
+>  script;
+.         * batch Stata retains the native editable GPH without requiring a Gra
+> ph window.
+.         graph drop groupforest
+ 13.         restore
+ 14.     }
+ 15. }
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_AUS_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_AUS_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_AUS_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_AUS_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_CHN_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_CHN_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_CHN_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_CHN_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_IND_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_IND_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_IND_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_IND_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_JPN_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_JPN_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_JPN_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_JPN_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_KOR_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_KOR_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_KOR_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_KOR_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_MYS_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_MYS_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_MYS_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_MYS_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_SGP_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_SGP_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_SGP_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_SGP_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_THA_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_THA_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_THA_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_THA_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_USA_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_USA_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_USA_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_USA_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_VNM_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_VNM_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_VNM_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_VNM_NARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_WLD_ARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_WLD_ARDL_goods.gph saved
+(147 observations deleted)
+(file F:/Trade-Balance/Tio/output/gph/oskooee/forest_WLD_NARDL_goods.gph not
+    found)
+file F:/Trade-Balance/Tio/output/gph/oskooee/forest_WLD_NARDL_goods.gph saved
+
+. 
+end of do-file
+
+. display "OSKOOEE_NATIVE_GRAPHS_COMPLETED"
+OSKOOEE_NATIVE_GRAPHS_COMPLETED
+
+. log close
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/oskooee/native_graphs.log
+  log type:  text
+ closed on:  17 Nov 2026, 15:40:08
+-------------------------------------------------------------------------------
+
+. exit, clear
+
+end of do-file
+.     exit
+
+end of do-file

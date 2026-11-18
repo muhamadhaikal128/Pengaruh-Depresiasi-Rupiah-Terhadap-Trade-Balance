@@ -1,0 +1,58 @@
+{
+  "status": "PASS_WITH_DATA_LIMITATIONS",
+  "raw_files_verified": 222,
+  "download_status": "complete",
+  "monthly_periods": 163,
+  "first_month": 201212,
+  "last_month": 202609,
+  "annual_first": 2006,
+  "annual_last": 2025,
+  "monthly_rows": 6383850,
+  "quarterly_long_rows": 2743246,
+  "quarterly_twoflow_rows": 1908343,
+  "annual_rows": 1232708,
+  "world_monthly_value_with_positive_weight_pct": 95.72437757518883,
+  "max_abs_HS6_vs_TOTAL_pct": 6.564279452187362e-07,
+  "HS6_vs_TOTAL_rows_over_0p01pct": 0,
+  "original_panels_unchanged": true,
+  "original_panel_sha256": {
+    "intermediate\\Panel_Country_Month.csv": "47be772f4c32ab3b5ef1df31107326fb7f4797409baa5428de1a9e56422f85aa",
+    "intermediate\\Panel_Country_Quarter.csv": "8ea981e3385379e98988666082239652ebfab79b1b433f58849e5c628c8fde54",
+    "intermediate\\Panel_World_Quarter.csv": "c62a06a48341a7cd23a9e70685dc3dccce0bd372445511e938ebebebf516d099",
+    "intermediate\\HS6_SITC3_Commodity_Crosswalk.csv": "511f828939d3cf86de07c569301f4e48d114379b1dcada3841c009c2e017678c"
+  },
+  "hs_revision_harmonized": false,
+  "native_HS_edition_retained": true,
+  "annual_data_disaggregated": false,
+  "absent_product_months_filled_zero": false,
+  "quarterly_completeness": "Three actual product-month rows; no gaps compressed",
+  "quantity_aggregation": "Only same quantity unit within the same HS edition/product/partner/flow",
+  "classification": "UNCTAD A11 via edition-specific HS6-SITC3 crosswalk; ambiguous classes retained",
+  "macro_source": "Existing audited macro panels; previous limitations remain",
+  "models_reestimated": false,
+  "internal_month_gaps": [
+    "2013-09",
+    "2014-11",
+    "2014-12"
+  ],
+  "delivery_workbook": "output\\tables\\comtrade_hs6\\Comtrade_HS6_Data_Audit.xlsx",
+  "delivery_validation": {
+    "indexed_files_checked": 188,
+    "all_indexed_sha256_match": true,
+    "original_panels_still_unchanged": true,
+    "previous_174_model_results_unchanged": true,
+    "incomplete_aggregate_quarters_not_filled": true,
+    "workbook_sheets": [
+      "Readme",
+      "Definitions",
+      "Weight_quantity",
+      "Monthly_calendar",
+      "HS6_vs_TOTAL",
+      "Annual_vs_Monthly",
+      "Previous_monthly",
+      "Previous_world_annual",
+      "Classifications"
+    ],
+    "known_month_gaps_direct_endpoint_confirmed": true
+  }
+}

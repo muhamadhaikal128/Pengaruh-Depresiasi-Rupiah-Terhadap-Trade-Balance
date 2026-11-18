@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/stata_environment_probe.lo
+> g
+  log type:  text
+ opened on:  17 Nov 2026, 09:14:55
+
+. noisily display "STATA_VERSION=" c(stata_version)
+STATA_VERSION=19.5
+
+. noisily display "STATA_FLAVOR=" c(flavor)
+STATA_FLAVOR=IC
+
+. capture noisily which ardl
+C:\Users\Administrator\ado\plus\a\ardl.ado
+*! version 1.0.6  06feb2023  sk dcs
+
+. capture noisily which nardl
+command nardl not found as either built-in or ado-file
+
+. capture noisily which estat ectest
+invalid 'ectest' 
+
+. capture noisily which cusum6
+command cusum6 not found as either built-in or ado-file
+
+. capture noisily which estat sbcusum
+invalid 'sbcusum' 
+
+. capture noisily sysdir
+   STATA:  C:\Program Files\StataNow19\
+    BASE:  C:\Program Files\StataNow19\ado\base\
+    SITE:  C:\Program Files\StataNow19\ado\site\
+    PLUS:  C:\Users\Administrator\ado\plus\
+PERSONAL:  C:\Users\Administrator\ado\personal\
+OLDPLACE:  c:\ado\
+
+. log close
+      name:  <unnamed>
+       log:  F:/Trade-Balance/Tio/output/diagnostics/stata_environment_probe.lo
+> g
+  log type:  text
+ closed on:  17 Nov 2026, 09:14:55
+-------------------------------------------------------------------------------

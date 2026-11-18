@@ -1,0 +1,30 @@
+\section{Apa yang ingin diketahui penelitian ini?}\label{sec:intro}
+\subsection{Mengapa rupiah melemah belum tentu memperbaiki perdagangan}
+Penjelasan yang sering kita dengar adalah bahwa rupiah yang melemah membuat barang Indonesia lebih murah bagi pembeli asing. Dari sini muncul dugaan bahwa ekspor akan naik dan trade balance membaik. Dugaan itu masuk akal sebagai titik awal, tetapi respons perdagangan juga dipengaruhi harga, permintaan, kemampuan produksi, dan kontrak yang sudah berjalan.
+
+Misalnya, harga suatu komoditas dalam dolar dapat mengikuti pasar internasional. Ketika rupiah melemah, harga yang dibayar pembeli asing belum tentu langsung berubah. Volume yang bisa dijual juga belum tentu segera bertambah. Perubahan kurs dan perubahan nilai ekspor karena itu tidak harus berjalan satu banding satu.
+
+Komoditas memang mengambil bagian besar dalam data penelitian ini. Pada 2025, komoditas yang berhasil dipetakan secara konsisten mencakup \CommodityShare\% nilai ekspor Indonesia, sedangkan manufaktur nonkomoditas \ManufacturingShare\%. Namun pangsa tersebut baru menjelaskan struktur ekspor. Untuk mengetahui respons terhadap kurs, kita masih perlu melihat hasil model dan confidence interval-nya.
+
+\subsection{Apa saja yang dibandingkan?}
+Analisis dibagi menjadi tiga cakupan. Pertama, total ekspor Indonesia ke semua negara dan total impor Indonesia dari semua negara. Kedua, perdagangan Indonesia dengan masing-masing sepuluh mitra. Ketiga, perdagangan yang sama dibagi menurut tujuh kelompok barang berbasis HS-6.
+
+Sepuluh mitranya adalah Australia, Tiongkok, India, Jepang, Korea Selatan, Malaysia, Singapura, Thailand, Amerika Serikat, dan Vietnam. Setiap kelompok barang juga diamati untuk total seluruh mitra dan untuk masing-masing negara tersebut. Dengan demikian, ada 77 seri kelompok barang, sepuluh seri bilateral, dan satu seri total.
+
+Setiap seri dijalankan menggunakan ARDL dan NARDL. Jumlahnya menjadi 176 model utama. Ini bukan berarti kita memiliki 176 bukti yang saling independen. Beberapa model memakai bagian perdagangan yang sama karena kelompok barangnya tumpang tindih.
+
+Data produknya sudah HS-6, tetapi regresi barang saat ini dilakukan untuk tujuh kelompok hasil klasifikasi. Penelitian ini belum menjalankan regresi satu per satu untuk setiap kode HS-6. Perbedaan ini penting agar kita tidak menganggap hasil kelompok berlaku sama untuk semua produk di dalamnya.
+
+\subsection{Bagaimana penelitian ini mengikuti paper acuan?}
+Bahmani-Oskooee dan Fariditavana \cite{bahmani} membandingkan ARDL dan NARDL untuk mempelajari J-curve dalam perdagangan AS dengan enam mitra. Gagasan utamanya adalah bahwa apresiasi dan depresiasi mungkin mempunyai respons yang berbeda. Penelitian Indonesia ini mengikuti gagasan tersebut, lalu menambahkan perbandingan kelompok barang.
+
+ARDL memberikan satu hubungan kurs untuk kedua arah perubahan. NARDL memisahkan perubahan ketika kurs menguat dan ketika melemah. Dasar bounds test berasal dari Pesaran, Shin, dan Smith \cite{pss}; pengembangan NARDL dan dynamic multipliers dibahas oleh Shin, Yu, dan Greenwood-Nimmo \cite{shin}.
+
+Estimasi memakai implementasi Stata yang dijelaskan Kripfganz dan Schneider \cite{ks}. Ada beberapa penyesuaian, terutama jumlah lag, panjang sampel, dan pemeriksaan tambahan. Karena itu, penelitian ini adalah adaptasi metode paper, bukan salinan persis semua pilihannya.
+
+\subsection{Batas pertanyaan yang bisa dijawab}
+Model memakai rasio impor terhadap ekspor. Rasio itu bisa membaik karena ekspor naik, impor turun, atau kombinasi keduanya. Jadi, hasilnya belum cukup untuk menyatakan bahwa ekspor naik atau turun secara khusus.
+
+Penelitian juga belum memisahkan nilai perdagangan menjadi harga dan volume. Kita belum bisa memastikan apakah suatu hasil berasal dari perubahan harga, kuantitas, atau komposisi barang. Pembahasan tentang harga global adalah kemungkinan penjelasan ekonomi yang masih perlu diuji lebih lanjut.
+
+Kanal ketergantungan ekspor pada input impor tidak dimasukkan dalam run ini. Kelompok bahan baku/penolong tetap digunakan sebagai jenis barang, tetapi bukan ukuran seberapa besar bahan impor dipakai oleh eksportir.

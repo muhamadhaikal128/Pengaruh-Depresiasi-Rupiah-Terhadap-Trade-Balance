@@ -1,0 +1,471 @@
+Sheet,Date,Series,Ticker,Primary_Value,Duplicate_Value,Difference_Type
+Commodities,2023-09-15,CPO_Active,KOA Comdty,#N/A N/A,3832,missing_or_error_difference
+Commodities,2023-09-18,CPO_Active,KOA Comdty,#N/A N/A,3759,missing_or_error_difference
+Commodities,2023-09-19,CPO_Active,KOA Comdty,#N/A N/A,3755,missing_or_error_difference
+Commodities,2023-09-20,CPO_Active,KOA Comdty,#N/A N/A,3717,missing_or_error_difference
+Commodities,2023-09-21,CPO_Active,KOA Comdty,#N/A N/A,3660,missing_or_error_difference
+Commodities,2023-09-22,CPO_Active,KOA Comdty,#N/A N/A,3663,missing_or_error_difference
+Commodities,2023-09-25,CPO_Active,KOA Comdty,#N/A N/A,3690,missing_or_error_difference
+Commodities,2023-09-26,CPO_Active,KOA Comdty,#N/A N/A,3679,missing_or_error_difference
+Commodities,2023-09-27,CPO_Active,KOA Comdty,#N/A N/A,3746,missing_or_error_difference
+Commodities,2023-09-28,CPO_Active,KOA Comdty,#N/A N/A,3746,missing_or_error_difference
+Commodities,2023-09-29,CPO_Active,KOA Comdty,#N/A N/A,3739,missing_or_error_difference
+Commodities,2023-10-02,CPO_Active,KOA Comdty,#N/A N/A,3709,missing_or_error_difference
+Commodities,2023-10-03,CPO_Active,KOA Comdty,#N/A N/A,3712,missing_or_error_difference
+Commodities,2023-10-04,CPO_Active,KOA Comdty,#N/A N/A,3713,missing_or_error_difference
+Commodities,2023-10-05,CPO_Active,KOA Comdty,#N/A N/A,3647,missing_or_error_difference
+Commodities,2023-10-06,CPO_Active,KOA Comdty,#N/A N/A,3561,missing_or_error_difference
+Commodities,2023-10-09,CPO_Active,KOA Comdty,#N/A N/A,3590,missing_or_error_difference
+Commodities,2023-10-10,CPO_Active,KOA Comdty,#N/A N/A,3560,missing_or_error_difference
+Commodities,2023-10-11,CPO_Active,KOA Comdty,#N/A N/A,3526,missing_or_error_difference
+Commodities,2023-10-12,CPO_Active,KOA Comdty,#N/A N/A,3608,missing_or_error_difference
+Commodities,2023-10-13,CPO_Active,KOA Comdty,#N/A N/A,3702,missing_or_error_difference
+Commodities,2023-10-16,CPO_Active,KOA Comdty,#N/A N/A,3716,missing_or_error_difference
+Commodities,2023-10-17,CPO_Active,KOA Comdty,#N/A N/A,3721,missing_or_error_difference
+Commodities,2023-10-18,CPO_Active,KOA Comdty,#N/A N/A,3748,missing_or_error_difference
+Commodities,2023-10-19,CPO_Active,KOA Comdty,#N/A N/A,3701,missing_or_error_difference
+Commodities,2023-10-20,CPO_Active,KOA Comdty,#N/A N/A,3725,missing_or_error_difference
+Commodities,2023-10-23,CPO_Active,KOA Comdty,#N/A N/A,3708,missing_or_error_difference
+Commodities,2023-10-24,CPO_Active,KOA Comdty,#N/A N/A,3613,missing_or_error_difference
+Commodities,2023-10-25,CPO_Active,KOA Comdty,#N/A N/A,3637,missing_or_error_difference
+Commodities,2023-10-26,CPO_Active,KOA Comdty,#N/A N/A,3702,missing_or_error_difference
+Commodities,2023-10-27,CPO_Active,KOA Comdty,#N/A N/A,3723,missing_or_error_difference
+Commodities,2023-10-30,CPO_Active,KOA Comdty,#N/A N/A,3699,missing_or_error_difference
+Commodities,2023-10-31,CPO_Active,KOA Comdty,#N/A N/A,3653,missing_or_error_difference
+Commodities,2023-11-01,CPO_Active,KOA Comdty,#N/A N/A,3664,missing_or_error_difference
+Commodities,2023-11-02,CPO_Active,KOA Comdty,#N/A N/A,3728,missing_or_error_difference
+Commodities,2023-11-03,CPO_Active,KOA Comdty,#N/A N/A,3706,missing_or_error_difference
+Commodities,2023-11-06,CPO_Active,KOA Comdty,#N/A N/A,3709,missing_or_error_difference
+Commodities,2023-11-07,CPO_Active,KOA Comdty,#N/A N/A,3682,missing_or_error_difference
+Commodities,2023-11-08,CPO_Active,KOA Comdty,#N/A N/A,3730,missing_or_error_difference
+Commodities,2023-11-09,CPO_Active,KOA Comdty,#N/A N/A,3704,missing_or_error_difference
+Commodities,2023-11-10,CPO_Active,KOA Comdty,#N/A N/A,3760,missing_or_error_difference
+Commodities,2023-11-13,CPO_Active,KOA Comdty,#N/A N/A,3760,missing_or_error_difference
+Commodities,2023-11-14,CPO_Active,KOA Comdty,#N/A N/A,3840,missing_or_error_difference
+Commodities,2023-11-15,CPO_Active,KOA Comdty,#N/A N/A,3887,missing_or_error_difference
+Commodities,2023-11-16,CPO_Active,KOA Comdty,#N/A N/A,3864,missing_or_error_difference
+Commodities,2023-11-17,CPO_Active,KOA Comdty,#N/A N/A,3810,missing_or_error_difference
+Commodities,2023-11-20,CPO_Active,KOA Comdty,#N/A N/A,3828,missing_or_error_difference
+Commodities,2023-11-21,CPO_Active,KOA Comdty,#N/A N/A,3833,missing_or_error_difference
+Commodities,2023-11-22,CPO_Active,KOA Comdty,#N/A N/A,3850,missing_or_error_difference
+Commodities,2023-11-23,CPO_Active,KOA Comdty,#N/A N/A,3815,missing_or_error_difference
+Commodities,2023-11-24,CPO_Active,KOA Comdty,#N/A N/A,3765,missing_or_error_difference
+Commodities,2023-11-27,CPO_Active,KOA Comdty,#N/A N/A,3770,missing_or_error_difference
+Commodities,2023-11-28,CPO_Active,KOA Comdty,#N/A N/A,3790,missing_or_error_difference
+Commodities,2023-11-29,CPO_Active,KOA Comdty,#N/A N/A,3774,missing_or_error_difference
+Commodities,2023-11-30,CPO_Active,KOA Comdty,#N/A N/A,3805,missing_or_error_difference
+Commodities,2023-12-01,CPO_Active,KOA Comdty,#N/A N/A,3780,missing_or_error_difference
+Commodities,2023-12-04,CPO_Active,KOA Comdty,#N/A N/A,3733,missing_or_error_difference
+Commodities,2023-12-05,CPO_Active,KOA Comdty,#N/A N/A,3702,missing_or_error_difference
+Commodities,2023-12-06,CPO_Active,KOA Comdty,#N/A N/A,3662,missing_or_error_difference
+Commodities,2023-12-07,CPO_Active,KOA Comdty,#N/A N/A,3633,missing_or_error_difference
+Commodities,2023-12-08,CPO_Active,KOA Comdty,#N/A N/A,3666,missing_or_error_difference
+Commodities,2023-12-11,CPO_Active,KOA Comdty,#N/A N/A,3653,missing_or_error_difference
+Commodities,2023-12-12,CPO_Active,KOA Comdty,#N/A N/A,3634,missing_or_error_difference
+Commodities,2023-12-13,CPO_Active,KOA Comdty,#N/A N/A,3595,missing_or_error_difference
+Commodities,2023-12-14,CPO_Active,KOA Comdty,#N/A N/A,3612,missing_or_error_difference
+Commodities,2023-12-15,CPO_Active,KOA Comdty,#N/A N/A,3612,missing_or_error_difference
+Commodities,2023-12-18,CPO_Active,KOA Comdty,#N/A N/A,3632,missing_or_error_difference
+Commodities,2023-12-19,CPO_Active,KOA Comdty,#N/A N/A,3621,missing_or_error_difference
+Commodities,2023-12-20,CPO_Active,KOA Comdty,#N/A N/A,3634,missing_or_error_difference
+Commodities,2023-12-21,CPO_Active,KOA Comdty,#N/A N/A,3640,missing_or_error_difference
+Commodities,2023-12-22,CPO_Active,KOA Comdty,#N/A N/A,3636,missing_or_error_difference
+Commodities,2023-12-25,CPO_Active,KOA Comdty,#N/A N/A,3636,missing_or_error_difference
+Commodities,2023-12-26,CPO_Active,KOA Comdty,#N/A N/A,3660,missing_or_error_difference
+Commodities,2023-12-27,CPO_Active,KOA Comdty,#N/A N/A,3665,missing_or_error_difference
+Commodities,2023-12-28,CPO_Active,KOA Comdty,#N/A N/A,3644,missing_or_error_difference
+Commodities,2023-12-29,CPO_Active,KOA Comdty,#N/A N/A,3631,missing_or_error_difference
+Commodities,2024-01-01,CPO_Active,KOA Comdty,#N/A N/A,3631,missing_or_error_difference
+Commodities,2024-01-02,CPO_Active,KOA Comdty,#N/A N/A,3620,missing_or_error_difference
+Commodities,2024-01-03,CPO_Active,KOA Comdty,#N/A N/A,3594,missing_or_error_difference
+Commodities,2024-01-04,CPO_Active,KOA Comdty,#N/A N/A,3610,missing_or_error_difference
+Commodities,2024-01-05,CPO_Active,KOA Comdty,#N/A N/A,3615,missing_or_error_difference
+Commodities,2024-01-08,CPO_Active,KOA Comdty,#N/A N/A,3630,missing_or_error_difference
+Commodities,2024-01-09,CPO_Active,KOA Comdty,#N/A N/A,3655,missing_or_error_difference
+Commodities,2024-01-10,CPO_Active,KOA Comdty,#N/A N/A,3649,missing_or_error_difference
+Commodities,2024-01-11,CPO_Active,KOA Comdty,#N/A N/A,3647,missing_or_error_difference
+Commodities,2024-01-12,CPO_Active,KOA Comdty,#N/A N/A,3675,missing_or_error_difference
+Commodities,2025-05-29,CPO_Active,KOA Comdty,3898,3896,numeric_conflict
+Commodities,2025-05-30,CPO_Active,KOA Comdty,3850,3848,numeric_conflict
+Commodities,2025-06-02,CPO_Active,KOA Comdty,3850,3848,numeric_conflict
+Commodities,2025-06-03,CPO_Active,KOA Comdty,3912,3898,numeric_conflict
+Commodities,2025-06-04,CPO_Active,KOA Comdty,3931,3917,numeric_conflict
+Commodities,2025-06-05,CPO_Active,KOA Comdty,3895,3881,numeric_conflict
+Commodities,2025-06-06,CPO_Active,KOA Comdty,3906,3892,numeric_conflict
+Commodities,2025-06-09,CPO_Active,KOA Comdty,3912,3898,numeric_conflict
+Commodities,2025-06-10,CPO_Active,KOA Comdty,3867,3853,numeric_conflict
+Commodities,2025-06-11,CPO_Active,KOA Comdty,3857,3843,numeric_conflict
+Commodities,2025-06-12,CPO_Active,KOA Comdty,3845,3831,numeric_conflict
+Commodities,2025-06-13,CPO_Active,KOA Comdty,3905,3891,numeric_conflict
+Commodities,2025-06-16,CPO_Active,KOA Comdty,4048,4034,numeric_conflict
+Commodities,2025-06-17,CPO_Active,KOA Comdty,4034,4020,numeric_conflict
+Commodities,2025-06-18,CPO_Active,KOA Comdty,4075,4061,numeric_conflict
+Commodities,2025-06-19,CPO_Active,KOA Comdty,4091,4077,numeric_conflict
+Commodities,2025-06-20,CPO_Active,KOA Comdty,4115,4102,numeric_conflict
+Commodities,2025-06-23,CPO_Active,KOA Comdty,4123,4110,numeric_conflict
+Commodities,2025-06-24,CPO_Active,KOA Comdty,3986,3973,numeric_conflict
+Commodities,2025-06-25,CPO_Active,KOA Comdty,3978,3967,numeric_conflict
+Commodities,2025-06-26,CPO_Active,KOA Comdty,4003,3992,numeric_conflict
+Commodities,2025-06-27,CPO_Active,KOA Comdty,4003,3992,numeric_conflict
+Commodities,2025-06-30,CPO_Active,KOA Comdty,3980,3969,numeric_conflict
+Commodities,2025-07-01,CPO_Active,KOA Comdty,3969,3958,numeric_conflict
+Commodities,2025-07-02,CPO_Active,KOA Comdty,4038,4034,numeric_conflict
+Commodities,2025-07-03,CPO_Active,KOA Comdty,4020,4016,numeric_conflict
+Commodities,2025-07-04,CPO_Active,KOA Comdty,4022,4018,numeric_conflict
+Commodities,2025-07-07,CPO_Active,KOA Comdty,4021,4017,numeric_conflict
+Commodities,2025-07-08,CPO_Active,KOA Comdty,4039,4037,numeric_conflict
+Commodities,2025-07-09,CPO_Active,KOA Comdty,4029,4027,numeric_conflict
+Commodities,2025-07-10,CPO_Active,KOA Comdty,4030,4028,numeric_conflict
+Commodities,2025-08-01,CPO_Active,KOA Comdty,4190,4196,numeric_conflict
+Commodities,2025-08-04,CPO_Active,KOA Comdty,4130,4136,numeric_conflict
+Commodities,2025-08-05,CPO_Active,KOA Comdty,4199,4205,numeric_conflict
+Commodities,2025-08-06,CPO_Active,KOA Comdty,4181,4187,numeric_conflict
+Commodities,2025-08-07,CPO_Active,KOA Comdty,4171,4177,numeric_conflict
+Commodities,2025-08-08,CPO_Active,KOA Comdty,4159,4165,numeric_conflict
+Commodities,2025-08-11,CPO_Active,KOA Comdty,4260,4266,numeric_conflict
+Commodities,2025-08-12,CPO_Active,KOA Comdty,4269,4275,numeric_conflict
+Commodities,2025-08-13,CPO_Active,KOA Comdty,4281,4287,numeric_conflict
+Commodities,2025-08-14,CPO_Active,KOA Comdty,4250,4256,numeric_conflict
+Commodities,2025-08-15,CPO_Active,KOA Comdty,4294,4300,numeric_conflict
+Commodities,2025-08-18,CPO_Active,KOA Comdty,4326,4333,numeric_conflict
+Commodities,2025-08-19,CPO_Active,KOA Comdty,4290,4297,numeric_conflict
+Commodities,2025-08-20,CPO_Active,KOA Comdty,4277,4284,numeric_conflict
+Commodities,2025-08-21,CPO_Active,KOA Comdty,4263,4270,numeric_conflict
+Commodities,2025-08-22,CPO_Active,KOA Comdty,4321,4328,numeric_conflict
+Commodities,2025-08-25,CPO_Active,KOA Comdty,4297,4304,numeric_conflict
+Commodities,2025-08-26,CPO_Active,KOA Comdty,4279,4286,numeric_conflict
+Commodities,2025-08-27,CPO_Active,KOA Comdty,4306,4313,numeric_conflict
+Commodities,2025-08-28,CPO_Active,KOA Comdty,4271,4278,numeric_conflict
+Commodities,2025-08-29,CPO_Active,KOA Comdty,4212,4219,numeric_conflict
+Commodities,2025-09-01,CPO_Active,KOA Comdty,4212,4219,numeric_conflict
+Commodities,2025-09-02,CPO_Active,KOA Comdty,4271,4280,numeric_conflict
+Commodities,2025-09-03,CPO_Active,KOA Comdty,4236,4245,numeric_conflict
+Commodities,2025-09-04,CPO_Active,KOA Comdty,4235,4248,numeric_conflict
+Commodities,2025-09-05,CPO_Active,KOA Comdty,4235,4248,numeric_conflict
+Commodities,2025-09-08,CPO_Active,KOA Comdty,4269,4289,numeric_conflict
+Commodities,2025-09-09,CPO_Active,KOA Comdty,4262,4282,numeric_conflict
+Commodities,2025-09-10,CPO_Active,KOA Comdty,4200,4220,numeric_conflict
+Commodities,2025-09-11,CPO_Active,KOA Comdty,4209,4229,numeric_conflict
+Commodities,2025-09-12,CPO_Active,KOA Comdty,4193,4213,numeric_conflict
+Commodities,2025-09-15,CPO_Active,KOA Comdty,4193,4213,numeric_conflict
+Commodities,2025-09-16,CPO_Active,KOA Comdty,4193,4213,numeric_conflict
+Commodities,2025-09-17,CPO_Active,KOA Comdty,4198,4209,numeric_conflict
+Commodities,2025-09-18,CPO_Active,KOA Comdty,4178,4189,numeric_conflict
+Commodities,2025-09-19,CPO_Active,KOA Comdty,4167,4172,numeric_conflict
+Commodities,2025-09-22,CPO_Active,KOA Comdty,4201,4206,numeric_conflict
+Commodities,2025-09-23,CPO_Active,KOA Comdty,4124,4129,numeric_conflict
+Commodities,2025-09-24,CPO_Active,KOA Comdty,4152,4159,numeric_conflict
+Commodities,2025-09-25,CPO_Active,KOA Comdty,4195,4202,numeric_conflict
+Commodities,2025-09-26,CPO_Active,KOA Comdty,4160,4166,numeric_conflict
+Commodities,2025-09-29,CPO_Active,KOA Comdty,4160,4161,numeric_conflict
+Commodities,2025-09-30,CPO_Active,KOA Comdty,4146,4147,numeric_conflict
+Commodities,2025-10-01,CPO_Active,KOA Comdty,4169,4170,numeric_conflict
+Commodities,2025-10-02,CPO_Active,KOA Comdty,4222,4220,numeric_conflict
+Commodities,2025-10-03,CPO_Active,KOA Comdty,4200,4190,numeric_conflict
+Commodities,2025-10-06,CPO_Active,KOA Comdty,4204,4194,numeric_conflict
+Commodities,2025-10-07,CPO_Active,KOA Comdty,4230,4229,numeric_conflict
+Commodities,2025-10-08,CPO_Active,KOA Comdty,4263,4262,numeric_conflict
+Commodities,2025-10-09,CPO_Active,KOA Comdty,4317,4316,numeric_conflict
+Commodities,2025-10-10,CPO_Active,KOA Comdty,4313,4312,numeric_conflict
+Commodities,2025-10-13,CPO_Active,KOA Comdty,4301,4300,numeric_conflict
+Commodities,2025-10-14,CPO_Active,KOA Comdty,4289,4288,numeric_conflict
+Commodities,2025-10-15,CPO_Active,KOA Comdty,4300,4299,numeric_conflict
+Commodities,2025-10-16,CPO_Active,KOA Comdty,4315,4319,numeric_conflict
+Commodities,2025-10-17,CPO_Active,KOA Comdty,4337,4341,numeric_conflict
+Commodities,2025-10-20,CPO_Active,KOA Comdty,4337,4341,numeric_conflict
+Commodities,2025-10-21,CPO_Active,KOA Comdty,4324,4328,numeric_conflict
+Commodities,2025-10-22,CPO_Active,KOA Comdty,4314,4318,numeric_conflict
+Commodities,2025-10-23,CPO_Active,KOA Comdty,4325,4329,numeric_conflict
+Commodities,2025-10-24,CPO_Active,KOA Comdty,4288,4292,numeric_conflict
+Commodities,2025-10-27,CPO_Active,KOA Comdty,4243,4247,numeric_conflict
+Commodities,2025-10-28,CPO_Active,KOA Comdty,4210,4205,numeric_conflict
+Commodities,2025-10-29,CPO_Active,KOA Comdty,4153,4148,numeric_conflict
+Commodities,2025-10-30,CPO_Active,KOA Comdty,4162,4157,numeric_conflict
+Commodities,2025-10-31,CPO_Active,KOA Comdty,4134,4115,numeric_conflict
+Commodities,2025-11-03,CPO_Active,KOA Comdty,4112,4092,numeric_conflict
+Commodities,2025-11-04,CPO_Active,KOA Comdty,4148,4128,numeric_conflict
+Commodities,2025-11-05,CPO_Active,KOA Comdty,4134,4113,numeric_conflict
+Commodities,2025-11-06,CPO_Active,KOA Comdty,4159,4135,numeric_conflict
+Commodities,2025-11-07,CPO_Active,KOA Comdty,4122,4098,numeric_conflict
+Commodities,2025-11-10,CPO_Active,KOA Comdty,4110,4086,numeric_conflict
+Commodities,2025-11-11,CPO_Active,KOA Comdty,4121,4103,numeric_conflict
+Commodities,2025-11-12,CPO_Active,KOA Comdty,4103,4085,numeric_conflict
+Commodities,2025-11-13,CPO_Active,KOA Comdty,4109,4091,numeric_conflict
+Commodities,2025-11-14,CPO_Active,KOA Comdty,4097,4079,numeric_conflict
+Commodities,2025-11-17,CPO_Active,KOA Comdty,4097,4079,numeric_conflict
+Commodities,2025-11-18,CPO_Active,KOA Comdty,4142,4131,numeric_conflict
+Commodities,2025-11-19,CPO_Active,KOA Comdty,4176,4165,numeric_conflict
+Commodities,2025-11-20,CPO_Active,KOA Comdty,4121,4100,numeric_conflict
+Commodities,2025-11-21,CPO_Active,KOA Comdty,4055,4021,numeric_conflict
+Commodities,2025-11-24,CPO_Active,KOA Comdty,4038,4004,numeric_conflict
+Commodities,2025-11-25,CPO_Active,KOA Comdty,4001,3967,numeric_conflict
+Commodities,2025-11-26,CPO_Active,KOA Comdty,4031,3997,numeric_conflict
+Commodities,2025-11-27,CPO_Active,KOA Comdty,4091,4057,numeric_conflict
+Commodities,2025-11-28,Brent,CO1 Comdty,63.34,63.2,numeric_conflict
+Commodities,2025-11-28,CPO_Active,KOA Comdty,4091,4061,numeric_conflict
+Commodities,2025-12-01,CPO_Active,KOA Comdty,4084,4050,numeric_conflict
+Commodities,2025-12-02,CPO_Active,KOA Comdty,4142,4108,numeric_conflict
+Commodities,2025-12-03,CPO_Active,KOA Comdty,4140,4106,numeric_conflict
+Commodities,2025-12-04,CPO_Active,KOA Comdty,4091,4058,numeric_conflict
+Commodities,2025-12-05,CPO_Active,KOA Comdty,4138,4105,numeric_conflict
+Commodities,2025-12-08,CPO_Active,KOA Comdty,4087,4054,numeric_conflict
+Commodities,2025-12-09,CPO_Active,KOA Comdty,4092,4061,numeric_conflict
+Commodities,2025-12-10,CPO_Active,KOA Comdty,4069,4038,numeric_conflict
+Commodities,2025-12-11,CPO_Active,KOA Comdty,4062,4031,numeric_conflict
+Commodities,2025-12-12,CPO_Active,KOA Comdty,4012,3984,numeric_conflict
+Commodities,2025-12-15,CPO_Active,KOA Comdty,3988,3960,numeric_conflict
+Commodities,2025-12-16,CPO_Active,KOA Comdty,3967,3933,numeric_conflict
+Commodities,2025-12-17,CPO_Active,KOA Comdty,3979,3941,numeric_conflict
+Commodities,2025-12-18,CPO_Active,KOA Comdty,3980,3953,numeric_conflict
+Commodities,2025-12-19,CPO_Active,KOA Comdty,3919,3897,numeric_conflict
+Commodities,2025-12-22,CPO_Active,KOA Comdty,3997,3972,numeric_conflict
+Commodities,2025-12-23,CPO_Active,KOA Comdty,4012,3987,numeric_conflict
+Commodities,2025-12-24,CPO_Active,KOA Comdty,4003,3978,numeric_conflict
+Commodities,2025-12-25,CPO_Active,KOA Comdty,4003,3978,numeric_conflict
+Commodities,2025-12-26,CPO_Active,KOA Comdty,4022,4012,numeric_conflict
+Commodities,2025-12-29,CPO_Active,KOA Comdty,3997,3987,numeric_conflict
+Commodities,2025-12-30,CPO_Active,KOA Comdty,4027,4017,numeric_conflict
+Commodities,2025-12-31,CPO_Active,KOA Comdty,4020,4006,numeric_conflict
+Commodities,2026-01-01,CPO_Active,KOA Comdty,4020,4006,numeric_conflict
+Commodities,2026-01-02,CPO_Active,KOA Comdty,3975,3961,numeric_conflict
+Commodities,2026-01-05,CPO_Active,KOA Comdty,4010,3996,numeric_conflict
+Commodities,2026-01-06,CPO_Active,KOA Comdty,3970,3960,numeric_conflict
+Commodities,2026-01-07,CPO_Active,KOA Comdty,4008,4000,numeric_conflict
+Commodities,2026-01-08,CPO_Active,KOA Comdty,4025,4017,numeric_conflict
+Commodities,2026-01-09,CPO_Active,KOA Comdty,4028,4017,numeric_conflict
+Commodities,2026-01-12,CPO_Active,KOA Comdty,4088,4080,numeric_conflict
+Commodities,2026-01-13,CPO_Active,KOA Comdty,4060,4053,numeric_conflict
+Commodities,2026-01-15,CPO_Active,KOA Comdty,3967,3977,numeric_conflict
+Commodities,2026-01-16,CPO_Active,KOA Comdty,4059,4064,numeric_conflict
+Commodities,2026-01-19,CPO_Active,KOA Comdty,4057,4059,numeric_conflict
+Commodities,2026-01-20,CPO_Active,KOA Comdty,4076,4077,numeric_conflict
+Commodities,2026-01-22,CPO_Active,KOA Comdty,4154,4160,numeric_conflict
+Commodities,2026-01-23,CPO_Active,KOA Comdty,4121,4130,numeric_conflict
+Commodities,2026-01-26,CPO_Active,KOA Comdty,4121,4144,numeric_conflict
+Commodities,2026-01-27,CPO_Active,KOA Comdty,4147,4174,numeric_conflict
+Commodities,2026-01-28,CPO_Active,KOA Comdty,4138,4184,numeric_conflict
+Commodities,2026-01-29,CPO_Active,KOA Comdty,4166,4226,numeric_conflict
+Commodities,2026-01-30,CPO_Active,KOA Comdty,4107,4160,numeric_conflict
+Commodities,2026-02-02,CPO_Active,KOA Comdty,4107,4160,numeric_conflict
+Commodities,2026-02-03,CPO_Active,KOA Comdty,4119,4157,numeric_conflict
+Commodities,2026-02-04,CPO_Active,KOA Comdty,4147,4177,numeric_conflict
+Commodities,2026-02-05,CPO_Active,KOA Comdty,4149,4177,numeric_conflict
+Commodities,2026-02-06,CPO_Active,KOA Comdty,4102,4130,numeric_conflict
+Commodities,2026-02-09,CPO_Active,KOA Comdty,4105,4133,numeric_conflict
+Commodities,2026-02-10,CPO_Active,KOA Comdty,4040,4073,numeric_conflict
+Commodities,2026-02-11,CPO_Active,KOA Comdty,4036,4060,numeric_conflict
+Commodities,2026-02-12,CPO_Active,KOA Comdty,4012,4020,numeric_conflict
+Commodities,2026-02-13,CPO_Active,KOA Comdty,4014,4025,numeric_conflict
+Commodities,2026-02-16,CPO_Active,KOA Comdty,3993,4007,numeric_conflict
+Commodities,2026-02-17,CPO_Active,KOA Comdty,3993,4007,numeric_conflict
+Commodities,2026-02-18,CPO_Active,KOA Comdty,3993,4007,numeric_conflict
+Commodities,2026-02-19,CPO_Active,KOA Comdty,4096,4106,numeric_conflict
+Commodities,2026-02-20,CPO_Active,KOA Comdty,4108,4101,numeric_conflict
+Commodities,2026-02-23,CPO_Active,KOA Comdty,4075,4071,numeric_conflict
+Commodities,2026-02-24,CPO_Active,KOA Comdty,4048,4044,numeric_conflict
+Commodities,2026-02-25,CPO_Active,KOA Comdty,4038,4037,numeric_conflict
+Commodities,2026-02-26,CPO_Active,KOA Comdty,4001,3994,numeric_conflict
+Commodities,2026-02-27,CPO_Active,KOA Comdty,4038,4034,numeric_conflict
+Commodities,2026-03-02,CPO_Active,KOA Comdty,4147,4137,numeric_conflict
+Commodities,2026-03-03,CPO_Active,KOA Comdty,4179,4178,numeric_conflict
+Commodities,2026-03-04,CPO_Active,KOA Comdty,4174,4173,numeric_conflict
+Commodities,2026-03-05,CPO_Active,KOA Comdty,4194,4200,numeric_conflict
+Commodities,2026-03-06,CPO_Active,KOA Comdty,4300,4331,numeric_conflict
+Commodities,2026-03-09,CPO_Active,KOA Comdty,4386,4470,numeric_conflict
+Commodities,2026-03-10,CPO_Active,KOA Comdty,4295,4360,numeric_conflict
+Commodities,2026-03-11,CPO_Active,KOA Comdty,4332,4412,numeric_conflict
+Commodities,2026-03-12,CPO_Active,KOA Comdty,4379,4451,numeric_conflict
+Commodities,2026-03-13,CPO_Active,KOA Comdty,4404,4480,numeric_conflict
+Commodities,2026-03-16,CPO_Active,KOA Comdty,4469,4545,numeric_conflict
+Commodities,2026-03-17,CPO_Active,KOA Comdty,4396,4471,numeric_conflict
+Commodities,2026-03-18,CPO_Active,KOA Comdty,4348,4425,numeric_conflict
+Commodities,2026-03-19,CPO_Active,KOA Comdty,4445,4504,numeric_conflict
+Commodities,2026-03-20,CPO_Active,KOA Comdty,4445,4504,numeric_conflict
+Commodities,2026-03-23,CPO_Active,KOA Comdty,4445,4504,numeric_conflict
+Commodities,2026-03-24,CPO_Active,KOA Comdty,4398,4451,numeric_conflict
+Commodities,2026-03-25,CPO_Active,KOA Comdty,4403,4438,numeric_conflict
+Commodities,2026-03-26,CPO_Active,KOA Comdty,4488,4521,numeric_conflict
+Commodities,2026-03-27,CPO_Active,KOA Comdty,4511,4570,numeric_conflict
+Commodities,2026-03-30,CPO_Active,KOA Comdty,4643,4711,numeric_conflict
+Commodities,2026-03-31,CPO_Active,KOA Comdty,4687,4776,numeric_conflict
+Commodities,2026-04-01,CPO_Active,KOA Comdty,4590,4711,numeric_conflict
+Commodities,2026-04-02,CPO_Active,KOA Comdty,4616,4737,numeric_conflict
+Commodities,2026-04-03,CPO_Active,KOA Comdty,4658,4789,numeric_conflict
+Commodities,2026-04-06,CPO_Active,KOA Comdty,4658,4761,numeric_conflict
+Commodities,2026-04-07,CPO_Active,KOA Comdty,4617,4729,numeric_conflict
+Commodities,2026-04-08,CPO_Active,KOA Comdty,4465,4551,numeric_conflict
+Commodities,2026-04-09,CPO_Active,KOA Comdty,4551,4613,numeric_conflict
+Commodities,2026-04-10,CPO_Active,KOA Comdty,4454,4520,numeric_conflict
+Commodities,2026-04-13,CPO_Active,KOA Comdty,4493,4549,numeric_conflict
+Commodities,2026-04-14,CPO_Active,KOA Comdty,4422,4479,numeric_conflict
+Commodities,2026-04-15,CPO_Active,KOA Comdty,4414,4481,numeric_conflict
+Commodities,2026-04-16,CPO_Active,KOA Comdty,4420,4483,numeric_conflict
+Commodities,2026-04-17,CPO_Active,KOA Comdty,4388,4449,numeric_conflict
+Commodities,2026-04-20,CPO_Active,KOA Comdty,4429,4488,numeric_conflict
+Commodities,2026-04-21,CPO_Active,KOA Comdty,4510,4557,numeric_conflict
+Commodities,2026-04-22,CPO_Active,KOA Comdty,4594,4639,numeric_conflict
+Commodities,2026-04-23,CPO_Active,KOA Comdty,4559,4598,numeric_conflict
+Commodities,2026-04-24,CPO_Active,KOA Comdty,4603,4627,numeric_conflict
+Commodities,2026-04-27,CPO_Active,KOA Comdty,4570,4576,numeric_conflict
+Commodities,2026-04-28,CPO_Active,KOA Comdty,4574,4572,numeric_conflict
+Commodities,2026-04-29,CPO_Active,KOA Comdty,4636,4621,numeric_conflict
+Commodities,2026-04-30,CPO_Active,KOA Comdty,4618,4599,numeric_conflict
+Commodities,2026-05-01,CPO_Active,KOA Comdty,4618,4599,numeric_conflict
+Commodities,2026-05-04,CPO_Active,KOA Comdty,4650,4646,numeric_conflict
+Commodities,2026-05-05,CPO_Active,KOA Comdty,4709,4722,numeric_conflict
+Commodities,2026-05-06,CPO_Active,KOA Comdty,4605,4593,numeric_conflict
+Commodities,2026-05-07,CPO_Active,KOA Comdty,4568,4558,numeric_conflict
+Commodities,2026-05-08,CPO_Active,KOA Comdty,4542,4526,numeric_conflict
+Commodities,2026-05-11,CPO_Active,KOA Comdty,4575,4541,numeric_conflict
+Commodities,2026-05-12,CPO_Active,KOA Comdty,4566,4515,numeric_conflict
+Commodities,2026-05-13,CPO_Active,KOA Comdty,4546,4472,numeric_conflict
+Commodities,2026-05-14,CPO_Active,KOA Comdty,4507,4428,numeric_conflict
+Commodities,2026-05-15,CPO_Active,KOA Comdty,4521,4449,numeric_conflict
+Commodities,2026-05-18,CPO_Active,KOA Comdty,4588,4542,numeric_conflict
+Commodities,2026-05-19,CPO_Active,KOA Comdty,4644,4589,numeric_conflict
+Commodities,2026-05-20,CPO_Active,KOA Comdty,4674,4601,numeric_conflict
+Commodities,2026-05-21,CPO_Active,KOA Comdty,4582,4480,numeric_conflict
+Commodities,2026-05-22,CPO_Active,KOA Comdty,4598,4502,numeric_conflict
+Commodities,2026-05-25,CPO_Active,KOA Comdty,4589,4493,numeric_conflict
+Commodities,2026-05-26,CPO_Active,KOA Comdty,4630,4522,numeric_conflict
+Commodities,2026-05-27,CPO_Active,KOA Comdty,4630,4522,numeric_conflict
+Commodities,2026-05-28,CPO_Active,KOA Comdty,4654,4560,numeric_conflict
+Commodities,2026-05-29,CPO_Active,KOA Comdty,4671,4561,numeric_conflict
+Commodities,2026-06-01,CPO_Active,KOA Comdty,4671,4561,numeric_conflict
+Commodities,2026-06-02,CPO_Active,KOA Comdty,4671,4561,numeric_conflict
+Commodities,2026-06-03,CPO_Active,KOA Comdty,4804,4705,numeric_conflict
+Commodities,2026-06-04,CPO_Active,KOA Comdty,4733,4629,numeric_conflict
+Commodities,2026-06-05,CPO_Active,KOA Comdty,4699,4584,numeric_conflict
+Commodities,2026-06-08,CPO_Active,KOA Comdty,4726,4607,numeric_conflict
+Commodities,2026-06-09,CPO_Active,KOA Comdty,4692,4566,numeric_conflict
+Commodities,2026-06-10,CPO_Active,KOA Comdty,4703,4578,numeric_conflict
+Commodities,2026-06-11,CPO_Active,KOA Comdty,4712,4592,numeric_conflict
+Commodities,2026-06-12,CPO_Active,KOA Comdty,4619,4511,numeric_conflict
+Commodities,2026-06-15,CPO_Active,KOA Comdty,4595,4485,numeric_conflict
+Commodities,2026-06-16,CPO_Active,KOA Comdty,4682,4574,numeric_conflict
+Commodities,2026-06-17,CPO_Active,KOA Comdty,4682,4574,numeric_conflict
+Commodities,2026-06-18,CPO_Active,KOA Comdty,4683,4573,numeric_conflict
+Commodities,2026-06-19,CPO_Active,KOA Comdty,4728,4646,numeric_conflict
+Commodities,2026-06-22,CPO_Active,KOA Comdty,4772,4672,numeric_conflict
+Commodities,2026-06-23,CPO_Active,KOA Comdty,4753,4658,numeric_conflict
+Commodities,2026-06-24,CPO_Active,KOA Comdty,4729,4633,numeric_conflict
+Commodities,2026-06-25,CPO_Active,KOA Comdty,4642,4557,numeric_conflict
+Commodities,2026-06-26,CPO_Active,KOA Comdty,4650,4568,numeric_conflict
+Commodities,2026-06-29,CPO_Active,KOA Comdty,4671,4588,numeric_conflict
+Commodities,2026-06-30,CPO_Active,KOA Comdty,4638,4546,numeric_conflict
+Commodities,2026-07-01,CPO_Active,KOA Comdty,4654,4557,numeric_conflict
+Commodities,2026-07-02,CPO_Active,KOA Comdty,4609,4506,numeric_conflict
+Commodities,2026-07-03,CPO_Active,KOA Comdty,4583,4480,numeric_conflict
+Commodities,2026-07-06,CPO_Active,KOA Comdty,4636,4550,numeric_conflict
+Commodities,2026-07-07,CPO_Active,KOA Comdty,4648,4547,numeric_conflict
+Commodities,2026-07-08,CPO_Active,KOA Comdty,4717,4609,numeric_conflict
+Commodities,2026-07-09,CPO_Active,KOA Comdty,4716,4594,numeric_conflict
+Commodities,2026-07-10,CPO_Active,KOA Comdty,4644,4513,numeric_conflict
+Commodities,2026-07-13,CPO_Active,KOA Comdty,4665,4566,numeric_conflict
+Commodities,2026-07-14,CPO_Active,KOA Comdty,4700,4573,numeric_conflict
+Commodities,2026-07-15,CPO_Active,KOA Comdty,4698,4601,numeric_conflict
+Commodities,2026-07-16,CPO_Active,KOA Comdty,4701,4606,numeric_conflict
+Commodities,2026-07-17,CPO_Active,KOA Comdty,4697,4597,numeric_conflict
+Commodities,2026-07-20,WTI,CL1 Comdty,83.23,82.09,numeric_conflict
+Commodities,2026-07-20,Brent,CO1 Comdty,89.22,88.29,numeric_conflict
+Commodities,2026-07-20,Coal_Newcastle,XW1 Comdty,130.4,130,numeric_conflict
+Commodities,2026-07-20,Gold,XAU Curncy,4008.03,4020.23,numeric_conflict
+Commodities,2026-07-20,CPO_Active,KOA Comdty,4735,4646,numeric_conflict
+Commodities,2026-07-20,CPO_Front,KO1 Comdty,4568,4572,numeric_conflict
+Commodities,2026-07-20,Nickel_Front,LN1 Comdty,16795.77,16840.13,numeric_conflict
+Commodities,2026-07-20,BCOM,BCOM INDEX,131.9727,131.3463,numeric_conflict
+Commodities,2026-07-20,DOW_Unverified,DOW1 COMDTY,6826,6816,numeric_conflict
+Commodities,2026-07-21,CPO_Active,KOA Comdty,4709,4610,numeric_conflict
+Commodities,2026-07-22,CPO_Active,KOA Comdty,4711,4622,numeric_conflict
+Commodities,2026-07-23,CPO_Active,KOA Comdty,4793,4710,numeric_conflict
+Commodities,2026-07-24,CPO_Active,KOA Comdty,4800,4722,numeric_conflict
+Commodities,2026-07-27,CPO_Active,KOA Comdty,4757,4673,numeric_conflict
+Commodities,2026-07-28,CPO_Active,KOA Comdty,4734,4642,numeric_conflict
+Commodities,2026-07-29,CPO_Active,KOA Comdty,4753,4664,numeric_conflict
+Commodities,2026-07-30,CPO_Active,KOA Comdty,4770,4683,numeric_conflict
+Commodities,2026-07-31,CPO_Active,KOA Comdty,4732,4643,numeric_conflict
+Commodities,2026-08-03,CPO_Active,KOA Comdty,4727,4629,numeric_conflict
+Commodities,2026-08-04,CPO_Active,KOA Comdty,4794,4696,numeric_conflict
+Commodities,2026-08-05,CPO_Active,KOA Comdty,4817,4702,numeric_conflict
+Commodities,2026-08-06,CPO_Active,KOA Comdty,4815,4686,numeric_conflict
+Commodities,2026-08-07,WTI,CL1 Comdty,78.18,77.77,numeric_conflict
+Commodities,2026-08-07,Brent,CO1 Comdty,83.55,83.27,numeric_conflict
+Commodities,2026-08-07,Coal_Newcastle,XW1 Comdty,127.85,128.25,numeric_conflict
+Commodities,2026-08-07,Gold,XAU Curncy,4341.56,4294.13,numeric_conflict
+Commodities,2026-08-07,CPO_Active,KOA Comdty,4829,4661,numeric_conflict
+Commodities,2026-08-07,CPO_Front,KO1 Comdty,4527,4508,numeric_conflict
+Commodities,2026-08-07,Nickel_Front,LN1 Comdty,16827.14,16590.42,numeric_conflict
+Commodities,2026-08-07,BCOM,BCOM INDEX,131.7293,131.2471,numeric_conflict
+Commodities,2026-08-10,CPO_Active,KOA Comdty,4872,4790,numeric_conflict
+Commodities,2026-08-11,CPO_Active,KOA Comdty,4906,4820,numeric_conflict
+Commodities,2026-08-12,CPO_Active,KOA Comdty,4872,4776,numeric_conflict
+Commodities,2026-08-13,CPO_Active,KOA Comdty,4908,4805,numeric_conflict
+Commodities,2026-08-14,CPO_Active,KOA Comdty,4936,4807,numeric_conflict
+Commodities,2026-08-17,CPO_Active,KOA Comdty,4970,4821,numeric_conflict
+Commodities,2026-08-18,CPO_Active,KOA Comdty,5007,4860,numeric_conflict
+Commodities,2026-08-19,CPO_Active,KOA Comdty,5033,4893,numeric_conflict
+Commodities,2026-08-20,CPO_Active,KOA Comdty,5070,4961,numeric_conflict
+Commodities,2026-08-21,CPO_Active,KOA Comdty,5118,5018,numeric_conflict
+Commodities,2026-08-24,CPO_Active,KOA Comdty,5064,4946,numeric_conflict
+Commodities,2026-08-25,CPO_Active,KOA Comdty,5064,4946,numeric_conflict
+Commodities,2026-08-26,CPO_Active,KOA Comdty,4996,4852,numeric_conflict
+Commodities,2026-08-27,CPO_Active,KOA Comdty,4984,4816,numeric_conflict
+Commodities,2026-08-28,CPO_Active,KOA Comdty,5067,4894,numeric_conflict
+Commodities,2026-08-31,WTI,CL1 Comdty,85.76,86.16,numeric_conflict
+Commodities,2026-08-31,Brent,CO1 Comdty,90.49,91.05,numeric_conflict
+Commodities,2026-08-31,Coal_Newcastle,XW1 Comdty,141.75,131.2,numeric_conflict
+Commodities,2026-08-31,Gold,XAU Curncy,4437.38,4442.77,numeric_conflict
+Commodities,2026-08-31,CPO_Active,KOA Comdty,5067,4894,numeric_conflict
+Commodities,2026-08-31,BCOM,BCOM INDEX,141.3656,141.0348,numeric_conflict
+Commodities,2026-08-31,DOW_Unverified,DOW1 COMDTY,5375,7340,numeric_conflict
+Commodities,2026-09-01,CPO_Active,KOA Comdty,5149,4973,numeric_conflict
+Commodities,2026-09-02,CPO_Active,KOA Comdty,5148,4958,numeric_conflict
+Commodities,2026-09-03,CPO_Active,KOA Comdty,5107,4904,numeric_conflict
+Commodities,2026-09-04,CPO_Active,KOA Comdty,5155,4929,numeric_conflict
+Commodities,2026-09-07,CPO_Active,KOA Comdty,5214,4978,numeric_conflict
+Commodities,2026-09-08,CPO_Active,KOA Comdty,5224,4976,numeric_conflict
+Commodities,2026-09-09,CPO_Active,KOA Comdty,5220,4966,numeric_conflict
+Commodities,2026-09-10,CPO_Active,KOA Comdty,5154,4885,numeric_conflict
+Commodities,2026-09-11,CPO_Active,KOA Comdty,5056,4814,numeric_conflict
+Commodities,2026-09-14,CPO_Active,KOA Comdty,5052,4850,numeric_conflict
+Commodities,2026-09-15,CPO_Active,KOA Comdty,5086,4998,numeric_conflict
+Commodities,2026-09-16,CPO_Active,KOA Comdty,5086,4998,numeric_conflict
+Commodities,2026-09-17,CPO_Active,KOA Comdty,5028,4936,numeric_conflict
+Commodities,2026-09-18,CPO_Active,KOA Comdty,4983,4898,numeric_conflict
+Commodities,2026-09-21,CPO_Active,KOA Comdty,4929,4857,numeric_conflict
+Commodities,2026-09-22,CPO_Active,KOA Comdty,4884,4810,numeric_conflict
+Commodities,2026-09-23,CPO_Active,KOA Comdty,4851,4768,numeric_conflict
+Commodities,2026-09-24,CPO_Active,KOA Comdty,4870,4772,numeric_conflict
+Commodities,2026-09-25,CPO_Active,KOA Comdty,4768,4672,numeric_conflict
+Commodities,2026-09-28,CPO_Active,KOA Comdty,4774,4664,numeric_conflict
+Commodities,2026-09-29,CPO_Active,KOA Comdty,4731,4624,numeric_conflict
+Commodities,2026-09-30,CPO_Active,KOA Comdty,4717,4610,numeric_conflict
+Commodities,2026-10-01,CPO_Active,KOA Comdty,4652,4554,numeric_conflict
+Commodities,2026-10-02,CPO_Active,KOA Comdty,4627,4535,numeric_conflict
+Commodities,2026-10-05,CPO_Active,KOA Comdty,4672,4578,numeric_conflict
+Commodities,2026-10-06,CPO_Active,KOA Comdty,4663,4560,numeric_conflict
+Commodities,2026-10-07,CPO_Active,KOA Comdty,4636,4524,numeric_conflict
+Commodities,2026-10-08,CPO_Active,KOA Comdty,4767,4661,numeric_conflict
+Commodities,2026-10-09,CPO_Active,KOA Comdty,4709,4592,numeric_conflict
+Commodities,2026-10-12,CPO_Active,KOA Comdty,4758,4637,numeric_conflict
+Commodities,2026-10-13,CPO_Active,KOA Comdty,4787,4682,numeric_conflict
+Commodities,2026-10-14,CPO_Active,KOA Comdty,4810,4700,numeric_conflict
+Commodities,2026-10-14,IronOre_62,ISIX62IU Index,86.8,87.06,numeric_conflict
+Commodities,2026-10-19,IronOre_62,ISIX62IU Index,87.5,86.46,numeric_conflict
+Commodities,2026-10-20,IronOre_62,ISIX62IU Index,87.4,86.46,numeric_conflict
+Commodities,2026-10-23,IronOre_62,ISIX62IU Index,86.39,86.2,numeric_conflict
+Sulfur etc.,2026-07-13,Sulfur,SSGSSFC4 Index,1160.31,1133.61,numeric_conflict
+Sulfur etc.,2026-07-13,Methanol,SSGSMCC Index,301,303,numeric_conflict
+Sulfur etc.,2026-07-13,JetKerosene,BCSL0032 Index,127.93,122.57,numeric_conflict
+Sulfur etc.,2026-07-20,Sulfur,SSGSSFC4 Index,1206.07,1206.67,numeric_conflict
+Sulfur etc.,2026-07-20,Methanol,SSGSMCC Index,314,315,numeric_conflict
+Sulfur etc.,2026-07-20,JetKerosene,BCSL0032 Index,146.22,145.95,numeric_conflict
+Sulfur etc.,2026-08-07,Urea,GCFPURMG Index,445,455,numeric_conflict
+Sulfur etc.,2026-08-07,Sulfur,SSGSSFC4 Index,1202.26,1202.1,numeric_conflict
+Sulfur etc.,2026-08-07,JetKerosene,BCSL0032 Index,137.78,138.31,numeric_conflict
+Sulfur etc.,2026-08-31,Sulfur,SSGSSFC4 Index,1153.64,1189.92,numeric_conflict
+Sulfur etc.,2026-08-31,Methanol,SSGSMCC Index,358,349,numeric_conflict
+Sulfur etc.,2026-08-31,JetKerosene,BCSL0032 Index,154.71,152.16,numeric_conflict
+Sulfur etc.,2026-10-01,Sulfur,SSGSSFC4 Index,1014.45,1023.43,numeric_conflict
+Sulfur etc.,2026-10-01,Methanol,SSGSMCC Index,518,520,numeric_conflict
+Sulfur etc.,2026-10-01,JetKerosene,BCSL0032 Index,169.12,175.61,numeric_conflict

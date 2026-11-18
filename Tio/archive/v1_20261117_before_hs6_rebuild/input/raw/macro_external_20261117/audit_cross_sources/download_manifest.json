@@ -1,0 +1,95 @@
+[
+  {
+    "label": "wdi_real_gdp_annual",
+    "requested_url": "https://api.worldbank.org/v2/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/indicator/NY.GDP.MKTP.KN?format=json&per_page=3000",
+    "retrieved_utc": "2026-11-16T21:28:15.029652+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/indicator/NY.GDP.MKTP.KN?format=json&per_page=3000",
+    "bytes": 150251,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "4999ab85a2ed795bda36cbe63de6ee1b78dc0bd652473e3013a8bcb1f4decb55",
+    "path": "input/raw/macro_external_20261117/audit_cross_sources/wdi_real_gdp_annual.json"
+  },
+  {
+    "label": "gem_cpi_all",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/CPTOTNSXN/time/all?format=json&per_page=30000",
+    "retrieved_utc": "2026-11-16T21:28:15.030849+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/CPTOTNSXN/time/all?format=json&per_page=30000",
+    "bytes": 1575878,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "33af4ee2373e5065277607de4fa32e8ddb6de4c1e5086bc8c19d3c46e6870a23",
+    "path": "input/raw/macro_external_20261117/audit_cross_sources/gem_cpi_all.json"
+  },
+  {
+    "label": "gem_fx_all",
+    "requested_url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/DPANUSLCU/time/all?format=json&per_page=30000",
+    "retrieved_utc": "2026-11-16T21:28:15.030849+00:00",
+    "status": 200,
+    "final_url": "https://api.worldbank.org/v2/sources/15/country/IDN;CHN;USA;SGP;JPN;MYS;IND;KOR;THA;VNM;AUS/series/DPANUSLCU/time/all?format=json&per_page=30000",
+    "bytes": 1776131,
+    "content_type": "application/json;charset=utf-8",
+    "sha256": "2cf19cb7b1b16b64933d906df1462ac58a09cbf75451a777ce5cabc8414fadd1",
+    "path": "input/raw/macro_external_20261117/audit_cross_sources/gem_fx_all.json"
+  },
+  {
+    "label": "gdp_idn_imf_sa",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCIDQ",
+    "retrieved_utc": "2026-11-16T21:28:39.923201+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCIDQ",
+    "bytes": 2575,
+    "content_type": "application/csv",
+    "sha256": "c029c9e5341f45346e1fb73f3fef4737f9de04630be3b3c35d1c9fc72bc79b75",
+    "path": "input/raw/macro_external_20261117/audit_cross_sources/gdp_idn_imf_sa.csv",
+    "header": [
+      "observation_date,NGDPRSAXDCIDQ"
+    ],
+    "first": [
+      "2000-01-01,1012908548.9"
+    ],
+    "last": [
+      "2026-04-01,3552669948.8"
+    ]
+  },
+  {
+    "label": "gdp_jpn_imf_sa",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCJPQ",
+    "retrieved_utc": "2026-11-16T21:28:40.666631+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCJPQ",
+    "bytes": 2761,
+    "content_type": "application/csv",
+    "sha256": "d4a9f8ead4a2ef743409ecb5b2d61263b6249d0909f77e68d89bdc2405c2bbfd",
+    "path": "input/raw/macro_external_20261117/audit_cross_sources/gdp_jpn_imf_sa.csv",
+    "header": [
+      "observation_date,NGDPRSAXDCJPQ"
+    ],
+    "first": [
+      "1994-01-01,116268250"
+    ],
+    "last": [
+      "2026-04-01,149572000"
+    ]
+  },
+  {
+    "label": "gdp_usa_imf_sa",
+    "requested_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCUSQ",
+    "retrieved_utc": "2026-11-16T21:28:41.272227+00:00",
+    "status": 200,
+    "final_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NGDPRSAXDCUSQ",
+    "bytes": 6403,
+    "content_type": "application/csv",
+    "sha256": "721ef03380165da7dec86c4dbfc44c134836372d9fae1e549cf31314818742d6",
+    "path": "input/raw/macro_external_20261117/audit_cross_sources/gdp_usa_imf_sa.csv",
+    "header": [
+      "observation_date,NGDPRSAXDCUSQ"
+    ],
+    "first": [
+      "1950-01-01,586526.0"
+    ],
+    "last": [
+      "2026-04-01,6067403.3"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+Family,ISO3,N_Compared,Median_Abs_Difference_pct,P95_Abs_Difference_pct,Max_Abs_Difference_pct,N_Over_1pct,Assessment,Note
+CPI,CHN,247,0.0713128913179,0.182133514687,0.230033392042,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,IDN,247,0.0349188692849,1.3492373228,1.56483294756,23,REVIEW_DIFFERENCE,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,IND,163,1.42331124664e-07,3.04727731937e-07,0.00926456035619,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,JPN,247,2.26976726303e-07,4.57087934169e-07,4.99136720844e-07,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,KOR,247,2.26624696786e-07,4.93906502363e-07,6.27552387833e-07,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,MYS,247,1.81717607628e-07,4.43749420542e-07,0.102144570019,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,SGP,247,2.21715656945e-07,5.06217929797e-07,6.43301767411e-07,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,THA,247,2.33839436703e-07,4.89277498517e-07,0.598384097652,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,USA,246,2.16133821951e-07,5.24381488232e-07,6.27178020629e-07,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+CPI,VNM,247,6.8256511554e-11,3.70015129647e-10,4.61886084935e-10,0,WITHIN_1PCT_SCREEN,"BIS vs WB GEM after 2015 rebase; VNM has same provider, not independent; IND pre2013 excluded"
+FX,AUS,248,0.0642023994144,0.255530302924,0.590325339647,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,CHN,248,0.0131575641731,0.0827744166369,0.309331306256,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,IDN,248,0.0418022740051,0.31661862477,0.726667622338,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,IND,248,0.0314270990207,0.255616164579,0.643679845115,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,JPN,248,0.0496995337455,0.241647990479,0.957667415959,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,KOR,248,0.039635037979,0.202558712409,1.2681362338,1,REVIEW_DIFFERENCE,BIS vs WB official period averages; fixing times and providers may differ
+FX,MYS,248,0.0272682710787,0.160047737167,0.577340590696,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,SGP,248,0.0258901819482,0.114476255495,0.335237954825,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,THA,248,0.033899318365,2.86782443741,10.1067650948,13,REVIEW_DIFFERENCE,BIS vs WB official period averages; fixing times and providers may differ
+FX,USA,248,0,0,0,0,WITHIN_1PCT_SCREEN,BIS vs WB official period averages; fixing times and providers may differ
+FX,VNM,247,0.96014708268,4.60225024027,4.79885549124,121,REVIEW_DIFFERENCE,BIS vs WB official period averages; fixing times and providers may differ
+GDP_annual,AUS,19,2.3714363806e-10,0.00282068729419,0.0277223901624,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,CHN,20,0.0639582566687,0.153356362621,0.289883028003,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,IDN,20,0.0129399710537,1.55335114828,1.55438928318,2,REVIEW_DIFFERENCE,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,IND,20,0.105842569723,4.29622131209,6.09299160851,5,REVIEW_DIFFERENCE,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,JPN,20,0.0244077624669,0.376050203701,0.395818437117,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,KOR,20,5.43448039902e-06,0.349739645489,0.474335772859,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,MYS,20,0.0665144181139,0.32306648018,0.323149323742,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,SGP,20,0.0164048482823,0.0712100035651,0.106697201729,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,THA,20,0.0187488293527,0.0897219184395,0.0899915279471,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,USA,20,0.000803687247003,0.00398607206156,0.0545851615098,0,WITHIN_1PCT_SCREEN,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_annual,VNM,20,0.0399075612954,3.8172219263,3.89964376963,4,REVIEW_DIFFERENCE,GEM vs WDI annual volume; IND/AUS fiscal-year aligned; fiscal-year 2015 rebase; annual check only
+GDP_quarterly,IDN,82,0.0815040651163,1.2584623513,1.57604773253,9,REVIEW_DIFFERENCE,GEM SA vs IMF/FRED SA; vintage/base revisions may differ
+GDP_quarterly,JPN,82,1.41198763681e-05,3.23412471781e-05,3.48002111794e-05,0,WITHIN_1PCT_SCREEN,GEM SA vs IMF/FRED SA; vintage/base revisions may differ
+GDP_quarterly,USA,82,0.000702589341961,0.00162749955543,0.00176332377522,0,WITHIN_1PCT_SCREEN,GEM SA vs IMF/FRED SA; vintage/base revisions may differ
+CPI,AUS,0,,,,,NOT_COMPARED_REFERENCE_UNAVAILABLE,BIS monthly is interpolated quarterly CPI; GEM reference has no nonmissing monthly/quarterly observations
