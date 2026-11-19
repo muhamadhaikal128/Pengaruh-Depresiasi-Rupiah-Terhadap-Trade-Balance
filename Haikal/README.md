@@ -27,6 +27,7 @@ Haikal/
 │   ├── 09_build_ppt.py         bangun PPT dari output/ (template DEN)
 │   ├── 10_indeks_harga_volume.py indeks harga (unit value Fisher) & volume dari kuantitas HS-6
 │   ├── 11_harga_volume.do      dekomposisi harga vs volume (LP) + uji Marshall-Lerner dengan volume (ARDL)
+│   ├── 12_ipi_mitra.py         IPI 10 mitra: rata-rata sederhana dan tertimbang (ekspor, perdagangan, PDB) + Excel
 │   └── helper_ardl.do          program bantu ARDL
 ├── output/
 │   ├── 0_deskriptif/           grafik TB vs REER, uji akar unit, pangsa kelompok
@@ -67,6 +68,7 @@ uv run --with pandas --with openpyxl python script/10_indeks_harga_volume.py
 PPT dibangun setelah Stata selesai (butuh `uv`):
 
 ```bash
+uv run --with pandas --with openpyxl python script/12_ipi_mitra.py   # IPI mitra tertimbang + ipi_mitra_10.xlsx
 uv run --with pandas --with matplotlib python script/08_deskriptif_episode.py
 uv run --with python-pptx --with pandas --with matplotlib python script/09_build_ppt.py
 ```
@@ -86,3 +88,4 @@ uv run --with python-pptx --with pandas --with matplotlib python script/09_build
 - **19 Nov 2026:** PPT disusun ulang alurnya (ringkasan eksekutif, 6 bagian dengan pertanyaan pemandu, konvensi warna cokelat = memburuk / oranye = membaik). Dekomposisi harga vs volume dari kuantitas HS-6 (Trade Map, 10 mitra): indeks unit value Fisher berantai tahunan, LP terms of trade vs rasio volume, dan uji Marshall-Lerner dengan elastisitas volume.
 - **19 Nov 2026 (revisi deck):** istilah teknis dikembalikan ke bahasa Inggris (shock, reverse causality, robustness check, confidence band, interquartile range); slide episode menampilkan neraca awal vs 12 bulan kemudian; slide baru "Tahapan analisis"; studi Indonesia yang tidak menemukan efek (Bahmani-Oskooee & Harvey 2015, Tang 2002, Wijaya 2020) ditonjolkan; glosarium A4; pointer dan speaker notes dilengkapi; label heatmap diperbaiki. Deck 53 slide.
 - **19 Nov 2026 (revisi deck 2):** metodologi disusun ulang (ARDL vs local projections dalam satu slide, slide intuisi local projections, daftar variabel dipindah ke dekat model specification, "interpretasi koefisien" sebagai simulasi depresiasi 10%); slide baru episode vs IPI mitra, PDB, dan REER; RQ1 dibedah diperjelas (definisi ToT, tahun pertama vs kedua); "Mengapa negatif" ditulis ulang menjadi tiga penjelasan + slide lanjutan (pre-trend dan korelasi dengan perlambatan global). Deck 56 slide.
+- **19 Nov 2026 (revisi deck 3):** dua slide episode digabung menjadi satu (kurs, neraca, BCOM, IPI 10 mitra tertimbang pangsa ekspor). Script baru `12_ipi_mitra.py` membuat `output/0_deskriptif/ipi_mitra_10.xlsx` (IPI per mitra, bobot ekspor/perdagangan/PDB World Bank, rata-rata dengan formula) dan `ipi_mitra.csv`; seri tertimbang ekspor identik dengan `yf_avg` di model. Deck 55 slide.

@@ -73,6 +73,8 @@ pvx = pd.read_csv("intermediate/analisis/price_volume.csv")
 lpq = pd.read_csv(f"{D2}/lp_pv.csv")
 avol = pd.read_csv(f"{D1}/ardl_volume.csv").set_index("id")
 pvcov = pd.read_csv(f"{D0}/pv_coverage.csv")
+# IPI 10 mitra, rata-rata tertimbang (12_ipi_mitra.py; workbook output/0_deskriptif/ipi_mitra_10.xlsx)
+ipm = pd.read_csv(f"{D0}/ipi_mitra.csv").assign(mdate=lambda d: pd.to_datetime(d.mdate))
 
 GRP = {"comm": "Komoditas (total)", "sec2": "Komoditas energi & tambang", "sec1": "Komoditas pertanian & pangan",
        "noncomm": "Non-komoditas (manufaktur)", "eu1": "Barang konsumsi", "eu2": "Bahan baku/penolong",
@@ -89,6 +91,8 @@ MON = {"May": "Mei", "Aug": "Agu", "Oct": "Okt", "Dec": "Des"}
 def idn(x, d=1, sign=False):
     if x is None or (isinstance(x, float) and np.isnan(x)):
         return "–"
+    if round(x, d) == 0:
+        x, sign = 0.0, False
     s = f"{x:+.{d}f}" if sign else f"{x:.{d}f}"
     return s.replace("-", "−").replace(".", ",")
 
@@ -189,11 +193,12 @@ def fig_timeline():
     a = agg.set_index("mdate")
     tb = ((a.exports_usdk - a.imports_usdk) / 1e6).rolling(12).mean()
     bcom = np.exp(a.lncom)
-    fig, (ax, bx, cx) = plt.subplots(3, 1, figsize=(6.4, 5.4), sharex=True, gridspec_kw={"height_ratios": [1, 1, 1]})
+    ip = ipm.set_index("mdate").ipi_w_ekspor_3b
+    fig, (ax, bx, cx, dx) = plt.subplots(4, 1, figsize=(6.4, 6.0), sharex=True)
     for k, r in enumerate(eps.itertuples()):
         st, en = pd.to_datetime(r.mulai, format="%b %Y"), pd.to_datetime(r.puncak, format="%b %Y")
         st = max(st, s.index[0])
-        for x in (ax, bx, cx):
+        for x in (ax, bx, cx, dx):
             x.axvspan(st, en, color=C(ORANGE), alpha=0.18, lw=0)
         ax.text(st + (en - st) / 2, s.max() * (1.03 if k % 2 == 0 else 1.13), EP_SHORT[r.episode], ha="center",
                 va="bottom", fontsize=7.5, color="#404040")
@@ -207,13 +212,18 @@ def fig_timeline():
     bx.set_ylim(tb.min() * 1.6, tb.max() * 1.35)
     cx.plot(bcom.index, bcom.values, color=C(BROWN), lw=1.8)
     cx.set_ylim(bcom.min() * 0.85, bcom.max() * 1.15)
+    dx.axhline(0, color="#404040", lw=0.9)
+    dx.fill_between(ip.index, ip.values, 0, where=ip.values < 0, color=C(BROWN), alpha=0.35, lw=0)
+    dx.plot(ip.index, ip.values, color=C(BROWN), lw=1.6)
+    dx.set_ylim(ip.min() * 1.15, ip.max() * 1.45)
     for x, t in [(ax, "A · Kurs Rp per USD (garis naik = rupiah melemah)"),
                  (bx, "B · Neraca perdagangan, USD miliar/bulan (oranye = surplus, cokelat = defisit)"),
-                 (cx, "C · Harga komoditas dunia, indeks BCOM")]:
+                 (cx, "C · Harga komoditas dunia, indeks BCOM"),
+                 (dx, "D · IPI 10 mitra, % yoy, tertimbang pangsa ekspor (rata-rata 3 bulan)")]:
         x.text(0.005, 0.97, t, transform=x.transAxes, ha="left", va="top", fontsize=9, fontweight="bold",
                color="#262626", bbox=dict(facecolor="white", edgecolor="none", alpha=0.8, pad=1))
         x.tick_params(labelsize=8.5)
-    fig.tight_layout(h_pad=0.5)
+    fig.tight_layout(h_pad=0.4)
     return save(fig, "episode_timeline")
 
 
@@ -222,39 +232,6 @@ def shade_episodes(axes):
         st, en = pd.to_datetime(r.mulai, format="%b %Y"), pd.to_datetime(r.puncak, format="%b %Y")
         for x in axes:
             x.axvspan(st, en, color=C(ORANGE), alpha=0.18, lw=0)
-
-
-def fig_timeline_macro():
-    """episode depresiasi dibandingkan dengan ekspor-impor, permintaan mitra, dan PDB Indonesia"""
-    a = agg.set_index("mdate")
-    a = a[a.index >= "2006-01-01"]
-    fig, axs = plt.subplots(4, 1, figsize=(6.4, 5.6), sharex=True)
-    shade_episodes(axs)
-    ax, bx, cx, dx = axs
-    for v, c, lb in [("exports_usdk", ORANGE, "ekspor"), ("imports_usdk", BROWN, "impor")]:
-        s = (a[v] / 1e6).rolling(12).mean()
-        ax.plot(s.index, s.values, color=C(c), lw=1.7)
-        ax.text(s.index[-1] + pd.Timedelta(days=50), s.iloc[-1], lb, color=C(c), fontsize=8,
-                va="bottom" if lb == "ekspor" else "top", fontweight="bold")
-    ip = a.yf_avg.rolling(3).mean()
-    gd = a.lngdp_idn.diff(12) * 100
-    rr = a.reer_bis_broad
-    for x, s, c in [(bx, ip, BROWN), (cx, gd, BROWN)]:
-        x.axhline(0, color="#404040", lw=0.8)
-        x.plot(s.index, s.values, color=C(c), lw=1.6)
-    dx.plot(rr.index, rr.values, color=C(BROWN), lw=1.6)
-    for x, t in [(ax, "A · Ekspor dan impor, USD miliar/bulan (rata-rata 12 bulan)"),
-                 (bx, "B · Permintaan mitra: IPI 10 mitra, % yoy (rata-rata 3 bulan)"),
-                 (cx, "C · PDB riil Indonesia, % yoy"),
-                 (dx, "D · REER, 2020 = 100 (turun = rupiah melemah riil)")]:
-        x.text(0.005, 0.97, t, transform=x.transAxes, ha="left", va="top", fontsize=8.5, fontweight="bold",
-               color="#262626", bbox=dict(facecolor="white", edgecolor="none", alpha=0.8, pad=1))
-        x.tick_params(labelsize=8)
-        lo, hi = x.get_ylim()
-        x.set_ylim(lo, hi + (hi - lo) * 0.3)
-    ax.set_xlim(pd.Timestamp("2006-01-01"), pd.Timestamp("2027-09-01"))
-    fig.tight_layout(h_pad=0.4)
-    return save(fig, "episode_makro")
 
 
 def fig_lp_intuition():
@@ -1292,94 +1269,58 @@ def build():
     section(prs, "03", "Fakta awal",
             "Apa kata data sebelum model: delapan episode depresiasi rupiah 2007–2026")
 
-    # neraca (USD miliar/bulan, rata-rata 3 bulan) di awal episode dan 12 bulan kemudian
+    # neraca (USD miliar/bulan, rata-rata 3 bulan) dan IPI mitra di awal episode dan 12 bulan kemudian
     tbm = ((agg.exports_usdk - agg.imports_usdk) / 1e6).set_axis(agg.mdate)
-    tb0, tb12 = [], []
+    ipw = ipm.set_index("mdate").ipi_w_ekspor
+    tb0, tb12, d_ipi = [], [], []
     for r in E.itertuples():
-        i = tbm.index.get_indexer([pd.to_datetime(r.mulai, format="%b %Y")], method="nearest")[0]
+        st_ = pd.to_datetime(r.mulai, format="%b %Y")
+        i = tbm.index.get_indexer([st_], method="nearest")[0]
         tb0.append(tbm.iloc[i:i + 3].mean()); tb12.append(tbm.iloc[i + 12:i + 15].mean())
-    E["tb0"], E["tb12"] = tb0, tb12
+        j = ipw.index.get_indexer([st_], method="nearest")[0]
+        d_ipi.append(ipw.iloc[j + 12:j + 15].mean() - ipw.iloc[j:j + 3].mean())
+    E["tb0"], E["tb12"], E["dipi"] = tb0, tb12, d_ipi
     n_up = int((E.tb12 > E.tb0).sum())
-    big2 = E.nlargest(2, "dep_idr_usd")
-    s = content(prs, f"Delapan episode depresiasi 2007–2026: rupiah melemah {idn(E.dep_idr_usd.min(), 0)}–"
-                     f"{idn(E.dep_idr_usd.max(), 0)}%, tetapi neraca hanya membaik di {n_up} dari 8 episode",
-                notes="Slide ini menempatkan tiga seri dalam satu sumbu waktu. Panel A adalah kurs rupiah per USD dengan delapan "
-                      "episode depresiasi yang diarsir. Panel B adalah neraca perdagangan, yaitu ekspor dikurangi impor, dalam "
-                      "USD miliar per bulan. Panel C adalah harga komoditas dunia. Kalau depresiasi memperbaiki neraca, panel B "
-                      "seharusnya naik setiap kali area arsir muncul. Kenyataannya tidak begitu. Dua depresiasi terbesar, 2008 "
-                      "dan 2013, justru diikuti surplus yang menyusut tajam, sedangkan surplus terbesar pada 2021–2022 muncul "
-                      "ketika harga komoditas melonjak. Tabel di kanan merangkum hal yang sama dalam angka: neraca di awal "
-                      "episode dibandingkan dengan neraca setahun kemudian. Dari sini muncul dugaan awal bahwa neraca lebih "
-                      "mengikuti harga komoditas daripada kurs, dan dugaan inilah yang diuji di bagian berikutnya.")
-    plabel(s, X1, 88, 566, "Kurs rupiah, neraca perdagangan, dan harga komoditas (BCOM)",
-           [("(arsir oranye = episode depresiasi; neraca = ekspor − impor, rata-rata 12 bulan)", False, None)])
-    pic(s, fig_timeline(), X1, 126, 566, 384)
-    rows = [["Episode", "Depr.", "Neraca awal → +12 bln"]]
-    for r in E.itertuples():
-        up = r.tb12 > r.tb0
-        rows.append([r.episode.replace("Komoditas jatuh", "Komod. jatuh").replace("Normalisasi", "Normal.")
-                      .replace("Pengetatan", "Pengetat."),
-                     f"+{idn(r.dep_idr_usd, 0)}%",
-                     (f"{idn(r.tb0)} → {idn(r.tb12)}", DARKOR if up else BROWN)])
-    table(s, 610, 94, 308, rows, [1.55, 0.6, 1.3], size=10, row_h=21)
-    note(s, "Neraca = ekspor − impor, USD miliar/bulan, rata-rata 3 bulan. Episode: mulai di titik terendah Rp/USD sebelum "
-            "rupiah melemah ≥10%; selesai di puncak sebelum menguat kembali ≥5%.", y=286, h=44, x=610, w=308)
-    pointers(s, [
-        [("Neraca membaik hanya di " + f"{n_up} dari 8 episode ", True, None),
-         ("(angka oranye). Dua depresiasi terbesar, " + " dan ".join(big2.episode) + ", justru diikuti surplus yang menyusut "
-          f"tajam ({idn(big2.tb0.iloc[0])} → {idn(big2.tb12.iloc[0])} dan {idn(big2.tb0.iloc[1])} → {idn(big2.tb12.iloc[1])}).",
-          False, None)],
-        [("Panel B mengikuti panel C, bukan panel A: ", True, None),
-         ("surplus terbesar (2021–22) muncul saat harga komoditas melonjak; defisit 2012–14 dan 2018–19 muncul di tengah "
-          "atau sesudah depresiasi.", False, None)],
-    ], x=610, y=334, w=308, size=10.5)
-    source(s, "BIS (kurs); ITC Trade Map (neraca); Bloomberg (BCOM); identifikasi episode oleh penulis")
-
-    # ---- episode vs permintaan mitra dan PDB Indonesia
-    am_ = agg.set_index("mdate")
-    gdp_g, ipi_ = am_.lngdp_idn.diff(12) * 100, am_.yf_avg
-    d_ipi, d_gdp = [], []
-    for r in E.itertuples():
-        i = am_.index.get_indexer([pd.to_datetime(r.mulai, format="%b %Y")], method="nearest")[0]
-        d_ipi.append(ipi_.iloc[i + 12:i + 15].mean() - ipi_.iloc[i:i + 3].mean())
-        d_gdp.append(gdp_g.iloc[i + 12:i + 15].mean() - gdp_g.iloc[i:i + 3].mean())
-    E["dipi"], E["dgdp"] = d_ipi, d_gdp
     n_slow = int((E.dipi < 0).sum())
-    best, worst_ = E.loc[E.d_xm_12m.idxmax()], E.loc[E.d_xm_12m.idxmin()]
-    s = content(prs, f"Episode yang sama dari sisi permintaan: IPI mitra melambat di {n_slow} dari 8 episode, dan neraca "
-                     "lebih mengikuti PDB Indonesia daripada kurs",
-                notes="Slide sebelumnya membandingkan kurs dengan neraca dan harga komoditas. Slide ini memakai episode yang sama, "
-                      "tetapi melihat sisi permintaan: ekspor dan impor secara terpisah, produksi industri di sepuluh negara mitra, "
-                      "dan pertumbuhan ekonomi Indonesia. Ada dua pola. Pertama, depresiasi rupiah sering datang bersamaan dengan "
-                      "perlambatan ekonomi mitra, seperti pada 2008, 2013, 2015, dan 2022. Pada saat seperti itu permintaan atas "
-                      "ekspor kita memang sedang turun, sehingga kurs yang melemah tidak banyak membantu. Kedua, perubahan neraca "
-                      "terbesar justru mengikuti ekonomi domestik. Pada 2020 rasio ekspor/impor naik tajam karena impor anjlok "
-                      "ketika PDB Indonesia terkontraksi, bukan karena ekspor naik. Sebaliknya pada 2008 impor melonjak karena "
-                      "ekonomi domestik tumbuh tinggi. Artinya, untuk mengukur efek kurs, permintaan mitra dan PDB domestik harus "
-                      "dikontrol di model.")
-    plabel(s, X1, 88, 566, "Episode depresiasi vs ekspor-impor, permintaan mitra, PDB, dan kurs riil",
-           [("(arsir oranye = episode depresiasi)", False, None)])
-    pic(s, fig_timeline_macro(), X1, 126, 566, 384)
-    rows = [["Episode", "Δ X/M", "Δ IPI mitra", "Δ PDB"]]
+    big2 = E.nlargest(2, "dep_idr_usd")
+    s = content(prs, f"Delapan episode depresiasi: neraca hanya membaik di {n_up} episode, dan lebih mengikuti harga "
+                     "komoditas serta permintaan mitra daripada kurs",
+                notes="Slide ini menempatkan empat seri dalam satu sumbu waktu. Panel A adalah kurs rupiah per USD dengan delapan "
+                      "episode depresiasi yang diarsir. Panel B adalah neraca perdagangan dalam USD miliar per bulan. Panel C "
+                      "adalah harga komoditas dunia, dan panel D adalah produksi industri sepuluh negara mitra, dirata-rata "
+                      "dengan bobot pangsa ekspor Indonesia ke tiap negara. Kalau depresiasi memperbaiki neraca, panel B "
+                      "seharusnya naik setiap kali area arsir muncul. Kenyataannya, neraca hanya membaik di separuh episode. "
+                      "Dua depresiasi terbesar, 2008 dan 2013, justru diikuti surplus yang menyusut tajam. Polanya lebih mirip "
+                      "panel C dan D: surplus terbesar 2021–2022 muncul saat harga komoditas melonjak, dan di sebagian besar "
+                      "episode produksi industri mitra sedang melambat, sehingga permintaan atas ekspor kita memang sedang "
+                      "turun ketika rupiah melemah. Inilah alasan harga komoditas dan permintaan mitra wajib dikontrol di model.")
+    plabel(s, X1, 88, 548, "Kurs rupiah, neraca perdagangan, harga komoditas, dan permintaan mitra",
+           [("(arsir oranye = episode depresiasi; neraca = ekspor − impor, rata-rata 12 bulan)", False, None)])
+    pic(s, fig_timeline(), X1, 126, 548, 386)
+    rows = [["Episode", "Depr.", "Neraca awal → +12", "Δ BCOM", "Δ IPI"]]
     for r in E.itertuples():
         rows.append([r.episode.replace("Komoditas jatuh", "Komod. jatuh").replace("Normalisasi", "Normal.")
-                      .replace("Pengetatan", "Pengetat."),
-                     (idn(r.d_xm_12m, 0), DARKOR if r.d_xm_12m > 0 else BROWN),
-                     (idn(r.dipi, sign=True), BROWN if r.dipi < 0 else "000000"),
-                     (idn(r.dgdp, sign=True), BROWN if r.dgdp < 0 else "000000")])
-    table(s, 610, 94, 308, rows, [1.55, 0.6, 0.85, 0.7], size=10, row_h=21)
-    note(s, "12 bulan setelah awal episode. Δ X/M = % rasio ekspor/impor; Δ IPI mitra dan Δ PDB = perubahan pertumbuhan yoy "
-            "(poin persen); cokelat = turun.", y=286, h=44, x=610, w=308)
+                      .replace("Pengetatan", "Pengetat.").replace("Krisis global", "Krisis glob.").replace("tantrum", "tant."),
+                     f"+{idn(r.dep_idr_usd, 0)}%",
+                     (f"{idn(r.tb0)} → {idn(r.tb12)}", DARKOR if r.tb12 > r.tb0 else BROWN),
+                     (idn(r.d_bcom_12m, 0, sign=True), DARKOR if r.d_bcom_12m > 0 else BROWN),
+                     (idn(r.dipi, sign=True), DARKOR if r.dipi > 0 else BROWN)])
+    table(s, 590, 94, 328, rows, [1.35, 0.55, 1.25, 0.6, 0.55], size=9.5, row_h=20)
+    note(s, "Neraca = ekspor − impor, USD miliar/bulan, rata-rata 3 bulan; Δ BCOM = % 12 bulan; Δ IPI = perubahan pertumbuhan "
+            "IPI mitra (poin persen). Episode: dari titik terendah Rp/USD sampai puncak (melemah ≥10%).",
+         y=276, h=44, x=590, w=328)
     pointers(s, [
-        [(f"Depresiasi datang bersama perlambatan global: ", True, None),
-         (f"pertumbuhan IPI mitra turun di {n_slow} dari 8 episode, sehingga permintaan ekspor sedang lemah saat rupiah "
-          "melemah.", False, None)],
-        [("Neraca mengikuti ekonomi domestik: ", True, None),
-         (f"perbaikan terbesar ({best.episode}, {idn(best.d_xm_12m, 0, sign=True)}%) datang dari impor yang anjlok saat PDB "
-          f"turun {idn(abs(best.dgdp))} poin; kemerosotan terbesar ({worst_.episode}, {idn(worst_.d_xm_12m, 0)}%) saat impor "
-          f"melonjak {idn(worst_.d_m_12m, 0)}%.", False, None)],
-    ], x=610, y=334, w=308, size=10.5)
-    source(s, "ITC Trade Map (ekspor-impor); CEIC (IPI mitra); BPS (PDB); BIS (REER); identifikasi episode oleh penulis")
+        [(f"Neraca membaik hanya di {n_up} dari 8 episode. ", True, None),
+         ("Dua depresiasi terbesar, " + " dan ".join(big2.episode) + ", justru diikuti surplus yang menyusut tajam.",
+          False, None)],
+        [("Neraca mengikuti panel C dan D, bukan A: ", True, None),
+         ("surplus terbesar (2021–22) muncul saat harga komoditas melonjak; defisit 2012–14 dan 2018–19 muncul di tengah "
+          "depresiasi.", False, None)],
+        [(f"IPI mitra melambat di {n_slow} dari 8 episode: ", True, None),
+         ("rupiah sering melemah saat permintaan ekspor sedang turun, sehingga efek kurs tertutup perlambatan global.",
+          False, None)],
+    ], x=590, y=324, w=328, size=10)
+    source(s, "BIS; ITC Trade Map; Bloomberg; CEIC (IPI tertimbang: ipi_mitra_10.xlsx); olahan penulis")
 
     s = content(prs, f"Setelah depresiasi, rasio ekspor/impor rata-rata {idn(ep_mean)}% dalam 12 bulan, tidak lebih baik "
                      f"daripada bulan biasa ({idn(bench)}%)",
