@@ -28,6 +28,7 @@ Sejak Bahmani-Oskooee & Brooks (1999), sebagian besar studi J-curve memakai ARDL
 
 **Studi Indonesia** juga hampir semuanya memakai ARDL/NARDL:
 - Bahmani-Oskooee & Harvey (2009): ARDL bilateral untuk 13 mitra. J-curve ditemukan pada 5 mitra.
+- Bahmani-Oskooee & Harvey (2015): AS–Indonesia per industri (23 industri), ARDL. Menyatakan bahwa studi sebelumnya yang memakai data agregat (Indonesia–dunia) maupun bilateral AS tidak menemukan hubungan signifikan antara kurs rupiah dan neraca; per industri, hanya sedikitnya 9 dari 23 industri yang membaik dalam jangka panjang.
 - Bahmani-Oskooee & Harvey (2019): NARDL bilateral. Asimetri jangka pendek ditemukan di hampir semua mitra, dan asimetri jangka panjang di 5 mitra.
 - Rifami & Heriqbaldi (2023): Indonesia–China per industri. J-curve ditemukan di 2 industri dengan ARDL dan 9 industri dengan NARDL.
 
@@ -89,6 +90,7 @@ Perbaikan data yang tersisa:
 - Bahmani-Oskooee, M., & Brooks, T.J. (1999). Bilateral J-curve between US and her trading partners. *Weltwirtschaftliches Archiv*, 135(1), 156–165.
 - Bahmani-Oskooee, M., & Fariditavana, H. (2016). Nonlinear ARDL approach and the J-curve phenomenon. *Open Economies Review*, 27(1), 51–70.
 - Bahmani-Oskooee, M., & Harvey, H. (2009). The J-curve: Indonesia vs. her major trading partners. *Journal of Economic Integration*, 24(4), 765–777.
+- Bahmani-Oskooee, M., & Harvey, H. (2015). The J-curve: evidence from industry-level data between the U.S. and Indonesia. *The International Trade Journal*, 29(2), 103–114. doi:10.1080/08853908.2015.1005779
 - Bahmani-Oskooee, M., & Harvey, H. (2019). The J-curve and bilateral trade balances of Indonesia with its major partners: are there asymmetric effects? *New Zealand Economic Papers*, 53(1), 63–76.
 - Bahmani-Oskooee, M., & Hegerty, S.W. (2010). The J- and S-curves: a survey of the recent literature. *Journal of Economic Studies*, 37(6), 580–596.
 - Bahmani-Oskooee, M., & Ratha, A. (2004). The J-curve: a literature review. *Applied Economics*, 36(13), 1377–1398.
