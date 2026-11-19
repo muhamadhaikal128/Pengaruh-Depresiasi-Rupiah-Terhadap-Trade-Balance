@@ -217,6 +217,117 @@ def fig_timeline():
     return save(fig, "episode_timeline")
 
 
+def shade_episodes(axes):
+    for r in eps.itertuples():
+        st, en = pd.to_datetime(r.mulai, format="%b %Y"), pd.to_datetime(r.puncak, format="%b %Y")
+        for x in axes:
+            x.axvspan(st, en, color=C(ORANGE), alpha=0.18, lw=0)
+
+
+def fig_timeline_macro():
+    """episode depresiasi dibandingkan dengan ekspor-impor, permintaan mitra, dan PDB Indonesia"""
+    a = agg.set_index("mdate")
+    a = a[a.index >= "2006-01-01"]
+    fig, axs = plt.subplots(4, 1, figsize=(6.4, 5.6), sharex=True)
+    shade_episodes(axs)
+    ax, bx, cx, dx = axs
+    for v, c, lb in [("exports_usdk", ORANGE, "ekspor"), ("imports_usdk", BROWN, "impor")]:
+        s = (a[v] / 1e6).rolling(12).mean()
+        ax.plot(s.index, s.values, color=C(c), lw=1.7)
+        ax.text(s.index[-1] + pd.Timedelta(days=50), s.iloc[-1], lb, color=C(c), fontsize=8,
+                va="bottom" if lb == "ekspor" else "top", fontweight="bold")
+    ip = a.yf_avg.rolling(3).mean()
+    gd = a.lngdp_idn.diff(12) * 100
+    rr = a.reer_bis_broad
+    for x, s, c in [(bx, ip, BROWN), (cx, gd, BROWN)]:
+        x.axhline(0, color="#404040", lw=0.8)
+        x.plot(s.index, s.values, color=C(c), lw=1.6)
+    dx.plot(rr.index, rr.values, color=C(BROWN), lw=1.6)
+    for x, t in [(ax, "A · Ekspor dan impor, USD miliar/bulan (rata-rata 12 bulan)"),
+                 (bx, "B · Permintaan mitra: IPI 10 mitra, % yoy (rata-rata 3 bulan)"),
+                 (cx, "C · PDB riil Indonesia, % yoy"),
+                 (dx, "D · REER, 2020 = 100 (turun = rupiah melemah riil)")]:
+        x.text(0.005, 0.97, t, transform=x.transAxes, ha="left", va="top", fontsize=8.5, fontweight="bold",
+               color="#262626", bbox=dict(facecolor="white", edgecolor="none", alpha=0.8, pad=1))
+        x.tick_params(labelsize=8)
+        lo, hi = x.get_ylim()
+        x.set_ylim(lo, hi + (hi - lo) * 0.3)
+    ax.set_xlim(pd.Timestamp("2006-01-01"), pd.Timestamp("2027-09-01"))
+    fig.tight_layout(h_pad=0.4)
+    return save(fig, "episode_makro")
+
+
+def fig_lp_intuition():
+    """ilustrasi local projections: satu regresi per horizon, koefisien dirangkai menjadi impulse response"""
+    s = lp[(lp.model == "A1_ols") & (lp.id == "AGG")].sort_values("h")
+    fig, (ax, bx) = plt.subplots(2, 1, figsize=(4.4, 4.2), gridspec_kw={"height_ratios": [0.8, 1.4]})
+    # panel atas: garis waktu
+    ax.set_xlim(-3, 26.5); ax.set_ylim(-0.3, 4.6); ax.axis("off")
+    ax.plot([-2, 25], [0.4, 0.4], color="#7F7F7F", lw=1)
+    ax.plot([0], [0.4], "o", color=C(BROWN), ms=9, zorder=5)
+    ax.text(0, -0.25, "bulan t:\nrupiah melemah", ha="center", va="top", fontsize=8, color=C(BROWN), fontweight="bold")
+    for k, (h, yy) in enumerate([(0, 1.1), (6, 1.75), (12, 2.4), (24, 3.05)]):
+        ax.plot([0, 0, h, h], [0.55, yy, yy, 0.55], color=C(ORANGE), lw=1.3)
+        ax.plot([h], [0.55], marker="v", color=C(ORANGE), ms=5)
+        ax.text(h + 0.4 if h < 24 else h - 0.4, yy + 0.08, f"regresi {k + 1}: h = {h}", fontsize=8,
+                ha="left" if h < 24 else "right", va="bottom", color="#404040")
+        if h > 0:
+            ax.text(h, 0.05, f"t+{h}", ha="center", va="top", fontsize=7.5, color="#595959")
+    ax.text(-2.8, 4.55, "1 · Untuk setiap h, satu regresi: perubahan rasio X/M dari t−1 ke t+h", fontsize=8.5,
+            fontweight="bold", color="#262626", va="top")
+    # panel bawah: hasilnya
+    bx.fill_between(s.h, s.lo90, s.hi90, color=C(BROWN), alpha=0.15, lw=0)
+    bx.plot(s.h, s.eff, color=C(BROWN), lw=1.6)
+    for h in (0, 6, 12, 24):
+        r = s[s.h == h].iloc[0]
+        bx.plot([h], [r.eff], "o", color=C(ORANGE), ms=6, zorder=5, mec="white")
+    r12 = s[s.h == 12].iloc[0]
+    bx.annotate(f"koefisien regresi h = 12:\n{r12.eff:.1f}%".replace(".", ",").replace("-", "−"), (12, r12.eff),
+                xytext=(14.5, -19.5), fontsize=8, color="#262626", arrowprops=dict(arrowstyle="-", color="#404040", lw=0.7))
+    bx.axhline(0, color="#404040", lw=0.9)
+    bx.set_ylim(-25, 12); bx.set_xlim(-0.5, 25)
+    bx.set_xticks(range(0, 25, 6)); bx.set_xlabel("Bulan setelah rupiah melemah (h)", fontsize=9)
+    bx.set_ylabel("% rasio X/M", fontsize=9); bx.tick_params(labelsize=8)
+    bx.set_title("2 · Koefisien dari 25 regresi dirangkai menjadi impulse response", fontsize=8.5, fontweight="bold",
+                 loc="left", color="#262626")
+    fig.tight_layout(h_pad=0.6)
+    return save(fig, "lp_intuisi")
+
+
+def fig_pretrend():
+    """rasio X/M sebelum dan sesudah awal episode: sudah turun sebelum rupiah melemah"""
+    g = ev[(ev.k >= -6) & (ev.k <= 12)].groupby("k").xm_idx
+    m, lo_, hi_ = g.mean(), g.quantile(0.25), g.quantile(0.75)
+    fig, ax = plt.subplots(figsize=(4.3, 2.9))
+    ax.fill_between(lo_.index, lo_.values, hi_.values, color=C(MUTED), alpha=0.3, lw=0)
+    ax.axvspan(-6, 0, color=C(BROWN), alpha=0.07, lw=0)
+    ax.plot(m.index, m.values, color=C(BROWN), lw=2.6)
+    ax.axhline(100, color="#404040", lw=0.9); ax.axvline(0, color="#7F7F7F", lw=0.9, ls="--")
+    ax.annotate(f"{m.loc[-6]:.1f} → 100:\nsudah turun sebelum\nrupiah melemah".replace(".", ","),
+                (-3, m.loc[-3]), xytext=(-5.8, 82), fontsize=8.5, color=C(BROWN), fontweight="bold",
+                arrowprops=dict(arrowstyle="-", color=C(BROWN), lw=0.7))
+    ax.text(0.4, 113.5, "rupiah mulai melemah →", fontsize=8, color="#595959", va="top")
+    ax.set_ylim(80, 114); ax.set_xlim(-6, 12); ax.set_xticks(range(-6, 13, 3))
+    ax.set_xlabel("Bulan sejak awal episode depresiasi", fontsize=9); ax.set_ylabel("Rasio X/M (awal episode = 100)", fontsize=9)
+    ax.tick_params(labelsize=8.5)
+    return save(fig, "pretrend")
+
+
+def fig_corr_dep():
+    """korelasi depresiasi riil dengan variabel lain (perubahan 12 bulan)"""
+    lab = [("d_x", "Ekspor"), ("ipi", "IPI mitra"), ("d_xm", "Rasio X/M"), ("d_bcom", "Harga komoditas"),
+           ("d_m", "Impor"), ("d_gdp", "PDB Indonesia")]
+    v = pd.Series({nm: sct["d_dep"].corr(sct[c]) for c, nm in lab}).sort_values()
+    fig, ax = plt.subplots(figsize=(4.3, 2.9))
+    ax.barh(v.index, v.values, color=[C(BROWN) if x < -0.15 else "#" + PALE[BROWN] for x in v.values], height=0.6)
+    for i, x in enumerate(v.values):
+        ax.text(x - 0.01, i, f"{x:.2f}".replace(".", ",").replace("-", "−"), va="center", ha="right", fontsize=9)
+    ax.axvline(0, color="#404040", lw=0.9); ax.grid(axis="y", visible=False)
+    ax.set_xlim(-0.4, 0.1); ax.tick_params(labelsize=9)
+    ax.set_xlabel("← turun saat rupiah melemah     korelasi     naik →", fontsize=9)
+    return save(fig, "korelasi_depresiasi"), v
+
+
 def zones(ax, lo, hi, base=0.0, up="Di atas 0: neraca membaik", dn="Di bawah 0: neraca memburuk"):
     """arsir zona membaik (oranye) dan memburuk (cokelat) supaya arah grafik langsung terbaca"""
     ax.axhspan(base, hi, color=C(ORANGE), alpha=0.07, lw=0)
@@ -817,7 +928,7 @@ def build():
          "barang yang sensitif harga lebih relevan daripada mengandalkan pelemahan kurs."),
     ], y0=206, step=64, desc=11.5, head=13)
     note(s, "Catatan: hasil konsisten antar metode, tetapi kemungkinan ~reverse causality~ belum sepenuhnya tertangani; lihat slide "
-            "“Mengapa negatif?” dan keterbatasan di kesimpulan.", y=470, h=30)
+            "“Mengapa depresiasi tidak memperbaiki neraca?” dan keterbatasan di kesimpulan.", y=470, h=30)
     source(s, "Estimasi penulis; ITC Trade Map, BIS, Bloomberg")
 
     # ---- alur presentasi
@@ -829,13 +940,13 @@ def build():
     flow = [("01", "Teori dan literatur", "Apa yang seharusnya terjadi?",
              "Marshall-Lerner, J-curve, bukti global dan Indonesia, research gap, tiga RQ."),
             ("02", "Data", "Apa yang diukur?",
-             "14 variabel bulanan 2006–2026; 10 mitra; 6.883 kode HS-6 menjadi 7 kelompok; indeks harga dan volume."),
+             "10 mitra; 6.883 kode HS-6 menjadi 7 kelompok; indeks harga dan volume; statistik deskriptif."),
             ("03", "Fakta awal", "Apa kata data sebelum model?",
              "8 episode depresiasi, neraca sebelum-sesudah, faktor penggerak neraca, pola per mitra dan kelompok."),
             ("04", "Metodologi", "Cara memisahkan efek kurs?",
-             "Tahapan analisis, ARDL sebagai standar literatur, local projections sebagai pembanding, cara membaca angka."),
+             "Tahapan analisis, ARDL vs local projections, daftar 14 variabel, model specification, interpretasi koefisien."),
             ("05", "Hasil", "Apa jawabannya?",
-             "RQ1–RQ3, masing-masing dibedah menjadi harga vs volume; uji Marshall-Lerner; mengapa negatif."),
+             "RQ1–RQ3, masing-masing dibedah menjadi harga vs volume; uji Marshall-Lerner; mengapa tidak membaik."),
             ("06", "Diagnostik", "Seberapa yakin?",
              "~Unit root test~, ~cointegration~, uji ~residual~, CUSUM, 11 spesifikasi alternatif, NARDL, panel.")]
     cw_ = 139
@@ -1030,47 +1141,7 @@ def build():
 
     # =========================================================================
     section(prs, "02", "Data",
-            "Apa yang diukur: variabel, mitra dagang, dan kelompok barang dari 6.883 kode HS-6")
-
-    s = content(prs, "Daftar variabel: 14 seri bulanan Jan 2006–Jun 2026 dari 8 sumber resmi",
-                notes="Tabel ini adalah peta bahan baku riset. Semua seri bulanan, dari 2006 sampai pertengahan 2026. Cara "
-                      "membacanya dari atas ke bawah. Empat baris pertama adalah yang ingin kita jelaskan: neraca dengan dunia, "
-                      "dengan tiap mitra, per kelompok barang, serta harga dan volumenya. Dua baris berikutnya adalah variabel "
-                      "utama, yaitu kurs riil: REER untuk level agregat dan kurs riil bilateral untuk tiap mitra. Kurs riil "
-                      "dipakai, bukan kurs nominal, karena yang menentukan daya saing adalah harga relatif setelah inflasi. "
-                      "Sisanya adalah kontrol: harga komoditas, permintaan mitra, dan PDB Indonesia, karena ketiganya ikut "
-                      "menggerakkan ekspor dan impor. Kalau tidak dikontrol, efeknya bisa keliru terbaca sebagai efek kurs. "
-                      "Batu bara dan CPO dipakai khusus untuk kelompok energi dan pertanian. JISDOR, indeks IMF, dan indeks "
-                      "dolar AS hanya dipakai untuk ~robustness check~ dan sebagai ~instrument~.")
-    table(s, 44, 92, 872, [
-        ["Variabel", "Notasi", "Definisi dan transformasi", "Sumber", "Periode", "Dipakai di"],
-        ["Neraca Indonesia–dunia", "ln(X/M)", "ln ekspor/impor (USD ribu), baris TOTAL HS-6", "ITC Trade Map", "Jan 06–Agu 26", "RQ1"],
-        ["Neraca bilateral", "ln(Xi/Mi)", "Idem, 10 mitra", "ITC Trade Map", "Jan 06–Agu 26", "RQ2"],
-        ["Neraca per kelompok", "ln(Xg/Mg)", "Idem, 7 kelompok HS-6 (UNSD HS–SITC3–BEC5)", "ITC Trade Map; UNSD", "Jan 06–Agu 26", "RQ3"],
-        ["Harga & volume", "Px, Pm, Qx, Qm", "Unit value Fisher (USD/kg per HS-6); volume = nilai ÷ harga",
-         "ITC Trade Map (kuantitas)", "Jan 06–Agu 26", "Dekomposisi"],
-        ["Kurs riil efektif", "ln q", "REER broad, 2020=100, naik = apresiasi", "BIS", "Jan 06–Sep 26", "ARDL, LP agregat"],
-        ["Kurs riil bilateral", "reri", "ln(Rp/mata uang i) + ln CPIi − ln CPIIDN", "BIS (kurs, CPI)", "Jan 06–Okt 26", "LP panel"],
-        ["Kurs nominal", "ln JISDOR", "Rp/USD, rata-rata hari kerja", "Bank Indonesia", "Jun 13–Okt 26", "~Robustness~"],
-        ["Harga komoditas", "ln P", "Bloomberg Commodity Index (BCOM), rata-rata bulanan", "Bloomberg", "Jan 06–Jun 26", "Semua model"],
-        ["Harga batu bara", "ln Pcoal", "Newcastle, rata-rata bulanan", "Bloomberg", "Jan 09–Jun 26", "RQ3 energi"],
-        ["Harga CPO", "ln Pcpo", "Kontrak terdekat, rata-rata bulanan", "Bloomberg", "Jan 06–Jun 26", "RQ3 pertanian"],
-        ["Permintaan mitra", "Y*", "IPI yoy, tertimbang pangsa ekspor 10 mitra", "CEIC", "Jan 06–Agu 26", "Semua model"],
-        ["PDB riil Indonesia", "ln Y", "Indeks 2015=100, interpolasi bulanan", "BPS", "Mar 06–Jun 26", "~Robustness~"],
-        ["Indeks dolar AS", "ln USD", "~Broad dollar index~, rata-rata bulanan", "Federal Reserve", "Jan 06–Okt 26", "Instrumen LP-IV"],
-        ["Indeks komoditas IMF", "ln PIMF", "~All commodities~, 2016=100", "IMF", "Jan 06–Sep 26", "~Robustness~"],
-    ], [1.6, 0.85, 2.7, 1.35, 1.05, 1.15], align=[L, L, L, L, L, L], size=10, row_h=21.5)
-    pointers(s, [
-        [("Peran tiap variabel: ", True, None),
-         ("rasio ekspor/impor adalah ~dependent variable~; kurs riil adalah variabel utama (REER untuk agregat, kurs riil "
-          "bilateral untuk mitra). Harga komoditas, permintaan mitra, dan PDB dikontrol karena ikut menggerakkan ekspor-impor; "
-          "tanpa kontrol, efeknya keliru terbaca sebagai efek kurs. JISDOR, indeks IMF, dan dolar AS hanya untuk ~robustness "
-          "check~ dan ~instrument~.", False, None)],
-        [("Sampel: ", True, None),
-         ("estimasi efektif Jan 2007–Jun 2026 (12 bulan pertama terpakai untuk lag; akhir sampel dibatasi data BCOM). "
-          "~Dummy~: ~seasonal~ (11 bulan), krisis global Okt 2008–Jun 2009, COVID Mar–Agu 2020.", False, None)],
-    ], y=422, head="", size=10.5)
-    source(s, "ITC Trade Map, BIS, Bank Indonesia, Bloomberg, CEIC, BPS, Federal Reserve, IMF")
+            "Apa yang diukur: mitra dagang, kelompok barang dari 6.883 kode HS-6, serta harga dan volume")
 
     fp, psh, tx, tm, tt = fig_partners()
     s = content(prs, f"Sepuluh mitra yang dianalisis mencakup {idn(tt, 0)}% perdagangan Indonesia selama 2006–2026",
@@ -1264,6 +1335,52 @@ def build():
     ], x=610, y=334, w=308, size=10.5)
     source(s, "BIS (kurs); ITC Trade Map (neraca); Bloomberg (BCOM); identifikasi episode oleh penulis")
 
+    # ---- episode vs permintaan mitra dan PDB Indonesia
+    am_ = agg.set_index("mdate")
+    gdp_g, ipi_ = am_.lngdp_idn.diff(12) * 100, am_.yf_avg
+    d_ipi, d_gdp = [], []
+    for r in E.itertuples():
+        i = am_.index.get_indexer([pd.to_datetime(r.mulai, format="%b %Y")], method="nearest")[0]
+        d_ipi.append(ipi_.iloc[i + 12:i + 15].mean() - ipi_.iloc[i:i + 3].mean())
+        d_gdp.append(gdp_g.iloc[i + 12:i + 15].mean() - gdp_g.iloc[i:i + 3].mean())
+    E["dipi"], E["dgdp"] = d_ipi, d_gdp
+    n_slow = int((E.dipi < 0).sum())
+    best, worst_ = E.loc[E.d_xm_12m.idxmax()], E.loc[E.d_xm_12m.idxmin()]
+    s = content(prs, f"Episode yang sama dari sisi permintaan: IPI mitra melambat di {n_slow} dari 8 episode, dan neraca "
+                     "lebih mengikuti PDB Indonesia daripada kurs",
+                notes="Slide sebelumnya membandingkan kurs dengan neraca dan harga komoditas. Slide ini memakai episode yang sama, "
+                      "tetapi melihat sisi permintaan: ekspor dan impor secara terpisah, produksi industri di sepuluh negara mitra, "
+                      "dan pertumbuhan ekonomi Indonesia. Ada dua pola. Pertama, depresiasi rupiah sering datang bersamaan dengan "
+                      "perlambatan ekonomi mitra, seperti pada 2008, 2013, 2015, dan 2022. Pada saat seperti itu permintaan atas "
+                      "ekspor kita memang sedang turun, sehingga kurs yang melemah tidak banyak membantu. Kedua, perubahan neraca "
+                      "terbesar justru mengikuti ekonomi domestik. Pada 2020 rasio ekspor/impor naik tajam karena impor anjlok "
+                      "ketika PDB Indonesia terkontraksi, bukan karena ekspor naik. Sebaliknya pada 2008 impor melonjak karena "
+                      "ekonomi domestik tumbuh tinggi. Artinya, untuk mengukur efek kurs, permintaan mitra dan PDB domestik harus "
+                      "dikontrol di model.")
+    plabel(s, X1, 88, 566, "Episode depresiasi vs ekspor-impor, permintaan mitra, PDB, dan kurs riil",
+           [("(arsir oranye = episode depresiasi)", False, None)])
+    pic(s, fig_timeline_macro(), X1, 126, 566, 384)
+    rows = [["Episode", "Δ X/M", "Δ IPI mitra", "Δ PDB"]]
+    for r in E.itertuples():
+        rows.append([r.episode.replace("Komoditas jatuh", "Komod. jatuh").replace("Normalisasi", "Normal.")
+                      .replace("Pengetatan", "Pengetat."),
+                     (idn(r.d_xm_12m, 0), DARKOR if r.d_xm_12m > 0 else BROWN),
+                     (idn(r.dipi, sign=True), BROWN if r.dipi < 0 else "000000"),
+                     (idn(r.dgdp, sign=True), BROWN if r.dgdp < 0 else "000000")])
+    table(s, 610, 94, 308, rows, [1.55, 0.6, 0.85, 0.7], size=10, row_h=21)
+    note(s, "12 bulan setelah awal episode. Δ X/M = % rasio ekspor/impor; Δ IPI mitra dan Δ PDB = perubahan pertumbuhan yoy "
+            "(poin persen); cokelat = turun.", y=286, h=44, x=610, w=308)
+    pointers(s, [
+        [(f"Depresiasi datang bersama perlambatan global: ", True, None),
+         (f"pertumbuhan IPI mitra turun di {n_slow} dari 8 episode, sehingga permintaan ekspor sedang lemah saat rupiah "
+          "melemah.", False, None)],
+        [("Neraca mengikuti ekonomi domestik: ", True, None),
+         (f"perbaikan terbesar ({best.episode}, {idn(best.d_xm_12m, 0, sign=True)}%) datang dari impor yang anjlok saat PDB "
+          f"turun {idn(abs(best.dgdp))} poin; kemerosotan terbesar ({worst_.episode}, {idn(worst_.d_xm_12m, 0)}%) saat impor "
+          f"melonjak {idn(worst_.d_m_12m, 0)}%.", False, None)],
+    ], x=610, y=334, w=308, size=10.5)
+    source(s, "ITC Trade Map (ekspor-impor); CEIC (IPI mitra); BPS (PDB); BIS (REER); identifikasi episode oleh penulis")
+
     s = content(prs, f"Setelah depresiasi, rasio ekspor/impor rata-rata {idn(ep_mean)}% dalam 12 bulan, tidak lebih baik "
                      f"daripada bulan biasa ({idn(bench)}%)",
                 notes="Slide sebelumnya memperlihatkan polanya secara visual; slide ini mengujinya dengan cara paling sederhana, tanpa "
@@ -1413,30 +1530,117 @@ def build():
     ], y=392, head="", size=11)
     source(s, "Olahan penulis")
 
-    s = content(prs, "Literatur metodologi: ARDL sebagai standar J-curve, local projections sebagai cek ~endogeneity~",
-                notes="Fakta awal tadi masih bercampur dengan harga komoditas dan permintaan dunia, sehingga kita butuh model untuk "
-                      "memisahkan efek kurs. Tabel ini menjelaskan setiap metode yang dipakai, kegunaannya, dan rujukannya. ARDL dipilih sebagai "
-                      "model utama karena menjadi standar studi J-curve, termasuk di Indonesia. Kelemahannya adalah persamaan "
-                      "tunggal yang rawan ~endogeneity~, sehingga kami menambahkan local projections dengan kurs bilateral dan "
-                      "fixed effects bulan. VECM Johansen tidak dipakai karena rasio ekspor/impor ternyata ~stationary~.")
-    table(s, 44, 94, 872, [
-        ["Metode", "Kegunaan", "Literatur", "Di riset ini"],
-        ["ARDL ~bounds test~", "Efek ~short-run~ dan ~long-run~; variabel I(0)/I(1) campuran; sampel kecil",
-         "Pesaran, Shin & Smith (2001); Bahmani-Oskooee & Brooks (1999); Kripfganz & Schneider (2020)", "Model utama RQ1–RQ3"],
-        ["NARDL", "~Asymmetry~ depresiasi vs apresiasi", "Shin, Yu & Greenwood-Nimmo (2014); Bahmani-Oskooee & Fariditavana (2016)",
-         "~Robustness~ RQ1"],
-        ["Panel PMG / MG", "Efek ~long-run~ lintas mitra, homogen vs heterogen", "Pesaran, Shin & Smith (1999)", "~Robustness~ RQ2"],
-        ["Local projections", "~Impulse response~ per horizon dengan ~confidence interval~; panel dengan ~fixed effects~",
-         "Jordà (2005); Plagborg-Møller & Wolf (2021); Montiel Olea & Plagborg-Møller (2021)", "Konfirmasi RQ1–RQ3"],
-        ["LP-IV", "Efek kausal dengan instrumen eksternal", "Stock & Watson (2018)", "Dicoba; ~weak instrument~"],
-        ["VAR / VECM Johansen", "Sistem endogen, banyak vektor ~cointegration~", "Johansen (1991); Widarjono (2005)",
-         "Tidak dipakai: ln(X/M) ~stationary~"],
-    ], [1.3, 2.4, 2.9, 1.4], align=[L, L, L, L], size=11, row_h=40)
-    pointers(s, [[("Mengapa dua metode: ", True, None),
-                  ("ARDL membuat hasil sebanding dengan literatur Indonesia, tetapi ~single equation~ rawan ~endogeneity~: rupiah "
-                   "dan neraca sama-sama digerakkan siklus komoditas. Local projections dengan kurs bilateral dan ~fixed "
-                   "effects~ bulan menyerap ~common shock~ itu.", False, None)]], y=392, h=70, head="Strategi identifikasi")
+    s = content(prs, "Mengapa dua model: ARDL dan local projections menjawab pertanyaan yang berbeda",
+                notes="Fakta awal tadi masih bercampur dengan harga komoditas dan permintaan dunia, sehingga kita butuh model "
+                      "untuk memisahkan efek kurs. Kami memakai dua model karena masing-masing menjawab pertanyaan yang berbeda. "
+                      "ARDL menjawab apakah ada hubungan long-run antara kurs dan neraca, berapa besarnya, dan seberapa cepat "
+                      "neraca kembali ke keseimbangan. Inilah ukuran Marshall-Lerner, dan ARDL adalah standar di literatur "
+                      "J-curve, termasuk studi Indonesia, sehingga hasil kami bisa dibandingkan. Kelemahannya, seluruh jalur "
+                      "respons diturunkan dari satu persamaan; bila persamaan itu keliru, seluruh jalurnya ikut keliru. Local "
+                      "projections menjawab pertanyaan yang lebih langsung: setelah rupiah melemah, berapa perubahan neraca satu "
+                      "bulan kemudian, enam bulan kemudian, setahun kemudian, dan seterusnya. Setiap bulan diestimasi terpisah, "
+                      "sehingga bentuk J tidak dipaksakan maupun dihalangi. Versi panelnya membandingkan sepuluh mitra pada bulan "
+                      "yang sama, sehingga global shock seperti harga komoditas terserap. Kesimpulan kami hanya dianggap kuat "
+                      "bila muncul di kedua model.")
+    table(s, 44, 92, 872, [
+        ["", "ARDL (model utama)", "Local projections (pembanding)"],
+        ["Pertanyaan yang dijawab", "Adakah hubungan ~long-run~ antara kurs riil dan neraca, berapa besarnya, dan seberapa cepat "
+                                    "neraca kembali ke ~equilibrium~?",
+         "Bagaimana neraca bergerak bulan demi bulan (0–24) setelah rupiah melemah, tanpa memaksakan bentuk hubungan?"],
+        ["Cara kerja", "Satu persamaan: neraca dijelaskan nilai masa lalunya, kurs, dan kontrol; jalur 24 bulan diturunkan dari "
+                       "koefisien (~dynamic multiplier~)",
+         "25 regresi terpisah, satu untuk tiap bulan h; koefisien tiap regresi langsung menjadi satu titik di grafik"],
+        ["Dipakai untuk", "Uji Marshall-Lerner (efek ~long-run~), elastisitas volume ekspor-impor, RQ3 per kelompok",
+         "Uji J-curve (jalur bulanan), RQ2 per mitra dengan kurs bilateral, dekomposisi harga vs volume"],
+        ["Kelebihan", "Standar literatur J-curve sehingga sebanding dengan studi Indonesia; sah untuk campuran I(0)/I(1)",
+         "Tetap valid bila model kurang tepat; ~confidence interval~ per bulan; panel dengan ~fixed effects~ bulan menyerap "
+         "~global shock~"],
+        ["Keterbatasan", "~Single equation~ rawan ~endogeneity~; bila hubungan ~long-run~ keliru, seluruh jalur ikut keliru",
+         "Lebih ~noisy~ di horizon jauh; tidak memberi satu angka ~long-run~"],
+        ["Rujukan", "Pesaran, Shin & Smith (2001); Bahmani-Oskooee & Brooks (1999); Kripfganz & Schneider (2020)",
+         "Jordà (2005); Plagborg-Møller & Wolf (2021); Montiel Olea & Plagborg-Møller (2021)"],
+    ], [1.3, 3.0, 3.0], align=[L, L, L], size=10.5, row_h=44)
+    pointers(s, [
+        [("Aturan membaca hasil: ", True, None),
+         ("kesimpulan dianggap kuat hanya bila muncul di kedua model; hasil yang hanya muncul di satu model ditandai belum "
+          "robust.", False, None)],
+        [("Metode pendukung: ", True, None),
+         ("NARDL untuk ~asymmetry~ depresiasi vs apresiasi (Shin dkk. 2014), panel PMG/MG untuk efek ~long-run~ lintas mitra "
+          "(Pesaran dkk. 1999), LP-IV dengan indeks dolar AS (dicoba, ~weak instrument~). VECM Johansen tidak dipakai karena "
+          "ln(X/M) ~stationary~.", False, None)],
+    ], y=410, head="", size=10.5)
     source(s, "Lihat notes/4_litrev_metode.md untuk daftar pustaka lengkap")
+
+    s = content(prs, "Local projections secara intuitif: satu regresi untuk setiap bulan setelah rupiah melemah",
+                notes="Local projections mungkin terdengar teknis, tetapi idenya sederhana. Kita ingin tahu: kalau rupiah melemah "
+                      "bulan ini, apa yang terjadi pada neraca bulan ini, enam bulan lagi, setahun lagi, sampai dua tahun lagi. "
+                      "Untuk menjawabnya, kami menjalankan satu regresi untuk setiap jarak waktu. Regresi pertama melihat "
+                      "perubahan neraca di bulan yang sama, regresi berikutnya satu bulan kemudian, dan seterusnya sampai 24 "
+                      "bulan. Setiap regresi membandingkan bulan-bulan ketika rupiah melemah dengan bulan-bulan lain yang "
+                      "kondisinya serupa: harga komoditas, permintaan mitra, dan musimnya sama. Koefisien dari tiap regresi "
+                      "adalah satu titik di grafik bawah. Kalau titik-titik itu dirangkai, kita mendapat jalur respons neraca. "
+                      "Karena tiap bulan diestimasi sendiri, bentuk J tidak dipaksakan: kalau J-curve memang ada, ia akan "
+                      "terlihat dengan sendirinya. Area arsir menunjukkan ketidakpastian; kalau seluruh arsir di bawah nol, "
+                      "penurunan itu signifikan.")
+    pic(s, fig_lp_intuition(), X1, 88, W1, 420)
+    numbered(s, [
+        ("Pertanyaannya",
+         "Bila rupiah melemah riil 10% di bulan t, berapa beda rasio X/M h bulan kemudian, dibanding bulan lain dengan harga "
+         "komoditas, permintaan mitra, dan musim yang sama?"),
+        ("Satu regresi per bulan",
+         "Untuk h = 0, 1, …, 24: perubahan rasio X/M dari t−1 ke t+h diregresikan pada depresiasi di t plus kontrol. "
+         "Koefisiennya, bh, adalah efek di bulan ke-h."),
+        ("Rangkai menjadi grafik",
+         "25 koefisien diplot berurutan menjadi ~impulse response~. Arsir = 90% ~confidence interval~: bila seluruhnya di "
+         "bawah nol, penurunan signifikan."),
+    ], x=X2, w=W2, y0=92, step=96, desc=11.5, head=13)
+    pointers(s, [
+        [("Mengapa perlu, padahal sudah ada ARDL: ", True, None),
+         ("ARDL menurunkan jalur dari satu persamaan; LP mengukur tiap bulan langsung, sehingga J-curve tidak dipaksakan "
+          "maupun dihalangi. Versi panel membandingkan 10 mitra di bulan yang sama, sehingga ~global shock~ terserap.",
+          False, None)],
+    ], x=X2, y=384, w=W2, head="", size=11)
+    source(s, "Jordà (2005); estimasi penulis")
+
+    s = content(prs, "Daftar variabel: 14 seri bulanan Jan 2006–Jun 2026 dari 8 sumber resmi",
+                notes="Tabel ini adalah peta bahan baku riset. Semua seri bulanan, dari 2006 sampai pertengahan 2026. Cara "
+                      "membacanya dari atas ke bawah. Empat baris pertama adalah yang ingin kita jelaskan: neraca dengan dunia, "
+                      "dengan tiap mitra, per kelompok barang, serta harga dan volumenya. Dua baris berikutnya adalah variabel "
+                      "utama, yaitu kurs riil: REER untuk level agregat dan kurs riil bilateral untuk tiap mitra. Kurs riil "
+                      "dipakai, bukan kurs nominal, karena yang menentukan daya saing adalah harga relatif setelah inflasi. "
+                      "Sisanya adalah kontrol: harga komoditas, permintaan mitra, dan PDB Indonesia, karena ketiganya ikut "
+                      "menggerakkan ekspor dan impor. Kalau tidak dikontrol, efeknya bisa keliru terbaca sebagai efek kurs. "
+                      "Batu bara dan CPO dipakai khusus untuk kelompok energi dan pertanian. JISDOR, indeks IMF, dan indeks "
+                      "dolar AS hanya dipakai untuk ~robustness check~ dan sebagai ~instrument~.")
+    table(s, 44, 92, 872, [
+        ["Variabel", "Notasi", "Definisi dan transformasi", "Sumber", "Periode", "Dipakai di"],
+        ["Neraca Indonesia–dunia", "ln(X/M)", "ln ekspor/impor (USD ribu), baris TOTAL HS-6", "ITC Trade Map", "Jan 06–Agu 26", "RQ1"],
+        ["Neraca bilateral", "ln(Xi/Mi)", "Idem, 10 mitra", "ITC Trade Map", "Jan 06–Agu 26", "RQ2"],
+        ["Neraca per kelompok", "ln(Xg/Mg)", "Idem, 7 kelompok HS-6 (UNSD HS–SITC3–BEC5)", "ITC Trade Map; UNSD", "Jan 06–Agu 26", "RQ3"],
+        ["Harga & volume", "Px, Pm, Qx, Qm", "Unit value Fisher (USD/kg per HS-6); volume = nilai ÷ harga",
+         "ITC Trade Map (kuantitas)", "Jan 06–Agu 26", "Dekomposisi"],
+        ["Kurs riil efektif", "ln q", "REER broad, 2020=100, naik = apresiasi", "BIS", "Jan 06–Sep 26", "ARDL, LP agregat"],
+        ["Kurs riil bilateral", "reri", "ln(Rp/mata uang i) + ln CPIi − ln CPIIDN", "BIS (kurs, CPI)", "Jan 06–Okt 26", "LP panel"],
+        ["Kurs nominal", "ln JISDOR", "Rp/USD, rata-rata hari kerja", "Bank Indonesia", "Jun 13–Okt 26", "~Robustness~"],
+        ["Harga komoditas", "ln P", "Bloomberg Commodity Index (BCOM), rata-rata bulanan", "Bloomberg", "Jan 06–Jun 26", "Semua model"],
+        ["Harga batu bara", "ln Pcoal", "Newcastle, rata-rata bulanan", "Bloomberg", "Jan 09–Jun 26", "RQ3 energi"],
+        ["Harga CPO", "ln Pcpo", "Kontrak terdekat, rata-rata bulanan", "Bloomberg", "Jan 06–Jun 26", "RQ3 pertanian"],
+        ["Permintaan mitra", "Y*", "IPI yoy, tertimbang pangsa ekspor 10 mitra", "CEIC", "Jan 06–Agu 26", "Semua model"],
+        ["PDB riil Indonesia", "ln Y", "Indeks 2015=100, interpolasi bulanan", "BPS", "Mar 06–Jun 26", "~Robustness~"],
+        ["Indeks dolar AS", "ln USD", "~Broad dollar index~, rata-rata bulanan", "Federal Reserve", "Jan 06–Okt 26", "Instrumen LP-IV"],
+        ["Indeks komoditas IMF", "ln PIMF", "~All commodities~, 2016=100", "IMF", "Jan 06–Sep 26", "~Robustness~"],
+    ], [1.6, 0.85, 2.7, 1.35, 1.05, 1.15], align=[L, L, L, L, L, L], size=10, row_h=21.5)
+    pointers(s, [
+        [("Peran tiap variabel: ", True, None),
+         ("rasio ekspor/impor adalah ~dependent variable~; kurs riil adalah variabel utama (REER untuk agregat, kurs riil "
+          "bilateral untuk mitra). Harga komoditas, permintaan mitra, dan PDB dikontrol karena ikut menggerakkan ekspor-impor; "
+          "tanpa kontrol, efeknya keliru terbaca sebagai efek kurs. JISDOR, indeks IMF, dan dolar AS hanya untuk ~robustness "
+          "check~ dan ~instrument~.", False, None)],
+        [("Sampel: ", True, None),
+         ("estimasi efektif Jan 2007–Jun 2026 (12 bulan pertama terpakai untuk lag; akhir sampel dibatasi data BCOM). "
+          "~Dummy~: ~seasonal~ (11 bulan), krisis global Okt 2008–Jun 2009, COVID Mar–Agu 2020.", False, None)],
+    ], y=422, head="", size=10.5)
+    source(s, "ITC Trade Map, BIS, Bank Indonesia, Bloomberg, CEIC, BPS, Federal Reserve, IMF")
 
     s = content(prs, "~Model specification~: ARDL bentuk ~error correction~ dan local projections per horizon",
                 notes="Model pertama, ARDL, menjelaskan perubahan neraca bulan ini dengan dua bagian: seberapa jauh neraca "
@@ -1472,26 +1676,31 @@ def build():
              y=432, head="", size=11.5)
     source(s, "Pesaran dkk. (2001); Jordà (2005); Kripfganz & Schneider (2023)")
 
-    s = content(prs, "Dari koefisien ke angka di slide: semua hasil diubah ke efek depresiasi riil 10%",
-                notes="Slide ini menjelaskan langkah yang biasanya terlewat: bagaimana angka di tabel hasil diperoleh dari output "
-                      "regresi. Koefisien kurs dikalikan 10 dan tandanya disesuaikan, sehingga semua angka bisa dibaca "
-                      "seragam: persen perubahan rasio ekspor/impor bila rupiah melemah riil 10 persen. Positif berarti "
-                      "membaik.")
+    s = content(prs, "Interpretasi koefisien: efek depresiasi riil 10% adalah simulasi dari koefisien yang diestimasi",
+                notes="Model menghasilkan koefisien dalam bentuk elastisitas, yang sulit dibaca langsung. Karena itu setiap koefisien "
+                      "kami terjemahkan menjadi satu skenario yang sama: seandainya rupiah melemah riil 10 persen, berapa persen "
+                      "rasio ekspor/impor berubah. Angka 10 persen ini bukan peristiwa nyata, melainkan simulasi dari koefisien. "
+                      "Karena modelnya dalam logaritma, efeknya proporsional: depresiasi 5 persen memberi separuh efek, dan 20 "
+                      "persen dua kalinya. Dengan satu skenario untuk semua model, hasil ARDL, local projections, per mitra, dan "
+                      "per kelompok bisa dibandingkan langsung. Positif berarti neraca membaik.")
     numbered(s, [
         ("Langkah 1 · estimasi",
          "ARDL menghasilkan koefisien ~long-run~ θ1 untuk ln REER. Contoh model utama: θ1 = "
          f"{idn(A1.lr, 2)}. LP menghasilkan bh untuk setiap bulan h."),
         ("Langkah 2 · samakan arah",
          "REER naik berarti rupiah ~menguat~. Depresiasi riil 10% berarti ln REER turun 0,10, sehingga efeknya = −0,10 × θ1."),
-        ("Langkah 3 · ubah ke persen",
+        ("Langkah 3 · simulasikan depresiasi 10%",
          f"Efek = −0,10 × θ1 × 100 = −10 × θ1. Contoh: −10 × {idn(A1.lr, 2)} = {idn(A1.eff10_lr)}% perubahan rasio ekspor/impor."),
         ("Langkah 4 · baca jalurnya",
          "~Dynamic multiplier~ (ARDL) dan ~impulse response~ (LP) diubah dengan cara yang sama untuk bulan 0–24, lalu "
          "diplot. Bintang (*) = signifikan pada 10%; warna menunjukkan arah: cokelat = memburuk, oranye = membaik."),
-    ], step=78, desc=12, head=13.5)
-    pointers(s, [[("Contoh membaca: ", True, None),
+    ], step=76, desc=12, head=13.5)
+    pointers(s, [[("Simulasi, bukan peristiwa: ", True, None),
+                  ("10% dipilih sebagai skenario yang mudah dibaca. Karena model dalam logaritma, efek depresiasi 5% = separuhnya "
+                   "dan 20% = dua kalinya.", False, None)],
+                 [("Contoh membaca: ", True, None),
                   ("angka −10 di bulan ke-12 berarti rasio ekspor/impor 1,10 menjadi 0,99 setahun setelah rupiah melemah riil "
-                   "10%: surplus kecil berubah menjadi defisit kecil.", False, None)]], y=418, h=50, head="")
+                   "10%: surplus kecil berubah menjadi defisit kecil.", False, None)]], y=404, head="", size=11.5)
     source(s, "Olahan penulis")
 
 
@@ -1505,43 +1714,59 @@ def build():
                       "sekitar sepuluh persen dalam enam sampai dua belas bulan dan tidak kembali ke atas nol. Tidak ada "
                       "bentuk J, dan efek ~long-run~nya tidak signifikan, sehingga kondisi Marshall-Lerner tidak "
                       "terpenuhi untuk Indonesia.")
-    plabel(s, X1, 88, W1, "ARDL: respons kumulatif rasio X/M", [("(persen; ~dynamic multiplier~)", False, None)])
-    pic(s, fig_ardl_jcurve(), X1, 126, W1, 250)
-    plabel(s, X2, 88, W2, "Local projections: respons rasio X/M", [("(persen; arsir = 90% ~confidence interval~)", False, None)])
-    pic(s, fig_lp_line(), X2, 126, W2, 250)
+    plabel(s, X1, 88, W1, "ARDL: jalur yang diturunkan dari satu persamaan", [("(% rasio X/M; ~dynamic multiplier~)", False, None)])
+    pic(s, fig_ardl_jcurve(), X1, 126, W1, 236)
+    plabel(s, X2, 88, W2, "Local projections: diestimasi langsung per bulan",
+           [("(% rasio X/M; tiap titik = satu regresi; arsir = 90% CI)", False, None)])
+    pic(s, fig_lp_line(), X2, 126, W2, 236)
     rows = [["", "Bulan 0", "Bulan 6", "Bulan 12", "Bulan 24", "~Long-run~"],
             ["ARDL", idn(A1.eff10_sr0), idn(A1.eff10_m6), idn(A1.eff10_m12), idn(A1.eff10_m24),
              f"{idn(A1.eff10_lr)} (p = {idn(A1.lr_p, 2)})"],
             ["Local projections"] + [sig(lpv("A1_ols", "AGG", h), lpv("A1_ols", "AGG", h, "p")) for h in (0, 6, 12, 24)] + ["–"]]
-    table(s, 44, 384, 872, rows, [1.6, 1, 1, 1, 1, 1.6], size=11, row_h=20)
+    table(s, 44, 368, 872, rows, [1.6, 1, 1, 1, 1, 1.6], size=11, row_h=19)
     pointers(s, [
-        "Tidak ada J-curve: di kedua grafik garis tidak pernah masuk zona oranye (membaik) dalam 24 bulan.",
-        "Marshall-Lerner tidak terpenuhi: efek ~long-run~ ARDL tidak signifikan. Spesifikasi lain (garis abu-abu: lag BIC, "
-        "10 mitra) memberi arah yang sama. Angka cokelat di tabel = memburuk dan signifikan 10%.",
-    ], y=448, head="", size=11)
+        [("Cara membaca: ", True, None),
+         ("garis = % perubahan rasio X/M h bulan setelah rupiah melemah riil 10%. Kedua model sepakat: rasio turun sekitar 10% "
+          "di bulan 6–12. Di grafik kanan, arsir seluruhnya di bawah nol pada bulan 6–12, artinya penurunan itu signifikan.",
+          False, None)],
+        [("Jawaban RQ1: ", True, None),
+         ("tidak ada J-curve, karena garis tidak pernah masuk zona oranye dalam 24 bulan. Marshall-Lerner tidak terpenuhi, "
+          "karena efek ~long-run~ ARDL tidak signifikan. Spesifikasi lain (garis abu-abu) memberi arah yang sama.", False, None)],
+    ], y=430, head="", size=10.5)
     source(s, "Estimasi penulis")
 
     P = lambda v, h: pvv("P_agg", "AGG10", v, h)
     Pp = lambda v, h: pvv("P_agg", "AGG10", v, h, "p")
     st = lambda v, h: star(Pp(v, h))
-    s = content(prs, "RQ1 dibedah: rasio memburuk terutama karena volume ekspor turun, bukan karena impor naik",
-                notes="Dengan identitas rasio = harga + volume, respons rasio ekspor/impor dipecah menjadi dua channel. Grafik "
-                      "kiri menunjukkan jalurnya dari bulan ke bulan; grafik kanan memecah penurunan di bulan ke-12 menjadi "
-                      "empat komponen. Sebagian besar penurunan datang dari volume ekspor yang turun. Volume impor tidak naik, "
-                      "dan harga ekspor turun sedikit. Teori memprediksi volume ekspor naik, jadi channel volume justru bekerja "
-                      "terbalik.")
-    plabel(s, X1, 88, W1, "Rasio X/M dan dua komponennya", [("(LP, Indonesia–10 mitra; arsir = 90% CI rasio X/M)", False, None)])
-    pic(s, fig_decomp_lines(), X1, 126, W1, 262)
+    s = content(prs, "RQ1 dibedah: tahun pertama rasio turun karena volume ekspor, tahun kedua karena harga",
+                notes="Slide ini menjawab pertanyaan lanjutan dari RQ1: neraca memburuk karena apa? Nilai ekspor dan impor selalu "
+                      "sama dengan harga dikali jumlah barang. Karena itu rasio ekspor/impor bisa dipecah persis menjadi dua "
+                      "bagian. Bagian pertama adalah terms of trade, yaitu harga ekspor dibagi harga impor. Kalau terms of "
+                      "trade turun, barang yang kita jual makin murah dibanding barang yang kita beli. Bagian kedua adalah rasio "
+                      "volume, yaitu jumlah barang yang diekspor dibanding yang diimpor. Di grafik kiri, garis cokelat tebal "
+                      "adalah rasio X/M, dan nilainya selalu sama dengan jumlah garis oranye putus-putus (harga) dan garis abu-abu "
+                      "titik-titik (volume). Di tahun pertama, penurunan terutama datang dari volume ekspor yang turun, padahal "
+                      "teori memprediksi naik. Di tahun kedua polanya berbalik: volume naik ke atas nol, artinya membaik, tetapi "
+                      "harga terus turun. Perbaikan volume itu dimakan penurunan harga, sehingga rasio X/M tetap di bawah nol. "
+                      "Perbaikan volume ini juga belum signifikan, jadi jejak J-curve-nya terlalu lemah untuk disimpulkan.")
+    plabel(s, X1, 88, W1, "Rasio X/M = harga (ToT) + volume", [("(LP, Indonesia–10 mitra; arsir = 90% CI rasio X/M)", False, None)])
+    pic(s, fig_decomp_lines(), X1, 126, W1, 246)
     plabel(s, X2, 88, W2, "Asal penurunan di bulan ke-12", [("(kontribusi tiap komponen ke rasio X/M, %)", False, None)])
-    pic(s, fig_waterfall(12), X2, 126, W2, 262)
+    pic(s, fig_waterfall(12), X2, 126, W2, 246)
     pointers(s, [
-        f"Bulan ke-12: rasio X/M {idn(P('lnxm', 12))}%{st('lnxm', 12)} = ~terms of trade~ {idn(P('lntot', 12))}% + rasio volume "
-        f"{idn(P('lnqxm', 12))}%{st('lnqxm', 12)}. Sekitar dua pertiga penurunan berasal dari volume.",
-        f"Penyebab utamanya volume ekspor yang turun ({idn(P('lnqx', 12))}%{st('lnqx', 12)}), bukan impor yang naik: volume impor "
-        f"{idn(P('lnqm', 12))}% (tidak signifikan). Harga ekspor turun {idn(abs(P('lnpx', 0)))}%{st('lnpx', 0)} sejak bulan 0.",
-        f"Bulan ke-24: harga memburuk (~terms of trade~ {idn(P('lntot', 24))}%{st('lntot', 24)}) tetapi volume mulai berbalik "
-        f"({idn(P('lnqxm', 24), sign=True)}%, tidak signifikan). Ini satu-satunya jejak J-curve, dan terlalu lemah.",
-    ], y=394, size=11, head="")
+        [("Definisi: ", True, None),
+         ("~terms of trade~ (ToT) = harga ekspor ÷ harga impor; turun berarti barang yang kita jual makin murah dibanding barang "
+          "yang kita beli. Rasio volume = jumlah barang diekspor ÷ diimpor. Garis cokelat = garis oranye + garis abu-abu.",
+          False, None)],
+        [("Tahun pertama (bulan 0–12), volume: ", True, None),
+         (f"rasio X/M {idn(P('lnxm', 12))}%{st('lnxm', 12)} = ToT {idn(P('lntot', 12))}% + volume {idn(P('lnqxm', 12))}%"
+          f"{st('lnqxm', 12)}. Penyebabnya volume ekspor yang turun ({idn(P('lnqx', 12))}%{st('lnqx', 12)}), bukan impor yang "
+          f"naik ({idn(P('lnqm', 12))}%, tidak signifikan).", False, None)],
+        [("Tahun kedua (bulan 18–24), harga: ", True, None),
+         (f"volume berbalik ke atas nol, artinya membaik ({idn(P('lnqxm', 24), sign=True)}%, belum signifikan), tetapi ToT makin "
+          f"turun ({idn(P('lntot', 24))}%{st('lntot', 24)}). Perbaikan volume dimakan penurunan harga, sehingga rasio tetap di "
+          "bawah nol.", False, None)],
+    ], y=380, size=10.5, head="")
     source(s, "Estimasi penulis; ITC Trade Map (kuantitas HS-6)")
 
     vx, vm = avol.loc["V1_qx"], avol.loc["V2_qm"]
@@ -1747,42 +1972,78 @@ def build():
     source(s, "Estimasi penulis")
 
 
-    s = content(prs, "Mengapa negatif? Volume tidak bereaksi, harga komoditas ikut turun, dan ada kemungkinan ~reverse causality~",
-                notes="Slide ini merangkum mengapa hasilnya berlawanan dengan teori, sekarang dengan bukti dari dekomposisi harga "
-                      "dan volume. Tabel kiri memperlihatkan empat komponen neraca dari bulan ke bulan. Ada tiga penjelasan. Dua "
-                      "yang pertama didukung langsung oleh dekomposisi. Yang ketiga, ~reverse causality~, belum "
-                      "bisa disingkirkan dan menjadi langkah lanjutan.")
-    plabel(s, X1, 88, W1, "Empat komponen neraca setelah depresiasi riil 10%",
-           [("(LP, Indonesia–10 mitra, %; tanda impor dibalik: positif = membantu neraca)", False, None)])
-    comp = [("Harga ekspor (Px)", "lnpx", 1), ("Volume ekspor (Qx)", "lnqx", 1), ("Harga impor (−Pm)", "lnpm", -1),
-            ("Volume impor (−Qm)", "lnqm", -1), ("Rasio X/M", "lnxm", 1)]
-    rows = [["Komponen", "Bulan 0", "Bulan 6", "Bulan 12", "Bulan 24"]]
-    for nm, v, sg in comp:
-        rows.append([nm] + [sig(sg * pvv("P_agg", "AGG10", v, h), pvv("P_agg", "AGG10", v, h, "p")) for h in (0, 6, 12, 24)])
-    table(s, X1 + 10, 130, W1 - 10, rows, [1.8, 1, 1, 1, 1], size=11, row_h=24, hl_rows=(5,))
+    pre = ev[ev.k.isin([-6, 0])].groupby("k").xm_idx.mean()
+    pre_drop = (pre.loc[0] / pre.loc[-6] - 1) * 100
+    fcorr, cv = fig_corr_dep()
+    s = content(prs, "Mengapa depresiasi tidak memperbaiki neraca? Tiga penjelasan dan buktinya",
+                notes="Hasil kami berlawanan dengan teori, jadi wajar bertanya mengapa. Kami menguji tiga penjelasan. Pertama, "
+                      "volume tidak bereaksi seperti yang diharapkan. Teori mengatakan rupiah yang murah membuat ekspor lebih "
+                      "laku dan impor berkurang. Kenyataannya, ekspor kita didominasi batu bara, CPO, dan nikel yang harganya "
+                      "ditetapkan dalam dolar dan jumlahnya dibatasi kapasitas produksi, sementara impor kita sebagian besar "
+                      "bahan baku dan mesin yang sulit diganti. Kedua, harga ekspor ikut turun. Depresiasi sering terjadi "
+                      "bersamaan dengan jatuhnya harga komoditas, sehingga nilai ekspor tergerus dari sisi harga. Dua penjelasan "
+                      "ini didukung langsung oleh dekomposisi harga dan volume. Ketiga, bisa jadi arah sebab-akibatnya terbalik: "
+                      "rupiah melemah karena neraca sedang memburuk, atau karena ekonomi dunia melambat. Kalau begitu, kurs "
+                      "bukan penyebab, melainkan gejala. Penjelasan ketiga ini belum bisa kami singkirkan, dan buktinya kami "
+                      "tunjukkan di slide berikutnya.")
+    table(s, 44, 92, 872, [
+        ["Penjelasan", "Apa yang terjadi", "Bukti dari riset ini", "Status"],
+        ["1 · Volume tidak bereaksi",
+         "Rupiah murah seharusnya membuat ekspor lebih laku dan impor berkurang. Tetapi ekspor komoditas dihargai dalam USD "
+         "(~dominant currency~) dan dibatasi kapasitas; impor didominasi input yang sulit diganti.",
+         f"Volume ekspor {idn(pvv('P_agg', 'AGG10', 'lnqx', 12))}%* di bulan 12; volume impor "
+         f"{idn(pvv('P_agg', 'AGG10', 'lnqm', 12))}% (tidak signifikan); εX + εM = {idn(epsx + epsm, 2)}, jauh di bawah 1.",
+         ("Didukung", BROWN)],
+        ["2 · Harga ekspor ikut turun",
+         "Depresiasi sering datang bersamaan dengan jatuhnya harga batu bara dan nikel, sehingga nilai ekspor tergerus dari "
+         "sisi harga.",
+         f"ToT komoditas {idn(pvv('R_group', 'comm', 'lntot', 12))}%*; ToT bilateral China "
+         f"{idn(pvv('Q_partner', 'CHN', 'lntot', 12))}%*; harga ekspor {idn(pvv('P_agg', 'AGG10', 'lnpx', 24))}%* di bulan 24.",
+         ("Didukung", BROWN)],
+        ["3 · ~Reverse causality~ atau ~common shock~",
+         "Rupiah melemah karena neraca sedang memburuk atau karena ekonomi dunia melambat. Kurs menjadi gejala, bukan penyebab.",
+         f"Rasio X/M sudah turun {idn(abs(pre_drop))}% dalam 6 bulan sebelum episode; depresiasi berkorelasi "
+         f"{idn(cv['IPI mitra'], 2)} dengan IPI mitra; instrumen USD lemah (F = {idn(LPIV_F, 2)}).",
+         ("Belum bisa disingkirkan", DARKOR)],
+    ], [1.45, 2.9, 2.75, 0.95], align=[L, L, L, L], size=10.5, row_h=62)
     pointers(s, [
-        "Rasio X/M = jumlah empat komponen. Angka berwarna = signifikan 10% (cokelat memburuk, oranye membaik).",
-        "Komponen terbesar di bulan 12 adalah volume ekspor; di bulan 24 harga ekspor.",
-    ], x=X1 + 10, y=286, w=W1 - 10, head="Cara membaca", size=11)
-    numbered(s, [
-        ("Volume tidak bereaksi seperti teori",
-         f"Volume ekspor turun ({idn(pvv('P_agg', 'AGG10', 'lnqx', 12))}%* di bulan 12), volume impor tidak turun. Ekspor "
-         "komoditas dibatasi kapasitas dan dihargai dalam USD (~dominant currency~); impor didominasi input yang sulit diganti. "
-         f"εX + εM = {idn(epsx + epsm, 2)}."),
-        ("Harga ekspor komoditas ikut turun",
-         f"~Terms of trade~ komoditas {idn(pvv('R_group', 'comm', 'lntot', 12))}%* dan bilateral China "
-         f"{idn(pvv('Q_partner', 'CHN', 'lntot', 12))}%*: depresiasi sering datang bersamaan dengan jatuhnya harga batu bara "
-         "dan nikel."),
-        ("Kemungkinan ~reverse causality~",
-         f"Rupiah cenderung melemah ketika neraca memang sedang memburuk. Harga ekspor sudah turun di bulan 0 "
-         f"({idn(pvv('P_agg', 'AGG10', 'lnpx', 0))}%*), dan instrumen USD terlalu lemah (F = {idn(LPIV_F, 2)}) untuk "
-         "memisahkannya."),
-    ], x=X2, w=W2, y0=92, step=112, desc=11.5, head=13)
-    pointers(s, [[("Langkah lanjutan: ", True, None),
-                  ("identifikasi ~shock~ kurs (SVAR ~sign restrictions~ atau ~US monetary policy shock~) untuk memisahkan "
-                   "penjelasan 3 dari penjelasan 1–2.", False, None)]],
-             y=440, head="", size=11)
+        [("Artinya: ", True, None),
+         ("penjelasan 1 dan 2 berarti efek kurs memang lemah karena struktur ekspor-impor Indonesia. Penjelasan 3 berarti angka "
+          "negatif bisa melebih-lebihkan efek buruk depresiasi. Dalam kedua kasus, rupiah yang lebih lemah tidak memperbaiki "
+          "neraca.", False, None)],
+        [("Lanjutan: ", True, None),
+         ("slide berikutnya menunjukkan bukti untuk penjelasan 3.", False, None)],
+    ], y=362, head="", size=11)
     source(s, "Estimasi penulis; Gopinath dkk. (2020) untuk ~dominant currency~")
+
+    s = content(prs, "Lanjutan: neraca sudah melemah sebelum rupiah turun, dan depresiasi datang bersama perlambatan global",
+                notes="Ini bukti untuk penjelasan ketiga. Grafik kiri memakai delapan episode depresiasi yang sama seperti di "
+                      "bagian fakta awal, tetapi kini kita melihat enam bulan sebelum rupiah mulai melemah. Rasio ekspor/impor "
+                      "ternyata sudah turun sebelum episode dimulai. Artinya, neraca yang memburuk bisa jadi justru ikut "
+                      "mendorong rupiah melemah, bukan sebaliknya. Grafik kanan menunjukkan dengan apa depresiasi biasanya "
+                      "terjadi bersamaan. Saat rupiah melemah, produksi industri negara mitra dan ekspor kita cenderung ikut "
+                      "turun. Jadi depresiasi sering menjadi bagian dari perlambatan global yang juga menekan ekspor. Dalam "
+                      "situasi seperti itu, regresi akan melihat rupiah melemah bersamaan dengan neraca memburuk, walaupun "
+                      "kurs bukan penyebabnya. Untuk memisahkannya, kita perlu shock kurs yang benar-benar dari luar, misalnya "
+                      "perubahan kebijakan moneter Amerika Serikat. Itulah langkah lanjutan riset ini.")
+    plabel(s, X1, 88, W1, "Rasio ekspor/impor sebelum dan sesudah awal episode",
+           [("(rata-rata 8 episode; area abu-abu = ~interquartile range~)", False, None)])
+    pic(s, fig_pretrend(), X1, 126, W1, 262)
+    plabel(s, X2, 88, W2, "Korelasi depresiasi riil dengan variabel lain",
+           [("(perubahan 12 bulan, 2007–2026; cokelat = korelasi lebih kuat)", False, None)])
+    pic(s, fcorr, X2, 126, W2, 262)
+    pointers(s, [
+        [("Neraca memburuk lebih dulu: ", True, None),
+         (f"rasio X/M rata-rata turun {idn(abs(pre_drop))}% dalam 6 bulan sebelum rupiah mulai melemah. Sebagian penurunan "
+          "neraca setelah depresiasi bisa jadi kelanjutan tren itu, bukan akibat kurs.", False, None)],
+        [("Depresiasi datang bersama perlambatan global: ", True, None),
+         (f"saat rupiah melemah, IPI mitra ({idn(cv['IPI mitra'], 2)}) dan ekspor ({idn(cv['Ekspor'], 2)}) cenderung ikut "
+          "turun. Efek kurs bercampur dengan ~common shock~ yang juga menekan ekspor.", False, None)],
+        [("Langkah lanjutan: ", True, None),
+         ("identifikasi ~shock~ kurs yang benar-benar eksogen (SVAR ~sign restrictions~ atau ~US monetary policy shock~) "
+          "untuk memisahkan efek kurs dari ~reverse causality~.", False, None)],
+    ], y=394, size=10.5, head="")
+    source(s, "ITC Trade Map, BIS, CEIC, Bloomberg, BPS; olahan penulis")
 
 
     # =========================================================================
