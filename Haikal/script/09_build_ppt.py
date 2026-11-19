@@ -168,11 +168,12 @@ def fig_timeline():
     s = fx[(fx.index >= "2006-01-01")]
     a = agg.set_index("mdate")
     tb = ((a.exports_usdk - a.imports_usdk) / 1e6).rolling(12).mean()
-    fig, (ax, bx) = plt.subplots(2, 1, figsize=(6.4, 4.0), sharex=True, gridspec_kw={"height_ratios": [1, 1]})
+    bcom = np.exp(a.lncom)
+    fig, (ax, bx, cx) = plt.subplots(3, 1, figsize=(6.4, 5.2), sharex=True, gridspec_kw={"height_ratios": [1, 1, 1]})
     for r in eps.itertuples():
         st, en = pd.to_datetime(r.mulai, format="%b %Y"), pd.to_datetime(r.puncak, format="%b %Y")
         st = max(st, s.index[0])
-        for x in (ax, bx):
+        for x in (ax, bx, cx):
             x.axvspan(st, en, color=C(ORANGE), alpha=0.18, lw=0)
         ax.text(st + (en - st) / 2, s.max() * 1.01, EP_SHORT[r.episode], ha="center", va="bottom", fontsize=8,
                 color="#404040")
@@ -185,6 +186,8 @@ def fig_timeline():
     bx.fill_between(tb.index, tb.values, 0, where=tb.values < 0, color=C(BROWN), alpha=0.7, lw=0)
     bx.plot(tb.index, tb.values, color="#404040", lw=0.8)
     bx.set_ylabel("Neraca, USD miliar/bln", fontsize=10)
+    cx.plot(bcom.index, bcom.values, color=C(BROWN), lw=1.8)
+    cx.set_ylabel("BCOM (indeks)", fontsize=10)
     fig.tight_layout(h_pad=0.6)
     return save(fig, "episode_timeline")
 
@@ -785,9 +788,9 @@ def build():
                       "neraca perdagangan bulanan dalam USD. Perhatikan bahwa neraca tidak selalu membaik setelah rupiah melemah: "
                       "di episode 2008 dan 2013 neraca justru jatuh ke defisit, sedangkan surplus besar 2021–2022 terjadi saat "
                       "harga komoditas melonjak. Ini petunjuk awal bahwa harga komoditas lebih menentukan daripada kurs.")
-    plabel(s, X1, 88, 600, "Kurs rupiah (atas) dan neraca perdagangan (bawah)",
+    plabel(s, X1, 88, 600, "Kurs rupiah, neraca perdagangan, dan harga komoditas (BCOM)",
            [("(Rp/USD; neraca = ekspor − impor, USD miliar/bulan, rata-rata 12 bulan; arsir = episode depresiasi)", False, None)])
-    pic(s, fig_timeline(), X1, 126, 600, 330)
+    pic(s, fig_timeline(), X1, 126, 600, 384)
     rows = [["Episode", "Periode", "Depr."]]
     for r in E.itertuples():
         rows.append([r.episode.replace("Komoditas jatuh", "Komod. jatuh").replace("Normalisasi", "Normal."),
@@ -798,8 +801,9 @@ def build():
     pointers(s, [
         "Surplus terbesar (2006–08, 2021–22) terjadi saat harga komoditas tinggi, bukan saat rupiah melemah.",
         "Defisit 2012–14 dan 2018–19 justru muncul di tengah atau sesudah episode depresiasi.",
+        "Panel bawah: neraca bergerak searah dengan BCOM (naik 2007–08 dan 2021–22, jatuh 2015–16), bukan dengan kurs.",
     ], x=648, y=336, w=270, h=128, size=11)
-    source(s, "BIS (kurs); ITC Trade Map (neraca); identifikasi episode oleh penulis")
+    source(s, "BIS (kurs); ITC Trade Map (neraca); Bloomberg (BCOM); identifikasi episode oleh penulis")
 
     s = content(prs, f"Setelah depresiasi, rasio ekspor/impor rata-rata {idn(ep_mean)}% dalam 12 bulan, tidak lebih baik "
                      f"daripada bulan biasa ({idn(bench)}%)",
