@@ -1,0 +1,149 @@
+id,label,h,eff10
+V1_qx,Volume ekspor (10 mitra),0,-.58413732
+V1_qx,Volume ekspor (10 mitra),1,-.68822932
+V1_qx,Volume ekspor (10 mitra),2,-.88485903
+V1_qx,Volume ekspor (10 mitra),3,-.98989075
+V1_qx,Volume ekspor (10 mitra),4,-1.1635231
+V1_qx,Volume ekspor (10 mitra),5,-1.3221611
+V1_qx,Volume ekspor (10 mitra),6,-1.5370933
+V1_qx,Volume ekspor (10 mitra),7,-1.6887488
+V1_qx,Volume ekspor (10 mitra),8,-1.8586415
+V1_qx,Volume ekspor (10 mitra),9,-2.0084331
+V1_qx,Volume ekspor (10 mitra),10,-2.1728399
+V1_qx,Volume ekspor (10 mitra),11,-2.3296461
+V1_qx,Volume ekspor (10 mitra),12,-2.4919345
+V1_qx,Volume ekspor (10 mitra),13,-2.6436696
+V1_qx,Volume ekspor (10 mitra),14,-2.7972553
+V1_qx,Volume ekspor (10 mitra),15,-2.9459114
+V1_qx,Volume ekspor (10 mitra),16,-3.0956485
+V1_qx,Volume ekspor (10 mitra),17,-3.242125
+V1_qx,Volume ekspor (10 mitra),18,-3.3878942
+V1_qx,Volume ekspor (10 mitra),19,-3.5305429
+V1_qx,Volume ekspor (10 mitra),20,-3.6720734
+V1_qx,Volume ekspor (10 mitra),21,-3.8113198
+V1_qx,Volume ekspor (10 mitra),22,-3.9492905
+V1_qx,Volume ekspor (10 mitra),23,-4.0852365
+V1_qx,Volume ekspor (10 mitra),24,-4.2196527
+V1_qx,Volume ekspor (10 mitra),25,-4.3521671
+V1_qx,Volume ekspor (10 mitra),26,-4.4831257
+V1_qx,Volume ekspor (10 mitra),27,-4.6123414
+V1_qx,Volume ekspor (10 mitra),28,-4.7399988
+V1_qx,Volume ekspor (10 mitra),29,-4.8659868
+V1_qx,Volume ekspor (10 mitra),30,-4.9904118
+V1_qx,Volume ekspor (10 mitra),31,-5.1132278
+V1_qx,Volume ekspor (10 mitra),32,-5.2345095
+V1_qx,Volume ekspor (10 mitra),33,-5.3542395
+V1_qx,Volume ekspor (10 mitra),34,-5.4724646
+V1_qx,Volume ekspor (10 mitra),35,-5.5891824
+V1_qx,Volume ekspor (10 mitra),36,-5.7044268
+V2_qm,Volume impor (10 mitra),0,-.87537056
+V2_qm,Volume impor (10 mitra),1,-.94606394
+V2_qm,Volume impor (10 mitra),2,-1.2920643
+V2_qm,Volume impor (10 mitra),3,-1.612318
+V2_qm,Volume impor (10 mitra),4,-1.7940725
+V2_qm,Volume impor (10 mitra),5,-2.0379231
+V2_qm,Volume impor (10 mitra),6,-2.2251592
+V2_qm,Volume impor (10 mitra),7,-2.3900614
+V2_qm,Volume impor (10 mitra),8,-2.549938
+V2_qm,Volume impor (10 mitra),9,-2.683599
+V2_qm,Volume impor (10 mitra),10,-2.8064322
+V2_qm,Volume impor (10 mitra),11,-2.9166794
+V2_qm,Volume impor (10 mitra),12,-3.0137701
+V2_qm,Volume impor (10 mitra),13,-3.1016297
+V2_qm,Volume impor (10 mitra),14,-3.1798217
+V2_qm,Volume impor (10 mitra),15,-3.2496643
+V2_qm,Volume impor (10 mitra),16,-3.3122816
+V2_qm,Volume impor (10 mitra),17,-3.3681448
+V2_qm,Volume impor (10 mitra),18,-3.4181278
+V2_qm,Volume impor (10 mitra),19,-3.4628246
+V2_qm,Volume impor (10 mitra),20,-3.5027652
+V2_qm,Volume impor (10 mitra),21,-3.5384877
+V2_qm,Volume impor (10 mitra),22,-3.5704215
+V2_qm,Volume impor (10 mitra),23,-3.5989704
+V2_qm,Volume impor (10 mitra),24,-3.6244972
+V2_qm,Volume impor (10 mitra),25,-3.6473179
+V2_qm,Volume impor (10 mitra),26,-3.6677213
+V2_qm,Volume impor (10 mitra),27,-3.6859629
+V2_qm,Volume impor (10 mitra),28,-3.7022719
+V2_qm,Volume impor (10 mitra),29,-3.7168529
+V2_qm,Volume impor (10 mitra),30,-3.7298892
+V2_qm,Volume impor (10 mitra),31,-3.7415442
+V2_qm,Volume impor (10 mitra),32,-3.7519643
+V2_qm,Volume impor (10 mitra),33,-3.7612805
+V2_qm,Volume impor (10 mitra),34,-3.7696097
+V2_qm,Volume impor (10 mitra),35,-3.7770565
+V2_qm,Volume impor (10 mitra),36,-3.7837141
+V3_qxm,Rasio volume Qx/Qm,0,-5.568953
+V3_qxm,Rasio volume Qx/Qm,1,2.320708
+V3_qxm,Rasio volume Qx/Qm,2,2.251946
+V3_qxm,Rasio volume Qx/Qm,3,-1.2479908
+V3_qxm,Rasio volume Qx/Qm,4,-.9086653
+V3_qxm,Rasio volume Qx/Qm,5,-3.5404294
+V3_qxm,Rasio volume Qx/Qm,6,-4.4460773
+V3_qxm,Rasio volume Qx/Qm,7,-4.2401114
+V3_qxm,Rasio volume Qx/Qm,8,-5.2369699
+V3_qxm,Rasio volume Qx/Qm,9,-5.7056003
+V3_qxm,Rasio volume Qx/Qm,10,-6.3454075
+V3_qxm,Rasio volume Qx/Qm,11,-7.2896061
+V3_qxm,Rasio volume Qx/Qm,12,-7.8521185
+V3_qxm,Rasio volume Qx/Qm,13,-8.4731712
+V3_qxm,Rasio volume Qx/Qm,14,-9.0867672
+V3_qxm,Rasio volume Qx/Qm,15,-9.5950718
+V3_qxm,Rasio volume Qx/Qm,16,-10.172317
+V3_qxm,Rasio volume Qx/Qm,17,-10.722151
+V3_qxm,Rasio volume Qx/Qm,18,-11.234495
+V3_qxm,Rasio volume Qx/Qm,19,-11.750997
+V3_qxm,Rasio volume Qx/Qm,20,-12.231946
+V3_qxm,Rasio volume Qx/Qm,21,-12.696304
+V3_qxm,Rasio volume Qx/Qm,22,-13.153053
+V3_qxm,Rasio volume Qx/Qm,23,-13.589276
+V3_qxm,Rasio volume Qx/Qm,24,-14.013972
+V3_qxm,Rasio volume Qx/Qm,25,-14.425145
+V3_qxm,Rasio volume Qx/Qm,26,-14.820017
+V3_qxm,Rasio volume Qx/Qm,27,-15.20287
+V3_qxm,Rasio volume Qx/Qm,28,-15.572551
+V3_qxm,Rasio volume Qx/Qm,29,-15.929492
+V3_qxm,Rasio volume Qx/Qm,30,-16.275127
+V3_qxm,Rasio volume Qx/Qm,31,-16.608892
+V3_qxm,Rasio volume Qx/Qm,32,-16.931429
+V3_qxm,Rasio volume Qx/Qm,33,-17.243269
+V3_qxm,Rasio volume Qx/Qm,34,-17.544491
+V3_qxm,Rasio volume Qx/Qm,35,-17.835661
+V3_qxm,Rasio volume Qx/Qm,36,-18.117096
+V4_tot,Terms of trade Px/Pm,0,-1.1878142
+V4_tot,Terms of trade Px/Pm,1,-1.7615516
+V4_tot,Terms of trade Px/Pm,2,-4.1242476
+V4_tot,Terms of trade Px/Pm,3,-3.8579299
+V4_tot,Terms of trade Px/Pm,4,-4.281743
+V4_tot,Terms of trade Px/Pm,5,-4.4957762
+V4_tot,Terms of trade Px/Pm,6,-4.745852
+V4_tot,Terms of trade Px/Pm,7,-4.9665399
+V4_tot,Terms of trade Px/Pm,8,-5.1768565
+V4_tot,Terms of trade Px/Pm,9,-5.3728042
+V4_tot,Terms of trade Px/Pm,10,-5.556561
+V4_tot,Terms of trade Px/Pm,11,-5.7285595
+V4_tot,Terms of trade Px/Pm,12,-5.8896403
+V4_tot,Terms of trade Px/Pm,13,-6.040472
+V4_tot,Terms of trade Px/Pm,14,-6.1817141
+V4_tot,Terms of trade Px/Pm,15,-6.3139739
+V4_tot,Terms of trade Px/Pm,16,-6.4378228
+V4_tot,Terms of trade Px/Pm,17,-6.5537963
+V4_tot,Terms of trade Px/Pm,18,-6.662395
+V4_tot,Terms of trade Px/Pm,19,-6.7640877
+V4_tot,Terms of trade Px/Pm,20,-6.8593135
+V4_tot,Terms of trade Px/Pm,21,-6.9484835
+V4_tot,Terms of trade Px/Pm,22,-7.0319834
+V4_tot,Terms of trade Px/Pm,23,-7.1101732
+V4_tot,Terms of trade Px/Pm,24,-7.1833911
+V4_tot,Terms of trade Px/Pm,25,-7.2519531
+V4_tot,Terms of trade Px/Pm,26,-7.316155
+V4_tot,Terms of trade Px/Pm,27,-7.3762741
+V4_tot,Terms of trade Px/Pm,28,-7.43257
+V4_tot,Terms of trade Px/Pm,29,-7.4852862
+V4_tot,Terms of trade Px/Pm,30,-7.5346498
+V4_tot,Terms of trade Px/Pm,31,-7.5808744
+V4_tot,Terms of trade Px/Pm,32,-7.6241598
+V4_tot,Terms of trade Px/Pm,33,-7.6646924
+V4_tot,Terms of trade Px/Pm,34,-7.7026477
+V4_tot,Terms of trade Px/Pm,35,-7.7381892
+V4_tot,Terms of trade Px/Pm,36,-7.7714705

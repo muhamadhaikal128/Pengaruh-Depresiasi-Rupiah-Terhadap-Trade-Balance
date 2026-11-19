@@ -30,3 +30,6 @@ do script/06_ardl_kelompok.do        // RQ3: per kelompok barang
 
 * --- 3. Local projections
 do script/07_local_projections.do    // RQ1-RQ3 dengan LP (~10 menit)
+
+* --- 4. Harga vs volume (butuh intermediate/analisis/price_volume.csv dari script/10_indeks_harga_volume.py)
+do script/11_harga_volume.do         // dekomposisi LP terms of trade vs volume + ARDL elastisitas volume

@@ -1,2 +1,5 @@
 # log Stata batch
 *.log
+
+# kuantitas HS-6 mentah dari Trade Map (157 MB); versi ringkasnya ada di intermediate/analisis/hs6_qty_long.csv.gz
+input/raw/trademap_hs6_qty/
